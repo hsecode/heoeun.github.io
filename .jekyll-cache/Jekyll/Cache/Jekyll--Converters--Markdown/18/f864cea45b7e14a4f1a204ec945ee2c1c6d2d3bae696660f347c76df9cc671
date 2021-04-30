@@ -1,4 +1,4 @@
-I"P.<h2 id="philosophy">Philosophy:</h2>
+I">0<h2 id="philosophy">Philosophy:</h2>
 
 <p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.</p>
 
@@ -15,13 +15,13 @@ Inline HTML</p>
 
 <p>For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.</p>
 
-<p>The only restrictions are that block-level HTML elements — e.g. <code class="highlighter-rouge">&lt;div&gt;</code>, <code class="highlighter-rouge">&lt;table&gt;</code>, <code class="highlighter-rouge">&lt;pre&gt;</code>, <code class="highlighter-rouge">&lt;p&gt;</code>, etc. — must be separated from surrounding content by blank lines, and the start and end tags of the block should not be indented with tabs or spaces. Markdown is smart enough not to add extra (unwanted) <code class="highlighter-rouge">&lt;p&gt;</code> tags around HTML block-level tags. <a href="https://daringfireball.net/projects/markdown/syntax"><strong>Source</strong></a></p>
+<p>The only restrictions are that block-level HTML elements — e.g. <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;pre&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, etc. — must be separated from surrounding content by blank lines, and the start and end tags of the block should not be indented with tabs or spaces. Markdown is smart enough not to add extra (unwanted) <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tags around HTML block-level tags. <a href="https://daringfireball.net/projects/markdown/syntax"><strong>Source</strong></a></p>
 
 <h2 id="basic-markdown-formatting">Basic Markdown Formatting</h2>
 
 <h3 id="headings">Headings</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is an &lt;h1&gt; tag
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is an &lt;h1&gt; tag
 ## This is an &lt;h2&gt; tag
 ### This is an &lt;h3&gt; tag
 #### This is an &lt;h4&gt; tag
@@ -31,7 +31,7 @@ Inline HTML</p>
 
 <h3 id="emphasis">Emphasis</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*This text will be italic*
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*This text will be italic*
 _This will also be italic_
 
 **This text will be bold**
@@ -56,7 +56,7 @@ _You **can** combine them_
 
 <p><strong>Inordered:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Milk
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Milk
 * Bread
     * Wholegrain
 * Butter
@@ -76,7 +76,7 @@ _You **can** combine them_
 
 <p><strong>Ordered:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Tidy the kitchen
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Tidy the kitchen
 2. Prepare ingredients
 3. Cook delicious things
 </code></pre></div></div>
@@ -91,7 +91,7 @@ _You **can** combine them_
 
 <h3 id="images">Images</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Alt Text](url)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Alt Text](url)
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -100,7 +100,7 @@ _You **can** combine them_
 
 <h3 id="links">Links</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[link](http://example.com)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[link](http://example.com)
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -109,7 +109,7 @@ _You **can** combine them_
 
 <h3 id="blockquotes">Blockquotes</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As Kanye West said:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As Kanye West said:
 
 &gt; We're living the future so
 &gt; the present is our past.
@@ -126,7 +126,7 @@ the present is our past.</p>
 
 <h3 id="horizontal-rules">Horizontal Rules</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -135,19 +135,19 @@ the present is our past.</p>
 
 <h3 id="code-snippets">Code Snippets</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Indenting by 4 spaces will turn an entire paragraph into a code-block.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Indenting by 4 spaces will turn an entire paragraph into a code-block.
 </code></pre></div></div>
 
 <p>Result:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-link {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-link {
     text-decoration: underline;
 }
 </code></pre></div></div>
 
 <h3 id="reference-lists--titles">Reference Lists &amp; Titles</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**The quick brown [fox][1], jumped over the lazy [dog][2].**
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>**The quick brown [fox][1], jumped over the lazy [dog][2].**
 
 [1]: https://en.wikipedia.org/wiki/Fox "Wikipedia: Fox"
 [2]: https://en.wikipedia.org/wiki/Dog "Wikipedia: Dog"
@@ -159,7 +159,7 @@ the present is our past.</p>
 
 <h3 id="escaping">Escaping</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\*literally\*
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\*literally\*
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -168,7 +168,7 @@ the present is our past.</p>
 
 <h3 id="embedding-html">Embedding HTML</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;button class="button-save large"&gt;Big Fat Button&lt;/button&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;button class="button-save large"&gt;Big Fat Button&lt;/button&gt;
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -181,7 +181,7 @@ the present is our past.</p>
 
 <h3 id="strike-throughs">Strike-throughs</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~deleted words~~
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~deleted words~~
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -190,7 +190,7 @@ the present is our past.</p>
 
 <h3 id="automatic-links">Automatic Links</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://ghost.org
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://ghost.org
 </code></pre></div></div>
 
 <p>Result:</p>
@@ -201,7 +201,7 @@ the present is our past.</p>
 
 <p>Work in <a href="https://ghost.org/">Ghost</a>:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The quick brown fox[^1] jumped over the lazy dog[^2].
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The quick brown fox[^1] jumped over the lazy dog[^2].
 
 [^1]: Foxes are red
 [^2]: Dogs are usually not red
@@ -215,7 +215,7 @@ the present is our past.</p>
 
 <h3 id="syntax-highlighting">Syntax Highlighting</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```javascript
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```javascript
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
@@ -235,7 +235,7 @@ function fancyAlert(arg) {
 
 <h3 id="task-lists">Task Lists</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [x] @mentions, #refs, [links](), **formatting**, and &lt;del&gt;tags&lt;/del&gt; supported
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [x] @mentions, #refs, [links](), **formatting**, and &lt;del&gt;tags&lt;/del&gt; supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
@@ -252,9 +252,9 @@ function fancyAlert(arg) {
 
 <h3 id="tables">Tables</h3>
 
-<p>You can create tables by assembling a list of words and dividing them with hyphens <code class="highlighter-rouge">-</code> (for the first row), and then separating each column with a pipe <code class="highlighter-rouge">|</code>:</p>
+<p>You can create tables by assembling a list of words and dividing them with hyphens <code class="language-plaintext highlighter-rouge">-</code> (for the first row), and then separating each column with a pipe <code class="language-plaintext highlighter-rouge">|</code>:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Header | Second Header | Third Header |
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Header | Second Header | Third Header |
 ------------ | ------------- ----------------
 Content from cell 1 | Content from cell 2 | Content from cell 3 |
 Content in the first column | Content in the second column | Content in the third column |

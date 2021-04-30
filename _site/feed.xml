@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-30T14:49:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Purelog: for Writers</title><subtitle>A responsive sidebar Jekyll theme using the Pure.css framework,  designed for writers and bloggers of all kinds.</subtitle><author><name>hseisme</name></author><entry><title type="html">A Comprehensive Guide to Self-Learning</title><link href="http://localhost:4000/a-comprehensive-guide-to-self-learning" rel="alternate" type="text/html" title="A Comprehensive Guide to Self-Learning" /><published>2020-11-03T00:00:00+09:00</published><updated>2020-11-03T00:00:00+09:00</updated><id>http://localhost:4000/a-comprehensive-guide-to-self-learning</id><content type="html" xml:base="http://localhost:4000/a-comprehensive-guide-to-self-learning">&lt;p&gt;One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty of MOOCs — the idea that you can pick and choose to learn exactly and only what you want to.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://hseisme.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hseisme.github.io/" rel="alternate" type="text/html" /><updated>2021-04-30T17:47:03+09:00</updated><id>https://hseisme.github.io/feed.xml</id><title type="html">hseisme 🐱</title><subtitle>#Plan_day #Study_js #Reading_2/month #Cat_OwnerOfEarth</subtitle><author><name>Brennan K. Brown</name></author><entry><title type="html">A Comprehensive Guide to Self-Learning</title><link href="https://hseisme.github.io/a-comprehensive-guide-to-self-learning" rel="alternate" type="text/html" title="A Comprehensive Guide to Self-Learning" /><published>2020-11-03T00:00:00+09:00</published><updated>2020-11-03T00:00:00+09:00</updated><id>https://hseisme.github.io/a-comprehensive-guide-to-self-learning</id><content type="html" xml:base="https://hseisme.github.io/a-comprehensive-guide-to-self-learning">&lt;p&gt;One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty of MOOCs — the idea that you can pick and choose to learn exactly and only what you want to.&lt;/p&gt;
 
 &lt;p&gt;Don’t jump into a new study without having a plan for it. Whenever you feel discouraged or frustrated, you can take a step back and look at the bigger picture.&lt;/p&gt;
 
@@ -84,7 +84,7 @@
   &lt;li&gt;The best skills to learn first are ‘meta-skills’, such as &lt;a href=&quot;https://www.coursera.org/learn/learning-how-to-learn&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;learning how to learn&lt;/a&gt;, time management or other skills that you can use in your studying.&lt;/li&gt;
   &lt;li&gt;Figure out a system and stick to it. Once you have a schedule made, find a way to link it to your created materials, as well as any other important information. (My personal recommendations would be &lt;a href=&quot;https://www.onenote.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OneNote&lt;/a&gt; for Windows, or using Sublime Text w/ Markdown for Linux.)&lt;/li&gt;
   &lt;li&gt;When you’re writing about what you’ve learned, don’t be afraid to add your own personal story or information — conglomerate multiple sources of learning for a more thorough discourse.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Reid Doe</name></author><category term="How-To" /><category term="Creativity" /><category term="Inspiration" /><category term="Habits" /><summary type="html">One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty of MOOCs — the idea that you can pick and choose to learn exactly and only what you want to.</summary></entry><entry><title type="html">A Glorious Example Post</title><link href="http://localhost:4000/a-glorious-example-post" rel="alternate" type="text/html" title="A Glorious Example Post" /><published>2020-11-02T00:00:00+09:00</published><updated>2020-11-02T00:00:00+09:00</updated><id>http://localhost:4000/a-glorious-example-post</id><content type="html" xml:base="http://localhost:4000/a-glorious-example-post">&lt;div class=&quot;message&quot;&gt;
+&lt;/ul&gt;</content><author><name>Reid Doe</name></author><category term="How-To" /><category term="Creativity" /><category term="Inspiration" /><category term="Habits" /><summary type="html">One of the most effective methods to understanding the materials that you’re studying is to be passionate about them. This is the beauty of MOOCs — the idea that you can pick and choose to learn exactly and only what you want to.</summary></entry><entry><title type="html">A Glorious Example Post</title><link href="https://hseisme.github.io/a-glorious-example-post" rel="alternate" type="text/html" title="A Glorious Example Post" /><published>2020-11-02T00:00:00+09:00</published><updated>2020-11-02T00:00:00+09:00</updated><id>https://hseisme.github.io/a-glorious-example-post</id><content type="html" xml:base="https://hseisme.github.io/a-glorious-example-post">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
 
@@ -101,12 +101,12 @@
 &lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
-  &lt;li&gt;Citations, like &lt;cite&gt;— Mark otto&lt;/cite&gt;, should use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
+  &lt;li&gt;Citations, like &lt;cite&gt;— Mark otto&lt;/cite&gt;, should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
@@ -117,7 +117,7 @@
 
 &lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
 
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code class=&quot;highlighter-rouge&quot;&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
 
@@ -208,13 +208,13 @@
 
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>Yui Doe</name></author><category term="Example Posts" /><category term="Jekyll" /><category term="Markdown" /><summary type="html">Howdy! This is an example blog post that shows several types of HTML content supported in this theme.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-11-01T00:00:00+09:00</published><updated>2020-11-01T00:00:00+09:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;hr /&gt;</content><author><name>Yui Doe</name></author><category term="Example Posts" /><category term="Jekyll" /><category term="Markdown" /><summary type="html">Howdy! This is an example blog post that shows several types of HTML content supported in this theme.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://hseisme.github.io/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-11-01T00:00:00+09:00</published><updated>2020-11-01T00:00:00+09:00</updated><id>https://hseisme.github.io/welcome-to-jekyll</id><content type="html" xml:base="https://hseisme.github.io/welcome-to-jekyll">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
 &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
@@ -224,7 +224,7 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Andrew Smith</name></author><category term="Example Posts" /><category term="Jekyll" /><category term="Markdown" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Markdown Syntax Preview</title><link href="http://localhost:4000/markdown-syntax-preview" rel="alternate" type="text/html" title="Markdown Syntax Preview" /><published>2020-10-31T00:00:00+09:00</published><updated>2020-10-31T00:00:00+09:00</updated><id>http://localhost:4000/markdown-syntax-preview</id><content type="html" xml:base="http://localhost:4000/markdown-syntax-preview">&lt;h2 id=&quot;philosophy&quot;&gt;Philosophy:&lt;/h2&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Andrew Smith</name></author><category term="Example Posts" /><category term="Jekyll" /><category term="Markdown" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Markdown Syntax Preview</title><link href="https://hseisme.github.io/markdown-syntax-preview" rel="alternate" type="text/html" title="Markdown Syntax Preview" /><published>2020-10-31T00:00:00+09:00</published><updated>2020-10-31T00:00:00+09:00</updated><id>https://hseisme.github.io/markdown-syntax-preview</id><content type="html" xml:base="https://hseisme.github.io/markdown-syntax-preview">&lt;h2 id=&quot;philosophy&quot;&gt;Philosophy:&lt;/h2&gt;
 
 &lt;p&gt;Markdown is intended to be as easy-to-read and easy-to-write as is feasible.&lt;/p&gt;
 
@@ -241,13 +241,13 @@ Inline HTML&lt;/p&gt;
 
 &lt;p&gt;For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.&lt;/p&gt;
 
-&lt;p&gt;The only restrictions are that block-level HTML elements — e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, etc. — must be separated from surrounding content by blank lines, and the start and end tags of the block should not be indented with tabs or spaces. Markdown is smart enough not to add extra (unwanted) &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags around HTML block-level tags. &lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;&lt;strong&gt;Source&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The only restrictions are that block-level HTML elements — e.g. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, etc. — must be separated from surrounding content by blank lines, and the start and end tags of the block should not be indented with tabs or spaces. Markdown is smart enough not to add extra (unwanted) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags around HTML block-level tags. &lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;&lt;strong&gt;Source&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;basic-markdown-formatting&quot;&gt;Basic Markdown Formatting&lt;/h2&gt;
 
 &lt;h3 id=&quot;headings&quot;&gt;Headings&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is an &amp;lt;h1&amp;gt; tag
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is an &amp;lt;h1&amp;gt; tag
 ## This is an &amp;lt;h2&amp;gt; tag
 ### This is an &amp;lt;h3&amp;gt; tag
 #### This is an &amp;lt;h4&amp;gt; tag
@@ -257,7 +257,7 @@ Inline HTML&lt;/p&gt;
 
 &lt;h3 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*This text will be italic*
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*This text will be italic*
 _This will also be italic_
 
 **This text will be bold**
@@ -282,7 +282,7 @@ _You **can** combine them_
 
 &lt;p&gt;&lt;strong&gt;Inordered:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Milk
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Milk
 * Bread
     * Wholegrain
 * Butter
@@ -302,7 +302,7 @@ _You **can** combine them_
 
 &lt;p&gt;&lt;strong&gt;Ordered:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Tidy the kitchen
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Tidy the kitchen
 2. Prepare ingredients
 3. Cook delicious things
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -317,7 +317,7 @@ _You **can** combine them_
 
 &lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt Text](url)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt Text](url)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -326,7 +326,7 @@ _You **can** combine them_
 
 &lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[link](http://example.com)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[link](http://example.com)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -335,7 +335,7 @@ _You **can** combine them_
 
 &lt;h3 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;As Kanye West said:
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;As Kanye West said:
 
 &amp;gt; We&apos;re living the future so
 &amp;gt; the present is our past.
@@ -352,7 +352,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -361,19 +361,19 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;code-snippets&quot;&gt;Code Snippets&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Indenting by 4 spaces will turn an entire paragraph into a code-block.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Indenting by 4 spaces will turn an entire paragraph into a code-block.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.my-link {
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.my-link {
     text-decoration: underline;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;reference-lists--titles&quot;&gt;Reference Lists &amp;amp; Titles&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;**The quick brown [fox][1], jumped over the lazy [dog][2].**
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;**The quick brown [fox][1], jumped over the lazy [dog][2].**
 
 [1]: https://en.wikipedia.org/wiki/Fox &quot;Wikipedia: Fox&quot;
 [2]: https://en.wikipedia.org/wiki/Dog &quot;Wikipedia: Dog&quot;
@@ -385,7 +385,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;escaping&quot;&gt;Escaping&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\*literally\*
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\*literally\*
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -394,7 +394,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;embedding-html&quot;&gt;Embedding HTML&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;button class=&quot;button-save large&quot;&amp;gt;Big Fat Button&amp;lt;/button&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;button class=&quot;button-save large&quot;&amp;gt;Big Fat Button&amp;lt;/button&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -407,7 +407,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;strike-throughs&quot;&gt;Strike-throughs&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~deleted words~~
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~~deleted words~~
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -416,7 +416,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;automatic-links&quot;&gt;Automatic Links&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://ghost.org
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://ghost.org
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:&lt;/p&gt;
@@ -427,7 +427,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;p&gt;Work in &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The quick brown fox[^1] jumped over the lazy dog[^2].
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The quick brown fox[^1] jumped over the lazy dog[^2].
 
 [^1]: Foxes are red
 [^2]: Dogs are usually not red
@@ -441,7 +441,7 @@ the present is our past.&lt;/p&gt;
 
 &lt;h3 id=&quot;syntax-highlighting&quot;&gt;Syntax Highlighting&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```javascript
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;```javascript
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:&apos;#foo&apos;})
@@ -461,7 +461,7 @@ function fancyAlert(arg) {
 
 &lt;h3 id=&quot;task-lists&quot;&gt;Task Lists&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [x] @mentions, #refs, [links](), **formatting**, and &amp;lt;del&amp;gt;tags&amp;lt;/del&amp;gt; supported
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- [x] @mentions, #refs, [links](), **formatting**, and &amp;lt;del&amp;gt;tags&amp;lt;/del&amp;gt; supported
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
@@ -478,9 +478,9 @@ function fancyAlert(arg) {
 
 &lt;h3 id=&quot;tables&quot;&gt;Tables&lt;/h3&gt;
 
-&lt;p&gt;You can create tables by assembling a list of words and dividing them with hyphens &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; (for the first row), and then separating each column with a pipe &lt;code class=&quot;highlighter-rouge&quot;&gt;|&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;You can create tables by assembling a list of words and dividing them with hyphens &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; (for the first row), and then separating each column with a pipe &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;|&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header | Second Header | Third Header |
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header | Second Header | Third Header |
 ------------ | ------------- ----------------
 Content from cell 1 | Content from cell 2 | Content from cell 3 |
 Content in the first column | Content in the second column | Content in the third column |
@@ -529,7 +529,7 @@ Content in the forth row A | Content in the forth row B | Content in the forth r
       &lt;p&gt;Dogs are usually not red &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Eric F.</name></author><category term="Example Posts" /><category term="Jekyll" /><category term="Markdown" /><summary type="html">Philosophy:</summary></entry><entry><title type="html">Getting Unstuck for Creatives</title><link href="http://localhost:4000/getting-unstuck" rel="alternate" type="text/html" title="Getting Unstuck for Creatives" /><published>2020-10-30T00:00:00+09:00</published><updated>2020-10-30T00:00:00+09:00</updated><id>http://localhost:4000/getting-unstuck</id><content type="html" xml:base="http://localhost:4000/getting-unstuck">&lt;h2 id=&quot;taking-a-novel-approach-to-life-and-breaking-routines&quot;&gt;Taking a novel approach to life and breaking routines.&lt;/h2&gt;
+&lt;/div&gt;</content><author><name>Eric F.</name></author><category term="Example Posts" /><category term="Jekyll" /><category term="Markdown" /><summary type="html">Philosophy:</summary></entry><entry><title type="html">Getting Unstuck for Creatives</title><link href="https://hseisme.github.io/getting-unstuck" rel="alternate" type="text/html" title="Getting Unstuck for Creatives" /><published>2020-10-30T00:00:00+09:00</published><updated>2020-10-30T00:00:00+09:00</updated><id>https://hseisme.github.io/getting-unstuck</id><content type="html" xml:base="https://hseisme.github.io/getting-unstuck">&lt;h2 id=&quot;taking-a-novel-approach-to-life-and-breaking-routines&quot;&gt;Taking a novel approach to life and breaking routines.&lt;/h2&gt;
 
 &lt;p&gt;Okay, let’s be real. I’ve found myself totally trapped in the habitual daily acts that’ve sprung up thanks to COVID-19, and I’m sure that I’m not alone in that. The lack of travelling different places, meeting new people, having &lt;em&gt;any&lt;/em&gt; sort of stimuli apart from our dreaded screens can get &lt;em&gt;beyond&lt;/em&gt; boring and frustrating.&lt;/p&gt;
 
@@ -601,7 +601,7 @@ Content in the forth row A | Content in the forth row B | Content in the forth r
 
 &lt;p&gt;Sure, for the most part we’re all stuck inside and don’t have a lot of flexibility with our setting or time, but there’s always something new to do if you look hard enough.&lt;/p&gt;
 
-&lt;p&gt;Take in more inspiration, mindfully wander outside, carefully analyze the routines you have set in place, turn the tasks that you do into games, and don’t be afraid to create more just for the sake of it!&lt;/p&gt;</content><author><name>Reid Doe</name></author><category term="How-To" /><category term="Creativity" /><category term="Inspiration" /><category term="Habits" /><summary type="html">Taking a novel approach to life and breaking routines.</summary></entry><entry><title type="html">6 Ways to Achieve New Things</title><link href="http://localhost:4000/six-ways-to-achieve-new-things" rel="alternate" type="text/html" title="6 Ways to Achieve New Things" /><published>2020-10-29T00:00:00+09:00</published><updated>2020-10-29T00:00:00+09:00</updated><id>http://localhost:4000/six-ways-to-achieve-new-things</id><content type="html" xml:base="http://localhost:4000/six-ways-to-achieve-new-things">&lt;blockquote&gt;
+&lt;p&gt;Take in more inspiration, mindfully wander outside, carefully analyze the routines you have set in place, turn the tasks that you do into games, and don’t be afraid to create more just for the sake of it!&lt;/p&gt;</content><author><name>Reid Doe</name></author><category term="How-To" /><category term="Creativity" /><category term="Inspiration" /><category term="Habits" /><summary type="html">Taking a novel approach to life and breaking routines.</summary></entry><entry><title type="html">6 Ways to Achieve New Things</title><link href="https://hseisme.github.io/six-ways-to-achieve-new-things" rel="alternate" type="text/html" title="6 Ways to Achieve New Things" /><published>2020-10-29T00:00:00+09:00</published><updated>2020-10-29T00:00:00+09:00</updated><id>https://hseisme.github.io/six-ways-to-achieve-new-things</id><content type="html" xml:base="https://hseisme.github.io/six-ways-to-achieve-new-things">&lt;blockquote&gt;
   &lt;p&gt;Getting back on your horse, no matter how many times you’ve fallen off.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -661,7 +661,7 @@ Content in the forth row A | Content in the forth row B | Content in the forth r
 
 &lt;p&gt;My last suggestion is that the less time and energy something takes to do, then the less time and energy it should take for you to maintain it. It takes a lot of willpower and preparation to start something serious, like exercising three days a week — where you might need to have a community of support and journal weekly to remind yourself why it’s important to keep up.&lt;/p&gt;
 
-&lt;p&gt;On the flip side, it’s a lot easier to do something like start flossing after brushing your teeth, and there should be a smaller and less-intrusive reminder to yourself to do that so it doesn’t feel like an overwhelming chore. Tasks in general are usually far less daunting than what we imagine they are, especially the longer with &lt;em&gt;think&lt;/em&gt; about doing it than actually doing it.&lt;/p&gt;</content><author><name>Tilo Smith</name></author><category term="Goals" /><category term="Habits" /><category term="Inspiration" /><summary type="html">Getting back on your horse, no matter how many times you’ve fallen off.</summary></entry><entry><title type="html">Creating a Contingency Plan</title><link href="http://localhost:4000/creating-a-contingency-plan" rel="alternate" type="text/html" title="Creating a Contingency Plan" /><published>2020-10-28T00:00:00+09:00</published><updated>2020-10-28T00:00:00+09:00</updated><id>http://localhost:4000/creating-a-contingency-plan</id><content type="html" xml:base="http://localhost:4000/creating-a-contingency-plan">&lt;h3 id=&quot;failure-is-important&quot;&gt;&lt;b&gt;Failure is Important&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;On the flip side, it’s a lot easier to do something like start flossing after brushing your teeth, and there should be a smaller and less-intrusive reminder to yourself to do that so it doesn’t feel like an overwhelming chore. Tasks in general are usually far less daunting than what we imagine they are, especially the longer with &lt;em&gt;think&lt;/em&gt; about doing it than actually doing it.&lt;/p&gt;</content><author><name>Tilo Smith</name></author><category term="Goals" /><category term="Habits" /><category term="Inspiration" /><summary type="html">Getting back on your horse, no matter how many times you’ve fallen off.</summary></entry><entry><title type="html">Creating a Contingency Plan</title><link href="https://hseisme.github.io/creating-a-contingency-plan" rel="alternate" type="text/html" title="Creating a Contingency Plan" /><published>2020-10-28T00:00:00+09:00</published><updated>2020-10-28T00:00:00+09:00</updated><id>https://hseisme.github.io/creating-a-contingency-plan</id><content type="html" xml:base="https://hseisme.github.io/creating-a-contingency-plan">&lt;h3 id=&quot;failure-is-important&quot;&gt;&lt;b&gt;Failure is Important&lt;/b&gt;&lt;/h3&gt;
 
 &lt;p&gt;Last month, I had the idea to write an article each day for the month. How long did that last? Only five days. No matter how you look at it, that is failure. And it’s not just about the fact I didn’t manage to beat the challenge, it’s more about the principle of the matter. The fact that I failed to keep a promise to myself and others. Why did I let this happen? I think more broadly, it needs to be asked: Why do people do this — so often — in general?&lt;/p&gt;
 
@@ -797,7 +797,7 @@ The human mind is an amazingly capable machine, but with so much stimuli, it is 
 
 &lt;figure class=&quot;wp-caption&quot;&gt;
 
-&lt;a href=&quot;https://writingcooperative.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;img data-width=&quot;1099&quot; data-height=&quot;139&quot; src=&quot;https://cdn-images-1.medium.com/max/800/1*eLY7z6NuxjwFyI1T-dwXcQ.png&quot; /&gt;&lt;/a&gt;&lt;figcaption class=&quot;wp-caption-text&quot;&gt;Helping each other write better.&lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Yui Doe</name></author><category term="Guides" /><category term="Planning" /><category term="Productivity" /><category term="Writing" /><summary type="html">Failure is Important</summary></entry><entry><title type="html">My Writing Process</title><link href="http://localhost:4000/my-writing-process" rel="alternate" type="text/html" title="My Writing Process" /><published>2020-10-27T00:00:00+09:00</published><updated>2020-10-27T00:00:00+09:00</updated><id>http://localhost:4000/my-writing-process</id><content type="html" xml:base="http://localhost:4000/my-writing-process">&lt;h2 id=&quot;five-steps-to-go-from-brainstorming-to-completed-work&quot;&gt;Five Steps to Go From Brainstorming to Completed Work&lt;/h2&gt;
+&lt;a href=&quot;https://writingcooperative.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;img data-width=&quot;1099&quot; data-height=&quot;139&quot; src=&quot;https://cdn-images-1.medium.com/max/800/1*eLY7z6NuxjwFyI1T-dwXcQ.png&quot; /&gt;&lt;/a&gt;&lt;figcaption class=&quot;wp-caption-text&quot;&gt;Helping each other write better.&lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Yui Doe</name></author><category term="Guides" /><category term="Planning" /><category term="Productivity" /><category term="Writing" /><summary type="html">Failure is Important</summary></entry><entry><title type="html">My Writing Process</title><link href="https://hseisme.github.io/my-writing-process" rel="alternate" type="text/html" title="My Writing Process" /><published>2020-10-27T00:00:00+09:00</published><updated>2020-10-27T00:00:00+09:00</updated><id>https://hseisme.github.io/my-writing-process</id><content type="html" xml:base="https://hseisme.github.io/my-writing-process">&lt;h2 id=&quot;five-steps-to-go-from-brainstorming-to-completed-work&quot;&gt;Five Steps to Go From Brainstorming to Completed Work&lt;/h2&gt;
 
 &lt;p&gt;&lt;span&gt;L&lt;/span&gt;et’s get down to the bare bones to start with: Prepare yourself and focus. Brainstorm and allow yourself to have bad ideas. Outline a thesis. Draft and edit. Cut the non-essential. Now, let’s expand on these ideas…&lt;/p&gt;
 
@@ -911,7 +911,7 @@ The human mind is an amazingly capable machine, but with so much stimuli, it is 
 
 &lt;p&gt;&lt;b&gt;Be clear and concise.&lt;/b&gt; Functional and pragmatic. Distill your message into the smallest amount of words possible. Short is memorable. If it’s easy to digest, it’s easy to share.&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;Be ruthless.&lt;/b&gt; After your first draft is complete, take a pause. Then, return and cut the word count in half.&lt;/p&gt;</content><author><name>Brennan K. Brown</name></author><category term="Guides" /><category term="Productivity" /><category term="Planning" /><category term="Writing" /><summary type="html">Five Steps to Go From Brainstorming to Completed Work</summary></entry><entry><title type="html">Disrupting the Attention-based Economy</title><link href="http://localhost:4000/disrupting-the-attention-based-economy" rel="alternate" type="text/html" title="Disrupting the Attention-based Economy" /><published>2020-10-26T00:00:00+09:00</published><updated>2020-10-26T00:00:00+09:00</updated><id>http://localhost:4000/disrupting-the-attention-based-economy</id><content type="html" xml:base="http://localhost:4000/disrupting-the-attention-based-economy">&lt;p&gt;When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distractions that will grab your awareness away from what you’re doing.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Be ruthless.&lt;/b&gt; After your first draft is complete, take a pause. Then, return and cut the word count in half.&lt;/p&gt;</content><author><name>Brennan K. Brown</name></author><category term="Guides" /><category term="Productivity" /><category term="Planning" /><category term="Writing" /><summary type="html">Five Steps to Go From Brainstorming to Completed Work</summary></entry><entry><title type="html">Disrupting the Attention-based Economy</title><link href="https://hseisme.github.io/disrupting-the-attention-based-economy" rel="alternate" type="text/html" title="Disrupting the Attention-based Economy" /><published>2020-10-26T00:00:00+09:00</published><updated>2020-10-26T00:00:00+09:00</updated><id>https://hseisme.github.io/disrupting-the-attention-based-economy</id><content type="html" xml:base="https://hseisme.github.io/disrupting-the-attention-based-economy">&lt;p&gt;When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distractions that will grab your awareness away from what you’re doing.&lt;/p&gt;
 
 &lt;p&gt;We live in an &lt;a href=&quot;https://techcrunch.com/2017/07/30/the-attention-economy-created-by-silicon-valley-is-bankrupting-us/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;strong&gt;attention-based economy&lt;/strong&gt;&lt;/a&gt;. Companies and people can only sell you products and services if they first have your attention, after all. This is nothing new, but with the rise of clever marketing statics (ex. Data-collection, branded content, personalized advertisements, etc.) most people are often being sold things without even realizing it.&lt;/p&gt;
 
@@ -960,7 +960,7 @@ The human mind is an amazingly capable machine, but with so much stimuli, it is 
 
 &lt;figure class=&quot;wp-caption&quot;&gt;
 
-&lt;img data-width=&quot;2400&quot; data-height=&quot;1800&quot; src=&quot;https://cdn-images-1.medium.com/max/800/1*pRon9UAtEO-JzTY-7mg1jA.png&quot; /&gt;&lt;figcaption class=&quot;wp-caption-text&quot;&gt;&lt;b&gt;Thanks for Reading!&lt;/b&gt;&lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Brennan K. Brown</name></author><category term="Essays" /><category term="Productivity" /><category term="Habits" /><summary type="html">When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distractions that will grab your awareness away from what you’re doing.</summary></entry><entry><title type="html">The Duality of Purpose and Work</title><link href="http://localhost:4000/the-duality-of-purpose-and-work" rel="alternate" type="text/html" title="The Duality of Purpose and Work" /><published>2020-10-25T00:00:00+09:00</published><updated>2020-10-25T00:00:00+09:00</updated><id>http://localhost:4000/the-duality-of-purpose-and-work</id><content type="html" xml:base="http://localhost:4000/the-duality-of-purpose-and-work">&lt;p&gt;&lt;strong&gt;PART ONE: HAVING FAITH IN GRAND DREAMS.&lt;/strong&gt; Understanding the &lt;em&gt;why&lt;/em&gt; of the work is the most important thing that’s needed when starting out. It’s so easy to become discouraged when you’re in the the thick of the weeds, when you need to do difficult or tedious. Motivation and discipline to do such work comes from having a bigger picture — a purpose.&lt;/p&gt;
+&lt;img data-width=&quot;2400&quot; data-height=&quot;1800&quot; src=&quot;https://cdn-images-1.medium.com/max/800/1*pRon9UAtEO-JzTY-7mg1jA.png&quot; /&gt;&lt;figcaption class=&quot;wp-caption-text&quot;&gt;&lt;b&gt;Thanks for Reading!&lt;/b&gt;&lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>Brennan K. Brown</name></author><category term="Essays" /><category term="Productivity" /><category term="Habits" /><summary type="html">When you wake up in the morning and get out of bed — or even before you get out of bed — what’s the first thing that grabs your attention? Whatever it is, it’s going to be responsible for your first thoughts of the day. Throughout the rest of your day, you’ll be faced with a bombardment of distractions that will grab your awareness away from what you’re doing.</summary></entry><entry><title type="html">The Duality of Purpose and Work</title><link href="https://hseisme.github.io/the-duality-of-purpose-and-work" rel="alternate" type="text/html" title="The Duality of Purpose and Work" /><published>2020-10-25T00:00:00+09:00</published><updated>2020-10-25T00:00:00+09:00</updated><id>https://hseisme.github.io/the-duality-of-purpose-and-work</id><content type="html" xml:base="https://hseisme.github.io/the-duality-of-purpose-and-work">&lt;p&gt;&lt;strong&gt;PART ONE: HAVING FAITH IN GRAND DREAMS.&lt;/strong&gt; Understanding the &lt;em&gt;why&lt;/em&gt; of the work is the most important thing that’s needed when starting out. It’s so easy to become discouraged when you’re in the the thick of the weeds, when you need to do difficult or tedious. Motivation and discipline to do such work comes from having a bigger picture — a purpose.&lt;/p&gt;
 
 &lt;p&gt;This purpose comes from a place of realistic optimism and idealism. It’s a messy and bold goal. A tangible, yet implausible objective without conventional measure or perspective. There’s a lot wrong with the world — and a lot of people that will complain about it — but how can you improve it? What troubles are you willing to tackle head-on for the good of humanity?&lt;/p&gt;
 
