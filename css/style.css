@@ -64,7 +64,8 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* header */
 .header_wrap{position:fixed;top:0;left:0;right:0;z-index:2;margin:0 auto;padding:0 20px;box-sizing:border-box;height:60px;background:rgba(255,255,255,.9);box-shadow:0 2px 5px rgba(0,0,0,.15);}
 .header_wrap .header_box{margin:0 auto;max-width:1200px;}
-.header_wrap h1 a{display:inline-block;font-family:'Baloo Bhai', cursive;font-size:25px;line-height:60px;color:#333;}
+.header_wrap h1{display:inline-block;padding-top:13px;}
+.header_wrap h1 a{display:inline-block;font-family:'Baloo Bhai', cursive;font-size:25px;color:#333;}
 .nav_wrap{position:fixed;z-index:2;top:-100%;left:0;right:0;padding:100px 0;height:100vh;box-sizing:border-box;background: #e3d0ff;transition:all ease .3s;}
 .nav_wrap.mob_active{top:0;}
 .button_nav{display:block;position:absolute;top:18px;right:20px;width:27px;height:23px;z-index:3;cursor:pointer;}
@@ -83,7 +84,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .navigation .nav_item a:focus{color:#df7dda;}
 
 @media only screen and (min-width:768px){
-    .header_wrap h1{float:left;}
+    .header_wrap h1{float:left;padding-top:8px;}
     .header_wrap h1 a{font-size:30px;}
     .button_nav{display:none;}
     .nav_wrap{position:relative;top:0;overflow:hidden;margin-left:auto;padding:0;width:auto;height:auto;background:none;text-align:right;}
@@ -151,7 +152,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .skill_list > li{flex:1 1 150px;position:relative;margin:5px;box-sizing:border-box;height:100px;background:#caf;border-radius:8px;overflow:hidden;}
 .skill_list > li:after{content:'';display:block;position:absolute;top:0;left:-150px;width:100px;height:100%;background-image:linear-gradient(to right, transparent, rgba(255,255,255,.5), transparent);transition:all .35s;transform:skewX(-42deg);}
 .skill_list > li:hover:after{left:calc(100% + 50px)}
-.skill_list > li > span{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-family:'Baloo Bhai', cursive,'Do Hyeon', sans-serif;font-size:23px;letter-spacing:.1px;color:#fff;}
+.skill_list > li > span{position:absolute;top:50%;left:0;right:0;transform:translate(0, -50%);text-align:center;font-family:'Baloo Bhai', cursive,'Do Hyeon', sans-serif;font-size:23px;line-height:23px;word-break:break-all;letter-spacing:.1px;color:#fff;}
 /*.skill_item .stat_box{display:flex;width:100%;}
 .skill_item .stat_box .items{display:flex;flex-flow:row wrap;width:100%;}
 .skill_item .stat_box .stat{flex:1 1 70px;}
