@@ -65,7 +65,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .header_wrap{position:fixed;top:0;left:0;right:0;z-index:2;margin:0 auto;padding:0 20px;box-sizing:border-box;height:60px;background:rgba(255,255,255,.9);box-shadow:0 2px 5px rgba(0,0,0,.15);}
 .header_wrap .header_box{margin:0 auto;max-width:1200px;}
 .header_wrap h1{display:inline-block;padding:13px 5px 0;}
-.header_wrap h1 a{display:inline-block;font-family:'Baloo Bhai', cursive;font-size:25px;letter-spacing:-1.5px;color:#333;}
+.header_wrap h1 a{display:inline-block;font-family:'Baloo Bhai', cursive;font-size:25px;white-space:nowrap;color:#333;}
 .nav_wrap{position:fixed;z-index:2;top:-200%;left:0;right:0;padding:100px 0;height:100vh;box-sizing:border-box;background: #e3d0ff;transition:all ease .3s;}
 .nav_wrap.mob_active{top:0;}
 .button_nav{display:block;position:absolute;top:18px;right:20px;width:27px;height:23px;z-index:3;cursor:pointer;}
