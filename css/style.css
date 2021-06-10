@@ -1,4 +1,19 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Baloo Bhai';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+    unicode-range:U+0041-005A, U+0061-007A;
+}
+@font-face {
+    font-family: 'Do Hyeon';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+    unicode-range:U+AC00-U+D7A3;
+}
+
 /* common */
 .mob_caution{display:none;}
 html[data-useragent*=iPhone] .mob_caution,
@@ -156,7 +171,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .skill_list > li{flex:1 1 150px;position:relative;margin:5px;box-sizing:border-box;height:100px;background:#caf;border-radius:8px;overflow:hidden;}
 .skill_list > li:after{content:'';display:block;position:absolute;top:0;left:-150px;width:100px;height:100%;background-image:linear-gradient(to right, transparent, rgba(255,255,255,.5), transparent);transition:all .35s;transform:skewX(-42deg);}
 .skill_list > li:hover:after{left:calc(100% + 50px)}
-.skill_list > li > span{position:absolute;top:50%;left:0;right:0;transform:translate(0, -50%);text-align:center;font-family:'Do Hyeon', sans-serif;font-size:23px;line-height:23px;word-break:break-all;letter-spacing:.1px;color:#fff;}
+.skill_list > li > span{position:absolute;top:50%;left:0;right:0;transform:translate(0, -50%);text-align:center;font-family: 'Baloo Bhai', 'Do Hyeon';font-size:23px;line-height:23px;word-break:break-all;letter-spacing:.1px;color:#fff;}
 /*.skill_item .stat_box{display:flex;width:100%;}
 .skill_item .stat_box .items{display:flex;flex-flow:row wrap;width:100%;}
 .skill_item .stat_box .stat{flex:1 1 70px;}
