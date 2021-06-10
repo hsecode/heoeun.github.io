@@ -9,8 +9,8 @@ $(function(){
                 $('html, body').toggleClass('scroll_hidden');
             });
             $('.navigation > li > a').click(function(){
-                $('.header_wrap .nav_wrap').toggleClass('mob_active')
-                $('.header_wrap .button_nav').toggleClass('close');;
+                $('.header_wrap .nav_wrap').toggleClass('mob_active');
+                $('.header_wrap .button_nav').toggleClass('close');
                 $('html, body').toggleClass('scroll_hidden');
             });
         } else {
