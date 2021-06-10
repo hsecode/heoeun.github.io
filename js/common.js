@@ -20,6 +20,25 @@ $(function(){
         return false;
     });
 
+    //header fix
+    $(function(){
+        var fixArea = $(".about_wrap").offset().top;
+        $(window).scroll(function(){
+            var window = $(this).scrollTop();
+
+            if(fixArea <= window) {
+                $(".header_wrap").addClass("fixed");
+            } else {
+                $(".header_wrap").removeClass("fixed");
+            }
+        });
+
+        //윈도우 리사이즈 시 fixed 해제
+        $(window).resize(function(){
+            $(".header_wrap").removeClass("fixed");
+        });
+    });
+
     //career tab
     $('.career_tab .button_tab').click(function(){
         $('.career_tab li').removeClass('active');

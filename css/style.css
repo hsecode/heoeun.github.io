@@ -1,7 +1,8 @@
 @charset "utf-8";
 /* common */
 .mob_caution{display:none;}
-html[data-useragent*=iPhone] .mob_caution{display:block;padding:5px 0;background:red;text-align:center;color:#fff;}
+html[data-useragent*=iPhone] .mob_caution,
+html[data-useragent*=Android]. mob_caution{display:block;padding:5px 0;background:red;text-align:center;color:#fff;}
 .scroll_hidden{min-height:100%;height:100%;overflow:hidden !important;touch-action:none;}
 .sp_img{display:inline-block;overflow:hidden;line-height:100em;vertical-align:top;background:url(../images/sprite.png) 0 0 no-repeat;}
 .sp_img.icon_mail{width:18px;height:14px;background-position:-24px 0;}
@@ -64,13 +65,14 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* //common */
 
 /* header */
-.header_wrap{position:relative;top:0;left:0;right:0;z-index:2;margin:0 auto;padding:0 20px;box-sizing:border-box;height:60px;background:rgba(255,255,255,.9);box-shadow:0 2px 5px rgba(0,0,0,.15);}
+.header_wrap{margin:0 auto;padding:0 20px;box-sizing:border-box;height:60px;background:rgba(255,255,255,.9);box-shadow:0 2px 5px rgba(0,0,0,.15);}
+.header_wrap.fixed{position:fixed;top:0;left:0;right:0;z-index:2;}
 .header_wrap .header_box{margin:0 auto;max-width:1200px;}
 .header_wrap h1{display:inline-block;padding:13px 5px 0;}
 .header_wrap h1 a{display:inline-block;font-family:'Baloo Bhai', cursive;font-size:25px;white-space:nowrap;color:#333;}
 .nav_wrap{position:fixed;z-index:2;top:-200%;left:0;right:0;padding:100px 0;height:100vh;box-sizing:border-box;background: #e3d0ff;transition:all ease .3s;}
 .nav_wrap.mob_active{top:0;}
-.button_nav{display:block;position:absolute;top:18px;right:20px;width:27px;height:23px;z-index:9999;cursor:pointer;}
+.button_nav{display:block;position:absolute;top:18px;right:20px;width:27px;height:23px;z-index:3;cursor:pointer;}
 .button_nav span{display:block;position:absolute;left:50%;margin-left:-14px;width:27px;height:3px;background:#ccaaff;transition:all ease .3s;-webkit-transition:all ease .3s;-ms-transition:all ease .3s;-o-transition:all ease .3s;}
 .button_nav span:nth-of-type(1){top:0;}
 .button_nav span:nth-of-type(2){top:10px;}
