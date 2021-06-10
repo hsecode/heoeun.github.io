@@ -1,4 +1,5 @@
 $(function(){
+    //navigation
     $(window).on('load resize', function(){
         var displayWidth = $(window).width();
 
@@ -16,11 +17,15 @@ $(function(){
         } else {
             $('.header_wrap .button_nav').off('click');
             $('html, body').removeClass('scroll_hidden');
+            $(window).resize(function(){
+                $('html, body').removeClass('scroll_hidden');
+            });
         }
+
         return false;
     });
 
-    //header fix
+    //header fixed
     $(function(){
         var fixArea = $(".about_wrap").offset().top;
         $(window).scroll(function(){
@@ -33,7 +38,6 @@ $(function(){
             }
         });
 
-        //윈도우 리사이즈 시 fixed 해제
         $(window).resize(function(){
             $(".header_wrap").removeClass("fixed");
         });
