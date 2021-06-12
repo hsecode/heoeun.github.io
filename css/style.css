@@ -133,7 +133,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* //window box style */
 
 /* about */
-.about_wrap{position:relative;padding-top:17%;width:100%;background:url(../images/top-bg.jpg) center top / 100% no-repeat;}
+.about_wrap{position:relative;padding-top:17%;width:100%;background:url(../images/top_bg.jpg) center top / 100% no-repeat;}
 .about_wrap .window_box{margin:0 auto;width:85%;}
 .about_area{padding:30px;}
 .about_area .info_top{margin-bottom:20px;text-align:center;}
@@ -186,7 +186,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* //skill */
 
 /* career */
-.career_wrap{margin-top:60px;padding:100px 20px;box-sizing:border-box;background:url(../images/cherry.jpg) 65% center / cover  no-repeat;background-attachment:fixed;}
+.career_wrap{margin-top:60px;padding:100px 20px;box-sizing:border-box;background:url(../images/fixed_bg.jpg) 65% center / cover  no-repeat;background-attachment:fixed;}
 .career_area{margin:0 auto;max-width:1200px;}
 .career_box{margin: 0 auto;padding:50px 30px;max-width:700px;background:#fff;}
 .career_tab{border-bottom: 1px solid #ddd;}
