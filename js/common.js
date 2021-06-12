@@ -94,8 +94,6 @@ $(function(){
 })(jQuery);
 
 //useragent
-//var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
 var isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i) == null ? false : true;
