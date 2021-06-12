@@ -15,8 +15,8 @@
 }
 
 .mob_caution{display:none;}
-html[data-useragent*=iPhone] .mob_caution,
-html[data-useragent*=Android] .mob_caution{display:block;padding:5px 0;background:red;text-align:center;color:#fff;}
+/*html[data-useragent*=iPhone] .mob_caution,
+html[data-useragent*=Android] .mob_caution{display:block;padding:5px 0;background:red;text-align:center;color:#fff;}*/
 .scroll_hidden{min-height:100%;height:100%;overflow:hidden !important;touch-action:none;}
 
 /* common */

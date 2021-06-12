@@ -93,3 +93,33 @@ $(function(){
     });
 })(jQuery);
 
+//useragent
+//var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+var isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i) == null ? false : true;
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i) == null ? false : true;
+    },
+    IOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) == null ? false : true;
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i) == null ? false : true;
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i) == null ? false : true;
+    },
+    any: function () {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.IOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+if(isMobile.any()){
+    $('.mob_caution').css('display','block');
+} else {
+    $('.mob_caution').css('display','none');
+}
+
