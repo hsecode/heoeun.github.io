@@ -18,6 +18,7 @@
 .scroll_hidden{min-height:100%;height:100%;overflow:hidden !important;touch-action:none;}
 
 /* common */
+main{padding-bottom:60px;}
 .sp_img{display:inline-block;overflow:hidden;line-height:100em;vertical-align:top;background:url(../images/sprite.png) 0 0 no-repeat;}
 .sp_img.icon_mail{width:18px;height:14px;background-position:-24px 0;}
 .sp_img.icon_phone{width:14px;height:19px;background-position:0 0;}
@@ -163,7 +164,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* //about */
 
 /* skill */
-.skill_wrap{padding-top:60px;text-align:center;}
+.skill_wrap{margin-top:60px;text-align:center;}
 .skill_area{margin: 0 auto;padding:0 20px;max-width:940px;}
 .skill_item + .skill_item{margin-top:50px;}
 .skill_item h4{font-size:20px;font-weight:400;letter-spacing:.3px;}
@@ -232,12 +233,10 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* //career */
 
 /* works */
-.works_wrap{margin-bottom:60px;padding-top:60px;text-align:center;}
+.works_wrap{padding-top:60px;text-align:center;}
 .works_wrap h4{font-size:16px;font-weight:600;}
-.works_box{margin:0 auto;padding:0 20px;max-width:1200px;}
-.works_box:after{content:'';display:block;clear:both;}
-.works_item{position:relative;}
-.works_item + .works_item{margin-top:20px;}
+.works_box{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-wrap:wrap;margin:-10px auto;padding:0 20px;max-width:1200px;}
+.works_item{position:relative;flex:1 1 337px;margin:10px;}
 .works_item img{max-width:100%;}
 .works_item .inbox .desc_box{position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.8);opacity:0;text-align:center;color:#fff;transition:all ease .5s;-webkit-transition:all ease .5s;-ms-transition:all ease .5s;-o-transition:all ease .5s;}
 .works_item .inbox:hover .desc_box{opacity:1;}
@@ -247,12 +246,12 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .works_item .inbox .desc_box .button_more:hover{top:-3px;left:-3px;box-shadow:2px 3px 1px rgba(255,231,66,1);}
 
 @media only screen and (min-width:768px){
-    .works_item{float:left;margin:10px;width:calc(50% - 20px);}
-    .works_item + .works_item{margin-top:10px;}
+    .works_item{max-width:calc(50% - 20px);}
     .works_item .inbox .desc_box .tit{font-size:25px;}
 }
+
 @media only screen and (min-width:1024px){
-    .works_item{width:calc(33.3333% - 20px);}
+    .works_item{max-width:calc(33.3333% - 20px);}
 }
 
 /* popup */
