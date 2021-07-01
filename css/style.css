@@ -149,13 +149,14 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .about_area .contact .contact_item dd{overflow:hidden;}
 .about_area .contact .contact_item dd a{font-size:13px;line-height:22px;letter-spacing:-.3px;}
 .about_area .info_bottom{padding:20px 0; border-top: 1px solid #ddd;}
+.info_area{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-direction:column;}
 
 @media all and (min-width:768px) {
     .about_wrap h3.section_title {max-width: 660px; margin: 0 auto 30px; text-align: left;}
     .about_area{padding:80px 20px;}
     .about_wrap .window_box{max-width:900px;}
     .about_area .profile_image{margin:0 0 20px;}
-    .info_area{display:flex;align-items:center;margin: 0 auto;max-width:660px;}
+    .info_area{flex-direction:row;align-items:center;margin:0 auto;max-width:660px;}
     .info_area .info_top{flex-basis:220px;text-align:left;}
     .info_area .info_bottom{flex:1;padding: 20px 0 20px 40px;border-top:none;border-left:1px solid #ddd;}
 }
