@@ -258,6 +258,8 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 /* lab */
 .lab_wrap{padding-top:60px;}
 .lab_area{margin:0 auto;max-width:940px;}
+.lab_area .section_title{position:relative;color:#3660ff;}
+.lab_area .section_title:before{content:'';display:block;position:absolute;top:30px;left:50%;margin-left:-46px;width:90px;height:25px;background:#eee;border-radius:50%;animation-name:shadow;animation-duration:.5s;animation-iteration-count:infinite;animation-direction:alternate;}
 .lab_box{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-wrap:wrap;justify-content:center;padding:0 20px;}
 .lab_item{display:flex;flex:1;align-items:center;justify-content:center;margin:0 10px;height:200px;background:#ecf;text-decoration:none;}
 .lab_item > div{font-size:30px;font-weight:bold;color:#fff;}
@@ -321,7 +323,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
         top:0;
     }
     100%{
-        top:-30px;
+        top:-25px;
     }
 }
 @keyframes colorTxt{
@@ -333,6 +335,14 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
     }
     100%{
         color:#7ce4db;
+    }
+}
+@keyframes shadow{
+    0%{
+        transform:scaleX(1);
+    }
+    100%{
+        transform:scaleX(.76);
     }
 }
 /* //animation */
