@@ -296,3 +296,43 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .footer_box{margin:0 auto;padding:30px 20px;max-width:1200px;color:#fff;}
 .footer_box a{color:#fff;}
 /* //footer */
+
+/* animation */
+.box_bounce{position:relative;min-height:50px;}
+.bounce{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    text-align:center;
+    animation-name:bounce;
+    animation-duration:.5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+.colortxt{
+    animation-name:colorTxt;
+    animation-duration:.5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes bounce {
+    0%{
+        top:0;
+    }
+    100%{
+        top:-30px;
+    }
+}
+@keyframes colorTxt{
+    0%{
+        color:#2e50fc;
+    }
+    50%{
+        color:#2ecbfc;
+    }
+    100%{
+        color:#7ce4db;
+    }
+}
+/* //animation */
