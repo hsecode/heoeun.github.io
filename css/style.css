@@ -108,7 +108,7 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
     .header_wrap h1 a{font-size:30px;}
     .button_nav{display:none;}
     .nav_wrap{position:relative;top:0;overflow:hidden;margin-left:auto;padding:0;width:auto;height:auto;background:none;text-align:right;}
-    .navigation .nav_item{position:relative;display:inline-block;margin:0 20px 0;}
+    .navigation .nav_item{position:relative;display:inline-block;margin:0 15px 0;}
     .navigation .nav_item + .nav_item{margin-top:0;}
     .navigation .nav_item a{font-size:23px;line-height:60px;color:#222;}
     .navigation .nav_item a:hover,
@@ -253,6 +253,20 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 @media only screen and (min-width:1024px){
     .works_item{max-width:calc(33.3333% - 20px);}
 }
+/* //works */
+
+/* lab */
+.lab_wrap{padding-top:60px;}
+.lab_area{margin:0 auto;max-width:940px;}
+.lab_box{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-wrap:wrap;justify-content:center;padding:0 20px;}
+.lab_item{display:flex;flex:1;align-items:center;justify-content:center;margin:0 10px;height:200px;background:#ecf;text-decoration:none;}
+.lab_item > div{font-size:30px;font-weight:bold;color:#fff;}
+@media only screen and (min-width:768px){
+    .lab_box{padding:0 100px;}
+    .lab_item{transform:skewX(-30deg);}
+    .lab_item > div{transform:skewX(30deg);}
+}
+/* //lab */
 
 /* popup */
 .popup_area{display:none;position:fixed;top:0;bottom:0;left:0;right:0;padding:20px;background:rgba(0,0,0,.5);z-index:3;}
