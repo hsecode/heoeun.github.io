@@ -24,6 +24,7 @@ main{padding-bottom:60px;}
 .sp_img.icon_phone{width:14px;height:19px;background-position:0 0;}
 .graytxt{color:#b1adad;}
 .caution{color:#de5757;}
+.last_modified{color:#2e50fc;}
 .button_up_box{display:inline-block;position:fixed;right:20px;bottom:5%;z-index:1;}
 .button_up{display:inline-block;}
 .heart{position:relative;width:60px;height:50px;}

@@ -121,3 +121,26 @@ if(isMobile.any()){
     $('.mob_caution').css('display','none');
 }
 
+//최근 수정된 날짜 출력
+let updateDate = document.lastModified;
+let textTag = document.querySelector('.last_modified');
+let changeDate = getFormatDate(new Date());
+
+function getFormatDate(updateDate){
+    let year = updateDate.getFullYear();
+    let month = updateDate.getMonth() + 1;
+    let day = updateDate.getDate();
+    let hour = updateDate.getHours();
+    let minutes = updateDate.getMinutes();
+    let seconds = updateDate.getSeconds();
+
+    month = month >= 10 ? month : '0' + month;
+    day = day >= 10 ? day : '0' + day;
+    hour = hour >= 10 ? hour : '0' + hour;
+    minutes = minutes >= 10 ? minutes : '0' + minutes;
+    seconds = seconds >= 10 ? seconds : '0' + seconds;
+
+    return year + '-' + month + '-' + day + '&nbsp;' + hour + ':' + minutes + ':' + seconds;
+}
+
+textTag.innerHTML = changeDate;
