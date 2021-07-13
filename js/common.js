@@ -124,7 +124,7 @@ if(isMobile.any()){
 //최근 수정된 날짜 출력
 let updateDate = document.lastModified;
 let textTag = document.querySelector('.last_modified');
-let changeDate = getFormatDate(new Date());
+
 
 function getFormatDate(updateDate){
     let year = updateDate.getFullYear();
@@ -142,5 +142,5 @@ function getFormatDate(updateDate){
 
     return year + '-' + month + '-' + day + '&nbsp;' + hour + ':' + minutes + ':' + seconds;
 }
-
+let changeDate = getFormatDate(new Date(updateDate));
 textTag.innerHTML = changeDate;
