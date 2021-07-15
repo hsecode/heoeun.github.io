@@ -67,6 +67,8 @@ main{padding-bottom:60px;}
 }
 
 h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', cursive;font-size:35px;}
+.section_info{margin-bottom:30px;text-align:center;font-family:'Do Hyeon';font-size:20px;color:#bbb;}
+.section_info em{padding:0 3px;box-shadow:inset 0 -13px 0 #fffb75;}
 .info_list .row + .row{margin-top:5px;}
 .info_list .row:after{content:'';display:block;clear:both;}
 .info_list dt{float:left;position:relative;padding-left:10px;min-width:90px;font-size:14px;font-weight:600;line-height:21px;color:#555;}
@@ -258,17 +260,16 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 
 /* lab */
 .lab_wrap{padding-top:60px;}
-.lab_area{margin:0 auto;max-width:940px;}
+.lab_area{margin:0 auto;}
 .lab_area .section_title{position:relative;color:#3660ff;}
 .lab_area .section_title:before{content:'';display:block;position:absolute;top:25px;left:50%;margin-left:-36px;width:70px;height:22px;background:#eee;border-radius:50%;animation-name:shadow;animation-duration:.5s;animation-iteration-count:infinite;animation-direction:alternate;}
-.lab_box{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-wrap:wrap;justify-content:center;padding:0 20px;}
-.lab_item{display:flex;flex:1;align-items:center;justify-content:center;margin:0 10px;height:200px;background:#ecf;text-decoration:none;}
-.lab_item > div{font-size:30px;font-weight:bold;color:#fff;}
+.lab_box{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-wrap:wrap;padding:0 20px;}
+.lab_item{display:flex;align-items:center;justify-content:center;flex:1 1 100px;margin:5px;padding:10px;height:100px;background:#ecf;text-decoration:none;font-size:16px;font-weight:bold;color:#fff;}
+.lab_item.disable{background:#ddd;cursor:default;}
 @media only screen and (min-width:768px){
     .lab_area .section_title:before{top:30px;margin-left:-46px;width:90px;height:25px;}
-    .lab_box{padding:0 100px;}
-    .lab_item{transform:skewX(-30deg);}
-    .lab_item > div{transform:skewX(30deg);}
+    .lab_box{padding:0 20px;}
+    .lab_item{font-size:20px;}
 }
 /* //lab */
 
