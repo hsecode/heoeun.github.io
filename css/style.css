@@ -262,12 +262,12 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .lab_wrap{padding-top:60px;}
 .lab_area{margin:0 auto;}
 .lab_area .section_title{position:relative;color:#3660ff;}
-.lab_area .section_title:before{content:'';display:block;position:absolute;top:25px;left:50%;margin-left:-36px;width:70px;height:22px;background:#eee;border-radius:50%;animation-name:shadow;animation-duration:.5s;animation-iteration-count:infinite;animation-direction:alternate;}
+.lab_area .section_title:before{content:'';display:block;position:absolute;top:22px;left:50%;margin-left:-30px;width:60px;height:22px;background:#eee;border-radius:50%;animation-name:shadow;animation-duration:.5s;animation-iteration-count:infinite;animation-direction:alternate;}
 .lab_box{display:flex;display:-webkit-flex;display:-ms-flex;display:-o-flex;flex-wrap:wrap;margin:0 auto;padding:0 20px;max-width:1200px;}
 .lab_item{display:flex;align-items:center;justify-content:center;flex:1 1 100px;margin:5px;padding:10px;height:100px;background:#ecf;text-decoration:none;font-size:16px;font-weight:bold;color:#fff;}
 .lab_item.disable{background:#ddd;cursor:default;}
 @media only screen and (min-width:768px){
-    .lab_area .section_title:before{top:30px;margin-left:-46px;width:90px;height:25px;}
+    .lab_area .section_title:before{top:30px;margin-left:-40px;width:80px;height:25px;}
     .lab_box{padding:0 20px;}
     .lab_item{font-size:20px;}
 }
