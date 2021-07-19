@@ -29,3 +29,5 @@ body{display:flex;justify-content:center;align-items:center;width:100%;height:10
 .space_room .wall_wrap .wall .side_top{width:1vw;height:35vw;transform-origin:bottom left;transform:rotateZ(90deg) translateX(-36vw) translateZ(30vw);background:blue;}
 .space_room .wall_wrap .wall .side_bottom{width:1vw;height:35vw;transform-origin:bottom left;transform:rotateZ(90deg) translateX(-36vw);background:blue;}
 .space_room .wall_wrap .wall.left{transform:rotateZ(-90deg) translateX(-17.5vw) translateY(-17.5vw);}
+
+.space_room .door_wrap{}
