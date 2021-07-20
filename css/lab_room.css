@@ -14,7 +14,7 @@
 body{display:flex;justify-content:center;align-items:center;width:100%;height:100vh;background:rgba(0,0,0,.3);overflow:hidden;}
 .face{position:absolute;}
 
-.space_room{position:absolute;width:35vw;height:35vw;transform:perspective(1250px) rotateX(70deg) /*rotateZ(45deg)*/ rotateZ(0deg) translateZ(-10vw);background:#f2dbff;}
+.space_room{position:absolute;width:35vw;height:35vw;transform:perspective(1250px) rotateX(70deg) /*rotateZ(45deg)*/ rotateZ(70deg) translateZ(-10vw);background:#f2dbff;}
 .space_room .floor{position:absolute;top:0;left:0;width:35vw;height:35vw;}
 .space_room .floor .floor_front{width:35vw;height:1vw;transform-origin:top left;transform:rotateX(-90deg) translateY(-1vw) translateZ(35vw);background-color:red;}
 .space_room .floor .floor_back{width:35vw;height:1vw;transform-origin:top left;transform:rotateX(90deg);background-color:yellow;}
@@ -30,4 +30,5 @@ body{display:flex;justify-content:center;align-items:center;width:100%;height:10
 .space_room .wall_wrap .wall .side_bottom{width:1vw;height:35vw;transform-origin:bottom left;transform:rotateZ(90deg) translateX(-36vw);background:blue;}
 .space_room .wall_wrap .wall.left{transform:rotateZ(-90deg) translateX(-17.5vw) translateY(-17.5vw);}
 
-.space_room .door_wrap{}
+.space_room .door_wrap{position:absolute;top:0;left:3vw;width:10vw;height:.5vw;}
+.space_room .door_wrap .door_front{width:10vw;height:20vw;transform-origin:bottom left;transform:rotateX(-90deg) translateZ(-19.99vw);border:0.125vw solid yellow;background:green;}
