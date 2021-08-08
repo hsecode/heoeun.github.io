@@ -7,15 +7,15 @@ h2{margin-bottom:10px;font-size:20px;font-weight:bold;}
 .banner_wrap{margin:0 auto;width:1600px;height:830px;background:url(../images/banner_bg2.png) no-repeat;}
 .banner_wrap:after{content:'';display:block;clear:both;}
 .banner_wrap [class^='item_']{float:left;width:400px;height:830px;overflow:hidden;}
-.banner_wrap [class^='item_'] .banner{margin:0;width:400px;height:830px;opacity:0;transition:all .5s ease;}
+.banner_wrap [class^='item_'] .banner{display:block;margin:0;width:100%;height:100%;opacity:0;transition:all .5s ease;}
 .banner_wrap .item_1 .banner{background:url(../images/banner1.png) no-repeat;}
 .banner_wrap .item_2 .banner{background:url(../images/banner2.png) no-repeat;}
 .banner_wrap .item_3 .banner{background:url(../images/banner3.png) no-repeat;}
 .banner_wrap .item_4 .banner{background:url(../images/banner4.png) no-repeat;}
-.banner_wrap [class^='item_']:hover .banner{opacity:1;transform:scale(1.06);}
+.banner_wrap [class^='item_'] .banner:hover{opacity:1;transform:scale(1.06);}
 .banner_wrap .banner .box{position:absolute;top:70%;left:50%;opacity:0;visibility:hidden;transform:translate(-50%,-50%);transition:all 0.5s ease;}
-.banner_wrap [class^='item_']:hover .banner .box{visibility:visible; opacity:1;}
-.banner_wrap [class^='item_']  .banner .box a{text-decoration:none; color:#fff; }
+.banner_wrap [class^='item_'] .banner:hover .box{visibility:visible; opacity:1;}
+.banner_wrap [class^='item_']  .banner .box span{text-decoration:none; color:#fff; }
 
 /* banner_wrap text transition */
 .banner_wrap [class^='item_'] .banner .left,
@@ -31,29 +31,25 @@ h2{margin-bottom:10px;font-size:20px;font-weight:bold;}
 }
 
 .banner_wrap [class^='item_'] .banner .box{width:250px;text-align:center;}
-
 .banner_wrap .item_1 .banner .left{transform:translateX(-215px);}
 .banner_wrap .item_1 .banner .right{transform:translateX(250px);}
-.banner_wrap .item_1:hover .left{transform:translateX(7px);}
-.banner_wrap .item_1:hover .right{transform:translateX(7px);}
-
+.banner_wrap .item_1 .banner:hover .left{transform:translateX(7px);}
+.banner_wrap .item_1 .banner:hover .right{transform:translateX(7px);}
 
 .banner_wrap .item_2 .banner .left{transform:translateX(-240px);}
 .banner_wrap .item_2 .banner .right{transform:translateX(238px);}
-.banner_wrap .item_2:hover .left{transform:translateX(-0.8px);}
-.banner_wrap .item_2:hover .right{transform:translateX(-0.8px);}
-
+.banner_wrap .item_2 .banner:hover .left{transform:translateX(-0.8px);}
+.banner_wrap .item_2 .banner:hover .right{transform:translateX(-0.8px);}
 
 .banner_wrap .item_3 .banner .left{transform:translateX(-203px);}
 .banner_wrap .item_3 .banner .right{transform:translateX(203px);}
-.banner_wrap .item_3:hover .left{transform:translateX(-0.8px);}
-.banner_wrap .item_3:hover .right{transform:translateX(-0.8px);}
-
+.banner_wrap .item_3 .banner:hover .left{transform:translateX(-0.8px);}
+.banner_wrap .item_3 .banner:hover .right{transform:translateX(-0.8px);}
 
 .banner_wrap .item_4 .banner .left{transform:translateX(-220px);}
 .banner_wrap .item_4 .banner .right{transform:translateX(220px);}
-.banner_wrap .item_4:hover .left{transform:translateX(-0.8px);}
-.banner_wrap .item_4:hover .right{transform:translateX(-0.8px);}
+.banner_wrap .item_4 .banner:hover .left{transform:translateX(-0.8px);}
+.banner_wrap .item_4 .banner:hover .right{transform:translateX(-0.8px);}
 
 /* footer */
 .footer_wrap{background:#fce;}
