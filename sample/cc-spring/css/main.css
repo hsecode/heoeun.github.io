@@ -33,7 +33,7 @@
 .petition-slide .op-indibox .op-pager {display:inline-block; width: 14px; height: 14px; background:#c1c1c1;  vertical-align: middle; border-radius: 100%; margin-right: 7px;}
 .petition-slide .op-indibox .op-pager.active {background: #000;}
 .petition-slide .op-indicator .op-play,
-.petition-slide .op-indicator .op-stop {display: inline-block; width: 31px; height: 31px; background: url("../../../../cc-spring/images/common/slide-play.png") no-repeat left top;}
+.petition-slide .op-indicator .op-stop {display: inline-block; width: 31px; height: 31px; background: url("../../../images/common/slide-play.png") no-repeat left top;}
 .petition-slide .op-indicator .op-play {background-position: right top;}
 .petition-slide .petition-box.max {height: 380px; width: 100%;}
 .petition-slide .slide {width: 100%; position: relative; padding-top: 380px;}
@@ -47,7 +47,7 @@
 
 @media all and (min-width:1024px) {
     .main-top-wrap {padding: 0; background: #e0ecee;}
-    .main-top-wrap .slogan {font-size: 30px; padding: 55px 0 50px; background: url("../../../../cc-spring/images/main/top-bg-pc.png") no-repeat center -24px;}
+    .main-top-wrap .slogan {font-size: 30px; padding: 55px 0 50px; background: url("../../../images/main/top-bg-pc.png") no-repeat center -24px;}
     .main-top-wrap .slogan .top-txt {font-size: 38px; margin-bottom: 10px;}
     .main-top-box {margin-bottom: 0; padding-bottom: 40px;}
     .top-info-box {display: table; width: 100%; max-width: 1200px; margin: 0 auto 20px; overflow: hidden;}
