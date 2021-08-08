@@ -1,0 +1,80 @@
+@charset "utf-8";
+.main-top-box {background: #293780 url("../../../yp-cock/images/main/main-bg-mob.jpg") no-repeat; background-size: 100%; padding: 50px 20px 40px;}
+.main-top-box .txt-box {color: #fff; font-size: 16px; text-align: center; margin-bottom: 50px;}
+.main-top-box .txt-box img {width: 200px; margin-bottom: 10px;}
+.main-notice-box {position: relative; color: #fff;}
+.main-notice-box a {color: #fff;}
+.main-notice-tit {display: block; font-size: 21px; font-weight: bold; padding-bottom: 5px; border-bottom: 1px solid rgba(255,255,255,.2);}
+.main-notice-list li {padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.2);}
+.main-notice-list li:first-child {padding: 16px 0 10px;}
+.main-notice-list a {display: block; margin-bottom: 10px;}
+.main-notice-list a:hover {text-decoration: underline;}
+.main-notice-list span {display: block; vertical-align: middle; overflow: hidden;; text-overflow: ellipsis; white-space: nowrap; word-break: break-all;}
+.main-notice-list li:first-child .tit {font-size: 18px;}
+.main-notice-list .date {letter-spacing: 0;}
+.main-notice-more {width: 18px; height: 18px; display: inline-block; position: absolute; top: 5px; right: 5px;}
+.main-notice-more .ico:after, .main-notice-more .ico:before {content: ""; background: #fff; position: absolute;}
+.main-notice-more .ico:before {width: 18px; height: 3px; top: 50%; left: 0; margin-top: -2px;}
+.main-notice-more .ico:after {width: 3px; height: 18px; top: 0; left: 50%; margin-left: -1px;}
+.main-btm-box .topbox {background: #002157; padding: 15px 20px 20px; color: #fff; text-align: center;}
+.main-btm-box .topbox .tit {font-size: 18px; margin-bottom: 12px;}
+.main-btm-box .topbox .tit > span {display: block; font-size: 14px;}
+.main-btm-box .topbox .current {border: 1px solid rgba(255,255,255,.5); border-radius: 1px; padding: 15px 20px;}
+.main-btm-box .topbox .current ul {width: 100%; max-width: 280px; margin: 0 auto;}
+.main-btm-box .topbox .current ul:after {content: ""; display: block; clear: both;}
+.main-btm-box .topbox .current li {float: left; text-align: left; width: 33.333%; padding-left: 25px; position: relative;}
+.main-btm-box .topbox .current .proceed:before,
+.main-btm-box .topbox .current .standby:before,
+.main-btm-box .topbox .current .complete:before {content: ""; position: absolute; display: block; width: 14px; height: 14px; border-radius: 100%; top: 3px; left: 7px;}
+.main-btm-box .topbox .current .proceed:before {background: #00aeef;}
+.main-btm-box .topbox .current .standby:before {background: #eb297b;}
+.main-btm-box .topbox .current .complete:before {background: #22d18d;}
+.main-btm-box .topbox .current li span {font-weight: bold;}
+.main-btm-box .btmbox {background: #fff; padding: 36px 20px 60px; text-align: center;}
+.main-btm-box .btmbox .chartbox {padding: 0 20px;}
+.main-btm-box .btmbox img {max-width: 100%; margin: 0 auto;}
+.main-btm-box .btmbox .login-txt {color: #003163; font-size: 18px; padding: 30px 0 20px;}
+.main-btm-box .btmbox .petition-btn {display: inline-block; color: #fff; background: url("../../../yp-cock/images/main/blue-btn-ptrn.gif") repeat-x; font-size: 22px; padding: 15px 40px 15px 70px; margin-bottom: 30px;}
+.main-btm-box .btmbox .petition-btn span {position: relative;}
+.main-btm-box .btmbox .petition-btn span:before {content: ""; display: block; position: absolute; background: url("../../../yp-cock/images/main/pen-con.png") no-repeat; width: 18px; height: 19px; top: 3px; left: -35px;}
+.main-btm-box .btmbox .infotxt {font-size: 16px;}
+.main-btm-box .btmbox .infotxt .blue {color: #0054a6;}
+@media all and (min-width:768px) {
+    .main-top-box {background: #293780 url("../../../yp-cock/images/main/main-bg-tab.jpg") no-repeat 0 100%; background-size: 100%; text-align: right; padding: 70px 40px 100px; position: relative; min-height: 660px;}
+    .main-top-box:before {content: ""; display: block; position: absolute; background: url("../../../yp-cock/images/main/gunsu.png") no-repeat; width: 358px; height: 616px; left: 8%; top: 40px;}
+    .topbox-wrap {display: inline-block; max-width: 50%;}
+    .main-top-box .txt-box {font-size: 21px;text-align: right; margin-bottom: 70px;}
+    .main-top-box .txt-box img {width: 280px;}
+    .main-notice-box {text-align: left;}
+    .topbox-wrap:after {content: ""; display: block; clear: both;}
+    .main-btm-box {background: #ebebeb; padding-left: 70px; margin-top: -30px;}
+    .main-btm-box .topbox {position: relative; padding: 15px 15px 15px 60px;}
+    .main-btm-box .topbox:before {content: ""; display: block; position: absolute; width: 30px; height: 100%; left: -30px; top: 0; background: #002157;}
+    .main-btm-box .topbox:after {content: ""; display: block; clear: both;}
+    .main-btm-box .topbox .tit {display: inline-block; float: left; margin: 12px 40px 12px 0; text-align: left;}
+    .main-btm-box .topbox .current {display: inline-block; float: left; width: 365px;}
+    .main-btm-box .btmbox {position: relative; padding: 48px 20px 60px;}
+    .main-btm-box .btmbox:before {content: ""; display: block; position: absolute; width: 0; height: 0; border-top: 30px solid #454e4e; border-left: 30px solid transparent; left: -30px; top: 0;}
+    .main-btm-box {padding-left: 40px;}
+    .main-btm-box .btmbox .petition-btn {width: 370px;}
+}
+@media all and (min-width:1024px) {
+    .pc-left-box {position: relative; background: url("../../../yp-cock/images/main/main-bg-pc.jpg") no-repeat center center;}
+    .main-top-box {background: none; padding: 116px 0 40px; text-align: left; max-width: 1200px; margin: 0 auto; min-height: 811px;}
+    .main-top-box:before {left: -15px; top: 165px;}
+    .main-top-box .txt-box {margin-bottom: 235px; text-align: left;}
+    .main-top-box .txt-box p {padding-left: 11px;}
+    .topbox-wrap {width: 50%; padding-left: 165px;}
+    .btm-box-wrap {position: absolute; max-width: 1200px; width: 50%; top: 50px; left: 50%; padding-left: 35px;}
+    .main-btm-box {position: relative; max-width: 585px; right: 0; top: 0; margin-top: 0;}
+    .main-btm-box .topbox {padding: 20px 15px 20px 0;}
+    .main-btm-box .topbox .tit {margin: 12px 20px 12px 0; width: 35%;}
+    .main-btm-box .topbox .current {width: 58%; padding: 15px 12px;}
+    .main-btm-box .topbox .current li {padding-left: 19px;}
+    .main-btm-box .topbox .current .proceed:before,
+    .main-btm-box .topbox .current .standby:before,
+    .main-btm-box .topbox .current .complete:before {left: 0;}
+    .main-btm-box .btmbox {padding: 48px 20px 40px;}
+    .main-btm-box .btmbox .chartbox {padding: 0;}
+    .main-btm-box .btmbox img {max-width: 408px; width: 100%;}
+}

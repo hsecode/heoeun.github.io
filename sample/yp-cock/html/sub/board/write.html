@@ -1,0 +1,56 @@
+<!--#include file="/html/include/header.html"-->
+<div class="sub-container" id="sub-container">
+    <!--#include file="/html/include/sub-top.html"-->
+    <div class="contentbox" id="contentbox">
+        <div class="sub-contentbox">
+            <h3 class="sub-h3-tit">공지사항</h3>
+            <div class="petition-write-wrap">
+                <form action="">
+                    <fieldset>
+                        <legend class="screen_out">공지사항 게시판 글쓰기</legend>
+                        <div class="petition-write">
+                            <div class="row">
+                                <div class="tit"><label for="peTitle">제목</label></div>
+                                <div class="con">
+                                    <input type="text" id="peTitle" class="pe-title" title="제목 입력"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tit"><label for="peName">작성자</label></div>
+                                <div class="con">
+                                    <input type="text" id="peName" class="pe-writer" title="작성자 입력"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tit"><label for="peCont">내용</label></div>
+                                <div class="con">
+                                    (텍스트에디터 영역)
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tit"><label for="peFile1">첨부파일</label></div>
+                                <div class="con">
+                                    <input type="file" id="peFile1" class="pe-file" title="첨부파일"/>
+                                    <input type="file" id="peFile2" class="pe-file" title="첨부파일"/>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div class="board-btnwrap">
+                    <div class="btnbox">
+                        <!--<a href="#lnk" class="btn write">글쓰기</a>-->
+                        <!--<a href="#lnk" class="btn reply">답변</a>-->
+                        <!--<a href="#lnk" class="btn list">목록</a>-->
+                        <!--<a href="#lnk" class="btn delete">삭제</a>
+                        <a href="#lnk" class="btn modify">수정</a>-->
+                        <a href="#lnk" class="btn cancel">취소</a>
+                        <a href="#lnk" class="btn check">저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include file="/html/include/footer.html"-->

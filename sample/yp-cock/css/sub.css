@@ -1,0 +1,155 @@
+@charset "utf-8";
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt60 {margin-top: 60px;}
+.mt70 {margin-top: 70px;}
+.mt80 {margin-top: 80px;}
+.mt90 {margin-top: 90px;}
+.mt100 {margin-top: 100px;}
+
+.sub-top-wrap {background: #002157 url("../../yp-cock/images/sub/top-bg-mob.png") no-repeat center top; background-size: 100%;}
+.sub-top-box {padding: 34px 20px 15px; max-width: 1200px; margin: 0 auto;}
+.sub-top-box:after {content: ""; display: block; clear: both;}
+.sub-h2-tit {color: #fff; font-size: 25px; text-align: center; margin-bottom: 25px;}
+.current-box {border: 1px solid rgba(255,255,255,.5); background: #002157; border-radius: 1px; color: #fff; text-align: center; max-width: 500px; margin: 0 auto;}
+.current-box .tit {font-size: 18px; padding: 15px 20px; border-bottom: 1px solid rgba(255,255,255,.5);}
+.current-box .tit > span {display: block; font-size: 14px;}
+.current-box .current {padding: 15px 20px;}
+.current-box .current ul {width: 100%; max-width: 280px; margin: 0 auto;}
+.current-box .current ul:after {content: ""; display: block; clear: both;}
+.current-box .current li {float: left; text-align: left; width: 33.333%; padding-left: 25px; position: relative; font-size: 14px;}
+.current-box .current .proceed:before,
+.current-box .current .standby:before,
+.current-box .current .complete:before {content: ""; position: absolute; display: block; width: 14px; height: 14px; border-radius: 100%; top: 3px; left: 7px;}
+.current-box .current .proceed:before {background: #00aeef;}
+.current-box .current .standby:before {background: #eb297b;}
+.current-box .current .complete:before {background: #22d18d;}
+.current-box .current li span {font-weight: bold;}
+.sub-top-box .petition-btn {display: block; color: #fff; background: url("../../yp-cock/images/main/blue-btn-ptrn.gif") repeat-x center -10px; font-size: 15px; padding: 10px 0; text-align: center; max-width: 350px; margin: 5px auto 0;}
+.sub-top-box .petition-btn span {position: relative; padding-left: 20px;}
+.sub-top-box .petition-btn span:before {content: ""; display: block; position: absolute; background: url("../../yp-cock/images/main/pen-con.png") no-repeat; width: 12px; height: 13px; top: 2px; left: 0; background-size: 100%;}
+
+.contentbox {background: #f3f4f8;}
+.sub-contentbox {background: #fff; padding: 20px 20px 50px; max-width: 1200px; margin: 0 auto;}
+.contentbox a, .contentbox button, .contentbox {color: #666;}
+.sub-tab {margin-bottom: 35px;}
+.sub-tab:after {content: ""; display: block; clear: both;}
+.sub-tab li {float: left; border-top: 1px solid #cacaca; border-bottom: 1px solid #cacaca; border-left: 1px solid #cacaca; background: #f6f6f6; text-align: center;}
+.sub-tab li.on {background: #009ac8; border: 1px solid #2680a8;}
+.sub-tab li:last-child {border-right: 1px solid #cacaca;}
+.sub-tab.tab2 li {width: 50%;}
+.sub-tab.tab3 li {width: 33.333%;}
+.sub-tab.tab4 li {width: 25%;}
+.sub-tab.tab5 li {width: 20%;}
+.sub-tab li a {display: block; color: #666; padding: 18px 0;}
+.sub-tab li.on a{color: #fff;}
+.style2 .sub-tab {margin-bottom: 20px;}
+.style2 .sub-tab li:first-child {border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+.style2 .sub-tab li:last-child {border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
+.style2 .sub-tab li {background: #fff;}
+.style2 .sub-tab .on {background: #1cbbb4; border: 1px solid #1cbbb4;}
+.style2 .sub-tab a {font-size: 16px; padding: 10px 0;}
+.sub-con-toptit {color: #2b405b; font-size: 20px; margin-bottom: 35px;}
+.sub-h3-tit {font-size: 20px; font-weight: 600; color: #07469b; padding-top: 15px; background: url("../../yp-cock/images/sub/bullet-h3.png") no-repeat left top; margin-bottom: 23px;}
+.sub-h4-tit {font-size: 20px; color: #07469b; padding-bottom: 20px; border-bottom: 1px solid #d1d1d1; margin-bottom: 20px;}
+.sub-con-box {margin-bottom: 50px;}
+.listype01 li {margin-bottom: 25px; padding-left: 13px; position: relative;}
+.listype01 li:last-child {margin-bottom: 0;}
+.listype01 li:before {content: ""; display: block; position: absolute; width: 4px; height: 4px; border-radius: 100%; background: #07469b; top: 8px; left: 0;}
+.listype02 li {margin-bottom: 20px;}
+.listype02 li:last-child {margin-bottom: 0;}
+.listype02 li .box {display: table; width: 100%;}
+.listype02 li .numbox {display: table-cell; width: 1%;}
+.listype02 li .num {display: inline-block; color: #fff; text-align: center; width: 20px; height: 20px; background: #009ac8; border-radius: 3px; font-size: 13px; padding-top: 3px;}
+.listype02 li .txt {display: table-cell; padding-left: 5px; vertical-align: middle;}
+.txt-blue {color: #009ac8;}
+.txt-red {color: #bc2744;}
+.process-box li {margin-bottom: 50px; padding: 10px 30px 20px; color: #fff; text-align: center; position: relative;}
+.process-box li:after {content: ""; display: block; position: absolute; width: 30px; height: 38px; background: url("../../yp-cock/images/sub/arrow01.png") no-repeat; bottom: -44px; left: 50%; margin-left: -15px;}
+.process-box li:last-child {margin-bottom: 0;}
+.process-box li:last-child:after {display: none;}
+.process-box li .tit {font-size: 24px; margin-bottom: 20px;}
+.process-box li .num {font-style: italic; font-size: 35px;}
+.process-box li.step1 {background: #2bbdcb;}
+.process-box li.step2 {background: #009ac8;}
+.process-box li.step3 {background: #2680a8;}
+.process-box li.step4 {background: #7a67b0;}
+.process-box-2 li {margin-bottom: 42px; border: 1px solid #ddd; padding: 17px 20px 20px; text-align: center; color: #000; position: relative;}
+.process-box-2 li:after {content: ""; display: block; position: absolute; background: url("../../yp-cock/images/sub/arrow01.png") no-repeat; width: 30px; height: 38px; left: 50%; bottom: -40px; margin-left: -15px;}
+.process-box-2 li:last-child {margin-bottom: 0;}
+.process-box-2 li:last-child:after {display: none;}
+.process-box-2 li.step1 {background: #f6f6f6 url("../../yp-cock/images/sub/step-back5.png") no-repeat center 15px;}
+.process-box-2 li.step2 {background: #f6f6f6 url("../../yp-cock/images/sub/step-back6.png") no-repeat center 15px;}
+.process-box-2 li.step3 {background: #f6f6f6 url("../../yp-cock/images/sub/step-back7.png") no-repeat center 15px;}
+.process-box-2 li.step4 {background: #f6f6f6 url("../../yp-cock/images/sub/step-back8.png") no-repeat center 15px;}
+.process-box-2 .tit {padding-top: 86px; font-size: 16px;}
+.exceptbox .btmbox {margin-top: 20px;}
+.faq-box {border-top: 1px solid #000;}
+.faq-box .question {display: block; padding: 20px 0; border-bottom: 1px solid #dcdcdc; background: url("../../yp-cock/images/sub/q-close-con.png") no-repeat 97% 50%;}
+.faq-box .question.active {background: url("../../yp-cock/images/sub/q-open-con.png") no-repeat 97% 50%;}
+.faq-box .question .q-txt {padding: 0 10% 0 67px; position: relative; display: block; color: #252525;}
+.faq-box .question .q-txt:before {content: ""; position: absolute; display: block; background: url("../../yp-cock/images/sub/q-ico.png") no-repeat; width: 51px; height: 41px; left: 0; top: 50%; margin-top: -21px;}
+.faq-box .answer {background: #fafafa; padding: 27px 21px; border-bottom: 1px solid #dcdcdc;}
+.complete-box {border-top: 2px solid #4c4c4c; text-align: center; padding: 30px 20px; margin-bottom: 20px; border-bottom: 1px solid #efefef;}
+.complete-box .tit {font-size: 30px; color: #000; line-height: 36px; margin: 30px 0 14px;}
+.complete-box .tit .txt-blue {color: #07469b; font-weight: bold;}
+.complete-box .con {color: #3e4c56; font-size: 16px;}
+
+@media all and (min-width:768px) {
+    .sub-top-box .petition-btn {margin: 20px auto 0;}
+    .process-box:after {content: ""; display: block; clear: both;}
+    .process-box li {float: left; width: 20%; height: 190px; margin: 0 6.6% 0 0; display: table; padding: 15px; font-size: 16px;}
+    .process-box li:last-child {margin-right: 0;}
+    .process-box li .step-con {display: table-cell; vertical-align: top;}
+    .process-box li:before {content: ""; display: block; position: absolute; width: 38px; height: 30px; background: url("../../yp-cock/images/sub/arrow02.png") no-repeat; top: 50%; right: -29%; margin-top: -15px;}
+    .process-box li:after {display: none;}
+    .process-box li:last-child:before {display: none;}
+    .process-box-2:after {content: ""; display: block; clear: both;}
+    .process-box-2 li {float: left; width: 20%; height: 150px; margin: 0 6.6% 0 0;}
+    .process-box-2 li:last-child {margin-right: 0;}
+    .process-box-2 li:before {content: ""; display: block; position: absolute; width: 38px; height: 30px; background: url("../../yp-cock/images/sub/arrow02.png") no-repeat; top: 50%; right: -29%; margin-top: -15px;}
+    .process-box-2 li:after {display: none;}
+    .process-box-2 li:last-child:before {display: none;}
+    .style2 .sub-tab {max-width: 245px;}
+}
+
+@media all and (min-width:1024px) {
+    body,select, textarea, button,input,a  {font-size: 17px;}
+    .sub-top-wrap {background: #002157 url("../../yp-cock/images/sub/top-bg-pc.jpg") no-repeat center top;}
+    .sub-top-box .petition-btn span:before {top: 1px;}
+    .sub-h2-tit {text-align: left; font-size: 31px; float: left; margin-top: 18px; margin-bottom: 0;}
+    .sub-h3-tit {font-size: 24px;}
+    .sub-h4-tit {font-size: 24px;}
+    .current-wrap {float: right; display: block;}
+    .current-box {display: inline-block; max-width: 520px;}
+    .current-box .tit {border-bottom: none; border-right: 1px solid rgba(255,255,255,.5); float: left; text-align: left; padding: 12px 20px;}
+    .current-box .current {float: left; width: 320px;}
+    .sub-top-box {padding: 16px 0 15px;}
+    .sub-top-box .petition-btn {display: inline-block; vertical-align: top; margin: 0 0 0 10px; min-width: 170px; font-size: 20px; line-height: 50px; background: url("../../yp-cock/images/sub/blue-btn-ptrn.jpg") repeat-x;}
+    .sub-top-box .petition-btn span {padding-left: 30px;}
+    .sub-top-box .petition-btn span:before {width: 20px; height: 24px;}
+    .sub-contentbox {padding: 40px 100px 90px; position: relative;}
+    /*.sub-contentbox:before {content: ""; display: block; position: absolute; width: 100%; height: 40px; background: #fff; top: -40px; left: 0;}*/
+    .sub-tab{margin-bottom: 65px;}
+    .sub-tab li a {padding: 15px 0; font-size: 17px;}
+    .sub-con-toptit {font-size: 31px; margin-bottom: 45px;}
+    .listype01 li {margin-bottom: 10px; font-size: 17px;}
+    .listype02 li {margin-bottom: 10px;}
+    .listype02 li .txt {font-size: 17px;}
+    .process-box li:before {right: -27%;}
+    .process-box-2 li:before {right: -27%;}
+    .sub-con-box {margin-bottom: 70px;}
+    .exceptbox {border: 1px solid #ddd; background: #f6f6f6;}
+    .exceptbox .listype02 {padding: 28px 33px 20px;}
+    .exceptbox .btmbox {margin-top: 0; background: #fff; padding: 15px 33px; font-size: 17px;}
+    .faq-box .question {padding: 25px 0;}
+    .faq-box .answer {padding: 40px 70px;}
+    .txt-box {font-size: 17px;}
+    .complete-box {padding: 52px 0 50px;}
+    .complete-box .tit {margin: 48px 0 20px;}
+    .complete-box .con {font-size: 18px;}
+}
+
