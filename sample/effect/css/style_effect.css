@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* common */
 main.container{padding:20px;}
 section + section{margin-top:20px;}
