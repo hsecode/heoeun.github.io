@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=1280">
+    <title>채팅 리스트 (LNB)</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/chat_lnb.css">
+</head>
+
+<body>
+<div class="co">
+    <div class="co_snb_renewal">
+        <ul class="tab_box">
+            <li class="tab on">
+                <button type="button" class="button_tab">
+                    <span class="initem">
+                        <span class="sp_co_v2 icon_talk"></span>대화
+                        <span class="noti">999+</span>
+                    </span>
+                </button>
+            </li>
+            <li class="tab">
+                <button type="button" class="button_tab">
+                    <span class="initem">
+                        <span class="sp_co_v2 icon_msg"></span>메시지
+                        <span class="noti">9</span>
+                    </span>
+                </button>
+            </li>
+        </ul>
+
+        <div class="talk_list_area">
+            <div class="generate_box">
+                <!-- LUX_popover 컴포넌트 사용 -->
+                <div class="LUX_popover no_arrow popover_inner_style_none" style="width:100%;">
+                    <button type="button" class="button_new"><span class="sp_co_v2 icon_add"></span>신규 대화방 생성</button>
+                    <div class="LUX_basic_popover2 " style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                        <div class="WSC_popover_memu renewal_co_popover">
+                            <div class="menu_scrall" style="max-height:100px;"><!-- 스크롤 생성 height 높이값 제어 -->
+                                <div class="menu_scrallin">
+                                    <ul class="menu_lst">
+                                        <li>
+                                            <a href="#">
+                                                <div><span class="sp_co_v2 icon_add"></span>1:1대화 생성</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div><span class="sp_co_v2 icon_add"></span>그룹대화 생성</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 클래스 active 추가 시 자동완성(auto_complete_box) 활성화 -->
+            <div class="top_search_box">
+                <div class="search_box">
+                    <input type="text" placeholder="대화방 바로가기">
+                    <button type="button" class="button_search"><span class="sp_co_v2">검색</span></button>
+                </div>
+                <div class="auto_complete_box">
+                    <ul>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_talk"></span><em class="emphasis">WEHAGOWEHAGO</em> 구축지원구축지원구축지원구축지원구축지원구축지원구축지원구축지원구축지원구축지원구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_talk"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_talk"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_talk"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_talk"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                        <li><a href="#"><span class="sp_co_x2 icon_rock"></span><em class="emphasis">WEHAGO</em> 구축지원</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="func_button_box">
+                <!-- 활성화 시 클래스 active 추가 -->
+                <button type="button" class="button_func_channel bar active">대화채널 검색</button>
+                <button type="button" class="button_func_mention bar">멘션 및 댓글</button>
+                <button type="button" class="button_func_file">파일 모아보기</button>
+            </div>
+            <!-- 오픈 시 클래스 open 추가 -->
+            <div class="talk_list_box open">
+                <div class="title_box">
+                    <a href="#">
+                        <strong><em class="emphasis">56</em> testtesttesttesttesttesttesttesttesttesttest</strong>
+                    </a>
+                    <div class="right_box">
+                        <button type="button" class="button_search"><span class="sp_co_v2">검색</span></button>
+                        <button type="button" class="button_rock"><span class="sp_co_v2">정렬기능고정</span></button>
+                    </div>
+                </div>
+                <ul class="list_box">
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail">
+                                <div class="LS_profile_image image4">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <i class="sp_co_x2 icon_alarm_mention">중요 알림만 받기</i>
+                                <em><span class="blind">참여 멤버 수 : </span>(9999)</em>
+                                testtesttesttesttesttesttesttesttest
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>999+</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail">
+                                <div class="LS_profile_image image3">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <i class="sp_co_x2 icon_alarm_mute">알림 받지 않기</i>
+                                test
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>1</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail">
+                                <div class="LS_profile_image image2">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <i class="sp_co_x2 icon_alarm">모든 알림 받기</i>
+                                <em><span class="blind">참여 멤버 수 : </span>(23)</em>
+                                웹메신저 대화 테스트
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>15</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 오픈 시 클래스 open 추가 -->
+            <div class="talk_list_box open">
+                <div class="title_box">
+                    <a href="#">
+                        <strong><em class="emphasis">26</em> 그룹대화</strong>
+                    </a>
+                    <div class="right_box">
+                        <button type="button" class="button_search"><span class="sp_co_v2">검색</span></button>
+                        <button type="button" class="button_rock active"><span class="sp_co_v2">정렬기능고정</span></button>
+                    </div>
+                </div>
+                <ul class="list_box">
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail">
+                                <div class="LS_profile_image">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <i class="sp_co_x2 icon_alarm_mention">중요 알림만 받기</i>
+                                <em><span class="blind">참여 멤버 수 : </span>(9999)</em>
+                                testtesttesttesttesttesttesttesttest
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>999+</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item selected">
+                        <a href="#" class="list_link">
+                            <!-- 비공개 대화 시 클래스 secret 추가 -->
+                            <div class="thumbnail secret">
+                                <div class="LS_profile_image image3">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <i class="sp_co_x2 icon_alarm_mute">알림 받지 않기</i>
+                                업데이트 체크리스트
+                            </div>
+                        </a>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <!-- 비공개 대화 시 클래스 secret 추가 -->
+                            <div class="thumbnail secret">
+                                <div class="LS_profile_image image2">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <i class="sp_co_x2 icon_alarm">모든 알림 받기</i>
+                                <em><span class="blind">참여 멤버 수 : </span>(23)</em>
+                                웹메신저웹메신저웹메신저웹메신저웹메신저웹메신저 대화 테스트
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>15</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 더보기 버튼 추가 시 클래스 more 추가 -->
+                    <li class="list_item more">
+                        <button type="button" class="button_more_list">더보기<span class="sp_co_v2 icon_arrow"></span></button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 오픈 시 클래스 open 추가 -->
+            <div class="talk_list_box open">
+                <div class="title_box">
+                    <a href="#">
+                        <strong><em class="emphasis">78</em> 1:1대화</strong>
+                    </a>
+                    <div class="right_box">
+                        <button type="button" class="button_search"><span class="sp_co_v2">검색</span></button>
+                        <button type="button" class="button_rock"><span class="sp_co_v2">정렬기능고정</span></button>
+                    </div>
+                </div>
+                <ul class="list_box">
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail online">
+                                <div class="LS_profile_image">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                김여름
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>34</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail online">
+                                <div class="LS_profile_image">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                김여름<strong class="emphasis">더존</strong>김여름
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>34</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list_item">
+                        <a href="#" class="list_link">
+                            <div class="thumbnail offline">
+                                <div class="LS_profile_image">
+                                    <div class="image_box" style="background-image:url(http://placehold.it/26x26)"></div>
+                                </div>
+                            </div>
+                            <div class="title_talk">
+                                <span class="label_out">OUT</span>
+                                김여름
+                            </div>
+                        </a>
+                        <span class="noti"><span class="blind">읽지 않음</span>34</span>
+                        <!-- 클래스 active 추가 시 LUX_basic_popover2 열림 -->
+                        <div class="func_more_box active">
+                            <!-- LUX_popover 컴포넌트 사용 -->
+                            <div class="LUX_popover no_arrow popover_inner_style_none">
+                                <button type="button" class="button_more"><span class="sp_co_v2">더보기</span></button>
+                                <div class="LUX_basic_popover2" style="display:none;position:absolute;top:0;left:calc(100% + 1px);width:120px;background:none;">
+                                    <div class="WSC_popover_memu renewal_co_popover">
+                                        <div class="menu_scrall">
+                                            <div class="menu_scrallin">
+                                                <ul class="menu_lst">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav"></span>즐겨찾기 추가</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_fav_on"></span>즐겨찾기 해제</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_leave"></span>대화방 나가기</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div><span class="sp_co_v2 icon_alarm"></span>알림설정</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 오픈 시 클래스 open 추가 -->
+            <div class="talk_list_box open">
+                <div class="title_box type_search">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <div class="right_box">
+                        <!--<button type="button" class="button_search"><span class="sp_co_v2">검색</span></button>-->
+                        <button type="button" class="button_back"><span class="sp_co_v2">검색 취소</span></button>
+                    </div>
+                </div>
+                <div class="empty_area" style="text-align:center;">
+                    <span class="ico"><img src="http://placehold.it/50x50" alt="" style="margin-top:14px"></span>
+                    <p class="empty_txt">검색결과가 없습니다.<br>
+                        검색어를 다시 확인해주세요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="co_container renewal new_st">
+
+    </div>
+</div>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+</body>
+</html>
