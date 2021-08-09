@@ -26,10 +26,13 @@ h1.title{padding-bottom:10px;border-bottom:1px solid #eee;font-size:32px;line-he
 @media only screen and (min-width:768px){
     .title_text_area [class^='item']{font-size: 150px;line-height:170px;}
 }
-
 @media only screen and (min-width:1024px){
     .title_text_area [class^='item']{font-size: 220px;line-height:220px;}
 }
+
+.top_info_text{position:relative;padding:10px 15px;border:2px solid #caf;border-radius:5px;}
+.link{color:#1c90fb;}
+.highlight{display:inline-block;padding:0 5px;box-shadow:inset 0 -10px 0 #f2dbff;}
 
 /* footer */
 .footer_wrap{background:#fce;}
