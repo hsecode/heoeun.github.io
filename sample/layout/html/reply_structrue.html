@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=1280">
+    <title>댓글 구조</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/reply_structrue.css">
+</head>
+<body>
+<div class="sc">
+    <!-- contents -->
+    <div class="sc_container">
+        <div class="visual_box">
+            <h2 class="title">댓글 구조 레이아웃 샘플</h2>
+            <p class="sub_text">서브 텍스트 영역으로 한 줄 정도 작성이 가능합니다.</p>
+        </div>
+        <div class="sub_content management">
+            <div class="current_stats_box">
+                <div class="item blue">
+                    <strong class="title"><span class="sp_sc icon_content"></span>채널 업로드 콘텐츠</strong>
+                    <div class="stats_box">
+                        <div class="stats">
+                            <span class="tit">전체 포스팅</span>
+                            <button type="button" class="num"><em>9,999+</em></button>
+                        </div>
+                        <div class="stats">
+                            <span class="tit">댓글 수</span>
+                            <button type="button" class="num"><em>9,999+</em></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item green">
+                    <strong class="title"><span class="sp_sc icon_good"></span>긍정언급 댓글</strong>
+                    <div class="stats_box">
+                        <div class="stats">
+                            <span class="tit">댓글 수</span>
+                            <button type="button" class="num"><em>500</em></button>
+                        </div>
+                        <div class="stats">
+                            <span class="tit">미답변 댓글</span>
+                            <button type="button" class="num"><em>5,000</em></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item yellow">
+                    <strong class="title"><span class="sp_sc icon_normal"></span>중립언급 댓글</strong>
+                    <div class="stats_box">
+                        <div class="stats">
+                            <span class="tit">댓글 수</span>
+                            <button type="button" class="num"><em>500</em></button>
+                        </div>
+                        <div class="stats">
+                            <span class="tit">미답변 댓글</span>
+                            <button type="button" class="num"><em>5,000</em></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item red">
+                    <strong class="title"><span class="sp_sc icon_bad"></span>부정언급 댓글</strong>
+                    <div class="stats_box">
+                        <button type="button" class="stats">
+                            <span class="tit">댓글 수</span>
+                            <strong class="num">500</strong>
+                        </button>
+                        <button type="button" class="stats">
+                            <span class="tit">미답변 댓글</span>
+                            <strong class="num">5,000</strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p class="notice_text_box">
+                <span class="sp_sc icon_alert"></span>
+                작성일로부터 하루(24시간) 이상 지난 미답변 부정언급 댓글이 <em>132</em>개 있습니다. <button type="button" class="button_sort">지금 바로 확인</button>해 주세요.
+            </p>
+            <div class="management_content_area">
+                <div class="header_group">
+                    <div class="header_tab">
+                        <ul role="tablist">
+                            <!-- 활성화 시 클래스 active 추가 -->
+                            <li role="tab" class="active"><a href="#">전체보기</a></li>
+                            <li role="tab"><a href="#">인스타그램</a></li>
+                            <li role="tab"><a href="#">트위터</a></li>
+                            <li role="tab"><a href="#">페이스북</a></li>
+                            <li role="tab"><a href="#">긍정언급댓글</a></li>
+                            <li role="tab"><a href="#">부정언급댓글</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <button type="button" class="button_default" style="float:left;font-size:12px;"><span class="sp_sc icon_synch"></span>포스팅 동기화</button>
+                    </div>
+                </div>
+                <div class="content_area">
+                    <div class="content_box">
+                        <div class="left_item">
+                            <span class="day_label blue">오늘</span>
+                            <!-- 활성화 시 (열려있을 시) 클래스 active 추가 -->
+                            <button type="button" class="button_fold active"><span class="sp_sc icon_next">열기/닫기</span></button>
+                        </div>
+                        <div class="content">
+                            <!-- 활성화 시 (열려있을 시) 클래스 active 추가 / class="post_cont" 제어 -->
+                            <button type="button" class="button_content_fold active"><span class="sp_sc icon_next">열기/닫기</span></button>
+                            <div class="post_area">
+                                <div class="top_area">
+                                    <div class="sns_info">
+                                        <div class="stats_group">
+                                            <a href="#" target="_blank" title="새창열림" class="item"><span class="sp_sc icon_like">좋아요 수</span>9,999+</a>
+                                            <a href="#" target="_blank" title="새창열림" class="item"><span class="sp_sc icon_comment">댓글 수</span>9,999+</a>
+                                        </div>
+                                        <div class="sns_bundle">
+                                            <span class="blind">등록된 채널</span>
+                                            <!-- 활성화 시 active 추가 -->
+                                            <!-- active 된 sns 만 텍스트 추가 -->
+                                            <span class="sp_sc icon_round_fb_small active">페이스북</span>
+                                            <span class="sp_sc icon_round_insta_small active">인스타그램</span>
+                                            <span class="sp_sc icon_round_twit_small active">트위터</span>
+                                            <span class="sp_sc icon_round_media_small"></span>
+                                        </div>
+                                    </div>
+                                    <div class="posting_info">
+                                        <div class="profile_pic">
+                                            <div class="LS_profile_image">
+                                                <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                            </div>
+                                        </div>
+                                        <p class="user_account">amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123amiibo123</p>
+                                        <span class="time">512673481246시간 전</span>
+                                    </div>
+                                </div>
+                                <!-- 활성화 시 클래스 active 추가 -->
+                                <div class="post_cont active">
+                                    <a href="#" title="새창열림" target="_blank" class="item_lnk">
+                                        <!-- 썸네일 사용하지 않을 시 삭제 -->
+                                        <div class="thumbnail" style="background-image:url(../../../images/dummy_04.jpg);"></div>
+                                        <!-- //썸네일 사용하지 않을 시 삭제 -->
+
+                                        <div class="desc">
+                                            <img src="../../../images/dummy_06.jpg" alt="이미지 샘플">
+                                            <br><br>
+                                            재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?<br>
+                                            <em class="highlight">#재택근무</em> , 남의 얘기 같나요?<em class="highlight">#재택근무</em> , 남의 얘기 같나요?
+                                            <br><br>
+                                            <em class="highlight">#재택근무</em><em class="highlight">#재택근무</em><em class="highlight">#재택근무</em>
+                                        </div>
+                                    </a>
+                                    <!-- 더보기 버튼 미사용 시 삭제 -->
+                                    <div class="button_box">
+                                        <button type="button" class="button_more">더보기<span class="sp_sc icon_open_small"></span></button>
+                                    </div>
+                                    <!-- //더보기 버튼 미사용 시 삭제 -->
+                                </div>
+                            </div>
+                            <div class="reply_area">
+                                <!-- 활성화 시 (열려있을 시) 클래스 active 추가 / class="reply_cont_box" 제어 -->
+                                <button type="button" class="button_reply_fold active">댓글접기<span class="sp_sc icon_open_small"></span></button>
+                                <!-- 활성화 시 클래스 active 추가 -->
+                                <div class="reply_cont_box active">
+                                    <div class="reply_cont">
+                                        <div class="profile_pic">
+                                            <div class="LS_profile_image">
+                                                <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="reply_item">
+                                            <div class="cell_box">
+                                                <div class="top_area">
+                                                    <p class="user_account">amiibo123</p>
+                                                    <span class="time">1242142시간 전</span>
+                                                    <!-- 댓글 고정 시 클래스 active 추가 -->
+                                                    <button type="button" class="button_pin active"><span class="sp_sc icon_pin">댓글 고정하기</span>관리자가 고정한 댓글입니다.</button>
+                                                </div>
+                                                <p class="desc">
+                                                    <a href="#" title="새창열림" target="_blank">재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?재택근무, 남의 얘기 같나요?</a>
+                                                </p>
+                                            </div>
+                                            <!-- 상태에 따른 클래스 추가. 좋음: good/ 보통: normal/ 별로:bad -->
+                                            <div class="emotion_box normal">
+                                                <span class="blind">감정분석 결과</span>
+                                                <span class="sp_sc icon_emotion"></span>
+                                                <div class="text">보통이에요</div>
+                                            </div>
+                                        </div>
+                                        <div class="re_reply_area">
+                                            <!-- 클릭 시 class="reply_input_area" 제어 -->
+                                            <button type="button" class="button_reply">댓글달기</button>
+                                            <!-- 댓글달기 버튼 클릭 시 클래스 active 추가 -->
+                                            <div class="reply_input_area active">
+                                                <div class="top_box">
+                                                    <span class="account">amiibo123</span>
+                                                    <span class="byte_info">0 / 1,000 byte</span>
+                                                </div>
+                                                <div contenteditable="true" class="reply_input">
+                                                    <!-- 텍스트 입력 시 삭제 -->
+                                                    <span class="placeholder">댓글을 남겨주세요.</span>
+                                                    ddd 테스트
+                                                </div>
+                                                <button class="button_regist">등록</button>
+                                            </div>
+                                            <!-- //댓글달기 버튼 클릭 시 클래스 active 추가 -->
+                                        </div>
+                                    </div>
+                                    <div class="reply_cont">
+                                        <div class="profile_pic">
+                                            <div class="LS_profile_image">
+                                                <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="reply_item">
+                                            <div class="cell_box">
+                                                <div class="top_area">
+                                                    <p class="user_account">amiibo123</p>
+                                                    <span class="time">1242142시간 전</span>
+                                                    <!-- 댓글 고정 시 클래스 active 추가 -->
+                                                    <button type="button" class="button_pin"><span class="sp_sc icon_pin">댓글 고정하기</span></button>
+                                                </div>
+                                                <p class="desc">
+                                                    <a href="#" title="새창열림" target="_blank">wewewewewewewhahahahahagogogogogo</a>
+                                                </p>
+                                            </div>
+                                            <!-- 상태에 따른 클래스 추가. 좋음: good/ 보통: normal/ 별로:bad -->
+                                            <div class="emotion_box good">
+                                                <span class="blind">감정분석 결과</span>
+                                                <span class="sp_sc icon_emotion"></span>
+                                                <div class="text">좋아요</div>
+                                            </div>
+                                        </div>
+                                        <div class="re_reply_area">
+                                            <!-- 클릭 시 class="reply_input_area" 제어 -->
+                                            <button type="button" class="button_reply">댓글달기</button>
+                                            <!-- 댓글달기 버튼 클릭 시 클래스 active 추가 -->
+                                            <div class="reply_input_area">
+                                                <div class="top_box">
+                                                    <span class="account">amiibo123</span>
+                                                    <span class="byte_info">0 / 1,000 byte</span>
+                                                </div>
+                                                <div contenteditable="true" class="reply_input">
+                                                    <!-- 텍스트 입력 시 삭제 -->
+                                                    <span class="placeholder">댓글을 남겨주세요.</span>
+                                                    ddd 테스트
+                                                </div>
+                                                <button class="button_regist">등록</button>
+                                            </div>
+                                            <!-- //댓글달기 버튼 클릭 시 클래스 active 추가 -->
+                                        </div>
+                                    </div>
+                                    <div class="reply_cont">
+                                        <div class="profile_pic">
+                                            <div class="LS_profile_image">
+                                                <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="reply_item">
+                                            <div class="cell_box">
+                                                <div class="top_area">
+                                                    <p class="user_account">amiibo123</p>
+                                                    <span class="time">1242142시간 전</span>
+                                                    <!-- 댓글 고정 시 클래스 active 추가 -->
+                                                    <button type="button" class="button_pin"><span class="sp_sc icon_pin">댓글 고정하기</span></button>
+                                                </div>
+                                                <p class="desc">
+                                                    <a href="#" title="새창열림" target="_blank">ㅇㅇ</a>
+                                                </p>
+                                            </div>
+                                            <!-- 상태에 따른 클래스 추가. 좋음: good/ 보통: normal/ 별로:bad -->
+                                            <div class="emotion_box bad">
+                                                <span class="blind">감정분석 결과</span>
+                                                <span class="sp_sc icon_emotion"></span>
+                                                <div class="text">별로에요</div>
+                                            </div>
+                                        </div>
+                                        <div class="re_reply_area">
+                                            <!-- 클릭 시 class="reply_input_area" 제어 -->
+                                            <button type="button" class="button_reply">댓글달기</button>
+                                            <!-- 댓글달기 버튼 클릭 시 클래스 active 추가 -->
+                                            <div class="reply_input_area">
+                                                <div class="top_box">
+                                                    <span class="account">amiibo123</span>
+                                                    <span class="byte_info">0 / 1,000 byte</span>
+                                                </div>
+                                                <div contenteditable="true" class="reply_input">
+                                                    <!-- 텍스트 입력 시 삭제 -->
+                                                    <span class="placeholder">댓글을 남겨주세요.</span>
+                                                    ddd 테스트
+                                                </div>
+                                                <button class="button_regist">등록</button>
+                                            </div>
+                                            <!-- //댓글달기 버튼 클릭 시 클래스 active 추가 -->
+                                        </div>
+                                    </div>
+                                    <!-- 관리계정에서 등록한 댓글일 시 클래스 admin 추가 -->
+                                    <div class="reply_cont admin">
+                                        <div class="modify_button_box">
+                                            <button type="button" class="button_default">수정</button>
+                                            <button type="button" class="button_default">삭제</button>
+                                        </div>
+                                        <div class="profile_pic">
+                                            <div class="LS_profile_image">
+                                                <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="reply_item">
+                                            <div class="cell_box">
+                                                <div class="top_area">
+                                                    <p class="user_account">amiibo123</p>
+                                                    <span class="time">1242142시간 전</span>
+                                                    <!-- 댓글 고정 시 클래스 active 추가 -->
+                                                    <button type="button" class="button_pin"><span class="sp_sc icon_pin">댓글 고정하기</span></button>
+                                                </div>
+                                                <p class="desc">
+                                                    <a href="#" title="새창열림" target="_blank" class="highlight">@amiibo123</a> <a href="#" title="새창열림" target="_blank">NINE는 아예 안 써본 사람과 쓰고 있는 사람만 있다면서요~?! NINE의 편리함과 스마트함을 한 번 느껴보고나면 다른 서비스로 돌아갈 수가 없다고 들었어요! 차이를 느껴보세요 !!! NINE 서비스의 특성과 슬로건이 정말 좋아요! NINE는 아예 안 써본 사람과 쓰고 있는 사람만 있다면서요~?!</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reply_btm_button">
+                                <button type="button" class=button_more><span class="sp_sc icon_open"></span><em class="highlight">10</em>개의 댓글 더 보기</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 날짜별 전체 닫힘 일 경우 -->
+                    <div class="content_box">
+                        <div class="left_item">
+                            <span class="day_label">어제</span>
+                            <!-- 활성화 시 (열려있을 시) 클래스 active 추가 -->
+                            <button type="button" class="button_fold"><span class="sp_sc icon_next">열기/닫기</span></button>
+                        </div>
+                        <div class="content">
+                            <!-- 활성화 시 (열려있을 시) 클래스 active 추가 -->
+                            <button type="button" class="button_content_fold"><span class="sp_sc icon_next">열기/닫기</span></button>
+                            <div class="fold_stats_box">
+                                <div class="inbox">
+                                    <div class="item">
+                                        <span class="tit">전체포스팅</span>
+                                        <strong class="stats"><em>134</em>개</strong>
+                                    </div>
+                                    <div class="item">
+                                        <span class="tit">포스팅에 달린 댓글</span>
+                                        <strong class="stats"><em>12,234</em>개</strong>
+                                    </div>
+                                    <div class="item">
+                                        <span class="tit">내가 작성한 댓글</span>
+                                        <strong class="stats"><em>9,999</em>개</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //contents -->
+</div>
+<script src="../js/jquery-3.3.1.min.js"></script>
+</body>
+</html>
