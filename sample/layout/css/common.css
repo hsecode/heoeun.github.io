@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,img,button,select{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,button{font-family:'Nanum Square','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif}
+body{min-width:1280px;-webkit-text-size-adjust:none}
+img,fieldset{border:0;vertical-align:top}
+a{color:#1a1a1a}
+em,address{font-style:normal}
+ul,ol,li{list-style:none}
+label,button{cursor:pointer}
+input::-ms-clear{display:none}
+.blind{position:absolute !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-1px !important;overflow:hidden !important}
+.table thead.blind{position:static;font-size:0} /* 테이블 thead blind 버그해결 */
+.clearbx:after,.clearfix:after{content:'';clear:both;display:table}
+.ellipsis{overflow:hidden;white-space:nowrap;word-break:break-all;text-overflow:ellipsis}
+.no_ellipsis{white-space:normal !important}
+.no_ellipsis2{white-space:normal !important;text-overflow:clip !important;}
+.us_none{-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;user-select:none !important}
+.mw_auto{min-width:auto}
+.w_auto{width:auto !important}
+.of_hidden{overflow:hidden !important}
+.of_visible{overflow:visible !important}
+input:disabled{-webkit-text-fill-color:#8d8d8d;opacity:1}
+iframe{overflow:hidden;margin:0;padding:0;border:0}
+.posfix{position:relative}
+.scroll_touch{-webkit-overflow-scrolling:touch;}
+.hide_lnb .lnb{display:none;}
+.snbnext.left0{left:0;} /* snbnext left 0 */
+
+/* 공통 Sprite */
+.sp_common{overflow:hidden;display:inline-block;background:url(https://static.wehago.com/imgs/common/sp_common.png) 0 0 no-repeat;line-height:100em;vertical-align:top}
+
+/* 크롬 디폴트 radius값 초기화 */
+/* input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button{border-radius:0} */
+
+/* 크롬 input 자동완성 배경 초기화 */
+input:-webkit-autofill {-webkit-box-shadow:0 0 0 30px #fff inset;-webkit-text-fill-color:#000;}
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active {transition:background-color 5000s ease-in-out 0s;}
+
+/* PlaceHolder 예외 처리 */
+::-webkit-input-placeholder{text-align:left !important;color:#999;}
+:-moz-placeholder{text-align:left !important;color:#999;}
+::-moz-placeholder{text-align:left !important;color:#999;}
+:-ms-input-placeholder{text-align:left !important;color:#999 !important;}
+::-ms-input-placeholder{text-align:left !important;color:#999;}
+::placeholder{text-align:left !important;color:#999;}
+input::-webkit-input-placeholder{text-align:left !important;color:#999;}
+input:-moz-placeholder{text-align:left !important;color:#999;}
+input::-moz-placeholder{text-align:left !important;color:#999;}
+input:-ms-input-placeholder{text-align:left !important;color:#999 !important;}
+input::-ms-input-placeholder{text-align:left !important;color:#999;}
+input::placeholder{text-align:left !important;color:#999;}
+
+/* 모바일 클릭 이벤트 대응 */
+/* body.m{cursor:pointer !important} */
+
+/* Overflw-y : hidden */
+body.xscroll_hidden{overflow-x:hidden;}
+
+/* skip navigation */
+#u_skip{position:relative;z-index:2147483647}
+#u_skip a{position:absolute;top:-30px;left:0;width:128px;border:1px solid #4ec53d;background-color:#eee;text-align:center;outline:none}
+#u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
+
+#skip_nav a {position:absolute;top:-500%;text-decoration:none;}
+#skip_nav a:active, #skip_nav a:focus {display:block;left:0;top:0;width:100%;height:35px;line-height:35px;text-align:center;background-color:#1c90fb;font-size:14px;color:#fff;z-index:2147483647;}
+
+/* text align */
+.txtcnt{text-align:center !important}
+.txtlft{text-align:left !important}
+.txtrgt{text-align:right !important}
+.vatop{vertical-align:top}
+
+/* font */
+.smallfont{font-family:'돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif !important}
+.nfont{font-family:'Nanum Square','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',sans-serif !important}
+.chfont{font-family:"Microsoft YaHei","PingFang SC","Nanum Square","돋움",Dotum,Helvetica,"Apple SD Gothic Neo",sans-serif}
+.text_bold{font-weight:bold !important}
+.text_font14{font-size:14px !important}
+.text_font13{font-size:13px !important}
+.text_font11{font-size:11px !important}
+.text_font12{font-size:12px !important}
+
+.snb{position:fixed;top:0;left:-148px;bottom:0;z-index:60;width:199px;height:100%;border-right:1px solid #b4b4b4;background:#fff;word-break:break-all}
+.snb .snbin{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0;width:199px;height:100%;word-break:break-all}
+.snbnext{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0;min-width:1232px;clear:both;}
+.snbnext.active_actionbar{bottom:56px;}
+
+/* 프로필이미지 */
+.LS_profile_image{position:relative;overflow:hidden;display:inline-block;width:34px;height:34px;background-color:#accfec;border-radius:50%;vertical-align:top;transform:translateY(0)}
+.LS_profile_image .image_box{position:absolute;top:0;left:0;width:100%;height:100%;background-image:url(https://static.wehago.com/imgs/common/profile_default.png);background-position:50% 50%;background-repeat:no-repeat;background-size:cover;color:transparent}
+.LS_profile_image.is_border:after{position:absolute;top:0;bottom:0;left:0;right:0;border:1px solid #000;border-radius:50%;opacity:.1;content:''}
+.LS_profile_image_wrap {
+    position: relative;
+    display:inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 34px;
+    height: 34px;
+}
+.LS_profile_image_wrap.secret:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    border-radius: 50%;
+    z-index: 5;
+}
+.LS_profile_image_wrap.secret:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 15px;
+    margin-top: -7px;
+    margin-left: -6px;
+    background: url(https://static.wehago.com/imgs/co/sp_co.png) -140px -199px no-repeat;
+    z-index: 10;
+}
+.LS_profile_image_wrap.online:after {
+    content:'';
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:10px;
+    height:10px;
+    background:url(https://static.wehago.com/imgs/co/sp_co.png) -166px -199px no-repeat;
+}
+.LS_profile_image.image2 .image_box{width:50%;}
+.LS_profile_image.image2 .image_box + .image_box{left:50%;border-left:1px solid #fff}
+.LS_profile_image.image3 .image_box{top:-1px;height:50%;border-bottom:1px solid #fff}
+.LS_profile_image.image3 .image_box + .image_box{top:50%;width:50%;border-bottom:0}
+.LS_profile_image.image3 .image_box + .image_box + .image_box{left:50%;border-left:1px solid #fff}
+.LS_profile_image.image4 .image_box{top:-1px;width:50%;height:50%;border-bottom:1px solid #fff}
+.LS_profile_image.image4 .image_box + .image_box{left:50%;border-left:1px solid #fff}
+.LS_profile_image.image4 .image_box + .image_box + .image_box{top:50%;left:0;border-left:0;border-bottom:0}
+.LS_profile_image.image4 .image_box + .image_box + .image_box + .image_box{left:50%;border-left:1px solid #fff}

@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=1280">
+    <title>챗봇</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/chatbot_list.css">
+</head>
+<body>
+<div id="wrap" class="webot">
+    <div class="snbnext">
+        <div class="container">
+            <div class="chat_group_wrap">
+                <!-- 상담 목록 -->
+                <div class="group_wrap">
+                    <ul class="menu_bx">
+                        <!-- [D] 활성화 시 클랙스 on 추가 -->
+                        <li class="menu on">
+                            <button type="button" class="standby"><span class="sp_webot"></span><span class="blind">대기</span></button>
+                            <span class="badge">1</span>
+                        </li>
+                        <li class="menu">
+                            <button type="button" class="ing"><span class="sp_webot"></span><span class="blind">진행</span></button>
+                            <span class="badge">99+</span>
+                        </li>
+                        <li class="menu">
+                            <button type="button" class="hold"><span class="sp_webot"></span><span class="blind">보류</span></button>
+                        </li>
+                        <li class="menu">
+                            <button type="button" class="finish"><span class="sp_webot"></span><span class="blind">완료</span></button>
+                        </li>
+                    </ul>
+                    <div class="search_wrap">
+                        <div class="search_bx">
+                            <ul class="tab_box">
+                                <li class="on"><button type="button" class="btn_tab">전체</button></li>
+                                <li><button type="button" class="btn_tab">담당상담</button></li>
+                                <li><button type="button" class="btn_tab">관리</button></li>
+                            </ul>
+                            <div class="inp_bx">
+                                <!-- btn_search 클릭 시 클래스 active 추가 -->
+                                <div class="search_area">
+                                    <div class="select_wrap">
+                                        <div class="search_box">
+                                            <span>전체상담</span>
+                                            <button type="button" class="button_fold"><span class="sp_webot">펼치기</span></button>
+                                        </div>
+                                        <!-- button_fold 클릭 시 클래스 active 추가 -->
+                                        <ul class="result_box">
+                                            <li><button type="button">전체상담</button></li>
+                                            <li class="on"><button type="button">담당자</button></li>
+                                            <li><button type="button">고객명</button></li>
+                                            <li><button type="button">상호명</button></li>
+                                        </ul>
+                                    </div>
+                                    <input type="text" class="inp_search" placeholder="검색어를 입력하세요.">
+                                </div>
+                                <button type="button" class="btn_search"><span class="sp_webot"></span><span class="blind">검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_list_wrap">
+                        <ul class="group_list_bx">
+                            <!-- [D] 활성화 시 클래스 on 추가 -->
+                            <li class="list_container on">
+                                <!-- [D] 클릭 시 list_container 활성화 -->
+                                <button type="button" class="btn_openbx">
+                                    <span class="profile_item ellipsis">
+                                        <span class="right_text">진행중 상담 <em>222</em>건</span>
+                                        <span class="ico"><span class="sp_webot"></span></span>
+                                        <span class="LS_profile_image is_border">
+                                            <span class="image_box" style="background-image:url(http://placehold.it/34x34)"></span>
+                                        </span>
+                                        김여름 사원 김여름 사원 김여름 사원
+                                    </span>
+                                </button>
+                                <div class="list_bx">
+                                    <!-- [D] 활성화 시 클래스 on 추가 -->
+                                    <div class="itembx on">
+                                        <div class="inbx">
+                                            <!-- [D] 온라인 시에는 클래스 online 추가 -->
+                                            <div class="profile_bx online">
+                                                <div class="LS_profile_image">
+                                                    <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="title_bx">
+                                                <div class="time">2분 전</div>
+                                                <div class="namebx">
+                                                    <!-- [D] 즐겨찾기 등록된 대화일시 클래스 on 추가 -->
+                                                    <span class="ico_fav on"><span class="sp_webot"></span><span class="blind">즐겨찾기</span></span>
+                                                    <em class="name">김여름 사원</em>
+                                                </div>
+                                                <div class="cont">
+                                                    연장근무의 간주근무시간은 테스트 테스트 테스트 테스트
+                                                    <span class="badge">99+</span>
+                                                </div>
+                                                <div class="label_bx">
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="ad_name">김여름(나)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#lnk" class="lnk_inbx" title="상담 불러오기"></a>
+                                    </div>
+                                    <div class="itembx">
+                                        <div class="inbx">
+                                            <!-- [D] 온라인 시에는 클래스 online 추가 -->
+                                            <div class="profile_bx online">
+                                                <div class="LS_profile_image">
+                                                    <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="title_bx">
+                                                <div class="time">22분 전</div>
+                                                <div class="namebx">
+                                                    <span class="ico_fav on"><span class="sp_webot"></span><span class="blind">즐겨찾기</span></span>
+                                                    <em class="name">김여름 김여름 김여름 김여름 사원</em>
+                                                </div>
+                                                <div class="cont">
+                                                    연장근무
+                                                    <span class="badge">32</span>
+                                                </div>
+                                                <div class="label_bx">
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="ad_name">김여름 상담</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#lnk" class="lnk_inbx" title="상담 불러오기"></a>
+                                    </div>
+                                    <div class="itembx">
+                                        <div class="inbx">
+                                            <div class="profile_bx">
+                                                <div class="LS_profile_image">
+                                                    <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="title_bx">
+                                                <div class="time">2분 전</div>
+                                                <div class="namebx">
+                                                    <span class="ico_fav"><span class="sp_webot"></span><span class="blind">즐겨찾기</span></span>
+                                                    <em class="name">김여름 사원</em>
+                                                </div>
+                                                <div class="cont">
+                                                    연장근무의 간주근무시간은 테스트 테스트 테스트 테스트
+                                                    <span class="badge">1</span>
+                                                </div>
+                                                <div class="label_bx">
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="ad_name">김여름 상담</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#lnk" class="lnk_inbx" title="상담 불러오기"></a>
+                                    </div>
+                                    <button type="button" class="button_more">더보기</button>
+                                </div>
+                            </li>
+                            <li class="list_container">
+                                <!-- [D] 클릭 시 list_container 활성화 -->
+                                <button type="button" class="btn_openbx"><span class="ico"><span class="sp_webot"></span></span>근태관리</button>
+                                <div class="list_bx">
+                                    <!-- [D] 활성화 시 클래스 on 추가 -->
+                                    <div class="itembx">
+                                        <div class="inbx">
+                                            <div class="profile_bx">
+                                                <div class="LS_profile_image">
+                                                    <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="title_bx">
+                                                <div class="time">2분 전</div>
+                                                <div class="namebx">
+                                                    <!-- [D] 즐겨찾기 등록된 대화일시 클래스 on 추가 -->
+                                                    <span class="ico_fav on"><span class="sp_webot"></span><span class="blind">즐겨찾기</span></span>
+                                                    <em class="name">김여름 사원</em>
+                                                </div>
+                                                <div class="cont">
+                                                    연장근무의 간주근무시간은 테스트 테스트 테스트 테스트
+                                                    <span class="badge">1</span>
+                                                </div>
+                                                <div class="label_bx">
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="ad_name">김여름 상담</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#lnk" class="lnk_inbx" title="상담 불러오기"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list_container">
+                                <!-- [D] 클릭 시 list_container 활성화 -->
+                                <button type="button" class="btn_openbx"><span class="ico"><span class="sp_webot"></span></span>T/Tedge</button>
+                                <div class="list_bx">
+                                    <!-- [D] 활성화 시 클래스 on 추가 -->
+                                    <div class="itembx">
+                                        <div class="inbx">
+                                            <div class="profile_bx">
+                                                <div class="LS_profile_image">
+                                                    <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                                </div>
+                                            </div>
+                                            <div class="title_bx">
+                                                <div class="time">2분 전</div>
+                                                <div class="namebx">
+                                                    <!-- [D] 즐겨찾기 등록된 대화일시 클래스 on 추가 -->
+                                                    <span class="ico_fav on"><span class="sp_webot"></span><span class="blind">즐겨찾기</span></span>
+                                                    <em class="name">김여름 사원</em>
+                                                </div>
+                                                <div class="cont">
+                                                    연장근무의 간주근무시간은 테스트 테스트 테스트 테스트
+                                                    <span class="badge">1</span>
+                                                </div>
+                                                <div class="label_bx">
+                                                    <span class="label_basic">연장근무</span>
+                                                    <span class="label_basic">간주</span>
+                                                    <span class="ad_name">김여름 상담</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#lnk" class="lnk_inbx" title="상담 불러오기"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //상담 목록 -->
+                <!-- 채팅영역 -->
+                <div class="chat_wrap">
+                    <div class="title_wrap">
+                        <!-- [D] 온라인 시에는 클래스 online 추가 -->
+                        <div class="profile_bx online">
+                            <div class="LS_profile_image">
+                                <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                            </div>
+                        </div>
+                        <!-- [D] 상담 종료 시 클래스 end 추가  -->
+                        <div class="title_bx">
+                            <div class="title">
+                                김여름 사원<span class="txt">님이 답변을 기다리고 있습니다.</span>
+                                <!-- [D] 즐겨찾기 클릭 시 클래스 on 추가 -->
+                                <div class="time_fav_bx">
+                                    <span class="time">5분 전</span>
+                                    <span class="favico"><button type="button" class="ico_fav on"><span class="sp_webot"></span><span class="blind">즐겨찾기</span></button></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_bx">
+                            <button type="button" class="btn_basic">보류</button>
+                            <button type="button" class="btn_basic">삭제</button>
+                            <button type="button" class="btn_basic v2">완료</button>
+                        </div>
+                    </div>
+                    <div class="upload_progress_wrap">
+                        <div class="upload_progress_bx">
+                            <div class="file_bx">
+                                <span class="txt">파일을 업로드하고 있습니다. (1/1)</span>
+                                <span class="file_info">
+                                    <span class="file_size">(913.01 KB/95.5 MB)</span>
+                                    근태관리 1차 상세기획 테스트 테스트 테스트 테스트 테스트
+                                </span>
+                            </div>
+                            <div class="progress_bar_bx">
+                                <div class="progress_bar">
+                                    <div class="percent" style="width:80%">80%</div>
+                                </div>
+                                <div class="btn_bx">
+                                    <button type="button" class="btn_basic cancel">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [D] 입력창 높이가 높아짐에따라 chat_bx의 bottom값이 조정되어야합니다. -->
+                    <div class="chat_bx">
+                        <div class="chat_con">
+                            <div class="chat_area">
+                                <div class="thumb_bx">
+                                    <div class="LS_profile_image">
+                                        <div class="image_box" style="background-image:url(http://placehold.it/330x400)"></div>
+                                    </div>
+                                </div>
+                                <div class="chat_inbx">
+                                    <strong class="name">김여름님</strong>
+                                    <div class="chat_bx_item">
+                                        <div class="chat_balloon">
+                                            근태관리
+                                        </div>
+                                        <div class="btn_func_bx" style="display: block;"><!-- 개발 시 인라인 스타일 삭제 -->
+                                            <button type="button" class="btn_func"><span class="sp_webot">기능버튼</span></button>
+                                            <ul class="func_result">
+                                                <li class="selected">
+                                                    <button type="button">복사</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button">삭제</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area">
+                                <div class="chat_inbx">
+                                    <div class="chat_bx_item">
+                                        <div class="chat_balloon">
+                                            전자결재
+                                        </div>
+                                        <div class="time">오전 10:30</div>
+                                        <div class="btn_func_bx">
+                                            <button type="button" class="btn_func"><span class="sp_webot">기능버튼</span></button>
+                                            <ul class="func_result">
+                                                <li class="selected">
+                                                    <button type="button">복사</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button">삭제</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_today">
+                                <span class="today_line"></span>
+                                <span class="today_date">0000.02.02</span>
+                            </div>
+                            <div class="chat_area">
+                                <div class="thumb_bx">
+                                    <div class="LS_profile_image">
+                                        <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                    </div>
+                                </div>
+                                <div class="chat_inbx">
+                                    <strong class="name">김여름님</strong>
+                                    <div class="chat_balloon">
+                                        상담원 연결
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_bx_item">
+                                        <div class="chat_balloon">
+                                            상담원을 연결합니다. 잠시만 기다려주세요.
+                                        </div>
+                                        <div class="btn_func_bx">
+                                            <button type="button" class="btn_func"><span class="sp_webot">기능버튼</span></button>
+                                            <ul class="func_result">
+                                                <li class="selected">
+                                                    <button type="button">복사</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button">삭제</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area other">
+                                <div class="thumb_bx">
+                                    <div class="LS_profile_image">
+                                        <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                    </div>
+                                </div>
+                                <div class="chat_inbx">
+                                    <strong class="name">이가을님</strong>
+                                    <div class="chat_bx_item">
+                                        <div class="chat_balloon">
+                                            안녕하세요. 상담원 이가을입니다. 궁금하신 사항 질문해주세요.
+                                        </div>
+                                        <div class="time">오후 15:30</div>
+                                        <div class="btn_func_bx">
+                                            <button type="button" class="btn_func"><span class="sp_webot">기능버튼</span></button>
+                                            <ul class="func_result">
+                                                <li class="selected">
+                                                    <button type="button">복사</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button">삭제</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area other">
+                                <div class="chat_inbx">
+                                    <div class="chat_append file">
+                                        <div class="preview_img">
+                                            <img src="../../../images/dummy_06.jpg" alt="이미지프리뷰">
+                                        </div>
+                                        <div class="file_inbx">
+                                            <img class="file_ico" src="http://placehold.it/32x32" width="35" height="32" alt="파일아이콘">
+                                            <span class="file_name">googlegooglegooglegooglegooglegooglepdf</span>
+                                            <span class="file_size">14.41MB</span>
+                                            <button type="button" class="btn_down"><span class="sp_webot">다운로드</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_bx_item">
+                                        <div class="chat_balloon">
+                                            안녕하세요. 상담원 김여름입니다. 궁금하신 사항 질문해주세요.
+                                        </div>
+                                        <div class="time">오후 15:30</div>
+                                        <div class="btn_func_bx">
+                                            <button type="button" class="btn_func"><span class="sp_webot">기능버튼</span></button>
+                                            <ul class="func_result">
+                                                <li class="selected">
+                                                    <button type="button">복사</button>
+                                                </li>
+                                                <li>
+                                                    <button type="button">삭제</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area">
+                                <div class="thumb_bx">
+                                    <div class="LS_profile_image">
+                                        <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                    </div>
+                                </div>
+                                <div class="chat_inbx">
+                                    <strong class="name">김여름님</strong>
+                                    <div class="chat_balloon">
+                                        간주근무신청 알려주세요
+                                        <a href="#lnk" target="_blank" title="새창열림" class="chat_lnk">https://www.googlecom/</a>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        < 간주근무신청 ><br>
+                                        근태관리 사이트 상단영역의 신청하기 버튼을 클릭합니다.<br>
+                                        ‘간주근무신청’ 버튼을 클릭하면 간주근무신청 페이지가 열립니다.<br>
+                                        근무 내용의 필수값을 모두 입력하면 간주근무신청이 완료됩니다.<br>
+                                        아래 주소를 클릭하면 간주근무신청페이지로 이동됩니다.<br>
+                                        (전자결재 서비스에서 휴가신청도 가능합니다.)
+                                        <a href="#lnk" target="_blank" title="새창열림" class="chat_lnk">https://www.google.com/</a>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area">
+                                <div class="thumb_bx">
+                                    <div class="LS_profile_image">
+                                        <div class="image_box" style="background-image:url(http://placehold.it/34x34)"></div>
+                                    </div>
+                                </div>
+                                <div class="chat_inbx">
+                                    <strong class="name">김여름님</strong>
+                                    <div class="chat_balloon">
+                                        테스트합니다
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area">
+                                <div class="chat_inbx">
+                                    <div class="chat_append file">
+                                        <div class="preview_img">
+                                            <img src="../../../images/dummy_06.jpg" alt="이미지프리뷰">
+                                        </div>
+                                        <div class="file_inbx">
+                                            <img class="file_ico" src="http://placehold.it/32x32" width="35" height="32" alt="파일아이콘">
+                                            <span class="file_name">google_google_google_google_google_google.pdf</span>
+                                            <span class="file_size">14.41MB</span>
+                                            <button type="button" class="btn_down"><span class="sp_webot">다운로드</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_append file">
+                                        <div class="preview_img">
+                                            <img src="../../../images/dummy_04.jpg" alt="이미지프리뷰">
+                                        </div>
+                                        <div class="file_inbx">
+                                            <img class="file_ico" src="http://placehold.it/32x32" width="35" height="32" alt="파일아이콘">
+                                            <span class="file_name">google.pdf</span>
+                                            <span class="file_size">14.41MB</span>
+                                            <button type="button" class="btn_down v2"><span class="sp_webot">다운로드</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        <a href="#lnk" class="ico_balloon_wrap" title="새창열림">
+                                            <span class="ico_video on"><span class="sp_webot"></span></span>
+                                            <div class="title_bx">
+                                                <strong>화상대화 요청이 있습니다.</strong>
+                                                <em>시작시간 0000.02.25 15:03</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        <div class="ico_balloon_wrap off" title="새창열림">
+                                            <span class="ico_video_close"><span class="sp_webot"></span></span>
+                                            <div class="title_bx">
+                                                <strong>화상대화가 종료되었습니다.</strong>
+                                                <em>0000.02.25 15:03 ~ 0000.02.25 15:45</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        <a href="#lnk" class="ico_balloon_wrap" title="새창열림">
+                                            <span class="ico_remote on"><span class="sp_webot"></span></span>
+                                            <div class="title_bx">
+                                                <strong>원격대화 요청이 있습니다.</strong>
+                                                <em>시작시간 0000.02.25 15:03</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        <div class="ico_balloon_wrap off">
+                                            <span class="ico_remote"><span class="sp_webot"></span></span>
+                                            <div class="title_bx">
+                                                <strong>원격대화가 종료되었습니다.</strong>
+                                                <em>0000.02.25 15:03 ~ 0000.02.25 15:45</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        <div class="chat_file">
+                                            <img src="http://placehold.it/32x32" alt="파일아이콘" class="file_ico">
+                                            <span class="file_size">13.25MB</span>
+                                            file_upload_test.zip
+                                            <button type="button" class="btn_down v2"><span class="sp_webot">다운로드</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area">
+                                <div class="chat_inbx">
+                                    <div class="chat_balloon">
+                                        <div class="chat_file">
+                                            <img src="http://placehold.it/32x32" alt="파일아이콘" class="file_ico">
+                                            <span class="file_size">13.25MB</span>
+                                            file_upload_test.docx
+                                            <button type="button" class="btn_down"><span class="sp_webot">다운로드</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                            <div class="chat_area mychat">
+                                <div class="chat_inbx">
+                                    <div class="upload_section">
+                                        <div class="lnk_box v2">
+                                            <div class="video_box">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LSr_oWqqWQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="lnk_box v2">
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_05.jpg);">
+                                                <span class="blind">링크 이미지</span>
+                                            </div>
+                                            <a href="#" title="다운로드" class="btn_down_area">
+                                                <span class="title">튜토리얼기획안.pdf튜토리얼기획안.pdf튜토리얼기획안.pdf튜토리얼기획안.pdf</span>
+                                                <span class="ico_down"><span class="sp_bot"></span></span>
+                                            </a>
+                                        </div>
+                                        <div class="lnk_box v2">
+                                            <a href="#" target="_blank" title="새창열림" class="lnk_item">
+                                                <div class="img_box" style="background-image:url(../../../images/dummy_06.jpg);">
+                                                    <span class="blind">링크 이미지</span>
+                                                </div>
+                                            </a>
+                                            <div class="bottom_box">
+                                                <div class="favicon_box"><img src="https://blog.naver.com/favicon.ico?2" width="16" height="16"><span class="site_url">blog.naver.com</span></div>
+                                                <a href="#" target="_blank" title="새창열림" class="lnk_item">
+                                                    <div class="text_box">
+                                                        <strong>제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목</strong>
+                                                        <p>게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="lnk_box v2 error">
+                                            <a href="#" target="_blank" title="새창열림" class="lnk_item">
+                                                <div class="img_box">
+                                                    <span class="errortext">삭제된 영상입니다.</span>
+                                                </div>
+                                            </a>
+                                            <div class="bottom_box">
+                                                <div class="favicon_box"><img src="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" width="16" height="16"><span class="site_url">www.youtube.com</span></div>
+                                                <a href="#" target="_blank" title="새창열림" class="lnk_item">
+                                                    <div class="text_box">
+                                                        <strong>삭제(손상)된 게시물</strong>
+                                                        <p>게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="lnk_box v2">
+                                            <div class="video_box">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LSr_oWqqWQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                            </div>
+                                            <div class="bottom_box">
+                                                <div class="favicon_box"><img src="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" width="16" height="16"><span class="site_url">www.youtube.com</span></div>
+                                                <a href="#" target="_blank" title="새창열림" class="lnk_item">
+                                                    <div class="text_box">
+                                                        <strong>제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목</strong>
+                                                        <p>게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명게시물설명</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo_box item4">
+                                            <!-- 클릭기능 추가 시 div class="img_box" 를 a 태그로 변경  -->
+                                            <a href="#" class="img_box" style="background-image:url(../../../images/dummy_01.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </a>
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_01.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_02.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_03.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                        </div>
+                                        <div class="photo_box item3">
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_03.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_03.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_03.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                        </div>
+                                        <div class="photo_box item2">
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_02.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_02.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                        </div>
+                                        <div class="photo_box">
+                                            <div class="img_box" style="background-image:url(../../../images/dummy_02.jpg);">
+                                                <span class="blind">업로드 된 이미지</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time">오후 15:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- [D] 입력창 높이가 높아짐에따라 chat_bx의 bottom값이 조정되어야합니다. -->
+                    <div class="chat_input_wrap">
+                        <div class="chat_input_inner">
+                            <!-- 활성화 시(btn_appending 클릭 시) 클래스 active 추가 -->
+                            <div class="appending">
+                                <button type="button" class="btn_appending"><span class="sp_webot"></span></button>
+                                <div class="appending_con">
+                                    <dl class="appending_dl">
+                                        <dt>파일첨부</dt>
+                                        <dd>
+                                            <button type="button" class="btn_file_add upload"><span class="sp_webot">파일올리기</span></button>
+                                        </dd>
+                                        <dd>
+                                            <button type="button" class="btn_file_add cloud"><span class="sp_webot">클라우드</span></button>
+                                        </dd>
+                                    </dl>
+                                    <dl class="appending_dl">
+                                        <dt>템플릿추가</dt>
+                                        <dd>
+                                            <button type="button" class="btn_file_add template"><span class="sp_webot">템플릿 추가</span></button>
+                                        </dd>
+                                    </dl>
+                                    <dl class="appending_dl">
+                                        <dt>부가기능</dt>
+                                        <dd>
+                                            <button type="button" class="ico_video"><span class="sp_webot">화상대화</span></button>
+                                        </dd>
+                                        <dd>
+                                            <button type="button" class="ico_remote"><span class="sp_webot">원격상담</span></button>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="chat_input_bx">
+                                <div class="chat_input" contenteditable="true">
+                                    test테스트 테스트
+                                </div>
+                            </div>
+                            <!-- [D] 활성화시 클래스 open 추가 -->
+                            <div class="auto_complet_bx">
+                                <div class="loading_area">
+                                    템플릿을 불러오고 있습니다..
+                                </div>
+                                <div>
+                                    <strong class="complet_title">공용 템플릿</strong>
+                                    <!-- [D] 마우스오버 hover 상태 유지 시 클래스 on 추가 -->
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>근무 신청</em>
+                                        <span class="caption">신청하기 영역에서 간주근무신청을 선택합니다. 시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word">근무 <span class="point">간주</span>제</em>
+                                        <span class="caption">신청하기 영역에서 간주근무신청을 선택합니다.</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>구분</em>
+                                        <span class="caption">간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>구분</em>
+                                        <span class="caption">간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>구분</em>
+                                        <span class="caption">간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>구분</em>
+                                        <span class="caption">간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span></em>
+                                        <span class="caption">간주근로 자동완성</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span></em>
+                                        <span class="caption">간주근로 자동완성</span>
+                                    </button>
+                                </div>
+                                <!-- [D] 상담직원/서비스관리자의 경우 클래스 type2 추가 -->
+                                <div class="type2">
+                                    <strong class="complet_title">개인 템플릿</strong>
+                                    <!-- [D] 마우스오버 hover 상태 유지 시 클래스 on 추가 -->
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>근무 신청</em>
+                                        <span class="caption">신청하기 영역에서 간주근무신청을 선택합니다. 시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면 시작시간과 간주근무 구분을 선택하면</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word">근무 <span class="point">간주</span>제</em>
+                                        <span class="caption">신청하기 영역에서 간주근무신청을 선택합니다.</span>
+                                    </button>
+                                    <button type="button" class="complet_item">
+                                        <em class="word"><span class="point">간주</span>구분</em>
+                                        <span class="caption">간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.간주구분은 예를들어 회의, 인접출장, 광역출장, 단체협업 등이 예시가 됩니다.</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="emoticon">
+                                <!-- [D] 액티브 시 클래스 on 추가 -->
+                                <button type="button" class="LUX_basic_btn emoticon_btn"><span class="sp_webot">이모티콘</span></button>
+                            </div>
+                            <div class="chat_submit">
+                                <button type="button" class="btn_submit">전송</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //채팅영역 -->
+                <!-- 우측 정보 영역 -->
+                <div class="rgt_info_wrap">
+                    <div class="top_bg_bx">
+                        <strong class="company_name">카카오</strong>
+                        <em class="satis_label">만족고객</em>
+                        <!-- [D] 온라인 시에는 클래스 online 추가 -->
+                        <div class="profile_bx size_l online">
+                            <div class="LS_profile_image">
+                                <div class="image_box" style="background-image:url(http://placehold.it/62x62)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rgt_info_bx">
+                        <div class="cont_bx profile">
+                            <strong class="name">김여름 사원</strong>
+                            <div class="timebx">
+                                <dl class="item">
+                                    <dt>마지막 접근시간</dt>
+                                    <dd>2019.07.04 14:00 5분전</dd>
+                                </dl>
+                                <dl class="item">
+                                    <dt>상담 시작시간</dt>
+                                    <dd>2019.07.04 14:00</dd>
+                                </dl>
+                            </div>
+                            <!-- [D] 활성화 시 (btn_before_list 클릭 시) 클래스 on 추가 -->
+                            <div class="before_list_bx on">
+                                <button type="button" class="btn_before_list">이전 상담목록<span class="sp_webot"></span></button>
+                                <ul class="list_bx">
+                                    <li>
+                                        <span class="day">0000.02.17</span>
+                                        <span class="what">김여름P_근태관리 근태관리</span>
+                                    </li>
+                                    <li>
+                                        <span class="day">0000.02.17</span>
+                                        <span class="what">김여름P_근태관리</span>
+                                    </li>
+                                    <li>
+                                        <span class="day">0000.02.17</span>
+                                        <span class="what">김여름P_근태관리</span>
+                                    </li>
+                                    <li>
+                                        <span class="day">0000.02.17</span>
+                                        <span class="what">김여름P_근태관리</span>
+                                    </li>
+                                    <li>
+                                        <span class="day">0000.02.17</span>
+                                        <span class="what">김여름P_근태관리</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont_bx info">
+                            <strong class="cont_bx_tit">세부정보</strong>
+                            <ul class="info_list_bx">
+                                <li class="list_item">
+                                    <span class="tit">
+                                        <span class="inbx">이메일</span>
+                                    </span>
+                                    <span class="con">
+                                        <span class="inbx">yunayun@gmail.com</span>
+                                    </span>
+                                </li>
+                                <li class="list_item">
+                                    <span class="tit">
+                                        <span class="inbx">연락처</span>
+                                    </span>
+                                    <span class="con">
+                                        <span class="inbx">010-0250-0654</span>
+                                    </span>
+                                </li>
+                                <li class="list_item">
+                                    <span class="tit">
+                                        <span class="inbx">전화번호</span>
+                                    </span>
+                                    <span class="con">
+                                        <span class="inbx">010-4746-7899</span>
+                                    </span>
+                                </li>
+                                <li class="list_item">
+                                    <span class="tit">
+                                        <span class="inbx">위치</span>
+                                    </span>
+                                    <span class="con">
+                                        <span class="inbx">강원도 춘천시 퇴계동 퇴계동 퇴계동</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont_bx tag">
+                            <strong class="cont_bx_tit">태그영역</strong>
+                            <div class="rgt_inpbx">
+                                <div class="inp_bx">
+                                    <input type="text" placeholder="태그명을 입력하세요." class="inp_basic">
+                                </div>
+                                <!-- [D] 활성화 시 active 추가 -->
+                                <div class="auto_complete_wrap">
+                                    <div class="auto_complet_bx">
+                                        <ul class="inbx">
+                                            <li class="row">
+                                                <button type="button"><span class="key">휴가</span>사용법</button>
+                                            </li>
+                                            <li class="row">
+                                                <button type="button"><span class="key">휴가</span>제도 설명</button>
+                                            </li>
+                                            <li class="row">
+                                                <button type="button">보상<span class="key">휴가</span></button>
+                                            </li>
+                                            <li class="row">
+                                                <button type="button"><span class="key">휴가</span>신청</button>
+                                            </li>
+                                            <li class="row">
+                                                <button type="button"><span class="key">휴가</span>취소방법</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn_bx">
+                                    <button type="button" class="btn_basic">추가</button>
+                                </div>
+                            </div>
+                            <div class="tag_label_bx">
+                                <span class="label_tag">
+                                    연장근무
+                                    <button type="button" class="btn_del"><span class="sp_webot">삭제</span></button>
+                                </span>
+                                <span class="label_tag">
+                                    유연근로제
+                                    <button type="button" class="btn_del"><span class="sp_webot">삭제</span></button>
+                                </span>
+                                <span class="label_tag">
+                                    유연근로제
+                                    <button type="button" class="btn_del"><span class="sp_webot">삭제</span></button>
+                                </span>
+                                <span class="label_tag">
+                                    연장근무
+                                    <button type="button" class="btn_del"><span class="sp_webot">삭제</span></button>
+                                </span>
+                                <span class="label_tag">
+                                    연장
+                                    <button type="button" class="btn_del"><span class="sp_webot">삭제</span></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cont_bx view">
+                            <strong class="cont_bx_tit">페이지 뷰</strong>
+                            <ul class="view_list">
+                                <li class="item">
+                                    <div class="tit today">오늘 오후 02:05</div>
+                                    <div class="con">
+                                        <a href="#lnk" target="_blank" class="page_lnk">https://www.googlecom/#/test!_communication2/talk/oWcZVGcBeAtpuzEu2hCN</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">0000.02.23</div>
+                                    <div class="con">
+                                        <a href="#lnk" target="_blank" class="page_lnk">https://www.googlecom/#/test!_communication2/talk/oWcZVGcBeAtpuzEu2hCN</a>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">0000.02.22</div>
+                                    <div class="con">(링크 아닌 일반텍스트 테스트)</div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">0000.02.20</div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">0000.02.15</div>
+                                </li>
+                                <li class="item">
+                                    <div class="tit">0000.02.10</div>
+                                    <div class="con">
+                                        <a href="#lnk" target="_blank" class="page_lnk">https://www.googlecom/#/</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont_bx">
+                            <div class="invitation">
+                                <strong class="cont_bx_tit">상담직원 초대 <span class="sub_tit">총 2명</span></strong>
+                                <div class="rgt_inpbx">
+                                    <div class="inp_bx">
+                                        <input type="text" placeholder="" class="inp_basic">
+                                        <button type="button" class="btn_search"><span class="sp_webot">직원 찾기</span></button>
+                                    </div>
+                                    <div class="btn_bx">
+                                        <button type="button" class="btn_basic">초대</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lnkshare">
+                                <strong class="cont_bx_tit">내용 내보내기</strong>
+                                <div class="rgt_inpbx">
+                                    <div class="inp_bx">
+                                        <input type="text" placeholder="" class="inp_basic">
+                                    </div>
+                                    <div class="btn_bx">
+                                        <button type="button" class="btn_basic">복사</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont_bx notice">
+                            <strong class="cont_bx_tit">공지사항</strong>
+                            <ul class="board_list_bx">
+                                <li class="list_item">
+                                    <a href="#lnk" class="titbx">
+                                        <span class="new_badge">N<span class="blind">새 글</span></span>
+                                        근태신청방법이 수정되었습니다.
+                                    </a>
+                                    <span class="date">20-02-02</span>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#lnk" class="titbx">
+                                        <span class="new_badge">N<span class="blind">새 글</span></span>
+                                        근태신청
+                                    </a>
+                                    <span class="date">20-02-02</span>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#lnk" class="titbx">
+                                        근태신청방법이 수정되었습니다.
+                                    </a>
+                                    <span class="date">20-02-02</span>
+                                </li>
+                                <li class="list_item">
+                                    <a href="#lnk" class="titbx">
+                                        테스트테스트테스트
+                                    </a>
+                                    <span class="date">20-02-02</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //우측 정보 영역 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- [D] 디자인 확인 목적으로 생성한 js입니다. 개발시 삭제 부탁드립니다 -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.LS_subheader .tabs_wrap > li').hover(function () {
+            $(this).toggleClass('open');
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('.group_list_wrap .btn_openbx').click(function(){
+            $(this).parent().toggleClass('on');
+        });
+        $('.time_fav_bx .ico_fav').click(function(){
+            $(this).toggleClass('on');
+        });
+        $('.appending .btn_appending').click(function(){
+            $('.appending').toggleClass('active');
+        });
+        $('.before_list_bx .btn_before_list').click(function(){
+            $('.before_list_bx').toggleClass('on');
+        });
+        $('.chat_input_bx .chat_input').click(function(){
+            $('.auto_complet_bx').toggleClass('open');
+        });
+        $('.cont_bx.tag .inp_bx input').click(function(){
+            $('.auto_complete_wrap').toggleClass('active');
+        });
+        $('.emoticon_btn').click(function(){
+            $('.emoticon_btn').toggleClass('on');
+            $('.emoticon_con').toggleClass('open');
+        });
+        $('.inp_bx .btn_search').click(function(){
+            $('.inp_bx .search_area').toggleClass('active');
+        });
+        $('.inp_bx .search_area .button_fold').click(function(){
+            $('.inp_bx .search_area .result_box').toggleClass('active');
+        });
+    });
+</script>
+</body>
+</html>
