@@ -30,9 +30,13 @@ h1.title{padding-bottom:10px;border-bottom:1px solid #eee;font-size:32px;line-he
     .title_text_area [class^='item']{font-size: 220px;line-height:220px;}
 }
 
-.top_info_text{position:relative;padding:10px 15px;border:2px solid #caf;border-radius:5px;}
+.top_info{position:relative;padding:10px 15px;border:2px solid #caf;border-radius:5px;}
+.top_info li{position:relative;padding-left:10px;}
+.top_info li:before{content:'-';display:block;position:absolute;top:0;left:0;}
+.top_info li + li{margin-top:8px;}
 .link{color:#1c90fb;}
 .highlight{display:inline-block;padding:0 5px;box-shadow:inset 0 -10px 0 #f2dbff;}
+.heartbeat{font-size:15px;}
 
 /* footer */
 .footer_wrap{background:#fce;}
