@@ -14,7 +14,7 @@ h1.title{padding-bottom:10px;border-bottom:1px solid #eee;font-size:32px;line-he
 .list_link li ul{margin-left:10px;}
 .list_link li ul li{font-size:18px;}
 .list_link li ul li:before{content:'';display:block;position:absolute;top:8px;left:0;width:5px;height:5px;border-style:solid;border-width:0 0 2px 2px;border-color:#e8afff;}
-.list_link li ul li a{font-size:18px;}
+.list_link li ul li a{font-size: 18px;}
 
 .title_text_area{transition:all ease .3s;}
 /*.title_text_area:hover{transform:scale(1.1);}*/
