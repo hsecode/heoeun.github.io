@@ -17,7 +17,7 @@ fieldset,blockquote,iframe,button{border:none;}
 i,em,u,cite,address{font-style:normal;}
 /*strong,em,b{font-weight:normal;}*/
 a{color:#333;text-decoration:none;}
-button{background:transparent;cursor:pointer;vertical-align:middle;margin:0;padding:0;font-size:14px;line-height:1.4;color:#333;/*-webkit-text-size-adjust:none;*/}
+button{background:transparent;cursor:pointer;vertical-align:middle;margin:0;padding:0;font-size:14px;line-height:1.4;color:#333;-webkit-text-size-adjust:none;}
 button,input[type='submit'],input[type='button'],input[type='reset']{cursor:pointer;-webkit-appearance:none;}
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button{
