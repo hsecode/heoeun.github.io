@@ -1,0 +1,35 @@
+.portfolioWrap{
+  .container__main{
+    .visual{
+      height:100vh;
+      background:pink;
+    }
+    .visual__content{
+      position:absolute;
+      top:50%;
+      left:50%;
+      padding:30px 50px;
+      box-sizing:border-box;
+      background:rgba(255,255,255,.3);
+      transform:translate(-50%,-50%);
+    }
+    .visual__title{
+      font-size:3rem;
+      text-align:center;
+      white-space:nowrap;
+    }
+    .visual__desc{
+      font-size:1.5rem;
+    }
+
+
+
+    .anitext{
+      display:inline-block;
+      transform:rotate(-18deg);
+      background:#fff;
+      font-size:40px;
+      font-weight:bold;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "variables.scss";
+
+@mixin spimg($sp_width : 0, $sp_height : 0, $posX : 0, $posY : 0, $url:$imgurl){
+  width:$sp_width;
+  height:$sp_height;
+  background:url($url) $posX $posY no-repeat;
+}
+
+@mixin fontType($type){
+  @if $type == 'type_vis'{
+    //visual 배너 등 제목
+    display:inline-block;
+    vertical-align:top;
+    font-size:26px;
+    font-weight:bold;
+    line-height:33px;
+    letter-spacing:-1.3px;
+    color:#fff;
+  }
+  @else if $type == 'type_h2'{
+    //h2
+    display:inline-block;
+    vertical-align:top;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:-.9px;
+    color:#000;
+  }
+  @else {
+    //content
+    font-size:14px;
+    line-height:19px;
+    letter-spacing:-.7px;
+    color:#4a4a4a;
+  }
+}
+
+@mixin flex{
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flex;
+  display:-o-flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+@mixin clearfix{
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+@mixin ellipsis2{
+  display:-webkit-box;
+  overflow:hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+
+@mixin ellipsis3{
+  display:-webkit-box;
+  overflow:hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+}
