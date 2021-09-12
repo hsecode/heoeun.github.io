@@ -8,3 +8,19 @@ $orange: #ffa018;
 $yellow: #febc2c;
 $green: #1fc47c;
 $gray: #aab3c4;
+
+
+//font-family: 'Noto Sans KR', sans-serif;
+/*
+한글 범위:  U+AC00-D7A3
+영어 대문자 범위 :  U+0041-005A
+영어 소문자 범위 :   U+0061-007A
+숫자 범위 : U+0030-0039
+특수 문자: U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E
+*/
+/*
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+  font-weight: 100;
+}*/

@@ -1,8 +1,37 @@
+@charset "UTF-8";
+/*
+한글 범위:  U+AC00-D7A3
+영어 대문자 범위 :  U+0041-005A
+영어 소문자 범위 :   U+0061-007A
+숫자 범위 : U+0030-0039
+특수 문자: U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E
+*/
+/*
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+  font-weight: 100;
+}*/
+/*
+한글 범위:  U+AC00-D7A3
+영어 대문자 범위 :  U+0041-005A
+영어 소문자 범위 :   U+0061-007A
+숫자 범위 : U+0030-0039
+특수 문자: U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E
+*/
+/*
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+  font-weight: 100;
+}*/
 .portfolioWrap {
   font-size: 62.5%;
+  color: #3a3a3a;
 }
 .portfolioWrap header .logo {
   display: inline-block;
+  margin-top: 7px;
 }
 .portfolioWrap header .logo a {
   position: relative;
@@ -39,34 +68,66 @@
   right: 0;
   z-index: 5;
 }
+.portfolioWrap .header__inbox {
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 70px;
+}
 .portfolioWrap section {
   position: relative;
 }
+.portfolioWrap .textSection {
+  height: 100vh;
+  background: orange;
+}
+.portfolioWrap .textSection .anitext {
+  transform: translate(900px, 0) rotate(-18deg);
+}
 
+/*
+html, body { height: 100%; margin: 0; }
+#container { height: 100%; position: relative; overflow: hidden; }
+section { width: 100%; height: 100%; position: absolute; }
+.section01 { background: orange; width: 100%; height: 100%; }
+.section02 { background: yellowgreen; }
+.section03 { background: firebrick; }
+.section04 { background: cornflowerblue; }
+.section05 { background: seagreen; }
+*/
 .portfolioWrap .container__main .visual {
   height: 100vh;
-  background: pink;
+  background: #deddff;
 }
 .portfolioWrap .container__main .visual__content {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 30px 50px;
+  padding: 20px 50px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
   transform: translate(-50%, -50%);
 }
 .portfolioWrap .container__main .visual__title {
   font-size: 3rem;
   text-align: center;
   white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.portfolioWrap .container__main .visual__title strong {
+  font-weight: 500;
 }
 .portfolioWrap .container__main .visual__desc {
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #555;
 }
 .portfolioWrap .container__main .anitext {
   display: inline-block;
-  transform: rotate(-18deg);
+  /*transform:rotate(-18deg);*/
   background: #fff;
   font-size: 40px;
   font-weight: bold;

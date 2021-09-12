@@ -1,32 +1,54 @@
+
+/*
+html, body { height: 100%; margin: 0; }
+#container { height: 100%; position: relative; overflow: hidden; }
+section { width: 100%; height: 100%; position: absolute; }
+.section01 { background: orange; width: 100%; height: 100%; }
+.section02 { background: yellowgreen; }
+.section03 { background: firebrick; }
+.section04 { background: cornflowerblue; }
+.section05 { background: seagreen; }
+*/
+
 .portfolioWrap{
   .container__main{
     .visual{
       height:100vh;
-      background:pink;
+      background:#deddff;
+      //background: url(../images/bg_cherry.jpg) 65% center / cover no-repeat;
     }
     .visual__content{
       position:absolute;
       top:50%;
       left:50%;
-      padding:30px 50px;
+      padding:20px 50px;
       box-sizing:border-box;
       background:rgba(255,255,255,.3);
+      border-radius:5px;
       transform:translate(-50%,-50%);
     }
     .visual__title{
       font-size:3rem;
       text-align:center;
       white-space:nowrap;
+      font-family: 'Roboto', sans-serif;
+      font-weight:100;
+      strong{
+        font-weight:500;
+      }
     }
     .visual__desc{
-      font-size:1.5rem;
+      text-align:center;
+      font-size:1rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight:100;
+      color:#555;
     }
-
 
 
     .anitext{
       display:inline-block;
-      transform:rotate(-18deg);
+      /*transform:rotate(-18deg);*/
       background:#fff;
       font-size:40px;
       font-weight:bold;
