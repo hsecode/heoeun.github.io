@@ -19,7 +19,7 @@
     <meta property="twitter:title" content="hsecode.github.io">
     <link rel="canonical" href="https://hsecode.github.io/">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Roboto:wght@100;300;500;700;900&family=Fredoka+One&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="css/common.css">-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
@@ -33,13 +33,22 @@
     <section class="section05"></section>
 </section>-->
 <div class="portfolioWrap">
+    <div class="decoItem">
+        <span class="decoItem__line"></span>
+    </div>
     <div class="container__main">
         <header>
             <div class="header__inbox">
-                <h1 class="logo"><a href="#"><span>heoban</span></a></h1>
-                <!--<nav>
-                    nav area
-                </nav>-->
+                <h1 class="logo"><a href="#">&lt; / SEONGEUN &gt;</a></h1>
+                <nav class="gnb">
+                    <button type="button" class="gnb__button">메뉴 열기</button>
+                    <ul class="gnb__list">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">works</a></li>
+                        <li><a href="#">career</a></li>
+                        <li><a href="#">lab</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -50,14 +59,10 @@
                 <p class="visual__desc">Web Publisher | Markup Developer</p>
             </div>
         </section>
-        <section class="textSection">
-            <div class="anitext type1" data-trigger>Text 111111</div>
-            <!--
-            <div class="anitext type2" data-trigger>Text 2222222</div>
-            <div class="anitext type3" data-trigger>Text 3333</div>-->
+
+        <section class="nextSection">
+            test
         </section>
-
-
 
         <!-- //contents -->
     </div>
@@ -66,7 +71,7 @@
 
 
 
-<script src="/portfolio/js/jquery-3.3.1.min.js"></script>
+<script src="portfolio/js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script>-->
@@ -103,6 +108,11 @@
         scrub: true,
         anticipatePin: 1
     });*/
+    $(function(){
+        $('.gnb__button').click(function(){
+            $('.gnb').toggleClass('active');
+        });
+    });
 </script>
 </body>
 </html>

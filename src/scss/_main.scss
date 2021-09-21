@@ -14,7 +14,7 @@ section { width: 100%; height: 100%; position: absolute; }
   .container__main{
     .visual{
       height:100vh;
-      background:#deddff;
+      background:#f3eae2;
       //background: url(../images/bg_cherry.jpg) 65% center / cover no-repeat;
     }
     .visual__content{
@@ -23,7 +23,7 @@ section { width: 100%; height: 100%; position: absolute; }
       left:50%;
       padding:20px 50px;
       box-sizing:border-box;
-      background:rgba(255,255,255,.3);
+      //background:rgba(255,255,255,.3);
       border-radius:5px;
       transform:translate(-50%,-50%);
     }
@@ -43,15 +43,6 @@ section { width: 100%; height: 100%; position: absolute; }
       font-family: 'Roboto', sans-serif;
       font-weight:100;
       color:#555;
-    }
-
-
-    .anitext{
-      display:inline-block;
-      /*transform:rotate(-18deg);*/
-      background:#fff;
-      font-size:40px;
-      font-weight:bold;
     }
   }
 }
