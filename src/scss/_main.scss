@@ -11,38 +11,73 @@ section { width: 100%; height: 100%; position: absolute; }
 */
 
 .portfolioWrap{
-  .container__main{
-    .visual{
-      height:100vh;
-      background:#f3eae2;
-      //background: url(../images/bg_cherry.jpg) 65% center / cover no-repeat;
+  .visualArea{
+    background:#f3eae2;
+  }
+  .visual__content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:20px 50px;
+    box-sizing:border-box;
+    //background:rgba(255,255,255,.3);
+    border-radius:5px;
+    transform:translate(-50%,-50%);
+  }
+  .visual__title{
+    font-size:3rem;
+    text-align:center;
+    white-space:nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+    strong{
+      font-weight:500;
     }
-    .visual__content{
-      position:absolute;
-      top:50%;
-      left:50%;
-      padding:20px 50px;
-      box-sizing:border-box;
-      //background:rgba(255,255,255,.3);
-      border-radius:5px;
-      transform:translate(-50%,-50%);
+  }
+  .visual__desc{
+    text-align:center;
+    font-size:1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+    color:#555;
+  }
+  .aboutArea{
+    padding:20px 30px;
+    background:#b4cef8;
+    &__inbox{
+      position:relative;
+      padding:10px 20px;
+      background:#fff;
+      border-radius:3px;
     }
-    .visual__title{
-      font-size:3rem;
-      text-align:center;
-      white-space:nowrap;
-      font-family: 'Roboto', sans-serif;
-      font-weight:100;
-      strong{
-        font-weight:500;
+    .section__title{
+      color:#67efaa;
+      &:before{
+        content:'About';
+        position:absolute;
+        top:-.25rem;
+        left:-.25rem;
+        color:transparent;
+        -webkit-text-stroke: 0.1rem #232323;
       }
     }
-    .visual__desc{
-      text-align:center;
-      font-size:1rem;
-      font-family: 'Roboto', sans-serif;
-      font-weight:100;
-      color:#555;
+    .flexWrap{
+      display:flex;
+      flex-wrap:wrap;
+      &__rightBox{
+        flex:1 1 550px;
+      }
+    }
+  }
+  .infoList{
+    &__row{
+      @include clearfix;
+    }
+    dt{
+      float:left;
+    }
+    dd{
+      overflow:hidden;
     }
   }
 }
