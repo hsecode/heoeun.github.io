@@ -46,7 +46,7 @@ section { width: 100%; height: 100%; position: absolute; }
     background:#b4cef8;
     &__inbox{
       position:relative;
-      padding:10px 20px;
+      padding:10px 30px 40px;
       background:#fff;
       border-radius:3px;
     }
@@ -66,10 +66,12 @@ section { width: 100%; height: 100%; position: absolute; }
       flex-wrap:wrap;
       &__rightBox{
         flex:1 1 550px;
+        margin-top:50px;
       }
     }
   }
   .infoList{
+    font-size:1rem;
     &__row{
       @include clearfix;
     }
@@ -78,6 +80,38 @@ section { width: 100%; height: 100%; position: absolute; }
     }
     dd{
       overflow:hidden;
+    }
+  }
+  .profile{
+    &__img{
+      position:relative;
+      display:inline-block;
+      margin-bottom:20px;
+      &:before{
+        content:'';
+        position:absolute;
+        top:-30px;
+        right:-80px;
+        width:130px;
+        height:130px;
+        background:#b8ff79;
+        border-radius:50%;
+      }
+    }
+    &__name{
+      font-size:2rem;
+    }
+    &__job{
+      font-size:1rem;
+    }
+    &__contactList{
+      font-size:.8rem;
+      address{
+        font-style:normal;
+      }
+      a{
+        text-decoration:none;
+      }
     }
   }
 }

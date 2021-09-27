@@ -242,7 +242,7 @@ section { width: 100%; height: 100%; position: absolute; }
 }
 .portfolioWrap .aboutArea__inbox {
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 30px 40px;
   background: #fff;
   border-radius: 3px;
 }
@@ -263,6 +263,10 @@ section { width: 100%; height: 100%; position: absolute; }
 }
 .portfolioWrap .aboutArea .flexWrap__rightBox {
   flex: 1 1 550px;
+  margin-top: 50px;
+}
+.portfolioWrap .infoList {
+  font-size: 1rem;
 }
 .portfolioWrap .infoList__row:after {
   content: "";
@@ -274,4 +278,34 @@ section { width: 100%; height: 100%; position: absolute; }
 }
 .portfolioWrap .infoList dd {
   overflow: hidden;
+}
+.portfolioWrap .profile__img {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.portfolioWrap .profile__img:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -80px;
+  width: 130px;
+  height: 130px;
+  background: #b8ff79;
+  border-radius: 50%;
+}
+.portfolioWrap .profile__name {
+  font-size: 2rem;
+}
+.portfolioWrap .profile__job {
+  font-size: 1rem;
+}
+.portfolioWrap .profile__contactList {
+  font-size: 0.8rem;
+}
+.portfolioWrap .profile__contactList address {
+  font-style: normal;
+}
+.portfolioWrap .profile__contactList a {
+  text-decoration: none;
 }
