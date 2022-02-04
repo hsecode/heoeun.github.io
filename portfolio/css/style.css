@@ -205,12 +205,12 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .career_tab li.active:before{transform: scaleX(1);}
 .career_item{display:none;margin-top:15px;}
 .career_item.active{display:block;}
-.career_item .career_detail .notice{margin-bottom:20px;font-size:12px;color:#999;}
+.career_item .career_detail .notice{margin-bottom:10px;font-size:12px;color:#999;}
 .career_item .career_detail .notice em{letter-spacing:.7px;color:#d05aec;}
 .project_list + .project_list{margin-top:20px;}
 .project_list .item + .item{margin-top:20px;}
 .project_list dt{font-size:15px;font-weight:normal;letter-spacing:normal;line-height:20px;}
-.project_list dt .num{display:inline-block;margin-right:5px;vertical-align:middle;width:18px;height:18px;background:#ecf;border-radius:3px;text-align:center;font-size:12px;font-weight:bold;line-height:19px;color:#fff;}
+.project_list dt .num{display:inline-block;margin-right:5px;vertical-align:middle;width:10px;height:10px;background:#ecf;border-radius:3px;text-align:center;font-size:12px;font-weight:bold;line-height:19px;color:#fff;}
 .project_list dt > strong{padding:0 3px;box-shadow:inset 0 -9px 0 #f2dbff;}
 .project_list dd{margin-top:10px;}
 .project_list dd > ul{margin-left:15px;}
@@ -223,6 +223,15 @@ h3.section_title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai', 
 .project_list.type2 dt .num{background-color:#b9eccb;}
 .project_list.type2 dt > strong{box-shadow:inset 0 -9px 0 #b9eccb;}
 .project_list.type2 dd > ul > li:before{background-color:#9ed6b1;}
+.career_area .detail_tab:after{content:'';display:block;clear:both;}
+.career_area .detail_tab li{position:relative;float:left;}
+.career_area .detail_tab li + li{margin-left:5px;}
+.career_area .detail_tab li .button_tab{display:block;padding:0 6px;box-sizing:border-box;height:30px;border:1px solid #ddd;background:#fff;border-radius:5px;font-family:'Varela Round',sans-serif;font-size:14px;color:#333;}
+.career_area .detail_tab li .button_tab:hover,
+.career_area .detail_tab li .button_tab:focus{border-color:#ff6293;box-shadow:1px 1px 3px rgba(0,0,0,.1);}
+.career_area .detail_tab li.active .button_tab{border-color:#ff6293;background:#ff6293;color:#fff;}
+.career_area .detail_item{display:none;margin-top:15px;}
+.career_area .detail_item.active{display:block;}
 
 @media all and (min-width:768px) {
     .career_box{margin:0 0 0 auto;}

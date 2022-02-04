@@ -53,6 +53,15 @@ $(function(){
         $('.career_box .career_item').eq(idx).addClass('active');
     });
 
+    $('.detail_tab .button_tab').click(function(){
+        $('.detail_tab li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        var idx = $('.detail_tab .button_tab').index(this);
+        $('.career_detail .detail_item').removeClass('active');
+        $('.career_detail .detail_item').eq(idx).addClass('active');
+    });
+
     //menu scroll
     jQuery(document).ready(function($) {
         $(".menubtn").click(function(event){
