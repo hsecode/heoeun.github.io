@@ -94,8 +94,8 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
 
 @media only screen and (min-width:768px){
     h3.section__title{margin-bottom:35px;font-size:50px;line-height:51px;}
-    .infoList dt{min-width:110px;font-size:18px;line-height:23px;}
-    .infoList dd{font-size:16px;line-height:23px;}
+    .infoList dt{min-width:85px;font-size:18px;line-height:23px;}
+    .infoList dd{font-size:16px;line-height:22px;}
     .basicTab li .basicTab__button{padding:0 10px;font-size:20px;line-height:39px;}
 }
 /* //common */
@@ -154,7 +154,7 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
 /* //window box style */
 
 /* about */
-.aboutWrap{position:relative;padding:8% 30px;box-sizing:border-box;width:100%;height:100vh;background:#ffda6a;}
+.aboutWrap{position:relative;padding:8% 30px;box-sizing:border-box;width:100%;background:#ffda6a;}
 .aboutArea{margin:0 auto;padding:30px;box-sizing:border-box;max-width:880px;background:#fff;border-radius:10px;}
 .infoArea .infoArea__top{margin-bottom:20px;text-align:center;}
 .aboutArea .profileImage{position:relative;margin:0 auto 20px;width:230px;height:260px;border:5px solid #ffbd00;background:url(../images/mypic.jpg) center bottom / cover no-repeat;border-radius:8px;}
@@ -176,7 +176,7 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
     .aboutArea .window_box{max-width:900px;}
     .aboutArea .profileImage{margin:0 0 20px;}
     .infoArea{flex-direction:row;align-items:center;margin:60px auto 0;max-width:720px;}
-    .infoArea .infoArea__top{flex-basis:320px;padding-right:20px;text-align:left;}
+    .infoArea .infoArea__top{padding-right:20px;text-align:left;}
     .infoArea .infoArea__bottom{flex:1;padding: 20px 0 20px 40px;border-top:none;border-left:3px dashed #ffb100;}
 }
 /* //about */
@@ -195,7 +195,7 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
 /* //skill */
 
 /* career */
-.careerWrap{margin-top:60px;padding:100px 20px;box-sizing:border-box;background:url(../images/fixed_bg_lemon.jpg) 65% center / cover  no-repeat;background-attachment:fixed;}
+.careerWrap{margin-top:60px;padding:100px 20px;box-sizing:border-box;background:url(../images/fixed_bg_orangee.jpg) 0 0 / cover  no-repeat;background-attachment:fixed;}
 .careerArea{margin:0 auto;max-width:1200px;}
 .careerBox{margin: 0 auto;padding:50px 30px;max-width:700px;background:#fff;}
 .careerBox__item{display:none;margin-top:15px;padding:0 10px;}
