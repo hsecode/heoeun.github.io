@@ -1,0 +1,76 @@
+@charset "utf-8";
+.blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height:1px;overflow:hidden;}
+
+.wrap{display:grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows:auto auto 100px;
+    grid-template-columns: repeat(2,1fr 2fr);
+    grid-auto-rows: minmax(70px,auto);
+    grid-gap: 4px;
+    grid-row-gap: 20px;
+    grid-column-gap: 8px;
+    grid-column: 1/3;
+}
+.wrap > div{background:#999;border:1px solid red;box-sizing:border-box;}
+.wrap > div:nth-child(odd){background:orange;}
+
+
+.wrap2{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 4px;
+}
+.wrap2 > div{background:#999;border:1px solid red;box-sizing:border-box;}
+.wrap2 > div:nth-child(odd){background:darkseagreen;}
+.wrap2 .div1{
+    grid-column:1/3;
+    grid-row:1/3;
+    grid-area:2/2/4/5;
+}
+/*grid-area: rowStart/columnStart/rowEnd/columnEnd*/
+
+
+.header{
+    grid-area: header;
+    background-color: LightSeaGreen ;
+}
+
+.leftCol{
+    grid-area: leftCol;
+    background-color: orange;
+}
+
+.rightCol{
+    grid-area: rightCol;
+    background-color: lightblue;
+}
+
+.midTop{
+    grid-area: midTop;
+    background-color: lightgrey;
+}
+
+.midBottom{
+    grid-area: midBottom;
+    background-color: pink;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lightgreen;
+}
+.wrapper{
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 50px 100px 100px 30px;
+    grid-template-areas:
+            "header header header header"
+            "leftCol midTop midTop rightCol"
+            "leftCol midBottom midBottom rightCol"
+            "footer footer footer footer";
+    /*". footer footer .";*/ /*푸터를 가운데 놓고싶을 때*/
+    grid-gap: 5px;
+}

@@ -1,0 +1,598 @@
+@charset "utf-8";
+body{background:#ffc3d7; margin:0; padding:0;font-family: 'Righteous', cursive;}
+#room_bg{
+    background:url(../images/room2017/background.png)no-repeat;
+    width:100%;
+    height:972px;
+}
+/*---------------------------------+menu css------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,100);
+cursor:url(/cursor/Polka_Dotted_Bow_Pink.cur), progress;}
+
+a:hover {
+    cursor:url(https://4.bp.blogspot.com/-0dBxVZ2DgZ8/Vurrx4GCfXI/AAAAAAAABds/tnbD55ZZ5_ERPvGFswkcZP5-lGNhd1gcw/s1600/cursor.png), progress;}
+.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    text-align: center;
+}
+
+.menu-container {
+    z-index:6;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    visibility: hidden;
+}
+
+.menu ul{top:0;}
+.menu ul li {
+    font-weight: 100;
+    font-size: 45px;
+    color: white;
+    min-height: 45px;
+    padding: 15px;
+    text-align: center;
+}
+.menu ul li a {
+    cursor: pointer;
+    text-decoration:none;
+    color:#fff;
+}
+.menu ul li a:hover{color:#ff519f;}
+.menu-sliders {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: -webkit-box-flex 0.45s;
+    transition: -webkit-box-flex 0.45s;
+    transition: flex 0.45s;
+    transition: flex 0.45s, -webkit-box-flex 0.45s, -ms-flex 0.45s;
+}
+.menu-sliders:nth-child(2) {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    background: transparent;
+}
+.menu-sliders:nth-child(odd) {
+    background: #f9acea;/*e0b8f2  연보라   dca4f6   보라   f9acea   핑크*/
+}
+
+#main_nav{position:absolute;}
+.plus-btn-pos {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index:7;
+}
+
+.plus-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+.plus-btn div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 3px;
+    background: #e0b8f2;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+.plus-btn .r1 {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.plus-btn .r2 {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+}
+.plus-btn:hover {
+    background: #e0b8f2;
+}
+.plus-btn:hover div {
+    background: white;
+}
+.plus-btn:active {
+    box-shadow: none;
+}
+
+body.menu-open .menu-sliders:nth-child(2) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 0%;
+    flex: 0 0 0%;
+}
+body.menu-open .menu {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    visibility: visible;
+    pointer-events: all;
+}
+body.menu-open .plus-btn .r1 {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+body.menu-open .plus-btn .r2 {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+}
+/*-------------------------Cursor---------------------------------*/
+
+/*body{
+    cursor:url(../images/room2017/cursor/PolkaDottedBow-Blue.cur), progress;}*/
+
+a:hover {
+    cursor:url(https://4.bp.blogspot.com/-0dBxVZ2DgZ8/Vurrx4GCfXI/AAAAAAAABds/tnbD55ZZ5_ERPvGFswkcZP5-lGNhd1gcw/s1600/cursor.png), progress;
+}
+ul li a:hover {
+    cursor:url(https://4.bp.blogspot.com/-0dBxVZ2DgZ8/Vurrx4GCfXI/AAAAAAAABds/tnbD55ZZ5_ERPvGFswkcZP5-lGNhd1gcw/s1600/cursor.png), progress;
+}
+
+.spark{background:url(../images/room2017/spark.gif)no-repeat;
+    width:133px;
+    height:146px;
+    position:absolute;
+    top:140px;
+    left:30px;}
+.title{background:url(../images/room2017/title.png)no-repeat;
+    width:409px;
+    height:212px;
+    position:absolute;
+    top:30px;
+    left:40px;
+}
+.menu-container ul li:hover{color:#ff519f;}
+
+.window{background:url(../images/room2017/window.png)no-repeat;
+    width:158px;
+    height:199px;
+    position:absolute;
+    top:210px;
+    left:415px;}
+.window_outside{background:url(../images/room2017/blind.png)no-repeat 0 0;
+    width:158px;
+    height:199px;
+    -webkit-mask:url('../images/room2017/blind.png') no-repeat 0 0;
+    position:absolute;
+    top:210px;
+    left:415px;
+    transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    z-index:3;
+}
+.window_outside:hover{background:url('../images/room2017/blind.png') no-repeat 0 -90px ;}
+
+.star{background:url(../images/room2017/star.gif)no-repeat;width:158px;height:199px;position:absolute;top:210px;left:415px;z-index:1;}
+.string_fake{background:url(../images/room2017/string_fake.png)no-repeat;width:24px;height:96px;position:absolute;top:222px;left:549px;}
+.string{background:url(../images/room2017/string.png)no-repeat;width:24px;height:96px;position:absolute;top:222px;left:549px;
+    transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -moz-transition:all 1s ease;}
+.window_outside:hover ~ .string{top:240px;}
+
+.book{background:url(../images/room2017/book.png)no-repeat;
+    width:36px;
+    height:54px;
+    position:absolute;
+    top:107px;
+    left:944px;
+    z-index:2;
+    transition:all linear 0.5s;
+}
+.book:hover{transition:all 0.5s linear;
+    animation-duration:0.5s;
+    animation-name:bookani;
+    animation-iteration-count: infinite;/*반복횟수*/
+    animation-direction:alternate;/*역실행*/
+    -webkit-animation-duration:0.5s;
+    -webkit-animation-name:bookani;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:0.5s;
+    -moz-animation-name:bookani;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;
+}
+.book_shadow{
+    background:url(../images/room2017/book_shadow.png)no-repeat;
+    width:32px;
+    height:19px;
+    position:absolute;
+    top:140px;
+    left:945px;
+    transition:all linear 0.5s;}
+.book:hover ~ .book_shadow{
+    background:url(../images/room2017/book_shadow.png)no-repeat;
+    width:32px;
+    height:19px;
+    position:absolute;
+    top:140px;
+    left:944px;
+    transition:all linear 0.5s;
+    animation-duration:0.5s;
+    animation-name:bookshadowani;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    -webkit-animation-duration:0.5s;
+    -webkit-animation-name:bookshadowani;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:0.5s;
+    -moz-animation-name:bookshadowani;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;
+}
+@keyframes bookani{
+    0%{top:107px;}
+    100%{top:90px;}
+}
+@keyframes bookshadowani{
+    0%{transform:scale(1);}
+    100%{transform:scale(0.8);}
+}
+
+.doll{background:url(../images/room2017/doll.png)no-repeat;
+    width:61px;
+    height:109px;
+    position:absolute;
+    top:192px;
+    left:1000px;
+    z-index:2;
+    transition:all 0.6s ease;}
+.doll_shadow{background:url(../images/room2017/doll_shadow.png)no-repeat;
+    width:61px;
+    height:37px;
+    position:absolute;
+    top:272px;
+    left:997px;
+    transition:all ease 0.6s;}
+.doll:hover{
+    animation-duration:0.6s;
+    animation-name:dollani;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    -webkit-animation-duration:0.6s;
+    -webkit-animation-name:dollani;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:0.6s;
+    -moz-animation-name:dollani;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;
+}
+.doll:hover ~ .doll_shadow{
+    animation-duration:0.6s;
+    animation-name:dollshadowani;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    -webkit-animation-duration:0.6s;
+    -webkit-animation-name:dollshadowani;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:0.6s;
+    -moz-animation-name:dollshadowani;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;}
+@keyframes dollani{
+    0%{top:192px;}
+    100%{top:172px;}
+}
+@keyframes dollshadowani{0%{transform:scale(1);}
+    100%{transform:scale(0.7);}
+}
+
+.cat_shadow{background:url(../images/room2017/cat_shadow.png)no-repeat;
+    width:77px;
+    height:39px;
+    position:absolute;
+    top:695px;
+    left:825px;
+}
+.cat{background:url(../images/room2017/cat.png)no-repeat;
+    width:110px;
+    height:77px;
+    position:absolute;
+    top:660px;
+    left:818px;
+    transition:all ease;
+    animation-duration:2s;
+    animation-name:catani;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    -webkit-animation-duration:2s;
+    -webkit-animation-name:catani;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:2s;
+    -moz-animation-name:catani;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;
+}
+
+@keyframes catani{
+    0%{transform:rotate(-7deg);}
+    100%{transform:rotate(7deg);}
+}
+
+.plant_bottom{background:url(../images/room2017/plant.png)no-repeat;width:293px;height:192px;position:absolute;top:720px;left:700px;z-index:2;}
+.plant{width:150px;height:200px; position:absolute; top:600px; left:800px; z-index:3;}
+.plant_left{background:url(../images/room2017/plant_left.png)no-repeat;
+    width:214px;
+    height:189px;
+    position:relative;
+    left:-130px;
+    transition:all linear 1s;
+    transform:0deg;
+    /*animation-duration:2s;
+animation-name:plant_le;
+animation-iteration-count: infinite;
+animation-direction:alternate;
+-webkit-animation-duration:2s;
+-webkit-animation-name:plant_le;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction:alternate;
+-moz-animation-duration:2s;
+-moz-animation-name:plant_le;
+-moz-animation-iteration-count: infinite;
+-moz-animation-direction:alternate;*/
+}
+.plant_right{background:url(../images/room2017/plant_right.png)no-repeat;
+    width:211px;
+    height:194px;
+    position:relative;
+    top:-190px;
+    left:45px;
+    transition:all linear 1s;
+    /*	animation-duration:2s;
+    animation-name:plant_ri;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    -webkit-animation-duration:2s;
+    -webkit-animation-name:plant_ri;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:2s;
+    -moz-animation-name:plant_ri;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;*/
+}
+.plant:hover .plant_left{transform:rotate(-27deg);transform-origin:right bottom;}
+.plant:hover .plant_right{transform:rotate(27deg);transform-origin:left bottom;}
+
+@keyframes plant_le{0%{transform:rotate(-1deg);transform-origin:right bottom;}100%{transform:rotate(1deg);transform-origin:right bottom;}}
+@keyframes plant_ri{0%{transform:rotate(1deg);transform-origin:left bottom;}100%{transform:rotate(-1deg);transform-origin:left bottom;}}
+
+.door{background:url(../images/room2017/door.png)no-repeat;
+    width:142px;
+    height:346px;
+    position:absolute;
+    top:500px;
+    left:990px;
+    z-index:4;
+}
+.lamp{background:url(../images/room2017/lamp.png)no-repeat;
+    width:81px;
+    height:118px;
+    position:absolute;
+    top:250px;
+    left:1240px;
+    transition:all ease 1s;
+    -webkit-transition:all ease 1s;
+    -moz-transition:all ease 1s;
+    -o-transition:all ease 1s;
+}
+.lamp:hover{background:url(../images/room2017/lamp_on.png)no-repeat;}
+.frame_fake{background:url(../images/room2017/frame.png)no-repeat;
+    width:188px;
+    height:184px;
+    position:absolute;
+    top:62px;
+    left:1103px;
+    transition:all 0.4s ease;
+}
+.frame{background:url(../images/room2017/frame.png)no-repeat;
+    width:188px;
+    height:184px;
+    position:absolute;
+    top:62px;
+    left:1103px;
+    z-index:2;
+    transition:all 0.5s ease;
+}
+.frame:hover{
+    background:url(../images/room2017/frame_on.png)no-repeat;
+    width:188px;
+    height:184px;
+    position:absolute;
+    top:67px;
+    left:1098px;
+}
+.frame:hover ~ .frame_fake{position:absolute;
+    top:64px;}
+
+.pad{background:url(../images/room2017/pad.png)no-repeat;
+    width:110px;
+    height:69px;
+    position:absolute;
+    top:380px;
+    left:542px;
+}
+.pad:hover{background:url(../images/room2017/pad_on.gif)no-repeat;width:110px;height:69px;position:absolute;top:380px;left:542px;}
+.phone{background:url(../images/room2017/phone.png)no-repeat;
+    width:40px;
+    height:28px;
+    position:absolute;
+    top:455px;
+    left:485px;
+    z-index:2;}
+.phone_shadow{background:url(../images/room2017/phone_shadow.png)no-repeat;
+    width:40px;
+    height:28px;
+    position:absolute;
+    transition:all 1s ease;
+    top:455px;
+    left:485px;
+    transform:scale(1);
+}
+.phone:hover{background:url(../images/room2017/phone_on.png)no-repeat;
+    width:40px;
+    height:28px;
+    position:absolute;
+    transition:all 1s ease;
+    top:440px;
+    left:485px;}
+.phone:hover ~ .phone_shadow{transform:scale(0.7);}
+
+.duck{background:url(../images/room2017/duck.png)no-repeat;
+    width:56px;
+    height:61px;
+    position:absolute;
+    top:390px;
+    left:1346px;
+    transition:all 15s ease-in-out;
+    animation-duration:15s;
+    animation-name:duckani;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    -webkit-animation-duration:15s;
+    -webkit-animation-name:duckani;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -moz-animation-duration:15s;
+    -moz-animation-name:duckani;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction:alternate;
+}
+@keyframes duckani{
+    0%{top:390px;left:1346px;}
+    33%{top:400px;left:1390px;}
+    66%{top:425px;left:1412px;}
+    100%{top:435px;left:1465px;}
+}
+
+.turtle{width:60px;height:50px;	position:absolute;
+    top:560px;
+    left:1240px; z-index:1;
+    transition:all 50s linear forwards;
+    animation:turtleani 50s linear forwards;
+    -webkit-transition:all 50s linear forwards;
+    -moz-transition:all 50s linear forwards;
+    -o-transition:all 50s linear forwards;
+    -webkit-animation:turtleani 50s linear forwards;
+    -moz-animation:turtleani 50s linear forwards;
+    -o-animation:turtleani 50s linear forwards;
+}
+.turtle_body{background:url(../images/room2017/turtle_body.png)no-repeat;
+    width:57px;
+    height:47px;
+    position:relative;
+    z-index:3;}
+.turtle_leg1{background:url(../images/room2017/turtle_leg1.png)no-repeat;width:57px;height:47px;position:relative;top:-50px;z-index:2;}
+.turtle_leg2{background:url(../images/room2017/turtle_leg2.png)no-repeat;width:57px;height:47px;position:relative;top:-93px;z-index:2;}
+.turtle_leg3{background:url(../images/room2017/turtle_leg3.png)no-repeat;width:57px;height:47px;position:relative;top:-140px;z-index:2;}
+
+@keyframes turtleani{
+    0%{top:560px;left:1240px;}
+    100%{top:750px;left:900px;}
+}
+
+
+/*------------------말풍선-------------------*/
+.container { margin:150px auto; width:70%;}
+.container a[data-role="popover"], .container a[data-role="popover2"] { display:inline-block; padding:1em; margin:1em; background-color:#2980B9; color:#fff; text-decoration:none;}
+.popover-wrapper{text-align:center;color:#ff5cad;}
+.popover-modal1 .popover-body { overflow:hidden; padding:1em;}
+
+.windowbubble{position:absolute;top:70px;left:390px;text-align:center;color:#69d1ad;}
+
+.bookbubble{position:absolute;top:30px;left:700px;text-align:center;color:#f973e0;}
+
+.dollbubble{position:absolute;top:310px;left:930px;color:#d590f5;}
+
+.framebubble{position:absolute;top:90px;left:1330px;color:#56a5db;}
+
+.padbubble{position:absolute;top:200px;left:580px;text-align:center;color:#ff5cad;}
+
+.phonebubble{position:absolute;top:370px;left:240px;text-align:center;color:#c556e9;}
+
+.duckbubble{position:absolute;top:300px;left:1350px;color:#edbf4f;}
+
+.nyabubble{position:absolute;top:550px;left:760px;color:#ff7ea9;}
+
+
+
+/*임시 버튼 */
+/*.win_button{position:absolute; width:100px;height:30px;z-index:4; top:250px;left:470px;}
+.doll_button{position:absolute; width:50px;height:30px;z-index:4; top:230px;left:1000px;}
+.frame_button{position:absolute; width:30px;height:50px;z-index:4; top:170px;left:1240px;}
+.pad_button{position:absolute; width:30px;height:20px;z-index:4; top:400px;left:580px;}*/
