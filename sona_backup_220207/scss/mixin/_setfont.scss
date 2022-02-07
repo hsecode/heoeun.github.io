@@ -1,0 +1,24 @@
+// font-size 에 따라서 font-family를 설정해 주는 함수. 다국어 대응.
+
+@mixin setfont($size) {
+  @at-root #{&} {
+    font-size:$size * 1px;
+    @if $size <= 12 {
+      font-family: $sfont;
+    }
+    @else {
+      font-family: $sfont;
+    }
+  }
+}
+
+@mixin setfont-only($size) {
+  @at-root #{&} {
+    @if $size <= 12 {
+      font-family: $sfont;
+    }
+    @else {
+      font-family: $sfont;
+    }
+  }
+}

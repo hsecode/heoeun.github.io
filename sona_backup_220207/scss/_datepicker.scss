@@ -1,0 +1,106 @@
+/*----- datepicker -----*/
+
+.SN_datepicker{
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  min-width:140px;
+  .inputbox{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    padding:6px 30px 3px 8px;
+    box-sizing:border-box;
+    width:100%;
+    height:30px;
+    border:1px solid #d3d3d3;
+    background:#fff;
+    border-radius:4px;
+    .date{
+      position:relative;
+      display:inline-block;
+      vertical-align:top;
+      margin-right:5px;
+      font-size:14px;
+      line-height:19px;
+      color:#4a4a4a;
+      cursor:default;
+      &:after{
+        content:'.';
+        position:absolute;
+        bottom:0;
+        right:-5px;
+      }
+      &:last-of-type{
+        margin-right:0;
+        &:after{
+          display:none;
+        }
+      }
+      &.selected,&:focus{
+        background: #b1d7fe;
+        outline:0;
+      }
+      &.disabled_date{
+        background:#d9d9d9;
+        color:#999;
+      }
+    }
+  }
+  .btn_calendar{
+    position:absolute;
+    top:0;
+    right:0;
+    width:28px;
+    height:28px;
+    border:0;
+    background:0;
+    outline: 0;
+    &:after{
+      content:'';
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-top:-7px;
+      margin-left:-5px;
+      width:13px;
+      height:14px;
+      background:url($spimg_url) -176px -20px;
+      background-size:$spimg_size;
+    }
+  }
+  &.full_width {
+    width: 100%;
+  }
+  &:hover,&.active{
+    .inputbox{
+      border-color:#4a4a4a;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,.1);
+    }
+  }
+  &.disabled{
+    .inputbox{
+      border-color:#d3d3d3;
+      background:#fafafa;
+      box-shadow:none;
+      .date{
+        color:#d3d3d3;
+      }
+    }
+    .btn_calendar{
+      cursor:default;
+      &:after{
+        background-position:-248px -20px;
+      }
+    }
+  }
+}
+
+.SN_datepicker_dash{
+  display:inline-block;
+  vertical-align:top;
+  padding:0 5px;
+  font-size:14px;
+  line-height:30px;
+  color:#4a4a4a;
+}

@@ -1,0 +1,110 @@
+/*----- Profile -----*/
+
+.SN_profile{
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  box-sizing:border-box;
+  width:34px;
+  height:34px;
+  border:1px solid #dbdbdb;
+  background:#f6f6f6;
+  border-radius:50%;
+  overflow:hidden;
+  .image_box{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:transparent;
+    &.more_text{
+      @extend %flex;
+      align-items:center;
+      justify-content:center;
+      .text{
+        font-size:12px;
+        font-weight:500;
+        color:#777;
+      }
+    }
+  }
+  &.image2{
+    .image_box{
+      width:50%;
+      +.image_box{
+        left:50%;
+        border-left:1px solid #fff;
+      }
+    }
+  }
+  &.image3{
+    .image_box{
+      top:-1px;
+      height:50%;
+      border-bottom:1px solid #fff;
+      +.image_box{
+        top:50%;
+        width:50%;
+        border-bottom:0;
+        +.image_box{
+          left:50%;
+          border-left:1px solid #fff;
+        }
+      }
+    }
+  }
+  &.image4{
+    .image_box{
+      top:-1px;
+      width:50%;
+      height:50%;
+      border-bottom:1px solid #fff;
+      +.image_box{
+        left:50%;
+        border-left:1px solid #fff;
+        +.image_box{
+          top:50%;
+          left:0;
+          border-left:0;
+          +.image_box{
+            left:50%;
+            border-left:1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.SN_profile_group{
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  .SN_profile{
+    +.SN_profile{
+      margin-left:-12px;
+    }
+  }
+}
+.SN_icon_badge{
+  position:absolute;
+  top:-2px;
+  left:calc(100% - 9px);
+  padding:0 5px;
+  box-sizing:border-box;
+  height:16px;
+  background:#f76c6c;
+  border-radius:10px;
+  font-size:10px;
+  line-height:17px;
+  color:#fff;
+  &.d_dot{
+    top:1px;
+    left:calc(100% - 9px);
+    width:10px;
+    height:10px;
+  }
+}

@@ -1,0 +1,50 @@
+//----- [guide] -----
+//----- Sona Component mixin
+
+// sona 스프라이트 이미지
+@mixin spsona($spimg_url) {
+  display: inline-block;
+  vertical-align: top;
+  background: url($spimg_url) 0 0 no-repeat;
+  background-size: $spimg_size;
+  line-height: 100em;
+  overflow: hidden;
+}
+
+// 스프라이트 이미지 설정
+@mixin spimg($sp_width : 0, $sp_height : 0, $posX : 0, $posY : 0, $url:$imgurl){
+  width:$sp_width;
+  height:$sp_height;
+  background:url($url) $posX $posY no-repeat;
+}
+
+// 버튼의 배경 / 라인 / 폰트 컬러 설정
+@mixin setBtn_color($border, $bg, $font) {
+  border: 1px solid $border;
+  background: $bg;
+  color: $font;
+}
+
+// 버튼 크기 지정
+@mixin setBtn_size($height) {
+  height:$height;
+  line-height:$height + 1;
+}
+
+// 최상위 부모를 새롭게 추가
+@mixin root-content($root-content) {
+  @at-root #{$root-content}#{&} {
+    @content;
+  }
+}
+
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+    // -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=#{-1*sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+    // filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=#{-1*sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+}

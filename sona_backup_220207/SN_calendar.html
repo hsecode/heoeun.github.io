@@ -1,0 +1,454 @@
+<div class="SN_calendar">
+    <div class="calendar_bx">
+        <div class="date_select">
+            <button type="button" class="btn btn_prev_year"><span class="blind">이전년</span></button>
+            <button type="button" class="btn btn_prev_mon"><span class="blind">이전달</span></button>
+            <strong class="date_day_title">2021. 10</strong>
+            <button type="button" class="btn btn_next_mon"><span class="blind">다음년</span></button>
+            <button type="button" class="btn btn_next_year"><span class="blind">이전달</span></button>
+        </div>
+        <div class="date_tbl">
+            <table>
+                <caption class="blind">달력</caption>
+                <colgroup>
+                    <col style="width:21px" span="7">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" class="date_week">일</th>
+                    <th scope="col" class="date_week">월</th>
+                    <th scope="col" class="date_week">화</th>
+                    <th scope="col" class="date_week">수</th>
+                    <th scope="col" class="date_week">목</th>
+                    <th scope="col" class="date_week">금</th>
+                    <th scope="col" class="date_week">토</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- [D] 이전달은  .date_day_prev_mon 추가  -->
+                    <td class="date_day date_day_sun date_day_prev_mon"><button type="button"><span>30</span></button></td>
+                    <td class="date_day date_day_prev_mon"><button type="button"><span>31</span></button></td>
+                    <td class="date_day"><button type="button"><span>1</span></button></td>
+                    <td class="date_day"><button type="button"><span>2</span></button></td>
+                    <td class="date_day"><button type="button"><span>3</span><span class="icon_schedule"></span></button></td>
+                    <td class="date_day"><button type="button"><span>4</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>5</span></button></td>
+                </tr>
+                <tr>
+                    <!-- [D] 일요일 .date_day_sun 추가  -->
+                    <td class="date_day date_day_sun"><button type="button"><span>6</span></button></td>
+                    <!-- [D] 오늘은 .date_day_today 추가  -->
+                    <td class="date_day date_day_today"><button type="button"><span>7</span></button></td>
+                    <td class="date_day"><button type="button"><span>8</span></button></td>
+                    <td class="date_day"><button type="button"><span>9</span><span class="icon_schedule"></span></button></td>
+                    <td class="date_day"><button type="button"><span>10</span></button></td>
+                    <td class="date_day date_check"><button type="button"><span>11</span></button></td>
+                    <!-- [D] 토요일 .date_day_sat 추가  -->
+                    <td class="date_day date_day_sat"><button type="button"><span>12</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>13</span></button></td>
+                    <td class="date_day"><button type="button"><span>14</span></button></td>
+                    <td class="date_day date_day_holiday"><button type="button"><span>15</span></button></td>
+                    <td class="date_day"><button type="button"><span>16</span></button></td>
+                    <td class="date_day"><button type="button"><span>17</span></button></td>
+                    <td class="date_day "><button type="button"><span>18</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button">19</button></td>
+                </tr>
+                <!-- 주간 선택시 클래스 check_week 추가 -->
+                <tr class="check_week">
+                    <td class="date_day date_day_sun"><button type="button"><span>20</span></button></td>
+                    <td class="date_day"><button type="button"><span>21</span></button></td>
+                    <td class="date_day"><button type="button"><span>22</span></button></td>
+                    <td class="date_day"><button type="button"><span>23</span></button></td>
+                    <td class="date_day"><button type="button"><span>24</span></button></td>
+                    <td class="date_day"><button type="button"><span>25</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>26</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>27</span></button></td>
+                    <td class="date_day"><button type="button"><span>28</span></button></td>
+                    <td class="date_day"><button type="button"><span>29</span></button></td>
+                    <td class="date_day"><button type="button"><span>30</span></button></td>
+                    <td class="date_day"><button type="button"><span>31</span></button></td>
+                    <!-- [D] 다음달은 .date_day_next_mon 추가 -->
+                    <td class="date_day date_day_next_mon"><button type="button"><span>1</span></button></td>
+                    <td class="date_day date_day_sat date_day_next_mon"><button type="button"><span>2</span></button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="select_area">
+        <button type="button" class="SN_btn today">오늘</button>
+        <p class="solar_area">
+            <span class="_label" data-solar-label="양력" data-lunar-label="음력">음력</span><span class="_text">2021.06.10 (평달)</span>
+        </p>
+    </div>
+</div>
+
+<div class="SN_calendar">
+    <div class="calendar_bx">
+        <div class="date_select">
+            <button type="button" class="btn btn_prev_year"><span class="blind">이전년</span></button>
+            <button type="button" class="btn btn_prev_mon"><span class="blind">이전달</span></button>
+            <strong class="date_day_title">2021. 08</strong>
+            <button type="button" class="btn btn_next_mon"><span class="blind">다음년</span></button>
+            <button type="button" class="btn btn_next_year"><span class="blind">이전달</span></button>
+        </div>
+        <!-- [D] 월간 선택시 클래스 check_all 추가 -->
+        <div class="date_tbl check_all">
+            <table>
+                <caption class="blind">달력</caption>
+                <colgroup>
+                    <col style="width:28px" span="7">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" class="date_week">일</th>
+                    <th scope="col" class="date_week">월</th>
+                    <th scope="col" class="date_week">화</th>
+                    <th scope="col" class="date_week">수</th>
+                    <th scope="col" class="date_week">목</th>
+                    <th scope="col" class="date_week">금</th>
+                    <th scope="col" class="date_week">토</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- [D] 이전달은  .date_day_prev_mon 추가  -->
+                    <td class="date_day date_day_sun date_day_prev_mon"><button type="button"><span>30</span></button></td>
+                    <td class="date_day date_day_prev_mon"><button type="button"><span>31</span></button></td>
+                    <td class="date_day"><button type="button"><span>1</span></button></td>
+                    <td class="date_day"><button type="button"><span>2</span></button></td>
+                    <td class="date_day"><button type="button"><span>3</span></button></td>
+                    <td class="date_day"><button type="button"><span>4</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>5</span></button></td>
+                </tr>
+                <tr>
+                    <!-- [D] 일요일 .date_day_sun 추가  -->
+                    <td class="date_day date_day_sun"><button type="button"><span>6</span></button></td>
+                    <!-- [D] 오늘은 .date_day_today 추가  -->
+                    <td class="date_day date_day_today"><button type="button"><span>7</span></button></td>
+                    <td class="date_day"><button type="button"><span>8</span></button></td>
+                    <td class="date_day"><button type="button"><span>9</span></button></td>
+                    <td class="date_day"><button type="button"><span>10</span></button></td>
+                    <td class="date_day"><button type="button"><span>11</span></button></td>
+                    <!-- [D] 토요일 .date_day_sat 추가  -->
+                    <td class="date_day date_day_sat"><button type="button"><span>12</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>13</span></button></td>
+                    <td class="date_day"><button type="button"><span>14</span></button></td>
+                    <td class="date_day date_day_holiday"><button type="button"><span>15</span></button></td>
+                    <td class="date_day"><button type="button"><span>16</span></button></td>
+                    <td class="date_day"><button type="button"><span>17</span></button></td>
+                    <!-- [D] 기간 선택시 시작지점 .gap_start 추가. 기간내 모든 td에는 .date_day_gap 추가 -->
+                    <td class="date_day date_day_gap gap_start"><button type="button"><span>18</span></button></td>
+                    <td class="date_day date_day_sat date_day_gap"><button type="button">19</button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun date_day_gap"><button type="button"><span>20</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>21</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>22</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>23</span></button></td>
+                    <!-- [D] 기간선택시 종료지점에 .gap_end 추가 -->
+                    <td class="date_day date_day_gap gap_end"><button type="button"><span>24</span></button></td>
+                    <td class="date_day"><button type="button"><span>25</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>26</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>27</span></button></td>
+                    <td class="date_day"><button type="button"><span>28</span></button></td>
+                    <td class="date_day"><button type="button"><span>29</span></button></td>
+                    <td class="date_day"><button type="button"><span>30</span></button></td>
+                    <td class="date_day"><button type="button"><span>31</span></button></td>
+                    <!-- [D] 다음달은 .date_day_next_mon 추가 -->
+                    <td class="date_day date_day_next_mon"><button type="button"><span>1</span></button></td>
+                    <td class="date_day date_day_sat date_day_next_mon"><button type="button"><span>2</span></button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="select_area">
+        <dl class="dataperiod_dl">
+            <dt>선택기간</dt>
+            <dd>5일</dd>
+        </dl>
+        <div class="btnbox">
+            <button type="button" class="SN_btn s_medium"><div class="btn_skin"><span class="label">취소</span></div></button><button type="button" class="SN_btn s_medium c_blue"><div class="btn_skin"><span class="label">확인</span></div></button>
+        </div>
+    </div>
+</div>
+
+<div class="SN_calendar">
+    <div class="calendar_bx">
+        <div class="date_select">
+            <button type="button" class="btn btn_prev_year"><span class="blind">이전년</span></button>
+            <button type="button" class="btn btn_prev_mon"><span class="blind">이전달</span></button>
+            <strong class="date_day_title">2021. 08</strong>
+            <button type="button" class="btn btn_next_mon"><span class="blind">다음년</span></button>
+            <button type="button" class="btn btn_next_year"><span class="blind">이전달</span></button>
+        </div>
+        <div class="date_tbl">
+            <table>
+                <caption class="blind">달력</caption>
+                <colgroup>
+                    <col style="width:28px" span="7">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" class="date_week">일</th>
+                    <th scope="col" class="date_week">월</th>
+                    <th scope="col" class="date_week">화</th>
+                    <th scope="col" class="date_week">수</th>
+                    <th scope="col" class="date_week">목</th>
+                    <th scope="col" class="date_week">금</th>
+                    <th scope="col" class="date_week">토</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- [D] 이전달은  .date_day_prev_mon 추가  -->
+                    <td class="date_day date_day_sun date_day_prev_mon date_not_allowed"><button type="button"><span>30</span></button></td>
+                    <td class="date_day date_day_prev_mon date_not_allowed"><button type="button"><span>31</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>1</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>2</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>3</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>4</span></button></td>
+                    <td class="date_day date_day_sat date_not_allowed"><button type="button"><span>5</span></button></td>
+                </tr>
+                <tr>
+                    <!-- [D] 일요일 .date_day_sun 추가  -->
+                    <td class="date_day date_day_sun date_not_allowed"><button type="button"><span>6</span></button></td>
+                    <!-- [D] 오늘은 .date_day_today 추가  -->
+                    <td class="date_day date_day_today date_not_allowed"><button type="button"><span>7</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>8</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>9</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>10</span></button></td>
+                    <td class="date_day date_not_allowed"><button type="button"><span>11</span></button></td>
+                    <!-- [D] 토요일 .date_day_sat 추가  -->
+                    <td class="date_day date_day_sat date_not_allowed"><button type="button"><span>12</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>13</span></button></td>
+                    <td class="date_day"><button type="button"><span>14</span></button></td>
+                    <td class="date_day date_day_holiday"><button type="button"><span>15</span></button></td>
+                    <td class="date_day"><button type="button"><span>16</span></button></td>
+                    <td class="date_day"><button type="button"><span>17</span></button></td>
+                    <!-- [D] 기간 선택시 시작지점 .gap_start 추가. 기간내 모든 td에는 .date_day_gap 추가 -->
+                    <td class="date_day date_day_gap gap_start"><button type="button"><span>18</span></button></td>
+                    <td class="date_day date_day_sat date_day_gap"><button type="button">19</button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun date_day_gap"><button type="button"><span>20</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>21</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>22</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>23</span></button></td>
+                    <!-- [D] 기간선택시 종료지점에 .gap_end 추가 -->
+                    <td class="date_day date_day_gap gap_end"><button type="button"><span>24</span></button></td>
+                    <td class="date_day"><button type="button"><span>25</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>26</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>27</span></button></td>
+                    <td class="date_day"><button type="button"><span>28</span></button></td>
+                    <td class="date_day"><button type="button"><span>29</span></button></td>
+                    <td class="date_day"><button type="button"><span>30</span></button></td>
+                    <td class="date_day"><button type="button"><span>31</span></button></td>
+                    <!-- [D] 다음달은 .date_day_next_mon 추가 -->
+                    <td class="date_day date_day_next_mon"><button type="button"><span>1</span></button></td>
+                    <td class="date_day date_day_sat date_day_next_mon"><button type="button"><span>2</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day" colspan="7" style="height:21px;"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="select_area">
+        <dl class="dataperiod_dl">
+            <dt>선택기간</dt>
+            <dd>5일</dd>
+        </dl>
+        <div class="btnbox">
+            <button type="button" class="SN_btn s_medium"><div class="btn_skin"><span class="label">취소</span></div></button><button type="button" class="SN_btn s_medium c_blue"><div class="btn_skin"><span class="label">확인</span></div></button>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="SN_calendar d_dategap">
+    <div class="calendar_bx">
+        <div class="date_select">
+            <button type="button" class="btn btn_prev_year"><span class="blind">이전년</span></button>
+            <button type="button" class="btn btn_prev_mon"><span class="blind">이전달</span></button>
+            <strong class="date_day_title">2021. 08</strong>
+            <button type="button" class="btn btn_next_mon"><span class="blind">다음년</span></button>
+            <button type="button" class="btn btn_next_year"><span class="blind">이전달</span></button>
+        </div>
+        <div class="date_tbl">
+            <table>
+                <caption class="blind">달력</caption>
+                <colgroup>
+                    <col style="width:28px" span="7">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" class="date_week">일</th>
+                    <th scope="col" class="date_week">월</th>
+                    <th scope="col" class="date_week">화</th>
+                    <th scope="col" class="date_week">수</th>
+                    <th scope="col" class="date_week">목</th>
+                    <th scope="col" class="date_week">금</th>
+                    <th scope="col" class="date_week">토</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- [D] 이전달은  .date_day_prev_mon 추가  -->
+                    <td class="date_day date_day_sun date_day_prev_mon"><button type="button"><span>30</span></button></td>
+                    <td class="date_day date_day_prev_mon"><button type="button"><span>31</span></button></td>
+                    <td class="date_day"><button type="button"><span>1</span></button></td>
+                    <td class="date_day"><button type="button"><span>2</span></button></td>
+                    <td class="date_day"><button type="button"><span>3</span></button></td>
+                    <td class="date_day"><button type="button"><span>4</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>5</span></button></td>
+                </tr>
+                <tr>
+                    <!-- [D] 일요일 .date_day_sun 추가  -->
+                    <td class="date_day date_day_sun"><button type="button"><span>6</span></button></td>
+                    <!-- [D] 오늘은 .date_day_today 추가  -->
+                    <td class="date_day date_day_today"><button type="button"><span>7</span></button></td>
+                    <td class="date_day"><button type="button"><span>8</span></button></td>
+                    <td class="date_day"><button type="button"><span>9</span></button></td>
+                    <td class="date_day"><button type="button"><span>10</span></button></td>
+                    <td class="date_day"><button type="button"><span>11</span></button></td>
+                    <!-- [D] 토요일 .date_day_sat 추가  -->
+                    <td class="date_day date_day_sat"><button type="button"><span>12</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>13</span></button></td>
+                    <td class="date_day"><button type="button"><span>14</span></button></td>
+                    <td class="date_day date_day_holiday"><button type="button"><span>15</span></button></td>
+                    <td class="date_day"><button type="button"><span>16</span></button></td>
+                    <td class="date_day"><button type="button"><span>17</span></button></td>
+                    <td class="date_day"><button type="button"><span>18</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button">19</button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>20</span></button></td>
+                    <td class="date_day"><button type="button"><span>21</span></button></td>
+                    <td class="date_day"><button type="button"><span>22</span></button></td>
+                    <td class="date_day"><button type="button"><span>23</span></button></td>
+                    <td class="date_day"><button type="button"><span>24</span></button></td>
+                    <td class="date_day"><button type="button"><span>25</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>26</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>27</span></button></td>
+                    <td class="date_day date_day_gap gap_start"><button type="button"><span>28</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>29</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>30</span></button></td>
+                    <td class="date_day date_day_gap"><button type="button"><span>31</span></button></td>
+                    <!-- [D] 다음달은 .date_day_next_mon 추가 -->
+                    <td class="date_day date_day_next_mon date_day_gap"><button type="button"><span>1</span></button></td>
+                    <td class="date_day date_day_sat date_day_next_mon date_day_gap"><button type="button"><span>2</span></button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="calendar_bx">
+        <div class="date_select">
+            <button type="button" class="btn btn_prev_year"><span class="blind">이전년</span></button>
+            <button type="button" class="btn btn_prev_mon"><span class="blind">이전달</span></button>
+            <strong class="date_day_title">2021. 08</strong>
+            <button type="button" class="btn btn_next_mon"><span class="blind">다음년</span></button>
+            <button type="button" class="btn btn_next_year"><span class="blind">이전달</span></button>
+        </div>
+        <div class="date_tbl">
+            <table>
+                <caption class="blind">달력</caption>
+                <colgroup>
+                    <col style="width:28px" span="7">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th scope="col" class="date_week">일</th>
+                    <th scope="col" class="date_week">월</th>
+                    <th scope="col" class="date_week">화</th>
+                    <th scope="col" class="date_week">수</th>
+                    <th scope="col" class="date_week">목</th>
+                    <th scope="col" class="date_week">금</th>
+                    <th scope="col" class="date_week">토</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- [D] 이전달은  .date_day_prev_mon 추가  -->
+                    <td class="date_day date_day_sun date_day_prev_mon date_day_gap"><button type="button"><span>30</span></button></td>
+                    <td class="date_day date_day_prev_mon date_day_gap"><button type="button"><span>31</span></button></td>
+                    <td class="date_day date_day_gap gap_end"><button type="button"><span>1</span></button></td>
+                    <td class="date_day"><button type="button"><span>2</span></button></td>
+                    <td class="date_day"><button type="button"><span>3</span></button></td>
+                    <td class="date_day"><button type="button"><span>4</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>5</span></button></td>
+                </tr>
+                <tr>
+                    <!-- [D] 일요일 .date_day_sun 추가  -->
+                    <td class="date_day date_day_sun"><button type="button"><span>6</span></button></td>
+                    <td class="date_day"><button type="button"><span>7</span></button></td>
+                    <td class="date_day"><button type="button"><span>8</span></button></td>
+                    <td class="date_day"><button type="button"><span>9</span></button></td>
+                    <td class="date_day"><button type="button"><span>10</span></button></td>
+                    <td class="date_day"><button type="button"><span>11</span></button></td>
+                    <!-- [D] 토요일 .date_day_sat 추가  -->
+                    <td class="date_day date_day_sat"><button type="button"><span>12</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>13</span></button></td>
+                    <td class="date_day"><button type="button"><span>14</span></button></td>
+                    <td class="date_day date_day_holiday"><button type="button"><span>15</span></button></td>
+                    <td class="date_day"><button type="button"><span>16</span></button></td>
+                    <td class="date_day"><button type="button"><span>17</span></button></td>
+                    <td class="date_day "><button type="button"><span>18</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button">19</button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>20</span></button></td>
+                    <td class="date_day"><button type="button"><span>21</span></button></td>
+                    <td class="date_day"><button type="button"><span>22</span></button></td>
+                    <td class="date_day"><button type="button"><span>23</span></button></td>
+                    <td class="date_day"><button type="button"><span>24</span></button></td>
+                    <td class="date_day"><button type="button"><span>25</span></button></td>
+                    <td class="date_day date_day_sat"><button type="button"><span>26</span></button></td>
+                </tr>
+                <tr>
+                    <td class="date_day date_day_sun"><button type="button"><span>27</span></button></td>
+                    <td class="date_day"><button type="button"><span>28</span></button></td>
+                    <td class="date_day"><button type="button"><span>29</span></button></td>
+                    <td class="date_day"><button type="button"><span>30</span></button></td>
+                    <td class="date_day"><button type="button"><span>31</span></button></td>
+                    <!-- [D] 다음달은 .date_day_next_mon 추가 -->
+                    <td class="date_day date_day_next_mon"><button type="button"><span>1</span></button></td>
+                    <td class="date_day date_day_sat date_day_next_mon"><button type="button"><span>2</span></button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="select_area">
+        <dl class="dataperiod_dl">
+            <dt>선택기간</dt>
+            <dd>5일</dd>
+        </dl>
+        <div class="btnbox">
+            <button type="button" class="SN_btn s_medium"><div class="btn_skin"><span class="label">취소</span></div></button><button type="button" class="SN_btn s_medium c_blue"><div class="btn_skin"><span class="label">확인</span></div></button>
+        </div>
+    </div>
+</div>

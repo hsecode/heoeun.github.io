@@ -1,0 +1,229 @@
+<style>
+    table.color_chart{margin:30px 0;width:600px;border-collapse:collapse;text-align:center;font-size:14px;}
+    table.color_chart caption{margin-bottom:10px;}
+    table.color_chart thead th{padding:5px 0;background:#eee;}
+    table.color_chart tbody tr{border-bottom:1px solid #ddd;}
+    table.color_chart tbody td{padding:5px 0;}
+    table.color_chart thead th:nth-of-type(3n+1):not(:first-of-type),
+    table.color_chart tbody td:nth-of-type(3n+1):not(:first-of-type){border-left:1px solid #ddd;}
+    table.color_chart .chip{display:inline-block;vertical-align:middle;width:20px;height:20px;}
+</style>
+<table class="color_chart">
+    <caption>[ Label Color Chart ]</caption>
+    <colgroup>
+        <col style="width:55px;">
+        <col>
+        <col>
+        <col style="width:55px;">
+        <col>
+        <col>
+    </colgroup>
+    <thead>
+    <tr>
+        <th scope="col">Color</th>
+        <th scope="col">Class</th>
+        <th scope="col">HEX</th>
+        <th scope="col">Color</th>
+        <th scope="col">Class</th>
+        <th scope="col">HEX</th>
+        <th scope="col">Color</th>
+        <th scope="col">Class</th>
+        <th scope="col">HEX</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <div class="chip" style="background:#1fc47c;"></div>
+        </td>
+        <td>green</td>
+        <td>#1FC47C</td>
+        <td>
+            <div class="chip" style="background:#1c90fb;"></div>
+        </td>
+        <td>blue</td>
+        <td>#1c90fb</td>
+        <td>
+            <div class="chip" style="background:#7349fd;"></div>
+        </td>
+        <td>purple</td>
+        <td>#7349fd</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="chip" style="background:#fc5356;"></div>
+        </td>
+        <td>red</td>
+        <td>#fc5356</td>
+        <td>
+            <div class="chip" style="background:#ffa000;"></div>
+        </td>
+        <td>orange</td>
+        <td>#ffa000</td>
+        <td>
+            <div class="chip" style="background:#98a4b4;"></div>
+        </td>
+        <td>gray</td>
+        <td>#98a4b4</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="chip" style="background:#f8c133;"></div>
+        </td>
+        <td>yellow</td>
+        <td>#f8c133</td>
+        <td>
+            <div class="chip" style="background:#83ce46;"></div>
+        </td>
+        <td>pear</td>
+        <td>#83ce46</td>
+        <td>
+            <div class="chip" style="background:#23b3c8;"></div>
+        </td>
+        <td>teal</td>
+        <td>#23b3c8</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="chip" style="background:#31c2ff;"></div>
+        </td>
+        <td>sky</td>
+        <td>#31c2ff</td>
+        <td>
+            <div class="chip" style="background:#5d8fd9;"></div>
+        </td>
+        <td>lapis</td>
+        <td>#5d8fd9</td>
+        <td>
+            <div class="chip" style="background:#4571e5;"></div>
+        </td>
+        <td>cobalt</td>
+        <td>#4571e5</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="chip" style="background:#7a7afa;"></div>
+        </td>
+        <td>iris</td>
+        <td>#7a7afa</td>
+        <td>
+            <div class="chip" style="background:#c58bff;"></div>
+        </td>
+        <td>violet</td>
+        <td>#c58bff</td>
+        <td>
+            <div class="chip" style="background:#f48da5;"></div>
+        </td>
+        <td>pink</td>
+        <td>#f48da5</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="chip" style="background:#697489;"></div>
+        </td>
+        <td>stone</td>
+        <td>#697489</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<p style="margin:20px 0 10px">* Label : <u>button, a태그</u>로 전환하여 사용 가능 (ex: pink, stone 컬러)</p>
+<p style="margin:10px 0 10px">[ Label ] height 20</p>
+<span class="SN_label"><span class="label_text">기본라벨</span></span><!-- 컬러 지정 없을 시 -->
+<span class="SN_label green"><span class="label_text">기본라벨</span></span>
+<span class="SN_label blue"><span class="label_text">기본라벨</span></span>
+<span class="SN_label purple"><span class="label_text">기본라벨</span></span>
+<span class="SN_label red"><span class="label_text">기본라벨</span></span>
+<span class="SN_label orange"><span class="label_text">기본라벨</span></span>
+<span class="SN_label yellow"><span class="label_text">기본라벨</span></span>
+<span class="SN_label gray"><span class="label_text">기본라벨</span></span>
+<span class="SN_label pear"><span class="label_text">기본라벨</span></span>
+<span class="SN_label teal"><span class="label_text">기본라벨</span></span>
+<span class="SN_label sky"><span class="label_text">기본라벨</span></span>
+<span class="SN_label lapis"><span class="label_text">기본라벨</span></span>
+<span class="SN_label cobalt"><span class="label_text">기본라벨</span></span>
+<span class="SN_label iris"><span class="label_text">기본라벨</span></span>
+<span class="SN_label violet"><span class="label_text">기본라벨</span></span>
+<a href="#" class="SN_label pink"><span class="label_text">기본라벨</span></a>
+<button type="button" class="SN_label stone"><span class="label_text">기본라벨</span></button>
+
+<p style="margin:20px 0 10px">[ Label ] height 16</p>
+<span class="SN_label s_small"><span class="label_text">기본라벨</span></span><!-- 컬러 지정 없을 시 -->
+<span class="SN_label s_small green"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small blue"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small purple"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small red"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small orange"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small yellow"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small gray"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small pear"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small teal"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small sky"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small lapis"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small cobalt"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small iris"><span class="label_text">기본라벨</span></span>
+<span class="SN_label s_small violet"><span class="label_text">기본라벨</span></span>
+<a href="#" class="SN_label s_small pink"><span class="label_text">기본라벨</span></a>
+<button type="button" class="SN_label s_small stone"><span class="label_text">기본라벨</span></button>
+
+<p style="margin:20px 0 10px">[ Label - round ] height 20</p>
+<span class="SN_label d_round"><span class="label_text">라운드</span></span><!-- 컬러 지정 없을 시 -->
+<span class="SN_label d_round green"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round blue"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round purple"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round red"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round orange"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round yellow"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round gray"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round pear"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round teal"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round sky"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round lapis"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round cobalt"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round iris"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round violet"><span class="label_text">라운드</span></span>
+<a href="#" class="SN_label d_round pink"><span class="label_text">라운드</span></a>
+<button type="button" class="SN_label d_round stone"><span class="label_text">라운드</span></button>
+
+<p style="margin:20px 0 10px">[ Label - round ] height 16</p>
+<span class="SN_label d_round s_small"><span class="label_text">라운드</span></span><!-- 컬러 지정 없을 시 -->
+<span class="SN_label d_round s_small green"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small blue"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small purple"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small red"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small orange"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small yellow"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small gray"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small pear"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small teal"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small sky"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small lapis"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small cobalt"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small iris"><span class="label_text">라운드</span></span>
+<span class="SN_label d_round s_small violet"><span class="label_text">라운드</span></span>
+<a href="#" class="SN_label d_round s_small pink"><span class="label_text">라운드</span></a>
+<button type="button" class="SN_label d_round s_small stone"><span class="label_text">라운드</span></button>
+
+<hr>
+
+<p style="margin:30px 0 10px">[ Icon Text ] icon 14x14</p>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-328px 0;"></span><span class="label_text">완료</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-346px 0;"></span><span class="label_text">진행</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-364px 0;"></span><span class="label_text">검수</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-382px 0;"></span><span class="label_text">반려</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-400px 0;"></span><span class="label_text">오류</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-418px 0;"></span><span class="label_text">실패</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-436px 0;"></span><span class="label_text">대기</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-454px 0;"></span><span class="label_text">대기</span></span>
+<span class="SN_icon_label"><span class="imgitem sp_sona" style="width:14px;height:14px;background-position:-472px 0;"></span><span class="label_text">대기</span></span>
+
+<p style="margin:30px 0 10px">[ Icon Text ] icon 9x9</p>
+<span class="SN_icon_label s_medium"><span class="imgitem" style="display:inline-block;width:9px;height:9px;background:#3bc887;border-radius:50%;"></span><span class="label_text">완료</span></span>
+<span class="SN_icon_label s_medium"><span class="imgitem" style="display:inline-block;width:9px;height:9px;background:#1c90fb;border-radius:50%;"></span><span class="label_text">진행</span></span>
+<span class="SN_icon_label s_medium"><span class="imgitem" style="display:inline-block;width:9px;height:9px;background:#8456f7;border-radius:50%;"></span><span class="label_text">검수</span></span>
+
+<p style="margin:30px 0 10px">[ Icon Text ] icon 5x5</p>
+<span class="SN_icon_label s_small"><span class="imgitem" style="display:inline-block;width:5px;height:5px;background:#3bc887;border-radius:50%;"></span><span class="label_text">완료</span></span>
+<span class="SN_icon_label s_small"><span class="imgitem" style="display:inline-block;width:5px;height:5px;background:#1c90fb;border-radius:50%;"></span><span class="label_text">진행</span></span>
+<span class="SN_icon_label s_small"><span class="imgitem" style="display:inline-block;width:5px;height:5px;background:#8456f7;border-radius:50%;"></span><span class="label_text">검수</span></span>

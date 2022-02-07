@@ -1,0 +1,61 @@
+/*----- Toast -----*/
+
+.SN_toast {
+    display:none;
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    background:#1fc47c;
+    border-radius:6px;
+    padding:11px 24px 11px 45px;
+    transform:translateX(-50%);
+    &:before {
+        content:'';
+        position:absolute;
+        top:50%;
+        left:6px;
+        width:37px;
+        height:37px;
+        margin-top:-17px;
+        background:url($spimg_url) 0 0 no-repeat;
+        background-size:$spimg_size;
+    }
+    &.i_confirm {
+        background:#1fc47c;
+        &:before {
+            background-position:-97px -221px;
+        }
+    }
+    &.i_refuse {
+        background:#fc5356;
+        &:before {
+            background-position:-139px -221px;
+        }
+    }
+    &.i_info {
+        background:#1c90fb;
+        &:before {
+            background-position:-55px -221px;
+        }
+    }
+    .msg {
+        display:block;
+        font-size:16px;
+        color:#fff;
+        letter-spacing:-.8px;
+        line-height:25px;
+    }
+    &.run_ani {
+        display:inline-block;
+        animation: toast_fadein 0.5s, toast_fadeout 0.5s 2.5s;
+    }
+}
+
+@keyframes toast_fadein {
+    from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+@keyframes toast_fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

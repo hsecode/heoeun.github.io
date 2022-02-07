@@ -1,0 +1,35 @@
+<p style="margin:20px 0 10px">[ Stepper ]</p>
+<div class="SN_stepper">
+    <input type="text" class="stepper_input" value="0">
+    <div class="step_btngroup">
+        <button type="button" class="btn_up"><span class="blind">크게</span></button>
+        <button type="button" class="btn_down"><span class="blind">작게</span></button>
+    </div>
+</div>
+<div class="SN_stepper disabled">
+    <input type="text" class="stepper_input" value="0" readonly>
+    <div class="step_btngroup">
+        <button type="button" class="btn_up"><span class="blind">크게</span></button>
+        <button type="button" class="btn_down"><span class="blind">작게</span></button>
+    </div>
+</div>
+<!-- [D] 힌트 문구 없을 경우 width 값 고정, Hint 있을 경우 min-width 공통 최소값 정의
+         힌트 있을 경우 class="SN_Stepper hint" 추가 -->
+<!-- Stepper 컴포넌트 사용의 경우 Hint 메시지가 없어야 하는 경우도 있을 수 있으므로 Hint 클래스 정의 -->
+<div class="SN_stepper hint">
+    <span class="hint_text">기본값을 설정해주세요.</span>
+    <input type="text" class="stepper_input" value="">
+    <div class="step_btngroup">
+        <button type="button" class="btn_up"><span class="blind">크게</span></button>
+        <button type="button" class="btn_down"><span class="blind">작게</span></button>
+    </div>
+</div>
+
+<div class="SN_stepper disabled hint">
+    <span class="hint_text">기본값을 설정해주세요.</span>
+    <input type="text" class="stepper_input" value="" readonly>
+    <div class="step_btngroup">
+        <button type="button" class="btn_up"><span class="blind">크게</span></button>
+        <button type="button" class="btn_down"><span class="blind">작게</span></button>
+    </div>
+</div>

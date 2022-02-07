@@ -1,0 +1,310 @@
+/*----- calendar -----*/
+
+.SN_calendar{
+  position:relative;
+  z-index:50;
+  display:inline-block;
+  width:216px;
+  border:1px solid #4a4a4a;
+  background:#fff;
+  border-radius:4px;
+  box-shadow:0 2px 4px 0 rgba(0,0,0,.11);
+  vertical-align: top;
+  overflow:hidden;
+  .calendar_bx{
+    position:relative;
+  }
+  .date_select{
+    position:relative;
+    height:38px;
+    background:#fff;
+    line-height:45px;
+    text-align:center;
+    .btn{
+      position:absolute;
+      top:12px;
+      width:20px;
+      height:20px;
+      border:1px solid transparent;
+      background:none;
+      border-radius:5px;
+      line-height:23px;
+      text-align:center;
+      &:hover{
+        border-color:#ccc;
+      }
+      &:after{
+        content:'';
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-top:-4px;
+        margin-left:-2px;
+        width:4px;
+        height:7px;
+        background:url($spimg_url) -141px -20px no-repeat;
+        background-size:$spimg_size;
+      }
+      &.btn_prev_mon{
+        left:54px;
+        &:after {
+          background-position:-141px -20px;
+        }
+        &:hover:after{
+          background-position:-123px -20px;
+        }
+      }
+      &.btn_next_mon{
+        right:54px;
+        &:after{
+          background-position:-150px -20px;
+        }
+        &:hover:after{
+          background-position:-132px -20px;
+        }
+      }
+      &.btn_prev_year{
+        left:32px;
+        &:after{
+          width:7px;
+          margin-left:-4px;
+          background-position:-99px -20px;
+        }
+        &:hover:after{
+          background-position:-75px -20px;
+        }
+      }
+      &.btn_next_year{
+        right:32px;
+        &:after{
+          margin-left:-3px;
+          width:7px;
+          background-position:-111px -20px;
+        }
+        &:hover:after{
+          background-position:-87px -20px;
+        }
+      }
+    }
+    .date_day_title{
+      vertical-align:top;
+      font-size:12px;
+      font-weight:700;
+      color:#000;
+    }
+  }
+  .date_tbl{
+    padding:0 10px 10px;
+    table {
+      table-layout:fixed;
+      width:100%;
+      border-collapse:collapse;
+      border-spacing:0;
+      border:0;
+      text-align:center;
+    }
+    th, td, tr:first-child td{
+      margin:0;
+      padding:0;
+      border-collapse:collapse;
+      border-spacing:0;
+      border:0;
+    }
+    .date_week{
+      padding:0;
+      height:21px;
+      border:0;
+      background:none;
+      text-align:center;
+      font-size:10px;
+      letter-spacing:-.5px;
+      color:#8d8d8d;
+    }
+    .date_day button{
+      position:relative;
+      display:block;
+      width:28px;
+      height:21px;
+      border:1px solid transparent;
+      background:none;
+      border-radius:4px;
+      text-align:center;
+      text-decoration:none;
+      font-size: 10px;
+      color:#4a4a4a;
+      cursor:pointer;
+      outline:none;
+
+      span{
+        font-size:10px;
+        font-weight:700;
+      }
+      &:hover{
+        border-color:#ccc;
+      }
+    }
+    .date_day_sun button{
+      color:#fc5356;
+    }
+    .date_day_holiday button{
+      color:#fc5356;
+      &:hover {
+        color:#fc5356;
+      }
+    }
+    .date_day_prev_mon button{
+      color:#c2c2c2;
+    }
+    .date_day_next_mon button{
+      color:#c2c2c2;
+    }
+    .icon_schedule{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      width:0;
+      height:0;
+      border-style:solid;
+      border-width:0 5px 5px 0;
+      border-color:transparent #00b4b7 transparent transparent;
+    }
+  }
+  .date_tbl{
+    .date_day_today button{
+      background:#f0f0f0;
+    }
+    .date_day_selected,
+    .gap_start,
+    .gap_end{
+      button{
+        background:#1c90fb;
+        color:#fff;
+        border-radius:4px;
+
+        &:hover{
+          border-color: #0072dc;
+        }
+      }
+
+    }
+    .date_day_gap{
+      background:#e9f5ff;
+      &.gap_start{
+        border-top-left-radius:4px;
+        border-bottom-left-radius:4px;
+      }
+      &.gap_end{
+        border-top-right-radius:4px;
+        border-bottom-right-radius:4px;
+      }
+    }
+    .date_check button{
+      border-color:#ccc;
+    }
+    .check_week{
+      th,td{
+        background:#f0f0f0;
+      }
+    }
+    .date_not_allowed button{
+      cursor:not-allowed;
+      &:hover{
+        border-color:transparent;
+      }
+    }
+    &.check_all{
+      td{
+        background:#f0f0f0;
+      }
+    }
+  }
+  .select_area{
+    position:relative;
+    padding:6px 10px;
+    box-sizing:border-box;
+    height:39px;
+    border-top:1px solid #e6e6e6;
+    white-space:nowrap;
+    clear:both;
+    &:after{
+      @extend %clearfix;
+    }
+    .SN_btn.today{
+      padding:0 5px;
+      height:26px;
+      font-size:11px;
+      line-height:26px;
+      letter-spacing:-.5px;
+    }
+    .dataperiod_dl{
+      display:inline-block;
+      font-size:13px;
+      line-height:26px;
+      color:#4a4a4a;
+      clear:both;
+      overflow:hidden;
+      dt{
+        float:left;
+        padding-right:4px;
+      }
+      dd{
+        float:left;
+        color:#1c90fb;
+      }
+    }
+    .solar_area{
+      display:inline-block;
+      margin-left:4px;
+      vertical-align:top;
+      font-size:12px;
+      letter-spacing:-.5px;
+      line-height:26px;
+      color:#b4b4b4;
+      span{
+        margin:0 3px 0 0;
+      }
+    }
+    .btnbox{
+      float:right;
+      .SN_btn{
+        //padding:0 10px;
+        // border-color:#d3d3d3;
+        // font-size:14px;
+        // height:26px;
+        // line-height:26px;
+        // color:#5d5d5d;
+        +.SN_btn{
+          margin-left:3px;
+        }
+        &.c_blue{
+          border-color:#1c90fb;
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+.SN_calendar.d_dategap{
+  width:434px;
+  &:after {
+    content:'';
+    display:table;
+    clear:both;
+  }
+  .calendar_bx {
+    float:left;
+    width:50%;
+    +.calendar_bx:before {
+      content:'';
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      z-index:10;
+      width:1px;
+      background:#e6e6e6;
+    }
+  }
+}

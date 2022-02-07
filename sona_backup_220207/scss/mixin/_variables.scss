@@ -1,0 +1,62 @@
+//----- [guide] -----
+//----- Sona Component에 사용된 변수 및 extend style
+
+// color
+$blue: #1c90fb;
+$cyan: #13bad2;
+$red: #fc5356;
+$orange: #ffa018;
+$yellow: #febc2c;
+$green: #1fc47c;
+$purple: #7349fd;
+$gray: #777;
+
+// sprite image url
+$spimg_url: "../imgs/sp_sona.png";
+$spimg_size: 500px 1000px;
+
+// blind
+%blind {
+  position:absolute !important;
+  clip:rect(0 0 0 0) !important;
+  width:1px !important;
+  height:1px !important;
+  margin:-1px !important;
+  overflow:hidden !important;
+}
+
+// flex
+%flex{
+  display:-webkit-flex;
+  display:-ms-flex;
+  display:-o-flex;
+  display:flex;
+}
+
+// clearfix
+%clearfix {
+  &:after {
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+
+// ellipsis
+%ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+%ellipsis2{
+  display:-webkit-box;
+  overflow:hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+%ellipsis3{
+  display:-webkit-box;
+  overflow:hidden;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+}

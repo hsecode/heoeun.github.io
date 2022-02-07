@@ -1,0 +1,40 @@
+<p style="margin:20px 0 10px">[ Toast Popup ]</p>
+<!-- [D] 인라인스타일 제거 -->
+<div class="SN_toast i_confirm" style="display:inline-block;position:relative;bottom:auto;left:auto;transform:translateX(0)">
+    <p class="msg">사용요청이 승인되었습니다.</p>
+</div>
+
+<!-- [D] 인라인스타일 제거 -->
+<div class="SN_toast i_refuse" style="display:inline-block;position:relative;bottom:auto;left:auto;transform:translateX(0)">
+    <p class="msg">사용요청이 반려되었습니다.</p>
+</div>
+
+<!-- [D] 인라인스타일 제거 -->
+<div class="SN_toast i_info" style="display:inline-block;position:relative;bottom:auto;left:auto;transform:translateX(0)">
+    <p class="msg">중요 정보를 알릴때 사용합니다.</p>
+</div>
+
+
+
+<br><br>
+<!-- [D] 애니메이션 테스트용 -->
+<!-- [D] 토스트 메세지 노출시 .run_ani 추가후 2900ms 지난다음 제거 -->
+<div class="SN_toast i_confirm" id="TestToast">
+    <p class="msg">사용요청이 승인되었습니다.</p>
+</div>
+
+<button type="button" id="_SN_ToastAniBtn" class="SN_btn">애니메이션 테스트</button>
+
+<!-- 마크업 테스트 코드 -->
+<script>
+    $(function() {
+        $('#_SN_ToastAniBtn').click(function() {
+            if(!$('#TestToast').hasClass('run_ani')) {
+                $('#TestToast').toggleClass('run_ani');
+                setTimeout(function() {
+                    $('#TestToast').toggleClass('run_ani');
+                }, 2900);
+            }
+        })
+    })
+</script>

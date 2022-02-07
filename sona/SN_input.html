@@ -1,0 +1,141 @@
+<p style="margin:20px 0 10px">[ 일반 텍스트 ]</p>
+<div class="SN_input" style="width:200px;">
+    <input type="text" class="textinput" placeholder="텍스트입력" title="내용입력">
+</div>
+<!-- 텍스트 입력 및 input focus 시 클래스 on 추가 -->
+<div class="SN_input on" style="width:200px;">
+    <input type="text" class="textinput" placeholder="텍스트입력" title="내용입력" value="내용 입력중">
+</div>
+<div class="SN_input disabled" style="width:200px;">
+    <input type="text" class="textinput" placeholder="텍스트입력" title="내용입력" value="비활성화" readonly>
+</div>
+
+<p style="margin:30px 0 10px">[ Validation ]</p>
+<div class="SN_input d_validation success" style="width:200px;">
+    <input type="text" class="textinput" placeholder="텍스트입력" title="내용입력" value="Success">
+    <p class="validation_text">사용 가능합니다.</p>
+</div>
+<div class="SN_input d_validation error" style="width:200px;">
+    <input type="text" class="textinput" placeholder="텍스트입력" title="내용입력" value="Error">
+    <p class="validation_text">필수입력 항목입니다.</p>
+</div>
+<div class="SN_input d_validation warning" style="width:200px;">
+    <input type="text" class="textinput" placeholder="텍스트입력" title="내용입력" value="Warning">
+    <p class="validation_text">사용을 권고하지 않습니다.</p>
+</div>
+
+<p style="margin:30px 0 10px">[ 검색 ]</p>
+<div class="SN_input d_search" style="width:200px;">
+    <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력">
+    <button type="button" class="btn_search"><span class="blind">검색</span></button>
+</div>
+<div class="SN_input d_search on" style="width:200px;">
+    <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력" value="내용 입력중">
+    <button type="button" class="btn_search"><span class="blind">검색</span></button>
+</div>
+<div class="SN_input d_search disabled" style="width:200px;">
+    <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력" value="비활성화" readonly>
+    <button type="button" class="btn_search"><span class="blind">검색</span></button>
+</div>
+
+<p style="margin:30px 0 10px">[ 검색 - 검색결과 포함 ]</p>
+<!-- 검색결과 오픈 시 클래스 open 추가 -->
+<div class="SN_input_wrap open">
+    <div class="SN_input d_search" style="width:200px;">
+        <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력">
+        <button type="button" class="btn_search"><span class="blind">검색</span></button>
+    </div>
+    <div class="SN_select_resultbox">
+        <!-- max-height 변경 시 : ul 태그의 max-height 조정 -->
+        <ul>
+            <li class="selected">
+                <button type="button" class="resultitem"><strong class="emphasis_text">김더</strong>존 <span>douzonekim</span></button>
+            </li>
+            <li>
+                <button type="button" class="resultitem"><strong class="emphasis_text">김더</strong>존 <span>douzonekimdouzonekimdouzonekim</span></button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 마우스오버로 검색결과 오픈 시 클래스 has_hover 추가 -->
+<div class="SN_input_wrap has_hover">
+    <div class="SN_input d_search" style="width:200px;">
+        <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력">
+        <button type="button" class="btn_search"><span class="blind">검색</span></button>
+    </div>
+    <div class="SN_select_resultbox">
+        <!-- max-height 변경 시 : ul 태그의 max-height 조정 -->
+        <ul>
+            <li class="selected">
+                <button type="button" class="resultitem"><strong class="emphasis_text">김더</strong>존 <span>douzonekim</span></button>
+            </li>
+            <li>
+                <button type="button" class="resultitem"><strong class="emphasis_text">김더</strong>존 <span>douzonekimdouzonekimdouzonekim</span></button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+            <li>
+                <button type="button" class="resultitem">검색결과</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<p style="margin:30px 0 10px">[ 비밀번호 ]</p>
+<div class="SN_input d_password" style="width:200px;">
+    <input type="password" class="textinput" placeholder="비밀번호를 입력하세요." title="비밀번호 입력">
+</div>
+<div class="SN_input d_password on" style="width:200px;">
+    <input type="password" class="textinput" placeholder="비밀번호를 입력하세요." title="비밀번호 입력" value="Password">
+</div>
+<div class="SN_input d_password on success" style="width:200px;">
+    <input type="password" class="textinput" placeholder="비밀번호를 입력하세요." title="비밀번호 입력" value="Password">
+</div>
+<div class="SN_input d_password on error" style="width:200px;">
+    <input type="password" class="textinput" placeholder="비밀번호를 입력하세요." title="비밀번호 입력" value="Password">
+    <p class="validation_text">비밀번호가 올바르지 않습니다.</p>
+</div>
+
+<p style="margin:30px 0 10px">[ 편집 ]</p>
+<div class="SN_input d_edit" style="width:200px;">
+    <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력">
+    <div class="edit_btn_box">
+        <button type="button" class="btn_check"><span class="blind">확인</span></button>
+        <button type="button" class="btn_del"><span class="blind">삭제</span></button>
+    </div>
+</div>
+<div class="SN_input d_edit on" style="width:200px;">
+    <input type="text" class="textinput" placeholder="검색어를 입력하세요." title="내용입력" value="내용 입력중">
+    <div class="edit_btn_box">
+        <button type="button" class="btn_check"><span class="blind">확인</span></button>
+        <button type="button" class="btn_del"><span class="blind">삭제</span></button>
+    </div>
+</div>
+
+<p style="margin:30px 0 10px">[ Info Text ]</p>
+<div class="SN_input" style="width:200px;">
+    <input type="text" class="textinput" placeholder="검색어 입력" title="내용입력">
+    <p class="info_text">검색어를 입력하세요.</p>
+</div>

@@ -1,0 +1,121 @@
+/*----- timepicker -----*/
+
+.SN_timepicker{
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  width:100%;
+  .inputbox{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    padding:6px 30px 3px 8px;
+    box-sizing:border-box;
+    width:100%;
+    height:30px;
+    border:1px solid #d3d3d3;
+    background:#fff;
+    border-radius:4px;
+    .time{
+      position:relative;
+      display:inline-block;
+      vertical-align:top;
+      margin-right:5px;
+      font-size:14px;
+      line-height:19px;
+      color:#4a4a4a;
+      span {
+        cursor: default;
+        &.time_ampm {
+          margin-right: 4px;
+        }
+        &:focus {
+          background: rgb(177, 215, 254);
+          outline: none;
+        }
+      }
+    }
+  }
+  .btn_time{
+    position:absolute;
+    top:0;
+    right:0;
+    width:28px;
+    height:28px;
+    border:0;
+    background:0;
+    &:after{
+      content:'';
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-top:-7px;
+      margin-left:-5px;
+      width:14px;
+      height:14px;
+      background:url($spimg_url) -215px 0;
+      background-size:$spimg_size;
+    }
+  }
+
+  &:hover,&.active{
+    .inputbox{
+      border-color:#4a4a4a;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,.1);
+    }
+  }
+
+  &.disabled{
+    .inputbox{
+      border-color:#d3d3d3;
+      background:#fafafa;
+      box-shadow:none;
+      .time{
+        color:#d3d3d3;
+      }
+    }
+    .btn_time{
+      cursor:default;
+      &:after{
+        background-position:-340px -62px;
+      }
+    }
+  }
+}
+
+.SN_timepicker_result{
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:5;
+  margin-top:2px;
+  padding:3px 0;
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid #4a4a4a;
+  background:#fff;
+  border-radius:4px;
+  overflow:hidden;
+  .timepicker_item{
+    display:block;
+    padding:0 7px;
+    box-sizing:border-box;
+    width:100%;
+    height:30px;
+    border:0;
+    background:none;
+    text-align:left;
+    font-size:14px;
+    color:#4a4a4a;
+    &:hover{
+      background:#f8f8f8;
+    }
+    .time {
+      span {
+        &.time_ampm {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

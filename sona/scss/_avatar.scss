@@ -1,0 +1,221 @@
+/*----- Avatar -----*/
+
+@function icon($iconName, $color) {
+    $iconList: ( 
+        user: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23#{$color}'%3E%%3Cpath d='M11,12c2.5,0,4.5-2,4.5-4.5S13.5,3,11,3S6.5,5,6.5,7.5C6.5,10,8.5,12,11,12z M11,4 c1.9,0,3.5,1.6,3.5,3.5S12.9,11,11,11S7.5,9.4,7.5,7.5S9.1,4,11,4z'/%3E%3Cpath d='M12.2,13.3H9.8c-4,0-7.3,3.2-7.3,7.2C2.5,20.8,2.7,21,3,21s0.5-0.2,0.5-0.5 c0-3.4,2.9-6.2,6.3-6.2h2.4c3.4,0,6.3,2.7,6.3,6.2c0,0.3,0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5C19.5,16.5,16.2,13.3,12.2,13.3z' /%3E%3C/svg%3E"
+        , user2: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23#{$color}'%3E%%3Cpath d='M11,12c2.5,0,4.5-2,4.5-4.5S13.5,3,11,3S6.5,5,6.5,7.5C6.5,10,8.5,12,11,12z M11,4 c1.9,0,3.5,1.6,3.5,3.5S12.9,11,11,11S7.5,9.4,7.5,7.5S9.1,4,11,4z'/%3E%3Cpath d='M12.2,13.3H9.8c-4,0-7.3,3.2-7.3,7.2C2.5,20.8,2.7,21,3,21s0.5-0.2,0.5-0.5 c0-3.4,2.9-6.2,6.3-6.2h2.4c3.4,0,6.3,2.7,6.3,6.2c0,0.3,0.2,0.5,0.5,0.5s0.5-0.2,0.5-0.5C19.5,16.5,16.2,13.3,12.2,13.3z' /%3E%3C/svg%3E"
+    );
+  $icon: map-get($iconList, $iconName);
+  @return url("data:image/svg+xml;charset=utf8,#{$icon}");
+}
+
+.SN_avatar {
+  display: inline-block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
+  * {
+    box-sizing: border-box;
+  }
+  .avatar_wrap {
+    overflow: hidden;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f6;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    .avatar_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50%;
+      text-align: center;
+      .pic {
+        width: 100%;
+        height: 100%;
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        background-size:cover;  
+      }
+      .text {
+        font-size: 0.6em;
+        line-height: 1;
+        user-select: none;
+      }
+    }
+  }
+  &.con1 {
+    .avatar_content {
+      &:nth-child(1) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      .text {
+        font-size: 0.8em;
+      }
+    }
+  }
+  &.con2 {
+    .avatar_content {
+      &:nth-child(1) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      &:nth-child(2) {
+        flex-basis: 50%;
+        max-width: 50%;
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+  &.con3 {
+    .avatar_content {
+      width: 100%;
+      &:nth-child(1) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      &:nth-child(2) {
+        flex-basis: 50%;
+        max-width: 50%;
+        border-top: 1px solid #fff;
+      }
+      &:nth-child(3) {
+        flex-basis: 50%;
+        max-width: 50%;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+  &.con4 {
+    .avatar_content {
+      &:nth-child(1), 
+      &:nth-child(2), 
+      &:nth-child(3), 
+      &:nth-child(4) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      &:nth-child(even) {
+        border-left: 1px solid #fff;
+      }
+      &:nth-child(3), 
+      &:nth-child(4) {
+        border-top: 1px solid #fff;
+      }
+    }
+  }
+  &.noborder {
+    .avatar_wrap {
+      border: 0;
+    }
+  }
+  &.s_small {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+  &.s_medium {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+  &.s_large {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+  &.add_user {
+    cursor: pointer;
+  }
+  .SN_badge {
+    position: absolute;
+    top: -0.44em;
+    left: calc(50% + 0.6em);
+    padding: 0.125em 0.4em 0;
+    font-size: .625em;
+    line-height: normal;
+    &:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #f76c6c;
+      border-radius: 1em;
+      border: 0.063em solid #fff;
+      content: '';
+    }
+    .txt {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+  .SN_notice {
+    position: absolute;
+    top: -0.2em;
+    left: calc(100% - 0.625em);
+    width: 0.625em;
+    height: 0.625em;
+    background: #f76c6c;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    &.bottom {
+      top: auto;
+      bottom: 0;
+    }
+  }
+  &.image {
+    .image-img {
+      width: 1.2em;
+      height: 1.2em;
+    }
+    .image-sprite {
+      width: 1.2em;
+      height: 1.2em;
+    }
+    .image-svg {
+      width: 1.2em;
+      height: 1.2em;
+      fill: #000;
+    }
+  
+  }
+  // Emptyset
+  &.empty_pic {
+    .avatar_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar_content {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      margin: -2px 0 0 1px;
+      // background: icon(user2, c0c1c4) no-repeat;
+      vertical-align: top;
+      svg {
+        fill: #c0c1c4;
+      }
+    }
+  }
+}
+.SN_avatar_group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  .SN_avatar + .SN_avatar {
+    margin-left: -12px;
+  }
+}

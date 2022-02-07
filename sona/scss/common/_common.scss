@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,img,button,select{margin:0;padding:0}
+body{-webkit-text-size-adjust:none}
+img,fieldset{border:0;vertical-align:top}
+a{color:#1a1a1a}
+em,address{font-style:normal}
+ul,ol{list-style:none}
+label,button{cursor:pointer}
+
+
+*[class *= "SN_"], *[class *= "SN_"] * {
+  // font-family: $dfont;
+}
+
+// sprite image
+.sp_sona{
+  @include spsona($spimg_url);
+}
+
+.emphasis_text{
+  color:$blue;
+}
+.error_text{
+  color:$red;
+}
+
+.SN_groupset{
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+}
+
+// rotate object
+.rotate180 {
+  @include rotate(180deg);
+}
+
+.blind {
+  position:absolute !important;
+  clip:rect(0 0 0 0) !important;
+  width:1px !important;
+  height:1px !important;
+  margin:-1px !important;
+  overflow:hidden !important
+}
