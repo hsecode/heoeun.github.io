@@ -1,0 +1,317 @@
+@charset "utf-8";
+.blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height:1px;overflow:hidden;}
+
+.chart_box{position:relative;margin:0 auto;width:450px;height:225px;}
+.chart_box [class^="item_box"]{position:absolute;top:50px;left:50px;width:350px;height:175px;}
+.chart_box [class^="item_box"] .title{position:absolute;width:60px;text-align:center;font-size:16px;font-weight:bold;color:#dbdbdb;z-index:11;}
+.chart_box .item_box_1 .title{top:139px;left:-58px;transform:rotate(-80deg);}
+.chart_box .item_box_2 .title{top:70px;left:-39px;transform:rotate(-67deg);}
+.chart_box .item_box_3 .title{top:10px;left:10px;transform:rotate(-40deg);}
+.chart_box .item_box_4 .title{top:-28px;left:74px;transform:rotate(-20deg);}
+.chart_box .item_box_5 .title{top:-40px;left:144px;}
+.chart_box .item_box_6 .title{top:-30px;left:216px;transform:rotate(20deg);}
+.chart_box .item_box_7 .title{top:4px;left:276px;transform:rotate(40deg);}
+.chart_box .item_box_8 .title{top:60px;left:321px;transform:rotate(60deg);}
+.chart_box .item_box_9 .title{top:130px;left:346px;transform:rotate(80deg);}
+.chart_box .item_box_1.active .title,
+.chart_box .item_box_2.active .title,
+.chart_box .item_box_3.active .title{color:#fc5356;}
+.chart_box .item_box_4.active .title,
+.chart_box .item_box_5.active .title,
+.chart_box .item_box_6.active .title,
+.chart_box .item_box_7.active .title{color:#febc2c;}
+.chart_box .item_box_8.active .title,
+.chart_box .item_box_9.active .title{color:#1fc47c;}
+/*텍스트 라벨에 눈금 적용할 경우*/
+.chart_box [class^="item_box"] .title:before{content:'';position:absolute;display:none;width:3px;height:17px;background:#fff;}
+.chart_box .item_box_1 .title:before{top:40px;right:-8px;transform:rotate(10deg);}
+.chart_box .item_box_2 .title:before{top:47px;right:-3px;transform:rotate(15deg);}
+.chart_box .item_box_3 .title:before{top:42px;right:-3px;transform:rotate(10deg);}
+.chart_box .item_box_4 .title:before{top:42px;right:0;transform:rotate(12deg);}
+.chart_box .item_box_5 .title:before{top:41px;right:-1px;transform:rotate(10deg);}
+.chart_box .item_box_6 .title:before{top:44px;right:1px;transform:rotate(10deg);}
+.chart_box .item_box_7 .title:before{top:44px;right:-5px;transform:rotate(10deg);}
+.chart_box .item_box_8 .title:before{top:41px;right:-5px;transform:rotate(10deg);}
+.chart_box .item_box_9 .title:before{display:none;}
+/*//텍스트 라벨에 눈금 적용할 경우*/
+.chart_box .arrow_box{position:absolute;bottom:0;left:77px;z-index:11;transform-origin:94% 50%;animation-timing-function:linear;animation-fill-mode:forwards;}
+.chart_box .arrow_box.step1{animation-name:arrow_step1;animation-duration:.1s;}
+.chart_box .arrow_box.step2{animation-name:arrow_step2;animation-duration:.4s;}
+.chart_box .arrow_box.step3{animation-name:arrow_step3;animation-duration:.6s;}
+.chart_box .arrow_box.step4{animation-name:arrow_step4;animation-duration:.8s;}
+.chart_box .arrow_box.step5{animation-name:arrow_step5;animation-duration:1s;}
+.chart_box .arrow_box.step6{animation-name:arrow_step6;animation-duration:1.2s;}
+.chart_box .arrow_box.step7{animation-name:arrow_step7;animation-duration:1.4s;}
+.chart_box .arrow_box.step8{animation-name:arrow_step8;animation-duration:1.6s;}
+.chart_box .arrow_box.step9{animation-name:arrow_step9;animation-duration:1.8s;}
+
+.chart-skills {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.chart-skills *,
+.chart-skills::before {
+    box-sizing: border-box;
+}
+
+/* chart styles */
+.chart-skills {
+    position: relative;
+    padding:50px 50px 0;
+    width: 350px;
+    height: 175px;
+    overflow: hidden;
+}
+.chart-skills::before,
+.chart-skills::after {
+    position: absolute;
+    top:50px;
+}
+.chart-skills::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    border: 60px solid #d6d6d6;
+    border-bottom: none;
+    border-top-left-radius: 175px;
+    border-top-right-radius: 175px;
+}
+.chart-skills .per {
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: inherit;
+    height: inherit;
+    border: 60px solid;
+    border-top: none;
+    border-bottom-left-radius: 175px;
+    border-bottom-right-radius: 175px;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+}
+.chart-skills .item_box_1 .per {z-index: 9;border-color: #fc5356;}
+.chart-skills .item_box_2 .per {z-index: 8;border-color: #fc5356;}
+.chart-skills .item_box_3 .per {z-index: 7;border-color: #fc5356;}
+.chart-skills .item_box_4 .per {z-index: 6;border-color: #febc2c;}
+.chart-skills .item_box_5 .per {z-index: 5;border-color: #febc2c;}
+.chart-skills .item_box_6 .per {z-index: 4;border-color: #febc2c;}
+.chart-skills .item_box_7 .per {z-index: 3;border-color: #febc2c;}
+.chart-skills .item_box_8 .per {z-index: 2;border-color: #1fc47c;}
+.chart-skills .item_box_9 .per {z-index: 1;border-color: #1fc47c;}
+.chart-skills .item_box_1.active .per{animation-name: rotate1;}
+.chart-skills .item_box_2.active .per{animation-name: rotate2;animation-delay:.2s;}
+.chart-skills .item_box_3.active .per{animation-name: rotate3;animation-delay:.4s;}
+.chart-skills .item_box_4.active .per{animation-name: rotate4;animation-delay:.6s;}
+.chart-skills .item_box_5.active .per{animation-name: rotate5;animation-delay:.8s;}
+.chart-skills .item_box_6.active .per{animation-name: rotate6;animation-delay:1s;}
+.chart-skills .item_box_7.active .per{animation-name: rotate7;animation-delay:1.2s;}
+.chart-skills .item_box_8.active .per{animation-name: rotate8;animation-delay:1.4s;}
+.chart-skills .item_box_9.active .per{animation-name: rotate9;animation-delay:1.6s;}
+
+.chart_box.type_small{width:190px;height:95px;}
+.chart_box.type_small [class^="item_box"]{top:0;left:0;width:190px;height:95px;}
+.chart_box.type_small .chart-skills{padding:0;width:190px;height:95px;}
+.chart_box.type_small .chart-skills::before,
+.chart_box.type_small .chart-skills .per{border-width:50px;}
+.chart_box.type_small .chart-skills::before,
+.chart_box.type_small .chart-skills::after{top:0;}
+.chart_box.type_small .arrow_box{bottom:0;left:35px;width:65px;height:12px;}
+.chart_box.type_small .arrow_box img{width:100%;border-radius:0;vertical-align:top;}
+
+.chart_box .gradation{position:absolute;top:0;bottom:0;left:0;right:0;z-index:11;}
+.chart_box .gradation span{position:absolute;width:3px;height:17px;background:#fff;}
+.chart_box .gradation span:nth-of-type(1){top:159px;left:66px;transform:rotate(-68deg);}
+.chart_box .gradation span:nth-of-type(2){top:110px;left:95px;transform:rotate(-55deg);}
+.chart_box .gradation span:nth-of-type(3){top:72px;left:140px;transform:rotate(-27deg);}
+.chart_box .gradation span:nth-of-type(4){top:52px;left:194px;transform:rotate(-8deg);}
+.chart_box .gradation span:nth-of-type(5){top:52px;left:252px;transform:rotate(8deg);}
+.chart_box .gradation span:nth-of-type(6){top:72px;left:307px;transform:rotate(27deg);}
+.chart_box .gradation span:nth-of-type(7){top:110px;left:351px;transform:rotate(55deg);}
+.chart_box .gradation span:nth-of-type(8){top:159px;left:381px;transform:rotate(68deg);}
+.chart_box.type_small .gradation span{position:absolute;width:2px;height:10px;background:#fff;}
+.chart_box.type_small .gradation span:nth-of-type(1){top:59px;left:9px;transform:rotate(-68deg);}
+.chart_box.type_small .gradation span:nth-of-type(2){top:33px;left:24px;transform:rotate(-55deg);}
+.chart_box.type_small .gradation span:nth-of-type(3){top:12px;left:49px;transform:rotate(-27deg);}
+.chart_box.type_small .gradation span:nth-of-type(4){top:1px;left:78px;transform:rotate(-8deg);}
+.chart_box.type_small .gradation span:nth-of-type(5){top:1px;left:109px;transform:rotate(8deg);}
+.chart_box.type_small .gradation span:nth-of-type(6){top:12px;left:139px;transform:rotate(27deg);}
+.chart_box.type_small .gradation span:nth-of-type(7){top:33px;left:163px;transform:rotate(55deg);}
+.chart_box.type_small .gradation span:nth-of-type(8){top:59px;left:178px;transform:rotate(68deg);}
+
+/* animation */
+@keyframes rotate1 {
+    100% {
+        transform: rotate(20deg);
+        /**
+         * 12% => 21.6deg
+         */
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(40deg);
+        /**
+         * 32% => 57.6deg
+         * 57.6 + 21.6 => 79.2deg
+         */
+    }
+}
+
+@keyframes rotate3 {
+    0% {
+        transform: rotate(40deg);
+    }
+    100% {
+        transform: rotate(60deg);
+        /**
+         * 34% => 61.2deg
+         * 61.2 + 79.2 => 140.4deg
+         */
+    }
+}
+
+@keyframes rotate4 {
+    0% {
+        transform: rotate(60deg);
+    }
+    100% {
+        transform: rotate(80deg);
+        /**
+         * 22% => 39.6deg
+         * 140.4 + 39.6 => 180deg
+         */
+    }
+}
+@keyframes rotate5 {
+    0% {
+        transform: rotate(80deg);
+    }
+    100% {
+        transform: rotate(100deg);
+    }
+}
+@keyframes rotate6 {
+    0% {
+        transform: rotate(100deg);
+    }
+    100% {
+        transform: rotate(120deg);
+    }
+}
+@keyframes rotate7 {
+    0% {
+        transform: rotate(120deg);
+    }
+    100% {
+        transform: rotate(140deg);
+    }
+}
+@keyframes rotate8 {
+    0% {
+        transform: rotate(140deg);
+    }
+    100% {
+        transform: rotate(160deg);
+    }
+}
+@keyframes rotate9 {
+    0% {
+        transform: rotate(160deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes fade-in {
+    0%,
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrow_step1 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(5deg);
+    }
+}
+@keyframes arrow_step2 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(25deg);
+    }
+}
+@keyframes arrow_step3 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(47deg);
+    }
+}
+@keyframes arrow_step4 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(70deg);
+    }
+}
+@keyframes arrow_step5 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(91deg);
+    }
+}
+@keyframes arrow_step6 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(109deg);
+    }
+}
+@keyframes arrow_step7 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(131deg);
+    }
+}
+@keyframes arrow_step8 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(153deg);
+    }
+}
+@keyframes arrow_step9 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(173deg);
+    }
+}
