@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.container{margin:30px auto;padding:0 20px;max-width:970px;height:calc(100vh - 180px);}
+.container{position:relative;margin:30px auto 120px;padding:0 20px;max-width:970px;height:100vh;}
 h1.title{padding-bottom:10px;border-bottom:1px solid #eee;font-size:32px;line-height:35px;}
 .list_link{margin-top:20px;}
 .list_link .emph{padding:0 4px;box-shadow:inset 0 -13px 0 #f2dbff;}
@@ -27,7 +27,7 @@ h1.title{padding-bottom:10px;border-bottom:1px solid #eee;font-size:32px;line-he
     .title_text_area [class^='item']{font-size: 150px;line-height:170px;}
 }
 @media only screen and (min-width:1024px){
-    .title_text_area [class^='item']{font-size: 220px;line-height:220px;}
+    /*.title_text_area [class^='item']{font-size: 220px;line-height:220px;}*/
 }
 
 .top_info{position:relative;padding:10px 15px;border:2px solid #caf;border-radius:5px;}

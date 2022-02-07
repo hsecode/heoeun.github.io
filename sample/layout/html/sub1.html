@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" name="viewport" content="width=1280">
+    <title>서브</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+</head>
+<body>
+<div class="am">
+    <!-- contents -->
+    <div class="am_container">
+        <div class="am_content">
+            <div class="am_content_inner">
+                <div class="section_title">
+                    <h2 class="title">출퇴근기록</h2>
+                    <div class="right_box">
+                        <div class="common_component_tabbtn">
+                            <!-- [D] 선택된 버튼에 .selected 추가  -->
+                            <button type="button" class="common_round_btn">
+                                <span class="sp_icon icon_list gray">리스트형 보기</span>
+                            </button><button type="button" class="common_round_btn selected">
+                            <span class="sp_icon icon_calendar gray">캘린더형 보기</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="division_wrap2">
+                    <div class="left_area">
+                        <div class="roundbox" style="padding-top:20px;">
+                            <div class="date_control_box">
+                                <button type="button" class="button_ctrl prev"><span class="sp_icon icon_arrow03">이전달</span></button>
+                                <div class="date">
+                                    2021.10.05(화)
+                                    <div class="datepicker_wrap">
+                                        <!-- button_datepicker 클릭 시 calendar_box 활성화 -->
+                                        <button type="button" class="button_datepicker"><span class="sp_icon icon_calendar">캘린더</span></button>
+                                        <!-- 활성화 시 클래스 active 추가 -->
+                                        <div class="calendar_box">
+                                            <div class="LUX_mini_calendar LUX_renewal">
+                                                <div class="LUX_calendar" style="display:block">
+                                                    <div class="LUX_date_day_bx">
+                                                        <div class="date_select">
+                                                            <button type="button" class="btn btn_prev_year"><span class="sp_lux">이전년</span></button>
+                                                            <button type="button" class="btn btn_prev_mon"><span class="sp_lux">이전달</span></button>
+                                                            <strong class="date_day_title" style="font-family:'douzone' !important;font-weight: 900;">2021. 10</strong>
+                                                            <button type="button" class="btn btn_next_mon"><span class="sp_lux">다음달</span></button>
+                                                            <button type="button" class="btn btn_next_year"><span class="sp_lux">이전달</span></button>
+                                                        </div>
+                                                        <div class="date_tbl">
+                                                            <table>
+                                                                <caption></caption>
+                                                                <colgroup>
+                                                                    <col style="width:28px" span="7">
+                                                                </colgroup>
+                                                                <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="date_week">일</th>
+                                                                    <th scope="col" class="date_week">월</th>
+                                                                    <th scope="col" class="date_week">화</th>
+                                                                    <th scope="col" class="date_week">수</th>
+                                                                    <th scope="col" class="date_week">목</th>
+                                                                    <th scope="col" class="date_week">금</th>
+                                                                    <th scope="col" class="date_week">토</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="date_day date_day_sun date_day_prev_mon"><button type="button"><span>30</span></button></td>
+                                                                    <td class="date_day date_day_prev_mon"><button type="button"><span>31</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>1</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>2</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>3</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>4</span></button></td>
+                                                                    <td class="date_day date_day_sat"><button type="button"><span>5</span></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="date_day date_day_sun"><button type="button"><span>6</span></button></td>
+                                                                    <td class="date_day date_day_today"><button type="button"><span>7</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>8</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>9</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>10</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>11</span></button></td>
+                                                                    <td class="date_day date_day_sat"><button type="button"><span>12</span></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="date_day date_day_sun"><button type="button"><span>13</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>14</span></button></td>
+                                                                    <td class="date_day date_day_holiday"><button type="button"><span>15</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>16</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>17</span></button></td>
+                                                                    <td class="date_day date_day_selected"><button type="button"><span>18</span></button></td>
+                                                                    <td class="date_day date_day_sat"><button type="button" style="font-size:11px">19</button></td>
+                                                                </tr>
+                                                                <!-- [D] 주간보기 선택시 tr에 .check_week 추가 -->
+                                                                <tr class="check_week">
+                                                                    <td class="date_day date_day_sun"><button type="button"><span>20</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>21</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>22</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>23</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>24</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>25</span></button></td>
+                                                                    <td class="date_day date_day_sat"><button type="button"><span>26</span></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="date_day date_day_sun"><button type="button"><span>27</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>28</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>29</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>30</span></button></td>
+                                                                    <td class="date_day"><button type="button"><span>31</span></button></td>
+                                                                    <td class="date_day date_day_next_mon"><button type="button"><span>1</span></button></td>
+                                                                    <td class="date_day date_day_sat date_day_next_mon"><button type="button"><span>2</span></button></td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="button_ctrl next"><span class="sp_icon icon_arrow03">다음달</span></button>
+                            </div>
+                            <div class="time_graph_box type_block">
+                                <strong class="time">00:00:00</strong>
+                                <div class="graph_box">
+                                    <div class="graph">
+                                        <div class="bar" style="width:45%;"></div>
+                                    </div>
+                                    <dl class="time_text">
+                                        <dt class="blind">출근시간</dt>
+                                        <dd class="time_start">09:00</dd>
+                                        <dt class="blind">퇴근시간</dt>
+                                        <!-- 퇴근시간에 따라 left 값 조정 -->
+                                        <dd class="time_limit" style="left:66%;">18:00</dd>
+                                        <dt class="blind">자정</dt>
+                                        <dd class="time_end">24:00</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="attend_button_wrap">
+                                <div class="attend_button_box bar">
+                                    <!-- 선택 시 클래스 selected 추가 / 비활성화 시 disabled 속성 추가 또는 클래스 추가 -->
+                                    <button type="button" class="button_tab">출근</button>
+                                    <button type="button" class="button_tab selected">퇴근</button>
+                                </div>
+                                <button type="button" class="button_white">근태신청하기</button>
+                            </div>
+                        </div>
+                        <div class="roundbox">
+                            <div class="section_title">
+                                <h3 class="item_title">근무통계</h3>
+                                <div class="right_box">
+                                    <div class="date_control_box">
+                                        <button type="button" class="button_ctrl prev"><span class="sp_icon icon_arrow03">이전달</span></button>
+                                        <div class="date">
+                                            2021.10
+                                            <div class="datepicker_wrap">
+                                                <!-- button_datepicker 클릭 시 calendar_box 활성화 -->
+                                                <button type="button" class="button_datepicker"><span class="sp_icon icon_calendar">캘린더</span></button>
+                                                <!-- 활성화 시 클래스 active 추가 -->
+                                                <div class="month_pick_box">
+                                                    <div class="date_control_box">
+                                                        <button type="button" class="button_ctrl prev"><span class="sp_icon icon_arrow02"></span></button>
+                                                        <p class="date">2021</p>
+                                                        <button type="button" class="button_ctrl next"><span class="sp_icon icon_arrow02"></span></button>
+                                                    </div>
+                                                    <div class="month_box">
+                                                        <button type="button" class="button_month">1월</button>
+                                                        <button type="button" class="button_month" disabled="">2월</button>
+                                                        <button type="button" class="button_month" disabled="">3월</button>
+                                                        <button type="button" class="button_month">4월</button>
+                                                        <button type="button" class="button_month">5월</button>
+                                                        <button type="button" class="button_month">6월</button>
+                                                        <button type="button" class="button_month">7월</button>
+                                                        <button type="button" class="button_month">8월</button>
+                                                        <button type="button" class="button_month">9월</button>
+                                                        <button type="button" class="button_month">10월</button>
+                                                        <button type="button" class="button_month">11월</button>
+                                                        <button type="button" class="button_month">12월</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="button_ctrl next"><span class="sp_icon icon_arrow03">다음달</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_graph_box type_multi">
+                                <div class="graph_box">
+                                    <div class="graph">
+                                        <div class="bar blue" style="width:50%;"></div>
+                                        <div class="bar teal" style="width:20%;"></div>
+                                    </div>
+                                    <dl class="time_text">
+                                        <dt class="blind">소정근무시간</dt>
+                                        <!-- 소정근무시간에 따라 left 값 조정 -->
+                                        <dd class="time_limit" style="left:75%;">168시간</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <dl class="index_define_list">
+                                <div class="item">
+                                    <dt>소정근무일 수</dt>
+                                    <dd><em>16</em>일</dd>
+                                </div>
+                                <div class="item">
+                                    <dt>소정근무시간</dt>
+                                    <dd><em>131</em>시간</dd>
+                                </div>
+                                <div class="item emphasis">
+                                    <dt>실제근무시간</dt>
+                                    <dd><em>32</em>시간</dd>
+                                </div>
+                                <div class="item emphasis2">
+                                    <dt>연장근무시간</dt>
+                                    <dd><em>31</em>시간</dd>
+                                </div>
+                                <div class="item">
+                                    <dt>잔여근무시간</dt>
+                                    <dd><em>23</em>시간</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="roundbox ad_banner_box fix_height_150" style="background-color:#9ddfd0">
+                            <div class="in_box">
+                                <div class="text_box">
+                                    <strong class="banner_title">일이삼사오육칠팔구</strong>
+                                    <p class="banner_content">
+                                        일이삼사오육칠팔구십일이삼<br>
+                                        일이삼사오육칠팔구십일이삼
+                                    </p>
+                                    <a href="#" class="button_link">바로가기<span class="sp_icon icon_arrow"></span></a>
+                                </div>
+                                <div class="img_box">
+                                    <img src="http://placehold.it/120x106" alt="" width="120" height="106">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_area">
+                        <div class="roundbox_border min_h100">
+                            <div class="calendar_top_area">
+                                <div class="date_control_box">
+                                    <button type="button" class="button_ctrl prev"><span class="sp_icon icon_arrow03">이전달</span></button>
+                                    <div class="date">
+                                        2021.10
+                                        <div class="datepicker_wrap">
+                                            <!-- button_datepicker 클릭 시 calendar_box 활성화 -->
+                                            <button type="button" class="button_datepicker"><span class="sp_icon icon_calendar">캘린더</span></button>
+                                            <!-- 활성화 시 클래스 active 추가 -->
+                                            <div class="month_pick_box">
+                                                <div class="date_control_box">
+                                                    <button type="button" class="button_ctrl prev"><span class="sp_icon icon_arrow02"></span></button>
+                                                    <p class="date">2021</p>
+                                                    <button type="button" class="button_ctrl next"><span class="sp_icon icon_arrow02"></span></button>
+                                                </div>
+                                                <div class="month_box">
+                                                    <button type="button" class="button_month">1월</button>
+                                                    <button type="button" class="button_month" disabled="">2월</button>
+                                                    <button type="button" class="button_month" disabled="">3월</button>
+                                                    <button type="button" class="button_month">4월</button>
+                                                    <button type="button" class="button_month">5월</button>
+                                                    <button type="button" class="button_month">6월</button>
+                                                    <button type="button" class="button_month">7월</button>
+                                                    <button type="button" class="button_month">8월</button>
+                                                    <button type="button" class="button_month">9월</button>
+                                                    <button type="button" class="button_month">10월</button>
+                                                    <button type="button" class="button_month">11월</button>
+                                                    <button type="button" class="button_month">12월</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="button_ctrl next"><span class="sp_icon icon_arrow03">다음달</span></button>
+                                </div>
+                                <dl class="worktime_stats_list">
+                                    <div class="item">
+                                        <dt><span class="label_title">소정근무일</span></dt>
+                                        <dd class="time"><em>21</em>일</dd>
+                                    </div>
+                                    <div class="item">
+                                        <dt><span class="label_title">소정근무시간</span></dt>
+                                        <dd class="time"><em>123</em>시간</dd>
+                                    </div>
+                                    <div class="item blue">
+                                        <dt><span class="label_title blue">근무시간</span></dt>
+                                        <dd class="time"><em>63</em>시간</dd>
+                                    </div>
+                                    <div class="item red">
+                                        <dt><span class="label_title red">근태이상</span></dt>
+                                        <dd class="time"><em>2</em>일</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="calendar_content_wrap">
+                                <div class="calendar_content_box">
+                                    <div class="week_header">
+                                        <div class="day sun"><span>일</span></div>
+                                        <div class="day"><span>월</span></div>
+                                        <div class="day"><span>화</span></div>
+                                        <div class="day"><span>수</span></div>
+                                        <div class="day"><span>목</span></div>
+                                        <div class="day"><span>금</span></div>
+                                        <div class="day sat"><span>토</span></div>
+                                    </div>
+                                    <div class="week">
+                                        <!-- day_box 클릭요소로 변경될 경우 div -> a태그로 변경 -->
+                                        <!-- 활성화 시 클래스 active 추가 -->
+                                        <a href="#" class="day_box sun prev_month">
+                                            <div class="date"><span>29</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box prev_month">
+                                            <div class="date"><span>30</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box prev_month">
+                                            <div class="date"><span>31</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket">
+                                                    <strong class="time">8시간</strong>
+                                                    <span class="term">09:00 ~ 18:00</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>1</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket abnormal">
+                                                    <strong class="time">7시간 30분</strong>
+                                                    <span class="term">09:00 ~ 17:30</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box active">
+                                            <div class="date"><span>2</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket">
+                                                    <strong class="time">8시간</strong>
+                                                    <span class="term">09:00 ~ 18:00</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>3</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket abnormal">
+                                                    <strong class="time">-</strong>
+                                                    <span class="term">09:00 ~ <span class="error">- : -</span></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box sat">
+                                            <div class="date"><span>4</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                    </div>
+                                    <div class="week">
+                                        <a href="#" class="day_box sun">
+                                            <div class="date"><span>5</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>6</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket">
+                                                    <strong class="time">8시간</strong>
+                                                    <span class="term">09:00 ~ 18:00</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>7</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket">
+                                                    <strong class="time">8시간</strong>
+                                                    <span class="term">09:00 ~ 18:00</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>8</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket">
+                                                    <strong class="time">8시간</strong>
+                                                    <span class="term">09:00 ~ 18:00</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>9</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box today">
+                                            <div class="date"><span>10</span></div>
+                                            <div class="day_con">
+                                                <div class="attend_ticket yet">
+                                                    <strong class="time">-</strong>
+                                                    <span class="term">09:00 ~ - : -</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="day_box sat">
+                                            <div class="date"><span>11</span></div>
+                                            <div class="day_con">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="week">
+                                        <a href="#" class="day_box sun">
+                                            <div class="date"><span>12</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>13</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>14</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>15</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>16</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>17</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box sat">
+                                            <div class="date"><span>18</span></div>
+                                            <div class="day_con">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="week">
+                                        <a href="#" class="day_box sun">
+                                            <div class="date"><span>19</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>20</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>21</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>22</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>23</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>24</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box sat">
+                                            <div class="date"><span>25</span></div>
+                                            <div class="day_con">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="week">
+                                        <a href="#" class="day_box sun">
+                                            <div class="date"><span>26</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>27</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>28</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>29</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box">
+                                            <div class="date"><span>30</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box next_month">
+                                            <div class="date"><span>1</span></div>
+                                            <div class="day_con"></div>
+                                        </a>
+                                        <a href="#" class="day_box sat next_month">
+                                            <div class="date"><span>2</span></div>
+                                            <div class="day_con">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //contents -->
+</div>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script>
+    $(function() {
+        //datepicker
+        $('.datepicker_wrap .button_datepicker').click(function() {
+            $(this).next('.calendar_box').toggleClass('active');
+            $(this).next('.month_pick_box').toggleClass('active');
+        });
+
+        //attend tab button
+        $('.attend_button_box .button_tab').click(function() {
+            $('.attend_button_box .button_tab').toggleClass('selected');
+        });
+
+        //am select list
+        $('.am_select_wrap button').click(function(){
+            $(this).parent().toggleClass('active');
+        });
+
+        //chart_popup
+        $('.vertical_chart_box .axis_x .graph').click(function(){
+            $('.worktime_chart_popup').toggleClass('active');
+        });
+        $('.worktime_chart_popup .button_close').click(function(){
+            $('.worktime_chart_popup').toggleClass('active');
+        });
+    });
+
+    //slick slide
+    $(function() {
+        $('.doc_slide_wrap').slick({
+            //slidesToShow: 15,
+            slidesToScroll: 1,
+            variableWidth: true,
+            draggable: true,
+            /*responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 10
+                    }
+                }
+            ]*/
+        });
+    });
+</script>
+
+</body>
+</html>
+

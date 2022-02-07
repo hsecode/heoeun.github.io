@@ -28,7 +28,7 @@ iframe{overflow:hidden;margin:0;padding:0;border:0}
 .snbnext.left0{left:0;} /* snbnext left 0 */
 
 /* 공통 Sprite */
-.sp_common{overflow:hidden;display:inline-block;background:url(https://static.wehago.com/imgs/common/sp_common.png) 0 0 no-repeat;line-height:100em;vertical-align:top}
+.sp_common{overflow:hidden;display:inline-block;background:url(http://placehold.it/1000x1000) 0 0 no-repeat;line-height:100em;vertical-align:top}
 
 /* 크롬 디폴트 radius값 초기화 */
 /* input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button{border-radius:0} */
@@ -54,17 +54,6 @@ input::placeholder{text-align:left !important;color:#999;}
 /* 모바일 클릭 이벤트 대응 */
 /* body.m{cursor:pointer !important} */
 
-/* Overflw-y : hidden */
-body.xscroll_hidden{overflow-x:hidden;}
-
-/* skip navigation */
-#u_skip{position:relative;z-index:2147483647}
-#u_skip a{position:absolute;top:-30px;left:0;width:128px;border:1px solid #4ec53d;background-color:#eee;text-align:center;outline:none}
-#u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
-
-#skip_nav a {position:absolute;top:-500%;text-decoration:none;}
-#skip_nav a:active, #skip_nav a:focus {display:block;left:0;top:0;width:100%;height:35px;line-height:35px;text-align:center;background-color:#1c90fb;font-size:14px;color:#fff;z-index:2147483647;}
-
 /* text align */
 .txtcnt{text-align:center !important}
 .txtlft{text-align:left !important}
@@ -88,7 +77,7 @@ body.xscroll_hidden{overflow-x:hidden;}
 
 /* 프로필이미지 */
 .LS_profile_image{position:relative;overflow:hidden;display:inline-block;width:34px;height:34px;background-color:#accfec;border-radius:50%;vertical-align:top;transform:translateY(0)}
-.LS_profile_image .image_box{position:absolute;top:0;left:0;width:100%;height:100%;background-image:url(https://static.wehago.com/imgs/common/profile_default.png);background-position:50% 50%;background-repeat:no-repeat;background-size:cover;color:transparent}
+.LS_profile_image .image_box{position:absolute;top:0;left:0;width:100%;height:100%;background-image:url(http://placehold.it/500x500);background-position:50% 50%;background-repeat:no-repeat;background-size:cover;color:transparent}
 .LS_profile_image.is_border:after{position:absolute;top:0;bottom:0;left:0;right:0;border:1px solid #000;border-radius:50%;opacity:.1;content:''}
 .LS_profile_image_wrap {
     position: relative;
@@ -118,7 +107,7 @@ body.xscroll_hidden{overflow-x:hidden;}
     height: 15px;
     margin-top: -7px;
     margin-left: -6px;
-    background: url(https://static.wehago.com/imgs/co/sp_co.png) -140px -199px no-repeat;
+    background: url(http://placehold.it/500x500) -140px -199px no-repeat;
     z-index: 10;
 }
 .LS_profile_image_wrap.online:after {
@@ -128,7 +117,7 @@ body.xscroll_hidden{overflow-x:hidden;}
     right:0;
     width:10px;
     height:10px;
-    background:url(https://static.wehago.com/imgs/co/sp_co.png) -166px -199px no-repeat;
+    background:url(http://placehold.it/500x500) -166px -199px no-repeat;
 }
 .LS_profile_image.image2 .image_box{width:50%;}
 .LS_profile_image.image2 .image_box + .image_box{left:50%;border-left:1px solid #fff}
@@ -139,3 +128,56 @@ body.xscroll_hidden{overflow-x:hidden;}
 .LS_profile_image.image4 .image_box + .image_box{left:50%;border-left:1px solid #fff}
 .LS_profile_image.image4 .image_box + .image_box + .image_box{top:50%;left:0;border-left:0;border-bottom:0}
 .LS_profile_image.image4 .image_box + .image_box + .image_box + .image_box{left:50%;border-left:1px solid #fff}
+
+.sp_icon{display:inline-block;vertical-align:top;background:url(http://placehold.it/1000x2000) no-repeat 0 0 / 500px 1000px;line-height:100em;overflow:hidden;}
+.sp_icon.icon_calendar{width:13px;height:14px;background-position:-365px -187px;}
+.sp_icon.icon_arrow03{width:6px;height:11px;background-position:-96px -244px;}
+.sp_icon.icon_arrow06{width:11px;height:6px;background-position:0 -244px;}
+.sp_icon.icon_graph{width:15px;height:14px;background-position:-365px -165px;}
+.sp_icon.icon_edit{width:15px;height:15px;background-position:-235px -165px;}
+.sp_icon.icon_setting{width:15px;height:15px;background-position:-366px -245px;}
+.sp_icon.icon_list.gray{width:14px;height:12px;background-position:-38px -204px;}
+.common_round_btn {display: inline-block;width: auto;position: relative;vertical-align: top;box-sizing: border-box;cursor: pointer;border-radius: 4px;font-size: 14px;padding: 0 10px;text-decoration: none;overflow: hidden;height: 30px;line-height: 31px;border: 1px solid #d3d3d3;background: #fff;color: #4a4a4a;}
+.common_boxtbl {position:relative;}
+.common_boxtbl .list_header {position:relative;display:flex;display:-ms-flexbox;box-sizing:border-box;border:1px solid #e6e6e6;background:#f6f6f6;align-items: center;padding:6px 0}
+.common_boxtbl .list_header > div {float:left;position:relative;font-size:13px;color:#4a4a4a;line-height:15px;text-align:center;font-weight:bold;box-sizing:border-box}
+.common_boxtbl .list_body{position:relative;overflow-y:auto}
+.common_boxtbl .list_body .row {position:relative;display:flex;display:-ms-flexbox;width:100%;box-sizing:border-box;border:1px solid #e6e6e6;margin-top:10px;border-radius:5px;overflow:hidden;align-items:center}
+.common_boxtbl .list_body .row:after{content:'';display:table;clear:both}
+.common_boxtbl .list_body .row > div {float:left;position:relative;padding:10px 15px;text-align:center;box-sizing:border-box}
+.common_boxtbl div[class *= "col"] {width:20%}
+.common_boxtbl.type1 .list_body{max-height:380px}
+.common_boxtbl.type1 .list_body .col1 {background:#f1f6fa;height:73px;padding-left:48px}
+.common_boxtbl.type1 .col1 .LS_form{position:absolute;top:50%;left:15px;margin-top:-2px}
+.common_boxtbl.type1 .col1 .LS_form .icon{width:18px;height:18px;background:url(http://placehold.it/300x700) -160px -543px no-repeat}
+.common_boxtbl.type1 .col1 .LS_form input:checked + .icon{background-position:-132px -543px}
+.common_boxtbl.type1 .col2 {width:15%}
+.common_boxtbl.type1 .col5 {width:25%}
+.common_boxtbl.type1 .list_body .col1 {background:#f1f6fa}
+.common_boxtbl.type1 .list_body .col1 {padding-left:48px}
+.common_boxtbl.style_basic{font-family:douzone,"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif}
+.common_boxtbl.style_basic .list_header{background:#edf0f5;border-radius:4px}
+.common_boxtbl.style_basic .list_body {font-size:14px;color:#5d5d5d}
+.common_boxtbl.style_basic .list_body .row{margin-top:8px}
+.common_boxtbl.style_basic .list_body .row > div{line-height:30px}
+.common_boxtbl.style_basic2{font-family:douzone,"Microsoft YaHei","PingFang SC","MS PGothic","Hiragino Kaku Gothic ProN","굴림",gulim,"Apple SD Gothic Neo",sans-serif}
+.common_boxtbl.style_basic2 .list_header{display:block;background:#f5f5f5;border-radius:4px;border:0;padding:0}
+.common_boxtbl.style_basic2 .list_header > div{font-size:12px;font-weight:normal;line-height:26px}
+.common_boxtbl.style_basic2 .list_body {font-size:14px;color:#4a4a4a}
+.common_boxtbl.style_basic2 .list_body .row{position:relative;display:block;margin-top:6px;border:1px solid #dfdfdf}
+.common_boxtbl.style_basic2 .list_body .row > div{line-height:30px;padding:8px 5px}
+.common_boxtbl.style_basic2 .list_body .row.active{border:2px solid #1c90fb}
+.common_boxtbl.style_basic2 .list_body .row.active > div {padding:7px 4px}
+.common_component_tabbtn{position:relative;display:inline-block;vertical-align:top}
+.common_component_tabbtn .common_round_btn{position:relative;padding:0 7px;border-radius:4px;height:30px;width:30px;box-sizing:border-box}
+.common_component_tabbtn .common_round_btn .imgitem{position:absolute;top:50%;left:50%;margin-top:-7px;margin-left:-7px;width:14px;height:15px;overflow: hidden;background: url(https://static.wehago.com/imgs/common/sp_diana.png) 0 0 no-repeat;line-height: 100em}
+.common_component_tabbtn .common_round_btn .imgitem.selected{display:none}
+.common_component_tabbtn .common_round_btn.selected{z-index:1;border-color:#31d2e7;background:#e9fff8;border-radius:4px}
+.common_component_tabbtn .common_round_btn.selected+.common_round_btn{margin-left:-3px;border-radius:0 4px 4px 0}
+.common_component_tabbtn .common_round_btn+.common_round_btn.selected{margin-left:-3px}
+.common_component_tabbtn .common_round_btn .imgitem.ico_1 {background-position: -113px -99px;}
+.common_component_tabbtn .common_round_btn.selected .imgitem.ico_1 {background-position: -113px -83px;}
+.common_component_tabbtn .common_round_btn .imgitem.ico_2 {background-position: -132px -99px;}
+.common_component_tabbtn .common_round_btn.selected .imgitem.ico_2 {background-position: -132px -83px;}
+.common_component_tabbtn .common_round_btn .imgitem.ico_3 {background-position: -110px -233px;width:16px;height:14px;margin:-7px 0 0 -8px}
+.common_component_tabbtn .common_round_btn.selected .imgitem.ico_3 {background-position: -110px -253px}
