@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>M.A.C</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<style>
+		*{margin:0; padding:0;}
+		body{background:#000;
+					font-family: 'Dosis', sans-serif;
+					overflow:auto;}
+		header{position:fixed;
+						width:100%;
+						height:80px;
+						z-index:100;
+						background:#000;
+						}
+		.logo{
+					text-decoration:none;
+					background:url(../mac/images/neon_logo2.gif) no-repeat;
+					width:200px;
+					height:44px;
+					background-size:95%;
+					margin-top:20px;
+					margin-left:auto;
+					margin-right:auto;
+					float:left;
+					cursor:pointer;
+					position:absolute;
+					left:50%;
+					transform:translate(-50%,0%);
+					}
+
+
+		.top_ul{
+					margin-top:20px;
+					margin-right:30px;
+					position:absolute;
+					right:0%;
+					z-index:110;
+					}
+		.top_ul li{
+					list-style:none;
+					float:left;
+					margin:20px;
+					}
+		.top_ul li a{
+							text-decoration:none;
+							font-size:13px;
+							color:#fff;
+							}
+	.top_ul li:hover a{color:#f5426c;
+									animation-duration:0.1s;
+									animation-name:iani;
+									animation-iteration-count: infinite;
+									animation-direction:alternate;
+									-webkit-animation-duration:0.8s;
+									-webkit-animation-name:iani;
+									-webkit-animation-iteration-count: infinite;
+									-webkit-animation-direction:alternate;
+									}
+	@keyframes iani{
+									0%{color:#871f51;}
+									25%{color:#00fffc;}
+									50%{color:orange;}
+									75%{color:#00ff00;}
+									100%{color:#ff00b4;}
+									}
+		
+		
+		.main_nav{
+						width:100%;
+						height:40px;
+						position:fixed;
+						z-index:100;
+						top:79px;						
+						background:rgba(0,0,0,0.7);
+						}
+		.main_ul{
+						width:1050px;
+						position:absolute;
+						top:-2px;
+						left:50%;
+						transform:translate(-50%,0);
+						
+						}
+		.main_ul > li{
+						float:left;
+						list-style:none;
+						width:150px;
+						height:30px;
+						padding-top:9px;
+						/*border-left:solid 1px #474747;*/
+						}
+		/*.main_ul li:last-child{border-right:solid 1px #474747;}*/
+		.main_ul li a{	
+						text-decoration:none;
+						color:#fff;		
+						}
+		
+
+		.ul1,.ul2, .ul3, .ul4, .ul5{border:solid 1px #888;
+									list-style:none;
+									height:280px;
+									width:180px;
+									position:relative;
+									top:10px;
+									left:-30px;
+									padding-left:10px;
+									padding-top:10px;
+									overflow:hidden;
+									 max-height:0;
+									 transition:350ms;
+									-webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+									-webkit-transform-origin:50% 0;
+									-webkit-transition:all 350ms;
+									 -moz-transition:all 350ms;
+									-o-transition:all 350ms;    
+									}
+		.ul2{width:250px; height:280px;}
+		.ul5{width:150px; height:130px;}
+		.ul1 li, .ul3 li, .ul4 li, .ul5 li {width:165px; height:50px; }
+		.ul2 li{width:200px; height:50px;}
+
+		.ul1 li a, .ul2 li a, .ul3 li a, .ul4 li a, .ul5 li a{
+													text-decoration:none;
+													color:#fff;
+													padding:2px 5px;
+													}		
+		.main_ul li:hover .ul1, .main_ul li:hover .ul3, .main_ul li:hover .ul4{
+										height:280px;
+										width:180px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.9;
+										}
+		.main_ul li:hover .ul5{
+										height:130px;
+										width:150px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+										}
+		 .main_ul li:hover .ul2{
+										height:280px;
+										width:250px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+												}
+		.main_ul li:hover > a{	color:#f5426c;	}
+		.ul1 li:hover a, .ul2 li:hover a, .ul3 li:hover a, .ul4 li:hover a, .ul5 li:hover a{
+									background:#ff477b; 
+									text-decoration:none; 
+									color:#fff;
+									}
+		/*-------리스트 하단 bar-------*/
+		.main_ul .li1 .bar1{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li1:hover .bar1{width:55px;height:1px;background:#ff477b;}
+		.main_ul .li2 .bar2{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li2:hover .bar2{width:80px;height:1px;background:#ff477b;}
+		.main_ul .li3 .bar3{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li3:hover .bar3{width:68px;height:1px;background:#ff477b;}
+		.main_ul .li4 .bar4{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li4:hover .bar4{width:88px;height:1px;background:#ff477b;}
+		.main_ul .li5 .bar5{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li5:hover .bar5{width:60px;height:1px;background:#ff477b;}
+		.main_ul .li6 .bar6{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li6:hover .bar6{width:60px;height:1px;background:#ff477b;}
+		.main_ul .li7 .bar7{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li7:hover .bar7{width:120px;height:1px;background:#ff477b;}
+	
+
+
+	/*--------------------콘텐츠-------------------------*/
+	
+	#collections{background:url(../mac/images/new_collection_bg.png) no-repeat;
+							width:100%;
+							height:974px;
+							position:absolute;
+							overflow:hidden;
+							}
+	#collections div[class *="con"]{							
+							width:300px; 
+							height:300px;			
+							transform:rotate(45deg);
+							position:absolute;
+							overflow:hidden;
+							}
+	
+	#collections div[class *="con"] div[class *="pic"]{
+								width:300px; 
+								height:300px;
+								position:absolute;
+								overflow:hidden;
+								transition:all 0.5s ease;
+								-webkit-transition:all 0.5s ease;
+								 -moz-transition:all 0.5s ease;
+								-o-transition:all 0.5s ease;   
+								}
+
+	.con1{
+			top:126px;
+			left:65px;
+			}
+	#collections .con1 .pic1_top{
+								background:rgba(245,66,108,.3);							
+								transition:all 0.3s ease;
+								transform:translateX(-300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con1:hover .pic1_top{transform:translateX(0);}
+	#collections .con1 .pic1_bottom{
+								background:rgba(245,66,108,.3);								
+								transition:all 0.3s ease;
+								transform:translateX(300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con1:hover .pic1_bottom{transform:translateX(0);}
+
+	#collections .con1 .pic1 .text1{
+																width:180px; 
+																height:180px; 
+																padding:10px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(245,66,108,.8);
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con1 .pic1 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con1:hover .pic1 .text1{opacity:1;}
+		#collections .con1 .bg1{
+													background:url(../mac/images/con1.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con1:hover .bg1{transform:scale(1.06);}
+
+
+	.con2{
+			top:126px;
+			left:490px;
+			}
+	#collections .con2 .pic2_top{
+								background:rgba(245,159,66,.3);								
+								transition:all 0.3s ease;
+								transform:translateY(-300px);
+								z-index:2;
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con2:hover .pic2_top{transform:translateX(0);}
+	#collections .con2 .pic2_bottom{
+								background:rgba(245,159,66,.3);						
+								transition:all 0.3s ease;
+								transform:translateY(300px);z-index:2;
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con2:hover .pic2_bottom{transform:translateX(0);}
+
+	#collections .con2 .pic2 .text2{
+																width:180px; 
+																height:180px; 
+																padding:10px;
+																font-size:15px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(245,159,66,.8);	
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con2 .pic2 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con2:hover .pic2 .text2{opacity:1;}
+		#collections .con2 .bg2{
+													background:url(../mac/images/con2.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con2:hover .bg2{transform:scale(1.06);}
+
+	.con3{
+			top:339px;
+			left:702px;
+			}
+	#collections .con3 .pic3_top{
+								background:rgba(112,56,69,.3);								
+								transition:all 0.3s ease;
+								transform:translateX(-300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con3:hover .pic3_top{transform:translateX(0);}
+	#collections .con3 .pic3_bottom{
+								background:rgba(112,56,69,.3);									
+								transition:all 0.3s ease;
+								transform:translateX(300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con3:hover .pic3_bottom{transform:translateX(0);}
+
+	#collections .con3 .pic3 .text3{
+																width:180px; 
+																height:180px; 
+																padding:10px; 
+																font-size:15px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(112,56,69,.8);		
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con3 .pic3 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con3:hover .pic3 .text3{opacity:1;}
+		#collections .con3 .bg3{
+													background:url(../mac/images/con3.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con3:hover .bg3{transform:scale(1.06);}
+
+
+	.con4{
+			top:127px;
+			left:1338px;
+			}
+	#collections .con4 .pic4_top{
+								background:rgba(245,66,66,.3);								
+								transition:all 0.3s ease;
+								transform:translateY(-300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con4:hover .pic4_top{transform:translateX(0);}
+	#collections .con4 .pic4_bottom{
+								background:rgba(245,66,66,.3);									
+								transition:all 0.3s ease;
+								transform:translateY(300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con4:hover .pic4_bottom{transform:translateX(0);}
+
+	#collections .con4 .pic4 .text4{
+																width:180px; 
+																height:180px; 
+																padding:10px; 
+																font-size:15px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(245,66,66,.8);		
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con4 .pic4 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con4:hover .pic4 .text4{opacity:1;}
+		#collections .con4 .bg4{
+													background:url(../mac/images/con4.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con4:hover .bg4{transform:scale(1.06);}
+
+	.con5{
+			top:552px;
+			left:65px;
+			}
+	#collections .con5 .pic5_top{
+								background:rgba(0,0,0,.3);								
+								transition:all 0.3s ease;
+								transform:translateY(-300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con5:hover .pic5_top{transform:translateX(0);}
+	#collections .con5 .pic5_bottom{
+								background:rgba(0,0,0,.3);								
+								transition:all 0.3s ease;
+								transform:translateY(300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con5:hover .pic5_bottom{transform:translateX(0);}
+
+	#collections .con5 .pic5 .text5{
+																width:180px; 
+																height:180px; 
+																padding:10px; 
+																font-size:15px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(0,0,0,.8);
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con5 .pic5 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con5:hover .pic5 .text5{opacity:1;}
+		#collections .con5 .bg5{
+													background:url(../mac/images/con5.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con5:hover .bg5{transform:scale(1.06);}
+
+
+	.con6{
+			top:552px;
+			left:490px;
+			}
+	#collections .con6 .pic6_top{
+								background:rgba(245,66,108,.3);								
+								transition:all 0.3s ease;
+								transform:translateX(-300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con6:hover .pic6_top{transform:translateX(0);}
+	#collections .con6 .pic6_bottom{
+								background:rgba(245,66,108,.3);								
+								transition:all 0.3s ease;
+								transform:translateX(300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con6:hover .pic6_bottom{transform:translateX(0);}
+
+	#collections .con6 .pic6 .text6{
+																width:180px; 
+																height:180px; 
+																padding:10px;
+																font-size:15px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(245,66,108,.8);	
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con6 .pic6 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con6:hover .pic6 .text6{opacity:1;}
+		#collections .con6 .bg6{
+													background:url(../mac/images/con6.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con6:hover .bg6{transform:scale(1.06);}
+
+
+	.con7{
+			top:552px;
+			left:914px;
+			}
+	#collections .con7 .pic7_top{
+								background:rgba(159,93,186,.3);								
+								transition:all 0.3s ease;
+								transform:translateY(-300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}
+	#collections .con7:hover .pic7_top{transform:translateX(0);}
+	#collections .con7 .pic7_bottom{
+								background:rgba(159,93,186,.3);											
+								transition:all 0.3s ease;
+								transform:translateY(300px);
+								-webkit-transition:all 0.3s ease;
+								-moz-transition:all 0.3s ease;
+								-o-transition:all 0.3s ease;
+								}				
+	#collections .con7:hover .pic7_bottom{transform:translateX(0);}
+
+	#collections .con7 .pic7 .text7{
+																width:180px; 
+																height:180px; 
+																padding:10px;
+																font-size:15px;
+																transform:rotate(-45deg); 
+																position:absolute; 
+																top:50px;
+																left:50px;
+																background:rgba(159,93,186,.8);		
+																opacity:0;
+																z-index:3;
+																transition:all 0.8s ease;
+																text-align:center;
+																-webkit-transition:all 0.8s ease;
+																-moz-transition:all 0.8s ease;
+																-o-transition:all 0.8s ease;
+																}
+		#collections .con7 .pic7 a{color:#fff; text-decoration:none; line-height:150%;}
+		#collections .con7:hover .pic7 .text7{opacity:1;}
+		#collections .con7 .bg7{
+													background:url(../mac/images/con7.png) no-repeat;
+													width:300px; 
+													height:300px;
+													top:126px;
+													left:65px; 
+													transition:all 0.5s ease;
+													-webkit-transition:all 0.5s ease;
+													-moz-transition:all 0.5s ease;
+													-o-transition:all 0.5s ease;
+													}			
+		#collections .con7:hover .bg7{transform:scale(1.06);}
+		
+		#collections .gif_box{
+												position:absolute;
+												top:127px;
+												left:914px;
+												width:300px;
+												height:300px;
+												overflow:hidden;
+												transform:rotate(45deg);												
+												background:url(../mac/images/tumblr_oa28ufYWvT1uhx9abo1_540.gif) no-repeat;
+												background-size:99.7%;
+												opacity:0.5;												
+												transition:all 0.3s ease;
+												-webkit-transition:all 0.3s ease;
+												-moz-transition:all 0.3s ease;
+												-o-transition:all 0.3s ease;
+												}
+		
+		#collections .gif_box:hover{opacity:1;}
+		/*#collections .gif_box:hover .button{opacity:1;}*/
+		/*#collections .gif_box .button{
+																cursor:pointer;
+																text-align:center;
+																width:90px; 
+																height:30px; 
+																padding-top:10px;
+																color:#fff; 
+																border:1px solid #eee; 
+																transform:rotate(-45deg);
+																position:absolute;
+																top:200px;
+																left:178px;
+																opacity:0;
+																}*/
+
+.button{
+				cursor:pointer;
+				transform:rotate(-45deg);
+				position:absolute;
+				top:200px;
+				left:178px;
+				width:90px;
+				height:30px;
+				}
+.button a {
+				  text-decoration:none;
+				  color: #111;  
+				  padding: 10px;
+				  position:absolute;
+				  overflow: hidden;
+				  -moz-transition: ease-out 0.3s 0.3s;
+				  -o-transition: ease-out 0.3s 0.3s;
+				  -webkit-transition: ease-out 0.3s;
+				  -webkit-transition-delay: 0.3s;
+				  transition: ease-out 0.3s 0.3s;
+				}
+.button a span::before {
+								  width: 100%;
+								  height: 2px;
+								  background: white;
+								  content: "";
+								  position: absolute;
+								  left: 0;
+								  top: 0;
+								  -moz-transform: translateX(-100%);
+								  -ms-transform: translateX(-100%);
+								  -webkit-transform: translateX(-100%);
+								  transform: translateX(-100%);
+								  -moz-transition: 0.3s;
+								  -o-transition: 0.3s;
+								  -webkit-transition: 0.3s;
+								  transition: 0.3s;
+								}
+.button a span::after {
+							  width: 100%;
+							  height: 2px;
+							  background: white;
+							  content: "";
+							  position: absolute;
+							  right: 0;
+							  bottom: 0;
+							  -moz-transform: translateX(100%);
+							  -ms-transform: translateX(100%);
+							  -webkit-transform: translateX(100%);
+							  transform: translateX(100%);
+							  -moz-transition: 0.3s;
+							  -o-transition: 0.3s;
+							  -webkit-transition: 0.3s;
+							  transition: 0.3s;
+							}
+.button a::before {
+							  width: 2px;
+							  height: 100%;
+							  background: white;
+							  content: "";
+							  position: absolute;
+							  left: 0;
+							  top: 0;
+							  -moz-transform: translateY(100%);
+							  -ms-transform: translateY(100%);
+							  -webkit-transform: translateY(100%);
+							  transform: translateY(100%);
+							  -moz-transition: 0.3s;
+							  -o-transition: 0.3s;
+							  -webkit-transition: 0.3s;
+							  transition: 0.3s;
+							}
+.button a::after {
+							  width: 2px;
+							  height: 100%;
+							  background: white;
+							  content: "";
+							  position: absolute;
+							  right: 0px;
+							  bottom: 0;
+							  -moz-transform: translateY(-100%);
+							  -ms-transform: translateY(-100%);
+							  -webkit-transform: translateY(-100%);
+							  transform: translateY(-100%);
+							  -moz-transition: 0.3s;
+							  -o-transition: 0.3s;
+							  -webkit-transition: 0.3s;
+							  transition: 0.3s;
+							}
+
+#collections .gif_box:hover .button a { color: white;}
+#collections .gif_box:hover .button a::before,#collections .gif_box:hover .button a::after {
+										  -moz-transform: translateX(0);
+										  -ms-transform: translateX(0);
+										  -webkit-transform: translateX(0);
+										  transform: translateX(0);
+										}
+#collections .gif_box:hover .button a span::before,#collections .gif_box:hover .button a span::after {
+											  -moz-transform: translateX(0);
+											  -ms-transform: translateX(0);
+											  -webkit-transform: translateX(0);
+											  transform: translateX(0);
+											}
+
+
+		
+		#collections	.tex1{
+											width:300px;
+											height:300px;
+											transform:rotate(45deg);
+											position:absolute;
+											overflow:hidden;
+											top:765px;
+											left:278px;
+											background:rgba(145,70,146,0.8);
+											}
+		#collections .tex1 .text_box{
+															width:90px; 
+															height:300px; 
+															background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+															background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+															transform:translateX(-90px);
+															}		
+	#collections .tex1:hover .text_box{
+																	width:90px; 
+																	height:300px;
+																	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+																	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+																	animation-duration:0.7s;
+																	animation-name:textbox;
+																	}				
+	@keyframes textbox{								
+										100%{transform:translateX(380px);}
+											}			
+		#collections .tex1 .text1{
+										width:192px;
+										height:192px;
+										position:absolute;
+										top:25px;
+										left:25px;
+										transform:rotate(-45deg);
+										background:url(../mac/images/text1.png) no-repeat;
+										}
+	
+
+		
+		#collections	.tex2{
+											background:rgba(114,35,73,1);
+											opacity:0.5;
+											transition:all .6s ease;
+											width:300px;
+											height:300px;
+											transform:rotate(45deg);
+											position:absolute;
+											overflow:hidden;
+											top:339px;
+											left:1126px;
+											}
+		#collections .tex2 .tex2_box{
+															width:220px; 
+															height:100px; 
+															transform:rotate(-45deg); 
+															position:absolute; 
+															top:95px; 
+															left:35px; 
+															/*border:solid 2px rgba(255,255,255,0.6);*/
+															overflow:hidden;
+															}
+		#collections .tex2 .tex2_box .text2{
+											width:220px; 
+											height:100px; 
+											text-align:justify;
+											position:absolute;
+											top:100px;											
+											color:rgba(255,255,255,0.8);
+											transition:all 0.4s ease-in;
+											-webkit-transition:all 0.4s ease-in;
+											-moz-transition:all 0.4s ease-in;
+											-o-transition:all 0.4s ease-in;
+											}
+		#collections .tex2:hover{opacity:0.9;}
+		#collections .tex2:hover .tex2_box .text2{
+											width:220px; 
+											height:100px; 
+											text-align:justify;
+											position:absolute;
+											top:10px;
+											opacity:1;
+											}	
+
+	#collections	.tex3{
+											width:300px;
+											height:300px;
+											transform:rotate(45deg);
+											position:absolute;
+											overflow:hidden;
+											top:339px;
+											left:1549px;
+											
+											}
+		#collections .tex3 .text_box{
+															width:40px; 
+															height:300px; 
+															background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+															background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+															transform:translateX(-90px);
+															}		
+	#collections .tex3:hover .text_box{
+																	width:90px; 
+																	height:300px;
+																	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+																	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+																	animation-duration:0.7s;
+																	animation-name:textbox;
+																	}			
+
+
+	/*--------------------footer----------------------------*/
+	/*.hidden_box{
+				height:20px;
+				overflow:hidden;
+				width:100%;
+				background:#222;				
+				transition:all 1s ease;
+				position:relative;
+				top:974px;
+				-webkit-transition:all 1s ease;
+				-moz-transition:all 1s ease;
+				-o-transition:all 1s ease;
+				}
+	.hidden_box:hover{height:250px;}
+	
+	footer .hidden_box .bottom_pt{
+						clear:both;
+						background:url(../mac/images/bottom_bg.png) repeat-x;
+						height:20px; 
+						width:100%;
+						}
+	
+	footer .hidden_box .foot_box{
+									width:100%;
+									height:200px;
+									position:relative;
+									left:15%;
+									}
+	footer div[class *="f"] {float:left; margin:20px 25px;}
+	footer div[class *="f"] h4{color:#888;}
+	footer div[class *="f"] ul{list-style:none;}
+	footer div[class *="f"] ul li a{text-decoration:none; font-size:13px;color:#999;}
+	
+
+ .footer_bottom{
+							width:100%; 
+							height:40px; 
+							background:#711c45;
+							padding-top:20px;
+							position:relative;
+							top:974px;
+							z-index:3;		
+							}
+.footer_bottom ul{
+									list-style:none; 
+									width:1500px; 
+									height:30px; 
+									margin:0px auto;
+									}
+.footer_bottom ul li{
+									float:left; 
+									font-size:15px; 
+									color:#f5426c; 
+									margin:0 30px;
+									font-weight:bold;
+									}
+.footer_bottom ul li a{
+									font-size:15px; 
+									color:#f5426c; 
+									text-decoration:none; 
+									font-weight:bold;
+									}
+
+	.brick{
+				height:230px;
+				width:100%;
+				background:url(../mac/images/bottom_bg.png) repeat-x;
+				position:relative;
+				top:974px;
+				}*/
+	</style>
+ </head>
+
+
+ <body>
+
+	
+	<header><!--http://bbaki.ivyro.net/pftest2/-->
+	<div class="logo"><a href="#"></a></div>
+	
+	<nav>		
+		<ul class="top_ul">
+			<li><a href="#"><i class="fa fa-search"></i> Search</a></li>
+			<li><a href="#">Sign In</a></li>
+			<li><a href="#"><i class="fa fa-shopping-cart"></i> My Bag (0)</a></li>
+		</ul>
+	</header>
+
+		<div class="main_nav">
+		<label for="menu_icon"><i class="fa"></i></label>
+		<ul class="main_ul">
+			<li class="li1"><a href="#">HOLIDAY<div class="bar1"><span></span></div></a>
+						<ul class="ul1">
+							<li><a href="#">HOLIDAY GIFT GUIDE</a></li>
+							<li><a href="#">BRUSH KITS</a></li>
+							<li><a href="#">LIP KITS & BAGS</a></li>
+							<li><a href="#">EYE KITS & BAGS</a></li>
+							<li><a href="#">FACE KITS</a></li>
+							<li><a href="#">HOLIDAY GIFT CARD</a></li>
+						</ul>
+			</li>
+			<li class="li2"><a href="#">WHAT'S NEW<div class="bar2"><span></span></div></a>
+						<ul class="ul2">
+							<li><a href="#">SHADESCENTS</a></li>
+							<li><a href="#">CANDY COATED GIFT GUIDE</a></li>
+							<li><a href="#">INTHE SPOTLIGHT</a></li>
+							<li><a href="#">M.A.C HELMUT NEWTON</a></li>
+							<li><a href="#">M.A.C STUDIO QUIKTRIK STICK</a></li>
+							<li><a href="#">HOLIDAY GIFT CARD</a></li>
+						</ul>
+			</li>
+			<li class="li3"><a href="#">PRODUCTS<div class="bar3"><span></span></div></a>
+						<ul class="ul3">
+							<li><a href="#">TRENDING NOW</a></li>
+							<li><a href="#">MAKEUP</a></li>
+							<li><a href="#">PRIMER+SKINCARE</a></li>
+							<li><a href="#">BRUSHES+TOOLS</a></li>
+							<li><a href="#">FRAGRANCE</a></li>
+							<li><a href="#">GIFTING</a></li>
+						</ul>
+			</li>
+			<li class="li4"><a href="#">BESTSELLERS<div class="bar4"><span></span></div></a>
+						<ul class="ul4">
+							<li><a href="#">HOLIDAY BESTSELLERS</a></li>
+							<li><a href="#">MOST DESIRED</a></li>
+							<li><a href="#">ONLINE EXCLUSIVES</a></li>
+							<li><a href="#">TOP RATED</a></li>
+							<li><a href="#">JUST IN</a></li>
+							<li><a href="#">TRAVEL SIZE</a></li>
+						</ul>
+			</li>
+			<li class="li5"><a href="#">ARTISTRY<div class="bar5"><span></span></div></a>
+						<ul class="ul5">
+							<li><a href="#">FASHION WEEK</a></li>
+							<li><a href="#">THE ARTISTS</a></li>
+							<li><a href="#">VIDEOS</a></li>
+						</ul>
+			</li>
+			<li class="li6"><a href="#">CULTURE<div class="bar6"><span></span></div></a></li>
+			<li class="li7"><a href="#">MAKEUP SERVICES<div class="bar7"><span></span></div></a></li>
+		</ul>
+		</div>
+	</nav>
+	
+
+	<!----------------------------------------콘텐츠------------------------------------------------>
+
+<section id="collections">
+	
+	<div class="con1">
+		<div class="pic1">
+				<div class="text1"><a href="#"><span style="font-size:20px"><br>IN THE SPOTLIGHT</span></a><br><br><a href="#"><span>Radiant skin in a flash, no matter what the lighting is.</span></a></div>
+		</div>
+		<div class="bg1">
+				<div class="pic1_top"></div>
+				<div class="pic1_bottom"></div>
+		</div>
+	</div>
+
+	<div class="con2">
+		<div class="pic2">
+				<div class="text2"><a href="#"><span style="font-size:20px">SHADESCENTS</span></a><br><br><a href="#"><span>From the seductive red leather Ruby Woo to the flirtatious Candy Yum-Yum, there’s a unique fragrance and matching Lipstick for each and every one of you.</span></a></div>
+		</div>
+		<div class="bg2">
+				<div class="pic2_top"></div>
+				<div class="pic2_bottom"></div>
+		</div>
+	</div>
+
+	<div class="con3">
+		<div class="pic3">
+					<div class="text3"><a href="#"><span style="font-size:20px">SPELLBINDER</span></a><br><br><a href="#"><span>This is one attraction that’s impossible to resist. Spellbinder Shadow can create mesmerizing eyes with the deepest, mysterious shades that cling to lids like velvet.</span></a></div>
+		</div>
+		<div class="bg3">
+				<div class="pic3_top"></div>
+				<div class="pic3_bottom"></div>
+		</div>
+	</div>
+
+	<div class="con4">
+		<div class="pic4">
+				<div class="text4"><a href="#"><span style="font-size:20px">LIPTENSITY</span></a><br><br><a href="#"><span>A brilliant new Lipstick formula that pushes the boundaries of colour. Each Lipstick holds intense amounts of pigment, resulting in extreme colour intensity, clarity and vibrancy.</span></a></div>
+		</div>
+		<div class="bg4">
+				<div class="pic4_top"></div>
+				<div class="pic4_bottom"></div>
+		</div>
+	</div>
+
+	<div class="con5">
+		<div class="pic5">
+				<div class="text5"><a href="#"><span style="font-size:20px">M.A.C HELMUY NEWTON</span></a><br><br><a href="#"><span>M·A·C Limited Edition celebrates the erotically charged and elegant work of legendary photographer Helmut Newton.</span></a></div>
+		</div>
+		<div class="bg5">
+				<div class="pic5_top"></div>
+				<div class="pic5_bottom"></div>
+		</div>
+	</div>
+
+	<div class="con6">
+		<div class="pic6">
+				<div class="text6"><a href="#"><span style="font-size:20px"><br>CANDY COATED GIFT GUIDE</span></a><br><br><a href="#"><span>Twist, turn and tumble into a magical land of candy-coated gifts.</span></a></div>
+		</div>
+		<div class="bg6">
+				<div class="pic6_top"></div>
+				<div class="pic6_bottom"></div>
+		</div>
+	</div>
+
+	<div class="con7">
+		<div class="pic7">
+				<div class="text7"><a href="#"><span style="font-size:20px">M.A.C. STREET SCENE</span></a><br><br><a href="#"><span>Our classic nylon makeup bag goes splatter-painted this year in two new unique prints. Colour play shouldn’t stop with makeup!</span></a></div>
+		</div>
+		<div class="bg7">
+				<div class="pic7_top"></div>
+				<div class="pic7_bottom"></div>
+		</div>
+	</div>
+	
+	<div class="gif_box">
+				<div class="dia"></div>
+				<!--<div class="button">SHOP NOW</div>-->
+				<div class="button" id="button">
+                    <a href="button"><span>SHOP NOW</span></a>
+                </div>
+	</div>
+
+	
+			<div class="tex1">
+				<div class="text1"></div>
+				<div class="text_box"></div>				
+			</div>
+			
+	
+
+	<div class="tex2">
+			<div class="tex2_box">
+					<div class="text2">
+										<span>"This season, take a leap
+													into a magical land that's nutty, naughty and
+													bursting with whimsy!
+													our story has only just
+													begun..."</span>
+					</div>
+			</div>
+	</div>
+		
+	<div class="tex3">
+				<div class="text_box"></div>		
+			</div>
+
+</section>
+
+
+
+<!-----------------------------footer------------------------------------------>
+<!--<footer>
+		<div class="hidden_box">
+		<div class="bottom_pt"></div>
+		<div class="foot_box">
+		<div class="f1">
+		<h4>YOUR M·A·C STORE</h4>
+		<ul>
+			<li><a href="#">FIND A STORE / EVENT</a></li>
+			<li><a href="#">MAKEUP SERVICES</a></li>
+		</ul>
+		</div>
+		
+		<div class="f2">
+		<h4>CUSTOMER SERVICE</h4>
+		<ul>
+			<li><a href="#">CONTACT US</a></li>
+			<li><a href="#">FAQS</a></li>
+			<li><a href="#">SHIPPING INFO</a></li>
+			<li><a href="#">RETURN POLICY</a></li>
+			<li><a href="#">OFFER DETAILS</a></li>
+			<li><a href="#">SITE FEEDBACK</a></li>
+		</ul>
+		</div>
+
+		<div class="f3">
+		<h4>ABOUT US</h4>
+		<ul>
+			<li><a href="#">OUR STORY</a></li>
+			<li><a href="#">M·A·C AIDS FUND</a></li>
+			<li><a href="#">M·A·C PRO MEMBERSHIP</a></li>
+			<li><a href="#">M·A·C SELECT PROGRAM</a></li>
+			<li><a href="#">BACK TO M·A·C</a></li>
+			<li><a href="#">CAREERS</a></li>
+			<li><a href="#">ANIMAL TESTING</a></li>
+		</ul>
+		</div>
+
+		<div class="f4">
+		<h4>YOUR ACCOUNT</h4>
+		<ul>
+			<li><a href="#">MY M·A·C</a></li>
+			<li><a href="#">ORDER STATUS</a></li>
+			<li><a href="#">MY FAVOURITES</a></li>
+		</ul>
+		</div>
+	
+		<div class="f5">
+		<h4>GIFT CARDS</h4>
+		<ul>
+			<li><a href="#">GIFT CARDS</a></li>
+			<li><a href="#">EGIFT CARDS</a></li>
+			<li><a href="#">CHECK BALANCE</a></li>
+			<li><a href="#">ABOUT GIFT CARDS</a></li>
+		</ul>
+		</div>
+
+		<div class="f6">
+		<h4>CONNECT</h4>
+		<ul>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+
+		<div class="f7">
+		<h4>INTERNATIONAL SITES</h4>
+		<ul>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+		
+		</div>		
+		</div>
+		
+	</footer>
+	<div class="footer_bottom">
+		<ul>
+			<li><a href="#">PRIVACY POLICY</a></li>
+			<li><a href="#">INTEREST-BASED ADS</a></li>
+			<li><a href="#">TERMS & CONDITIONS</a></li>
+			<li><a href="#">SUPPLIER RELATIONS</a></li>
+			<li><a href="#">COUNTERFEIT EDUCATION</a></li>
+			<li>© MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.</li>
+		</ul>
+		</div>
+	<div class="brick"></div>-->
+ </body>
+</html>

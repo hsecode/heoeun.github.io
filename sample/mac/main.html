@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>M.A.C</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+	<style>
+		*{margin:0; padding:0;}
+		body{background:url(../mac/images/main_bg.png)no-repeat;background-color:#000;font-family: 'Dosis', sans-serif;width:100%;overflow-x: hidden;}
+		header{position:fixed;width:100%;height:80px;z-index:100;background:#000;}
+		.logo{
+					text-decoration:none;
+					background:url(../mac/images/neon_logo2.gif) no-repeat;
+					width:200px;
+					height:44px;
+					background-size:95%;
+					margin-top:20px;
+					margin-left:auto;
+					margin-right:auto;
+					float:left;
+					cursor:pointer;
+					position:absolute;
+					left:50%;
+					transform:translate(-50%,0%);
+					}
+
+
+		.top_ul{
+					margin-top:20px;
+					margin-right:30px;
+					position:absolute;
+					right:0%;
+					z-index:110;
+					}
+		.top_ul li{
+					list-style:none;
+					float:left;
+					margin:20px;
+					}
+		.top_ul li a{
+							text-decoration:none;
+							font-size:13px;
+							color:#fff;
+							}
+	.top_ul li:hover a{color:#f5426c;
+									animation-duration:0.1s;
+									animation-name:iani;
+									animation-iteration-count: infinite;
+									animation-direction:alternate;
+									-webkit-animation-duration:0.8s;
+									-webkit-animation-name:iani;
+									-webkit-animation-iteration-count: infinite;
+									-webkit-animation-direction:alternate;
+									}
+
+
+
+		.main_nav{
+						width:100%;
+						height:40px;
+						position:fixed;
+						z-index:100;
+						top:79px;
+						background:rgba(0,0,0,0.7);
+						}
+		.main_ul{
+						width:1050px;
+						position:absolute;
+						top:-2px;
+						left:50%;
+						transform:translate(-50%,0);
+
+						}
+		.main_ul > li{
+						float:left;
+						list-style:none;
+						width:150px;
+						height:30px;
+						padding-top:9px;
+						/*border-left:solid 1px #474747;*/
+						}
+		/*.main_ul li:last-child{border-right:solid 1px #474747;}*/
+		.main_ul li a{
+						text-decoration:none;
+						color:#fff;
+						}
+
+
+		.ul1,.ul2, .ul3, .ul4, .ul5{border:solid 1px #888;
+									list-style:none;
+									height:280px;
+									width:180px;
+									position:relative;
+									top:10px;
+									left:-30px;
+									padding-left:10px;
+									padding-top:10px;
+									overflow:hidden;
+									 max-height:0;
+									 transition:350ms;
+									-webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+									-webkit-transform-origin:50% 0;
+									-webkit-transition:all 350ms;
+									 -moz-transition:all 350ms;
+									-o-transition:all 350ms;
+									}
+		.ul2{width:250px; height:280px;}
+		.ul5{width:150px; height:130px;}
+		.ul1 li, .ul3 li, .ul4 li, .ul5 li {width:165px; height:50px; }
+		.ul2 li{width:200px; height:50px;}
+
+		.ul1 li a, .ul2 li a, .ul3 li a, .ul4 li a, .ul5 li a{
+													text-decoration:none;
+													color:#fff;
+													padding:2px 5px;
+													}
+		.main_ul li:hover .ul1, .main_ul li:hover .ul3, .main_ul li:hover .ul4{
+										height:280px;
+										width:180px;
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.9;
+										}
+		.main_ul li:hover .ul5{
+										height:130px;
+										width:150px;
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+										}
+		 .main_ul li:hover .ul2{
+										height:280px;
+										width:250px;
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+												}
+		.main_ul li:hover > a{	color:#f5426c;	}
+		.ul1 li:hover a, .ul2 li:hover a, .ul3 li:hover a, .ul4 li:hover a, .ul5 li:hover a{
+									background:#ff477b;
+									text-decoration:none;
+									color:#fff;
+									}
+		/*-------리스트 하단 bar-------*/
+		.main_ul .li1 .bar1{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li1:hover .bar1{width:55px;height:1px;background:#ff477b;}
+		.main_ul .li2 .bar2{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li2:hover .bar2{width:80px;height:1px;background:#ff477b;}
+		.main_ul .li3 .bar3{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li3:hover .bar3{width:68px;height:1px;background:#ff477b;}
+		.main_ul .li4 .bar4{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li4:hover .bar4{width:88px;height:1px;background:#ff477b;}
+		.main_ul .li5 .bar5{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li5:hover .bar5{width:60px;height:1px;background:#ff477b;}
+		.main_ul .li6 .bar6{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li6:hover .bar6{width:60px;height:1px;background:#ff477b;}
+		.main_ul .li7 .bar7{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li7:hover .bar7{width:120px;height:1px;background:#ff477b;}
+
+
+
+
+
+	/*-------------------------------------------------------------배너영역-------------------------------------------------------------------*/
+	#banner{
+					float:left;
+					clear:both;
+					width:1600px;
+					height:830px;
+					padding:0;
+					background:url(../mac/images/banner_bg2.png) no-repeat;
+					position:relative;
+					top:200px;
+					left:50%;
+					transform:translate(-50%,0%);
+					margin-bottom:150px;
+					/*position:absolute;
+					top:170px;
+					left:230px;*/
+					}
+	.con1, .con2, .con3, .con4{
+													width:400px;
+													height:830px;
+													float:left;
+													overflow:hidden;
+													}
+	#banner .con1 .banner1{
+					background:url(../mac/images/banner1.png) no-repeat;
+					width:400px;
+					height:830px;
+					margin:0;
+					transition:all 0.5s ease;
+					opacity:0;
+					}
+	#banner .con2 .banner2{
+					background:url(../mac/images/banner2.png) no-repeat;
+					width:400px;
+					height:830px;
+					margin:0;
+					transition:all 0.5s ease;
+					opacity:0;
+					}
+	#banner .con3 .banner3{
+					background:url(../mac/images/banner3.png) no-repeat;
+					width:400px;
+					height:830px;
+					margin:0;
+					transition:all 0.5s ease;
+					opacity:0;
+					}
+	#banner .con4 .banner4{
+					background:url(../mac/images/banner4.png) no-repeat;
+					width:400px;
+					height:830px;
+					margin:0;
+					transition:all 0.5s ease;
+					opacity:0;
+					}
+	#banner .con1:hover .banner1,#banner .con2:hover .banner2,#banner .con3:hover .banner3,#banner .con4:hover .banner4{
+					transform:scale(1.06);
+					opacity:1;
+					}
+	div[class *="banner"] .box{
+													/*overflow:hidden;*/
+													opacity:0;
+													visibility:hidden;
+													position:absolute;
+													top:70%;
+													left:50%;
+													transform:translate(-50%,-50%);
+													transition:all 0.5s ease;
+													}
+	div[class *="con"]:hover div[class *="banner"] .box{visibility:visible; opacity:1;}
+	#banner div[class *="con"]  div[class *="banner"] .box a{text-decoration:none; color:#fff; }
+
+
+	/*--------------------------배너영역 텍스트 transition-----------------------------*/
+	#banner div[class *="con"] div[class *="banner"] .left{
+														position:absolute;
+														left:0;
+														top:0;
+														color:#fff;
+														opacity:0.5;
+														transition:all 0.5s ease;
+														-webkit-transition:all 0.5s ease;
+														-o-transition:all 0.5s ease;
+														}
+	#banner div[class *="con"] div[class *="banner"] .right{
+														position:absolute;
+														left:0;
+														top:0;
+														color:#fff;
+														opacity:0.5;
+														transition:all 0.5s ease;
+														-webkit-transition:all 0.5s ease;
+														-o-transition:all 0.5s ease;
+														}
+
+	#banner .con1 .banner1 .box{width:250px; text-align:center;}
+	#banner .con1 .banner1 .left{transform:translateX(-215px);}
+	#banner .con1 .banner1 .right{transform:translateX(250px);}
+	#banner .con1:hover .left{transform:translateX(16px);}
+	#banner .con1:hover .right{transform:translateX(16px);}
+
+
+	#banner .con2 .banner2 .box{width:250px; text-align:center;}
+	#banner .con2 .banner2 .left{transform:translateX(-240px);}
+	#banner .con2 .banner2 .right{transform:translateX(238px);}
+	#banner .con2:hover .left{transform:translateX(-0.8px);}
+	#banner .con2:hover .right{transform:translateX(-0.8px);}
+
+
+	#banner .con3 .banner3 .box{width:250px; text-align:center;}
+	#banner .con3 .banner3 .left{transform:translateX(-203px);}
+	#banner .con3 .banner3 .right{transform:translateX(203px);}
+	#banner .con3:hover .left{transform:translateX(-0.8px);}
+	#banner .con3:hover .right{transform:translateX(-0.8px);}
+
+
+	#banner .con4 .banner4 .box{width:250px; text-align:center;}
+	#banner .con4 .banner4 .left{transform:translateX(-220px);}
+	#banner .con4 .banner4 .right{transform:translateX(220px);}
+	#banner .con4:hover .left{transform:translateX(-0.8px);}
+	#banner .con4:hover .right{transform:translateX(-0.8px);}
+
+
+
+/*----------------------------------------콘텐츠 영역----------------------------------------------*/
+.block_box{
+					clear:both;
+					background:rgba(0,0,0,0);
+					height:200px;
+					display:block;
+					}
+
+
+		.video_box{
+							width:1910px;
+							height:810px;
+							margin:0;
+							padding:0;
+							position:absolute;
+							}
+		.video_left .left_bg{
+							width:950px;
+							height:800px;
+							background:url(../mac/images/video_left.png) no-repeat;
+							position:relative;
+							z-index:20;
+							float:left;
+							display:inline-block;
+							transition:all 0.6s ease-out;
+							-webkit-transition:all 0.6s ease-out;
+							-o-transition:all 0.6s ease-out;
+							}
+		.video_right .right_bg{
+							width:950px;
+							height:800px;
+							background:url(../mac/images/video_right.png) no-repeat;
+							position:relative;
+							z-index:20;
+							display:inline-block;
+							transition:all 0.6s ease-out;
+							-webkit-transition:all 0.6s ease-out;
+							-o-transition:all 0.6s ease-out;
+							}
+		.video_box:hover .video_left .left_bg{transform:translateX(-600px);transition-delay:0.2s;}
+		.video_box:hover .video_right .right_bg{transform:translateX(600px);transition-delay:0.2s;}
+
+		.video{
+					clear:both;
+					display:block;
+					height:720px;
+					width:1280px;
+					position:relative;
+					top:400px;
+					left:950px;
+					z-index:-1;
+					transform:translate(-50%,-50%);
+					}
+
+
+
+
+	#holiday .title{
+									background:url(../mac/images/magical_text.png) no-repeat;
+									width:1159px;
+									height:70px;
+									position:relative;
+									top:250px;
+									left:50%;
+									transform:translate(-50%,-50%);
+									}
+
+	#scroll{
+					height:400px;
+					width:100%;
+					position:relative;
+					top:250px;
+					}
+	#scroll .back{
+								height:400px;
+								width:100%;
+								background:url(../mac/images/back_attach.jpg) no-repeat;
+								background-attachment:fixed;
+								}
+	#scroll .nut_text{
+								position:relative;
+								top:-400px;
+								opacity:0.6;
+								}
+
+
+
+	#holiday_box{
+							width:100%;
+							position:relative;
+							z-index:10;
+							top:140px;
+							margin:185px 0;
+							}
+	#holiday_box .product{width:1125px; margin:0px auto;}
+	.lip1, .lip2, .lip3, .lip4, .lip5{width:185px; height:385px; float:left; margin:0 20px;}
+	.lip1:hover{
+			background:url(../mac/images/lip1-neon.png) no-repeat;
+			}
+	.lip2:hover{
+			background:url(../mac/images/lip2-neon.png) no-repeat;
+			}
+	.lip3:hover{
+			background:url(../mac/images/lip3-neon.png) no-repeat;
+			}
+	.lip4:hover{
+			background:url(../mac/images/lip4-neon.png) no-repeat;
+			}
+	.lip5:hover{
+			background:url(../mac/images/lip5-neon.png) no-repeat;
+			}
+
+	#holiday_box:before{background:url(../mac/images/neon_heart.gif) no-repeat; width:250px; height:250px;}
+
+
+
+
+	.insta{
+				width:1500px;
+				height:410px;
+				position:relative;
+				top:130px;
+				margin:270px auto 120px;;
+				}
+	.insta div[class *="con"]{
+	float:left;
+	width:200px;
+	height:200px;
+	margin:2.5px;
+	overflow:hidden;
+	}
+	.insta div[class *="pic"]{
+				width:200px;
+				height:200px;
+				float:left;
+				cursor:pointer;
+				transition:all 0.5s ease;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
+				-moz-transition:all 0.5s ease;
+				-o-transition:all 0.5s ease;s
+				overflow:hidden;
+				}
+	.insta .con1:hover .pic1,.insta .con2:hover .pic2,.insta .con3:hover .pic3,.insta .con4:hover .pic4,.insta .con5:hover .pic5,.insta .con6:hover .pic6,.insta .con7:hover .pic7,.insta .con8:hover .pic8,.insta .con9:hover .pic9,.insta .con10:hover .pic10,.insta .con11:hover .pic11,.insta .con12:hover .pic12,.insta .con13:hover .pic13,.insta .con14:hover .pic14,.insta .con15:hover .pic15,.insta .con16:hover .pic16{transform:scale(1.06); opacity:1;}
+	.insta .pic1{background:url(../mac/images/insta1.png) no-repeat;}
+	.insta .pic2{background:url(../mac/images/insta2.png) no-repeat;}
+	.insta .pic3{background:url(../mac/images/insta3.png) no-repeat;}
+	.insta .pic4{background:url(../mac/images/insta4.png) no-repeat;}
+	.insta .pic5{background:url(../mac/images/insta5.png) no-repeat;}
+	.insta .pic6{background:url(../mac/images/insta6.png) no-repeat;}
+	.insta .pic7{background:url(../mac/images/insta7.png) no-repeat;}
+	.insta .pic8{background:url(../mac/images/insta8.png) no-repeat;}
+	.insta .pic9{background:url(../mac/images/insta9.png) no-repeat;}
+	.insta .pic10{background:url(../mac/images/insta10.png) no-repeat;}
+	.insta .pic11{background:url(../mac/images/insta11.png) no-repeat;}
+	.insta .pic12{background:url(../mac/images/insta12.png) no-repeat;}
+	.insta .pic13{background:url(../mac/images/insta13.png) no-repeat;}
+	.insta .pic14{background:url(../mac/images/insta14.png) no-repeat;}
+	.insta .pic15{background:url(../mac/images/insta15.png) no-repeat;}
+	.insta .pic16{background:url(../mac/images/insta16.png) no-repeat;}
+
+	.social{
+				width:200px;
+				height:50px;
+				background:rgba(245,66,108,0.7);
+				margin-top:150px;
+				color:#fff;
+				font-size:20px;
+				transition:all 0.5s ease;
+				-webkit-transition:all 0.5s ease;
+				-moz-transition:all 0.5s ease;
+				-o-transition:all 0.5s ease;
+				position:relative;
+				top:50px;
+				}
+	.social i{margin:13px 23px;}
+	.insta div[class *="pic"]:hover .social{top:0;}
+	.insta div[class *="pic"] .social i:hover{
+																			color:#871f51;
+																			font-weight:bold;
+																			text-shadow:2px 2px 3px #711c45;
+																			animation-duration:0.1s;
+																			animation-name:iani;
+																			animation-iteration-count: infinite;
+																			animation-direction:alternate;
+																			-webkit-animation-duration:0.8s;
+																			-webkit-animation-name:iani;
+																			-webkit-animation-iteration-count: infinite;
+																			-webkit-animation-direction:alternate;
+																			}
+	@keyframes iani{
+									0%{color:#871f51;}
+									25%{color:#00fffc;}
+									50%{color:orange;}
+									75%{color:#00ff00;}
+									100%{color:#ff00b4;}
+									}
+
+
+	.hidden_box{
+				height:20px;
+				overflow:hidden;
+				width:100%;
+				background:#222;
+				transition:all 1s ease;
+				position:relative;
+				top:150px;
+				-webkit-transition:all 1s ease;
+				-moz-transition:all 1s ease;
+				-o-transition:all 1s ease;
+				}
+	.hidden_box:hover{height:250px;}
+
+	footer .hidden_box .bottom_pt{
+						clear:both;
+						background:url(../mac/images/bottom_bg.png) repeat-x;
+						height:20px;
+						width:100%;
+						}
+
+	footer .hidden_box .foot_box{
+									width:100%;
+									height:200px;
+									position:relative;
+									left:15%;
+									}
+	footer div[class *="f"] {float:left; margin:20px 25px;}
+	footer div[class *="f"] h4{color:#888;}
+	footer div[class *="f"] ul{list-style:none;}
+	footer div[class *="f"] ul li a{text-decoration:none; font-size:13px;color:#999;}
+
+
+ .footer_bottom{
+							width:100%;
+							height:40px;
+							background:#711c45;
+							padding-top:20px;
+							position:relative;
+							top:150px;
+							z-index:3;
+							}
+.footer_bottom ul{
+									list-style:none;
+									width:1500px;
+									height:30px;
+									margin:0px auto;
+									}
+.footer_bottom ul li{
+									float:left;
+									font-size:15px;
+									color:#f5426c;
+									margin:0 30px;
+									font-weight:bold;
+									}
+.footer_bottom ul li a{
+									font-size:15px;
+									color:#f5426c;
+									text-decoration:none;
+									font-weight:bold;
+									}
+
+	.brick{
+				height:230px;
+				width:100%;
+				background:url(../mac/images/bottom_bg.png) repeat-x;
+				position:relative;
+				top:150px;
+				}
+
+	</style>
+ </head>
+
+
+ <body>
+
+
+	<header>
+	<div class="logo"><a href="#"></a></div>
+
+	<nav>
+		<ul class="top_ul">
+			<li><a href="#"><i class="fa fa-search"></i> Search</a></li>
+			<li><a href="#">Sign In</a></li>
+			<li><a href="#"><i class="fa fa-shopping-cart"></i> My Bag (0)</a></li>
+		</ul>
+	</header>
+
+		<div class="main_nav">
+		<label for="menu_icon"><i class="fa"></i></label>
+		<ul class="main_ul">
+			<li class="li1"><a href="#">HOLIDAY<div class="bar1"><span></span></div></a>
+						<ul class="ul1">
+							<li><a href="#">HOLIDAY GIFT GUIDE</a></li>
+							<li><a href="#">BRUSH KITS</a></li>
+							<li><a href="#">LIP KITS & BAGS</a></li>
+							<li><a href="#">EYE KITS & BAGS</a></li>
+							<li><a href="#">FACE KITS</a></li>
+							<li><a href="#">HOLIDAY GIFT CARD</a></li>
+						</ul>
+			</li>
+			<li class="li2"><a href="#">WHAT'S NEW<div class="bar2"><span></span></div></a>
+						<ul class="ul2">
+							<li><a href="#">SHADESCENTS</a></li>
+							<li><a href="#">CANDY COATED GIFT GUIDE</a></li>
+							<li><a href="#">INTHE SPOTLIGHT</a></li>
+							<li><a href="#">M.A.C HELMUT NEWTON</a></li>
+							<li><a href="#">M.A.C STUDIO QUIKTRIK STICK</a></li>
+							<li><a href="#">HOLIDAY GIFT CARD</a></li>
+						</ul>
+			</li>
+			<li class="li3"><a href="#">PRODUCTS<div class="bar3"><span></span></div></a>
+						<ul class="ul3">
+							<li><a href="#">TRENDING NOW</a></li>
+							<li><a href="#">MAKEUP</a></li>
+							<li><a href="#">PRIMER+SKINCARE</a></li>
+							<li><a href="#">BRUSHES+TOOLS</a></li>
+							<li><a href="#">FRAGRANCE</a></li>
+							<li><a href="#">GIFTING</a></li>
+						</ul>
+			</li>
+			<li class="li4"><a href="#">BESTSELLERS<div class="bar4"><span></span></div></a>
+						<ul class="ul4">
+							<li><a href="#">HOLIDAY BESTSELLERS</a></li>
+							<li><a href="#">MOST DESIRED</a></li>
+							<li><a href="#">ONLINE EXCLUSIVES</a></li>
+							<li><a href="#">TOP RATED</a></li>
+							<li><a href="#">JUST IN</a></li>
+							<li><a href="#">TRAVEL SIZE</a></li>
+						</ul>
+			</li>
+			<li class="li5"><a href="#">ARTISTRY<div class="bar5"><span></span></div></a>
+						<ul class="ul5">
+							<li><a href="#">FASHION WEEK</a></li>
+							<li><a href="#">THE ARTISTS</a></li>
+							<li><a href="#">VIDEOS</a></li>
+						</ul>
+			</li>
+			<li class="li6"><a href="#">CULTURE<div class="bar6"><span></span></div></a></li>
+			<li class="li7"><a href="#">MAKEUP SERVICES<div class="bar7"><span></span></div></a></li>
+		</ul>
+		</div>
+	</nav>
+
+
+
+
+	<!-------------------------배너영역--------------------------->
+
+	<section id="banner">
+			<div class="con1">
+					<div class="banner1">
+								<div class="box">
+										<a href="#" class="a1"><span style="font-size:50px">STUDIO FIX</span></a>
+										<div class="left">
+												<a href="#" class="a2"><span style="font-size:50px">STUDIO FIX</span></a>
+										</div>
+										<div class="right">
+												<a href="#" class="a3"><span style="font-size:50px">STUDIO FIX</span></a>
+										</div>
+										<br><br>
+										<a href="#" class="a_text">TWO NEW ADDITIONS TO OUR REPERTOIRE OF BACKSTAGE-TESTED MUST-HAVE PRODUCTS.</a>
+								</div>
+					</div>
+					<div class="banner_bg"></div>
+			</div>
+
+			<div class="con2">
+					<div class="banner2">
+								<div class="box">
+										<a href="#" class="a1"><span style="font-size:45px">CANDY COATED GIFT<br>GUIDE</span></a>
+										<div class="left">
+												<a href="#" class="a2"><span style="font-size:45px">CANDY COATED GIFT<br>GUIDE</span></a>
+										</div>
+										<div class="right">
+												<a href="#" class="a3"><span style="font-size:45px">CANDY COATED GIFT<br>GUIDE</span></a>
+										</div>
+										<br><br>
+										<a href="#">TWIST, TURN AND TUMBLE INTO A MAGICAL LAND OF CANDY-COATED GIFTS.</a>
+								</div>
+					</div>
+			</div>
+
+			<div class="con3">
+					<div class="banner3">
+								<div class="box">
+										<a href="#"><span style="font-size:50px">M.A.C SELENA</span></a>
+										<div class="left">
+												<a href="#" class="a2"><span style="font-size:50px">M.A.C SELENA</span></a>
+										</div>
+										<div class="right">
+												<a href="#" class="a3"><span style="font-size:50px">M.A.C SELENA</span></a>
+										</div>
+										<br><br>
+										<a href="#">SELENA NOT ONLY TAUGHT US TO MOVE, SHE MOVED US - LET'S KEEP THAT RHYTHM ALIVE !</a>
+								</div>
+					</div>
+			</div>
+
+			<div class="con4">
+					<div class="banner4">
+								<div class="box">
+										<a href="#"><span style="font-size:45px">VIVA GLAM ARIANA GRANDE</span></a>
+										<div class="left">
+												<a href="#" class="a2"><span style="font-size:45px">VIVA GLAM ARIANA GRANDE</span></a>
+										</div>
+										<div class="right">
+												<a href="#" class="a3"><span style="font-size:45px">VIVA GLAM ARIANA GRANDE</span></a>
+										</div>
+										<br><br><br><a href="#">BE A DOLL!, <br>GO GLAM!</a>
+								</div>
+					</div>
+			</div>
+			<div class="banner_bg"></div>
+	</section>
+
+	<!---------------------배너-------------------------------------->
+	</header>
+
+	<div class="block_box"></div>
+
+		<div class="video_box">
+				<div class="video_left"><div class="left_bg"></div></div>
+				<div class="video_right"><div class="right_bg"></div></div>
+		</div>
+		<div class="video">
+		<video src=".../mac/images/Nutcracker.mp4"  width="1280" height="700" preload controls loop>
+		<source src=".Nutcracker.mp4">
+		</div>
+
+
+<section id="holiday">
+		<div class="title"></div>
+	</section>
+
+	<section id="scroll">
+		<div class="back"></div>
+		<div class="nut_text"><img src=".../mac/images/nut_back1.png"></div>
+	</section>
+
+
+
+	<!--<div id="holiday_box">
+		<div class="product">
+		<a href="#"><div class="lip1"><img src=".../mac/images/lip-1.png"></div></a>
+		<a href="#"><div class="lip2"><img src=".../mac/images/lip-2.png"></div></a>
+		<a href="#"><div class="lip3"><img src=".../mac/images/lip-3.png"></div></a>
+		<a href="#"><div class="lip4"><img src=".../mac/images/lip-4.png"></div></a>
+		<a href="#"><div class="lip5"><img src=".../mac/images/lip-5.png"></div></a>
+		</div>
+	</div>-->
+
+
+	<div class="insta">
+		<div class="con1">
+				<div class="pic1">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con2">
+				<div class="pic2">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con3">
+				<div class="pic3">
+					<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con4">
+				<div class="pic4">
+					<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con5">
+				<div class="pic5">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con6">
+				<div class="pic6">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con7">
+				<div class="pic7">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con8">
+				<div class="pic8">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con9">
+				<div class="pic9">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con10">
+				<div class="pic10">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con11">
+				<div class="pic11">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con12">
+				<div class="pic12">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con13">
+				<div class="pic13">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con14">
+				<div class="pic14">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<!--<div class="con15">
+				<div class="pic15">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>
+		<div class="con16">
+				<div class="pic16">
+						<div class="social"><i class="fa fa-instagram"></i><i class="fa fa-heart"></i><i class="fa fa-reply"></i></div>
+				</div>
+		</div>-->
+	</div>
+
+
+	<footer>
+		<div class="hidden_box">
+		<div class="bottom_pt"></div>
+		<div class="foot_box">
+		<div class="f1">
+		<h4>YOUR M·A·C STORE</h4>
+		<ul>
+			<li><a href="#">FIND A STORE / EVENT</a></li>
+			<li><a href="#">MAKEUP SERVICES</a></li>
+		</ul>
+		</div>
+		
+		<div class="f2">
+		<h4>CUSTOMER SERVICE</h4>
+		<ul>
+			<li><a href="#">CONTACT US</a></li>
+			<li><a href="#">FAQS</a></li>
+			<li><a href="#">SHIPPING INFO</a></li>
+			<li><a href="#">RETURN POLICY</a></li>
+			<li><a href="#">OFFER DETAILS</a></li>
+			<li><a href="#">SITE FEEDBACK</a></li>
+		</ul>
+		</div>
+
+		<div class="f3">
+		<h4>ABOUT US</h4>
+		<ul>
+			<li><a href="#">OUR STORY</a></li>
+			<li><a href="#">M·A·C AIDS FUND</a></li>
+			<li><a href="#">M·A·C PRO MEMBERSHIP</a></li>
+			<li><a href="#">M·A·C SELECT PROGRAM</a></li>
+			<li><a href="#">BACK TO M·A·C</a></li>
+			<li><a href="#">CAREERS</a></li>
+			<li><a href="#">ANIMAL TESTING</a></li>
+		</ul>
+		</div>
+
+		<div class="f4">
+		<h4>YOUR ACCOUNT</h4>
+		<ul>
+			<li><a href="#">MY M·A·C</a></li>
+			<li><a href="#">ORDER STATUS</a></li>
+			<li><a href="#">MY FAVOURITES</a></li>
+		</ul>
+		</div>
+	
+		<div class="f5">
+		<h4>GIFT CARDS</h4>
+		<ul>
+			<li><a href="#">GIFT CARDS</a></li>
+			<li><a href="#">EGIFT CARDS</a></li>
+			<li><a href="#">CHECK BALANCE</a></li>
+			<li><a href="#">ABOUT GIFT CARDS</a></li>
+		</ul>
+		</div>
+
+		<div class="f6">
+		<h4>CONNECT</h4>
+		<ul>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+
+		<div class="f7">
+		<h4>INTERNATIONAL SITES</h4>
+		<ul>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+		
+		</div>		
+		</div>
+		
+	</footer>
+	<div class="footer_bottom">
+		<ul>
+			<li><a href="#">PRIVACY POLICY</a></li>
+			<li><a href="#">INTEREST-BASED ADS</a></li>
+			<li><a href="#">TERMS & CONDITIONS</a></li>
+			<li><a href="#">SUPPLIER RELATIONS</a></li>
+			<li><a href="#">COUNTERFEIT EDUCATION</a></li>
+			<li>© MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.</li>
+		</ul>
+		</div>
+	<div class="brick"></div>
+
+ </body>
+</html>

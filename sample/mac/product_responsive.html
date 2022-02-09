@@ -1,0 +1,1511 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>M.A.C</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <style>
+  *{margin:0; padding:0;}
+		body{background:#000;
+					font-family: 'Dosis', sans-serif;
+					overflow:auto;}
+		@media screen and (min-width:1024px){
+		header{position:fixed;
+						width:100%;
+						height:80px;
+						z-index:100;
+						background:#000;
+						}
+		.logo{
+					text-decoration:none;
+					background:url(../mac/images/neon_logo2.gif) no-repeat;
+					width:200px;
+					height:44px;
+					background-size:95%;
+					margin-top:20px;
+					margin-left:auto;
+					margin-right:auto;
+					float:left;
+					cursor:pointer;
+					position:absolute;
+					left:50%;
+					transform:translate(-50%,0%);
+					}
+
+
+		.top_ul{
+					margin-top:20px;
+					margin-right:30px;
+					position:absolute;
+					right:0%;
+					z-index:110;
+					}
+		.top_ul li{
+					list-style:none;
+					float:left;
+					margin:20px;
+					}
+		.top_ul li a{
+							text-decoration:none;
+							font-size:13px;
+							color:#fff;
+							}
+	.top_ul li:hover a{color:#f5426c;
+									animation-duration:0.1s;
+									animation-name:iani;
+									animation-iteration-count: infinite;
+									animation-direction:alternate;
+									-webkit-animation-duration:0.8s;
+									-webkit-animation-name:iani;
+									-webkit-animation-iteration-count: infinite;
+									-webkit-animation-direction:alternate;
+									}
+	@keyframes iani{
+									0%{color:#871f51;}
+									25%{color:#00fffc;}
+									50%{color:orange;}
+									75%{color:#00ff00;}
+									100%{color:#ff00b4;}
+									}
+		
+		.main_nav{
+						width:100%;
+						height:40px;
+						position:fixed;
+						z-index:100;
+						top:79px;						
+						background:rgba(0,0,0,0.7);
+						}
+		.main_ul{
+						width:1050px;
+						position:absolute;
+						top:-2px;
+						left:50%;
+						transform:translate(-50%,0);
+						
+						}
+		.main_ul > li{
+						float:left;
+						list-style:none;
+						width:150px;
+						height:30px;
+						padding-top:9px;
+						/*border-left:solid 1px #474747;*/
+						}
+		/*.main_ul li:last-child{border-right:solid 1px #474747;}*/
+		.main_ul li a{	
+						text-decoration:none;
+						color:#fff;		
+						}
+		
+
+		.ul1,.ul2, .ul3, .ul4, .ul5{border:solid 1px #888;
+									list-style:none;
+									height:280px;
+									width:180px;
+									position:relative;
+									top:10px;
+									left:-30px;
+									padding-left:10px;
+									padding-top:10px;
+									overflow:hidden;
+									 max-height:0;
+									 transition:350ms;
+									-webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+									-webkit-transform-origin:50% 0;
+									-webkit-transition:all 350ms;
+									 -moz-transition:all 350ms;
+									-o-transition:all 350ms;    
+									}
+		.ul2{width:250px; height:280px;}
+		.ul5{width:150px; height:130px;}
+		.ul1 li, .ul3 li, .ul4 li, .ul5 li {width:165px; height:50px; }
+		.ul2 li{width:200px; height:50px;}
+
+		.ul1 li a, .ul2 li a, .ul3 li a, .ul4 li a, .ul5 li a{
+													text-decoration:none;
+													color:#fff;
+													padding:2px 5px;
+													}		
+		.main_ul li:hover .ul1, .main_ul li:hover .ul3, .main_ul li:hover .ul4{
+										height:280px;
+										width:180px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.9;
+										}
+		.main_ul li:hover .ul5{
+										height:130px;
+										width:150px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+										}
+		 .main_ul li:hover .ul2{
+										height:280px;
+										width:250px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+												}
+		.main_ul li:hover > a{	color:#f5426c;	}
+		.ul1 li:hover a, .ul2 li:hover a, .ul3 li:hover a, .ul4 li:hover a, .ul5 li:hover a{
+									background:#ff477b; 
+									text-decoration:none; 
+									color:#fff;
+									}
+		/*-------리스트 하단 bar-------*/
+		.main_ul .li1 .bar1{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li1:hover .bar1{width:55px;height:1px;background:#ff477b;}
+		.main_ul .li2 .bar2{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li2:hover .bar2{width:80px;height:1px;background:#ff477b;}
+		.main_ul .li3 .bar3{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li3:hover .bar3{width:68px;height:1px;background:#ff477b;}
+		.main_ul .li4 .bar4{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li4:hover .bar4{width:88px;height:1px;background:#ff477b;}
+		.main_ul .li5 .bar5{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li5:hover .bar5{width:60px;height:1px;background:#ff477b;}
+		.main_ul .li6 .bar6{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li6:hover .bar6{width:60px;height:1px;background:#ff477b;}
+		.main_ul .li7 .bar7{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li7:hover .bar7{width:120px;height:1px;background:#ff477b;}
+
+
+		/*-----------------------------------------제품---------------------------------------------------------------*/
+		#shadow_bg{
+							background:url(../mac/images/shadow_bg.png) no-repeat;
+							width:100%;
+							height:2400px;
+							position:absolute;
+							top:80px;
+							}
+
+		.top_list{
+						width:100%;
+						height:50px;
+						background:rgba(255,255,255,0.2);
+						position:absolute;
+						top:40px;
+						}
+		.top_list ul{
+		width:400px;
+		height:50px;
+       font-size:14px;
+	   position:absolute;
+	   left:10%;
+       }
+  .top_list ul li:first-child {list-style:none; margin-right:10px;}
+  .top_list ul li{ list-style-image:url(../mac/images/li-style.png);
+        float:left;        
+        height:20px;
+        padding:15px 5px; margin:0 5px;
+        } 
+		.top_list ul li a{color:#f2f2f2; text-decoration:none;}
+
+		.top_banner{
+								width:1220px;
+								height:420px;
+								background:url(../mac/images/shadow_banner.png) no-repeat;
+								position:absolute;
+								top:130px;
+								left:50%;
+								transform:translate(-50%,0);
+								transition:all 0.7s ease;
+								-webkit-transition:all 0.7s ease;
+								-moz-transition:all 0.7s ease;
+								-o-transition:all 0.7s ease;
+								overflow:hidden;
+								}
+		.top_banner .banner .text_box{
+																	border:solid 2px rgba(255,255,255,1);  
+																	background:rgba(255,255,255,0.1);
+																	width:400px;
+																	height:250px;
+																	position:absolute;
+																	top:100px;
+																	left:80px;
+																	text-align:justify;
+																	padding:10px;
+																	transition:all 1s ease;
+																	-webkit-transition:all 1s ease;
+																	-moz-transition:all 1s ease;
+																	-o-transition:all 1s ease;
+																	opacity:0;}
+		.top_banner .banner .text_box span{color:rgba(255,255,255,1); }
+		.top_banner:hover{background:url(../mac/images/shadow_banner2.png) no-repeat;}
+		.top_banner:hover .banner .text_box{opacity:1;top:60px;}
+	
+		.top_banner .banner .text_box .button{
+															cursor:pointer;
+															width:90px;
+															height:30px;
+															position:absolute;
+															top:200px;
+															left:300px;
+															}
+		.top_banner .banner .text_box .button a {
+																  text-decoration:none;
+																  color: rgba(255,255,255,0);  
+																  background:rgba(134,85,105,0.8);
+																  padding: 10px;
+																  position:absolute;
+																  overflow: hidden;
+																  -moz-transition: ease-out 0.3s 0.3s;
+																  -o-transition: ease-out 0.3s 0.3s;
+																  -webkit-transition: ease-out 0.3s;
+																  -webkit-transition-delay: 0.3s;
+																  transition: ease-out 0.3s 0.3s;
+																}
+		.top_banner .banner .text_box .button a span::before {
+																	  width: 100%;
+																	  height: 2px;
+																	  background: rgba(255,255,255,.7);
+																	  content: "";
+																	  position: absolute;
+																	  left: 0;
+																	  top: 0;
+																	  -moz-transform: translateX(-100%);
+																	  -ms-transform: translateX(-100%);
+																	  -webkit-transform: translateX(-100%);
+																	  transform: translateX(-100%);
+																	  -moz-transition: 0.3s;
+																	  -o-transition: 0.3s;
+																	  -webkit-transition: 0.3s;
+																	  transition: 0.3s;
+																	  transition-delay: 0.3s;
+																	  -moz-transition-delay: 0.3s;
+																	  -o-transition-delay: 0.3s;
+																	  -webkit-transition-delay: 0.3s;
+																	}
+.top_banner .banner .text_box .button a span::after {
+																	  width: 100%;
+																	  height: 2px;
+																	  background: rgba(255,255,255,.7);
+																	  content: "";
+																	  position: absolute;
+																	  right: 0;
+																	  bottom: 0;
+																	  -moz-transform: translateX(100%);
+																	  -ms-transform: translateX(100%);
+																	  -webkit-transform: translateX(100%);
+																	  transform: translateX(100%);
+																	  -moz-transition: 0.3s;
+																	  -o-transition: 0.3s;
+																	  -webkit-transition: 0.3s;
+																	  transition: 0.3s;
+																	  transition-delay: 0.3s;
+																	  -moz-transition-delay: 0.3s;
+																	  -o-transition-delay: 0.3s;
+																	  -webkit-transition-delay: 0.3s;
+																	}
+.top_banner .banner .text_box .button a::before {
+																		  width: 2px;
+																		  height: 100%;
+																		  background:rgba(255,255,255,.7);
+																		  content: "";
+																		  position: absolute;
+																		  left: 0;
+																		  top: 0;
+																		  -moz-transform: translateY(100%);
+																		  -ms-transform: translateY(100%);
+																		  -webkit-transform: translateY(100%);
+																		  transform: translateY(100%);
+																		  -moz-transition: 0.3s;
+																		  -o-transition: 0.3s;
+																		  -webkit-transition: 0.3s;
+																		  transition: 0.3s;
+																		  transition-delay: 0.3s;
+																		  -moz-transition-delay: 0.3s;
+																		  -o-transition-delay: 0.3s;
+																		  -webkit-transition-delay: 0.3s;
+																		}
+.top_banner .banner .text_box .button a::after {
+																			  width: 2px;
+																			  height: 100%;
+																			  background: rgba(255,255,255,.7);
+																			  content: "";
+																			  position: absolute;
+																			  right: 0px;
+																			  bottom: 0;
+																			  -moz-transform: translateY(-100%);
+																			  -ms-transform: translateY(-100%);
+																			  -webkit-transform: translateY(-100%);
+																			  transform: translateY(-100%);
+																			  -moz-transition: 0.3s;
+																			  -o-transition: 0.3s;
+																			  -webkit-transition: 0.3s;
+																			  transition: 0.3s;
+																			   transition-delay: 0.3s;
+																			   -moz-transition-delay: 0.3s;
+																			  -o-transition-delay: 0.3s;
+																			  -webkit-transition-delay: 0.3s;
+																			}
+		.top_banner:hover .banner .text_box .button a { color:rgba(255,255,255,.8); }
+		.top_banner:hover .banner .text_box .button a::before,.top_banner:hover .banner .text_box .button a::after {
+										  -moz-transform: translateX(0);
+										  -ms-transform: translateX(0);
+										  -webkit-transform: translateX(0);
+										  transform: translateX(0);
+										}
+		.top_banner:hover .banner .text_box .button a span::before,.top_banner:hover .banner .text_box .button a span::after {
+											  -moz-transform: translateX(0);
+											  -ms-transform: translateX(0);
+											  -webkit-transform: translateX(0);
+											  transform: translateX(0);
+											}
+		
+		.shadow_logo{
+									background:url(../mac/images/shadow.gif) no-repeat;
+									background-size:100%;
+									width:300px;
+									height:84px;
+									position:absolute;
+									top:650px;
+									left:50%;
+									transform:translate(-50%,0);
+									border-top:solid 2px rgba(255,255,255,0.7);
+									}
+
+			#product{
+								width:1750px; 
+								height:1400px; 
+								/*background:rgba(255,0,0,0.5); */
+								position:absolute; 
+								top:800px;
+								left:50%;
+								transform:translate(-50%,0);
+								}
+			#product div[class *="box"]{
+																width:390px; 
+																height:390px; 
+																/*background:#fff;*/
+																position:absolute; 
+																transition:all 0.5s ease;
+																-webkit-transition:all 0.5s ease;
+																-moz-transition:all 0.5s ease;
+																-o-transition:all 0.5s ease;
+																overflow:hidden;	}
+			#product .box1{top:10px; left:30px; background:url(../mac/images/shadow1.png) no-repeat; }
+			#product .box2{top:10px; left:463px; background:url(../mac/images/shadow2.png) no-repeat; }
+			#product .box3{top:10px; left:896px; background:url(../mac/images/shadow3.png) no-repeat; }
+			#product .box4{top:10px; left:1329px; background:url(../mac/images/shadow4.png) no-repeat; }
+
+			#product .box5{top:505px; left:30px; background:url(../mac/images/shadow5.png) no-repeat; }
+			#product .box6{top:505px; left:463px; background:url(../mac/images/shadow6.png) no-repeat; }
+			#product .box7{top:505px; left:896px; background:url(../mac/images/shadow7.png) no-repeat; }
+			#product .box8{top:505px; left:1329px; background:url(../mac/images/shadow8.png) no-repeat; }
+
+			#product .box9{top:999px; left:30px; background:url(../mac/images/shadow9.png) no-repeat; }
+			#product .box10{top:999px; left:463px; background:url(../mac/images/shadow10.png) no-repeat; }
+			#product .box11{top:999px; left:896px; background:url(../mac/images/shadow11.png) no-repeat; }
+			#product .box12{top:999px; left:1329px; background:url(../mac/images/shadow12.png) no-repeat; }
+
+			#product div[class *="box"] .top{background:rgba(0,0,0,0); width:390px; height:390px;}
+			#product div[class *="box"]:hover .top{background:rgba(0,0,0,0.3);}
+			#product div[class *="box"]:hover div[class *="box"] .top{
+																		-webkit-transform: translate(-10px,-10px);
+																		  transform: translate(-10px,-10px);																		  
+																		  }
+			#product div[class *="box"] .top .title{
+															width:340px; 
+															height:100px; 
+															background:rgba(0,0,0,0.7); 
+															padding:10px; 
+															position:absolute;
+															top:30px;
+															left:-50px; 
+															transition:all 0.7s ease; 
+															-webkit-transition:all 0.7s ease; 
+															-moz-transition:all 0.7s ease; 
+															-o-transition:all 0.7s ease; 
+															opacity:0;
+															}
+															#product div[class *="box"]:hover .top .title{left:0px; opacity:1;}
+															
+			#product div[class *="box"] .top .title a{color:#eee; text-decoration:none;}
+			#product div[class *="box"] .top .price{
+															font-size:25px;
+															color:#eee;
+															position:absolute;
+															top:330px;
+															left:270px;
+															background:rgba(0,0,0,0.7); 
+															width:150px;
+															padding-left:10px;
+															transition:all 0.7s ease; 
+															opacity:0;
+															}
+															#product div[class *="box"]:hover .top .price{left:230px; opacity:1;}
+			#product div[class *="box"] .top .icon{position:absolute; top:330px; left:30px; opacity:0; transition:all 0.5s ease; transition-delay:0.3s;}
+			#product div[class *="box"] .top .icon a{color:#fff; text-decoration:none; font-size:20px; margin-right:25px; }
+			#product div[class *="box"]:hover .top .icon{opacity:1;}
+			#product div[class *="box"] .top .icon i:hover{color:#711c45; font-weight:bold;text-shadow:2px 2px 3px #666;}
+
+
+
+			#product div[class *="box"]:hover{  
+											box-shadow:
+																	1px 1px #b56f91,
+																	2px 2px #ae6688,
+																	3px 3px #a95f82,
+																	4px 4px #a4577c,
+																	5px 5px #a15178,
+																	6px 6px #9d4c73,
+																	7px 7px #9a4970,
+																	8px 8px #96466d,
+																	9px 9px #914168,
+																	10px 10px #8b3a61,
+																	11px 11px #87355d,
+																	12px 12px #85325a,
+																	13px 13px #822f57,
+																	14px 14px #7f2b54,
+																	15px 15px #711c45;
+																	  -webkit-transform: translate(-10px,-10px);
+																	  transform: translate(-10px,-10px);
+														}
+				#product .box1:hover{background:url(../mac/images/shadow1-2.png) no-repeat;}
+				#product .box2:hover{background:url(../mac/images/shadow2-2.png) no-repeat;}
+				#product .box3:hover{background:url(../mac/images/shadow3-2.png) no-repeat;}
+				#product .box4:hover{background:url(../mac/images/shadow4-2.png) no-repeat;}
+				#product .box5:hover{background:url(../mac/images/shadow5-2.png) no-repeat;}
+				#product .box6:hover{background:url(../mac/images/shadow6-2.png) no-repeat;}
+				#product .box7:hover{background:url(../mac/images/shadow7-2.png) no-repeat;}
+				#product .box8:hover{background:url(../mac/images/shadow8-2.png) no-repeat;}
+				#product .box9:hover{background:url(../mac/images/shadow9-2.png) no-repeat;}
+				#product .box10:hover{background:url(../mac/images/shadow10-2.png) no-repeat;}
+				#product .box11:hover{background:url(../mac/images/shadow11-2.png) no-repeat;}
+				#product .box12:hover{background:url(../mac/images/shadow12-2.png) no-repeat;}
+				
+	
+	/*--------------------footer----------------------------*/
+	.hidden_box{
+				height:20px;
+				overflow:hidden;
+				width:100%;
+				background:#222;				
+				transition:all 1s ease;
+				position:relative;
+				top:2440px;
+				-webkit-transition:all 1s ease;
+				-moz-transition:all 1s ease;
+				-o-transition:all 1s ease;
+				}
+	.hidden_box:hover{height:250px;}
+	
+	footer .hidden_box .bottom_pt{
+						clear:both;
+						background:url(../mac/images/bottom_bg.png) repeat-x;
+						height:20px; 
+						width:100%;
+						}
+	
+	footer .hidden_box .foot_box{
+									width:100%;
+									height:200px;
+									position:relative;
+									left:15%;
+									}
+	footer div[class *="f"] {float:left; margin:20px 25px;}
+	footer div[class *="f"] h4{color:#888;}
+	footer div[class *="f"] ul{list-style:none;}
+	footer div[class *="f"] ul li a{text-decoration:none; font-size:13px;color:#999;}
+	
+
+ .footer_bottom{
+							width:100%; 
+							height:40px; 
+							background:#711c45;
+							padding-top:20px;
+							position:relative;
+							top:2440px;
+							z-index:3;		
+							}
+.footer_bottom ul{
+									list-style:none; 
+									width:1500px; 
+									height:30px; 
+									margin:0px auto;
+									}
+.footer_bottom ul li{
+									float:left; 
+									font-size:15px; 
+									color:#f5426c; 
+									margin:0 30px;
+									font-weight:bold;
+									}
+.footer_bottom ul li a{
+									font-size:15px; 
+									color:#f5426c; 
+									text-decoration:none; 
+									font-weight:bold;
+									}
+
+	.brick{
+				height:230px;
+				width:100%;
+				background:url(../mac/images/bottom_bg.png) repeat-x;
+				position:relative;
+				top:2440px;
+				}
+				}
+
+/*------------------------------------------------패드----------------------------------------------------*/
+		@media screen and (min-width:600px) and (max-width:1023px) {
+			header{position:fixed;
+						width:100%;
+						height:80px;
+						z-index:100;
+						background:#000;
+						}
+		.logo{
+					text-decoration:none;
+					background:url(../mac/images/neon_logo2.gif) no-repeat;
+					width:200px;
+					height:44px;
+					background-size:80%;
+					margin-top:30px;
+					margin-left:auto;
+					margin-right:auto;
+					float:left;
+					cursor:pointer;
+					position:absolute;
+					left:50%;
+					transform:translate(-50%,0%);
+					}
+
+
+		.top_ul{
+					margin-top:40px;
+					margin-right:15px;
+					position:absolute;
+					right:0%;
+					z-index:110;
+					}
+		.top_ul li{
+					list-style:none;
+					float:left;
+					margin:10px;
+					}
+		.top_ul li a{
+							text-decoration:none;
+							font-size:13px;
+							color:#fff;
+							}
+	.top_ul li:hover a{color:#f5426c;	}
+	
+		
+
+		.main_ul{
+						width:700px;
+						height:40px;
+						position:relative;
+						left:50%;
+						transform:translate(-50%,0);
+						z-index:30;
+						top:79px;
+						
+						}
+		.main_ul > li{
+						float:left;
+						list-style:none;
+						width:100px;
+						height:30px;
+						padding-top:9px;						
+						font-size:13px;
+						}
+		.main_ul li a{	
+						text-decoration:none;
+						color:#fff;		
+						}
+		
+
+		.ul1,.ul2, .ul3, .ul4, .ul5{border:solid 1px #888;
+									list-style:none;
+									height:280px;
+									width:180px;
+									position:relative;
+									top:10px;
+									left:-30px;
+									padding-left:10px;
+									padding-top:10px;
+									overflow:hidden;
+									 max-height:0;
+									 transition:350ms;
+									-webkit-transform:perspective(400) rotate3d(1,0,0,-90deg);
+									-webkit-transform-origin:50% 0;
+									-webkit-transition:all 350ms;
+									 -moz-transition:all 350ms;
+									-o-transition:all 350ms;    
+									}
+		.ul2{width:250px; height:280px;}
+		.ul5{width:150px; height:130px;}
+		.ul1 li, .ul3 li, .ul4 li, .ul5 li {width:165px; height:50px; }
+		.ul2 li{width:200px; height:50px;}
+
+		.ul1 li a, .ul2 li a, .ul3 li a, .ul4 li a, .ul5 li a{
+													text-decoration:none;
+													color:#fff;
+													padding:2px 5px;
+													}		
+		.main_ul li:hover .ul1, .main_ul li:hover .ul3, .main_ul li:hover .ul4{
+										height:280px;
+										width:180px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.9;
+										}
+		.main_ul li:hover .ul5{
+										height:130px;
+										width:150px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+										}
+		 .main_ul li:hover .ul2{
+										height:280px;
+										width:250px;  
+										max-height:1000px;
+										-webkit-transform:perspective(400) rotate3d(0,0,0,0);
+										background:#000;
+										opacity:0.8;
+												}
+		.main_ul li:hover > a{	color:#f5426c;	}
+		.ul1 li:hover a, .ul2 li:hover a, .ul3 li:hover a, .ul4 li:hover a, .ul5 li:hover a{
+									background:#ff477b; 
+									text-decoration:none; 
+									color:#fff;
+									}
+		/*-------리스트 하단 bar-------*/
+		.main_ul .li1 .bar1{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li1:hover .bar1{width:45px;height:1px;background:#ff477b;}
+		.main_ul .li2 .bar2{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li2:hover .bar2{width:65px;height:1px;background:#ff477b;}
+		.main_ul .li3 .bar3{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li3:hover .bar3{width:56px;height:1px;background:#ff477b;}
+		.main_ul .li4 .bar4{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li4:hover .bar4{width:73px;height:1px;background:#ff477b;}
+		.main_ul .li5 .bar5{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li5:hover .bar5{width:50px;height:1px;background:#ff477b;}
+		.main_ul .li6 .bar6{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li6:hover .bar6{width:50px;height:1px;background:#ff477b;}
+		.main_ul .li7 .bar7{width:0px;height:1px;background:#ff477b; ; transition:all 0.5s ease;}
+		.main_ul .li7:hover .bar7{width:100px;height:1px;background:#ff477b;}
+
+
+		/*-----------------------------------------제품---------------------------------------------------------------*/
+		#shadow_bg{
+							background:url(../mac/images/shadow_bg.png) no-repeat;
+							width:100%;
+							height:1800px;
+							position:absolute;
+							top:80px;
+							}
+
+		.top_list{
+						width:100%;
+						height:50px;
+						background:rgba(255,255,255,0.2);
+						position:absolute;
+						top:80px;
+						}
+		.top_list ul{
+       position:absolute;
+	   left:5%;
+	   transform:translate(-5%,0);
+       font-size:14px;
+       }
+  .top_list ul li:first-child {list-style:none; margin-right:10px;}
+  .top_list ul li{ list-style-image:url(../mac/images/li-style.png);
+        float:left;        
+        height:20px;
+        padding:15px 5px; margin:0 5px;
+        } 
+		.top_list ul li a{color:#f2f2f2; text-decoration:none;}
+
+		.top_banner{
+								width:100%;
+								height:350px;
+								background:url(../mac/images/shadow_banner.png) no-repeat;
+								background-size:100%;
+								position:absolute;
+								top:150px;
+								transition:all 0.7s ease;
+								-webkit-transition:all 0.7s ease;
+								-moz-transition:all 0.7s ease;
+								-o-transition:all 0.7s ease;
+								overflow:hidden;
+								cursor:pointer;
+								}
+		.top_banner .banner .text_box{display:none;}
+		.top_banner:hover{background:url(../mac/images/shadow_banner3.png) no-repeat;background-size:100%;}
+		
+	
+		.top_banner .banner .text_box .button{
+															cursor:pointer;
+															width:90px;
+															height:30px;
+															position:absolute;
+															top:200px;
+															left:250px;
+															}
+		.top_banner .banner .text_box .button a {
+																  text-decoration:none;
+																  color: rgba(255,255,255,0);  
+																  background:rgba(134,85,105,0.8);
+																  padding: 10px;
+																  position:absolute;
+																  overflow: hidden;
+																  -moz-transition: ease-out 0.3s 0.3s;
+																  -o-transition: ease-out 0.3s 0.3s;
+																  -webkit-transition: ease-out 0.3s;
+																  -webkit-transition-delay: 0.3s;
+																  transition: ease-out 0.3s 0.3s;
+																}
+		.top_banner .banner .text_box .button a span::before {
+																	  width: 100%;
+																	  height: 2px;
+																	  background: rgba(255,255,255,.7);
+																	  content: "";
+																	  position: absolute;
+																	  left: 0;
+																	  top: 0;
+																	  -moz-transform: translateX(-100%);
+																	  -ms-transform: translateX(-100%);
+																	  -webkit-transform: translateX(-100%);
+																	  transform: translateX(-100%);
+																	  -moz-transition: 0.3s;
+																	  -o-transition: 0.3s;
+																	  -webkit-transition: 0.3s;
+																	  transition: 0.3s;
+																	  transition-delay: 0.3s;
+																	  -moz-transition-delay: 0.3s;
+																	  -o-transition-delay: 0.3s;
+																	  -webkit-transition-delay: 0.3s;
+																	}
+.top_banner .banner .text_box .button a span::after {
+																	  width: 100%;
+																	  height: 2px;
+																	  background: rgba(255,255,255,.7);
+																	  content: "";
+																	  position: absolute;
+																	  right: 0;
+																	  bottom: 0;
+																	  -moz-transform: translateX(100%);
+																	  -ms-transform: translateX(100%);
+																	  -webkit-transform: translateX(100%);
+																	  transform: translateX(100%);
+																	  -moz-transition: 0.3s;
+																	  -o-transition: 0.3s;
+																	  -webkit-transition: 0.3s;
+																	  transition: 0.3s;
+																	  transition-delay: 0.3s;
+																	  -moz-transition-delay: 0.3s;
+																	  -o-transition-delay: 0.3s;
+																	  -webkit-transition-delay: 0.3s;
+																	}
+.top_banner .banner .text_box .button a::before {
+																		  width: 2px;
+																		  height: 100%;
+																		  background:rgba(255,255,255,.7);
+																		  content: "";
+																		  position: absolute;
+																		  left: 0;
+																		  top: 0;
+																		  -moz-transform: translateY(100%);
+																		  -ms-transform: translateY(100%);
+																		  -webkit-transform: translateY(100%);
+																		  transform: translateY(100%);
+																		  -moz-transition: 0.3s;
+																		  -o-transition: 0.3s;
+																		  -webkit-transition: 0.3s;
+																		  transition: 0.3s;
+																		  transition-delay: 0.3s;
+																		  -moz-transition-delay: 0.3s;
+																		  -o-transition-delay: 0.3s;
+																		  -webkit-transition-delay: 0.3s;
+																		}
+.top_banner .banner .text_box .button a::after {
+																			  width: 2px;
+																			  height: 100%;
+																			  background: rgba(255,255,255,.7);
+																			  content: "";
+																			  position: absolute;
+																			  right: 0px;
+																			  bottom: 0;
+																			  -moz-transform: translateY(-100%);
+																			  -ms-transform: translateY(-100%);
+																			  -webkit-transform: translateY(-100%);
+																			  transform: translateY(-100%);
+																			  -moz-transition: 0.3s;
+																			  -o-transition: 0.3s;
+																			  -webkit-transition: 0.3s;
+																			  transition: 0.3s;
+																			   transition-delay: 0.3s;
+																			   -moz-transition-delay: 0.3s;
+																			  -o-transition-delay: 0.3s;
+																			  -webkit-transition-delay: 0.3s;
+																			}
+		.top_banner:hover .banner .text_box .button a { color:rgba(255,255,255,.8); }
+		.top_banner:hover .banner .text_box .button a::before,.top_banner:hover .banner .text_box .button a::after {
+										  -moz-transform: translateX(0);
+										  -ms-transform: translateX(0);
+										  -webkit-transform: translateX(0);
+										  transform: translateX(0);
+										}
+		.top_banner:hover .banner .text_box .button a span::before,.top_banner:hover .banner .text_box .button a span::after {
+											  -moz-transform: translateX(0);
+											  -ms-transform: translateX(0);
+											  -webkit-transform: translateX(0);
+											  transform: translateX(0);
+											}
+		
+		.shadow_logo{
+									background:url(../mac/images/shadow.gif) no-repeat;
+									background-size:100%;
+									width:300px;
+									height:84px;
+									position:absolute;
+									top:570px;
+									left:50%;
+									transform:translate(-50%,0);
+									border-top:solid 2px rgba(255,255,255,0.7);
+									}
+
+			#product{
+								width:750px; 
+								height:1000px; 
+								position:absolute; 
+								left:50%;
+								transform:translate(-50%,0);
+								top:700px;
+								}
+			#product div[class *="box"]{float:left;
+																width:210px; 
+																height:210px; 
+																transition:all 0.5s ease;
+																-webkit-transition:all 0.5s ease;
+																-moz-transition:all 0.5s ease;
+																-o-transition:all 0.5s ease;
+																margin:10px;
+																padding:10px;
+																}
+			#product .box1{background:url(../mac/images/shadow1.png) no-repeat; background-size:100%;}
+			#product .box2{ background:url(../mac/images/shadow2.png) no-repeat;  background-size:100%;}
+			#product .box3{background:url(../mac/images/shadow3.png) no-repeat;  background-size:100%;}
+			#product .box4{ background:url(../mac/images/shadow4.png) no-repeat;  background-size:100%;}
+
+			#product .box5{background:url(../mac/images/shadow5.png) no-repeat; background-size:100%; }
+			#product .box6{background:url(../mac/images/shadow6.png) no-repeat; background-size:100%; }
+			#product .box7{background:url(../mac/images/shadow7.png) no-repeat;  background-size:100%;}
+			#product .box8{background:url(../mac/images/shadow8.png) no-repeat;  background-size:100%;}
+
+			#product .box9{background:url(../mac/images/shadow9.png) no-repeat;  background-size:100%;}
+			#product .box10{background:url(../mac/images/shadow10.png) no-repeat;  background-size:100%;}
+			#product .box11{background:url(../mac/images/shadow11.png) no-repeat;  background-size:100%;}
+			#product .box12{background:url(../mac/images/shadow12.png) no-repeat;  background-size:100%;}
+
+			
+				#product .box1:hover{background:url(../mac/images/shadow1-2.png) no-repeat; background-size:100%;}
+				#product .box2:hover{background:url(../mac/images/shadow2-2.png) no-repeat; background-size:100%;}
+				#product .box3:hover{background:url(../mac/images/shadow3-2.png) no-repeat; background-size:100%;}
+				#product .box4:hover{background:url(../mac/images/shadow4-2.png) no-repeat; background-size:100%;}
+				#product .box5:hover{background:url(../mac/images/shadow5-2.png) no-repeat; background-size:100%;}
+				#product .box6:hover{background:url(../mac/images/shadow6-2.png) no-repeat; background-size:100%;}
+				#product .box7:hover{background:url(../mac/images/shadow7-2.png) no-repeat; background-size:100%;}
+				#product .box8:hover{background:url(../mac/images/shadow8-2.png) no-repeat; background-size:100%;}
+				#product .box9:hover{background:url(../mac/images/shadow9-2.png) no-repeat; background-size:100%;}
+				#product .box10:hover{background:url(../mac/images/shadow10-2.png) no-repeat; background-size:100%;}
+				#product .box11:hover{background:url(../mac/images/shadow11-2.png) no-repeat; background-size:100%;}
+				#product .box12:hover{background:url(../mac/images/shadow12-2.png) no-repeat; background-size:100%;}
+				
+				
+				#product div[class *="box"] .title {font-size:14px; background:rgba(0,0,0,.7); padding:10px; opacity:0;}
+				#product div[class *="box"]:hover .title {opacity:1;}
+				#product div[class *="box"] a{color:rgba(255,255,255,1); text-decoration:none;}
+				#product div[class *="box"] .title h3{font-size:16px;}
+
+				#product div[class *="box"] .price{position:relative;font-size:15px; background:rgba(0,0,0,.7); padding:10px; color:rgba(255,255,255,1); opacity:0;}
+				#product div[class *="box"]:hover .price{opacity:1;}
+
+				#product div[class *="box"] .icon i{display:none;}
+				
+	/*--------------------footer----------------------------*/
+	.hidden_box{
+				height:250px;
+				overflow:hidden;
+				width:100%;
+				background:#222;				
+				transition:all 1s ease;
+				position:relative;
+				top:1800px;
+				-webkit-transition:all 1s ease;
+				-moz-transition:all 1s ease;
+				-o-transition:all 1s ease;
+				}
+	
+	
+	footer .hidden_box .bottom_pt{
+						clear:both;
+						background:url(../mac/images/bottom_bg.png) repeat-x;
+						height:20px; 
+						width:100%;
+						}
+	
+	footer .hidden_box .foot_box{
+									width:100%;
+									height:200px;
+									position:relative;									
+									}
+	footer div[class *="f"] {float:left; margin:20px 10px;}
+	footer div[class *="f"] h4{color:#888;}
+	footer div[class *="f"] ul{list-style:none;}
+	footer div[class *="f"] ul li a{text-decoration:none; font-size:13px;color:#999;}
+	
+
+ .footer_bottom{
+							width:100%; 
+							height:40px; 
+							background:#711c45;
+							padding-top:20px;
+							position:relative;
+							top:1800px;
+							z-index:3;		
+							}
+.footer_bottom ul{
+									list-style:none; 
+									width:100%; 
+									height:30px; 
+									margin:0 auto;
+									font-size:12px;
+									}
+.footer_bottom ul li{
+									float:left; 
+									color:#f5426c; 
+									margin:0 10px;
+									font-weight:bold;
+									}
+.footer_bottom ul li a{
+									font-size:12px; 
+									color:#f5426c; 
+									text-decoration:none; 
+									font-weight:bold;
+									}
+									}
+
+/*-------------------------------------------모바일----------------------------------------------------*/
+	@media screen and (max-width:559px){
+		header{position:fixed;
+						width:100%;
+						height:70px;
+						z-index:100;
+						background:#000;
+						}
+		.logo{
+					text-decoration:none;
+					background:url(../mac/images/neon_logo2.gif) no-repeat;
+					width:140px;
+					height:44px;
+					background-size:100%;
+					margin-top:15px;
+					margin-left:auto;
+					margin-right:auto;
+					float:left;
+					cursor:pointer;
+					position:absolute;
+					left:50%;
+					transform:translate(-50%,0%);
+					}
+
+
+		.top_ul{
+					margin-top:10px;					
+					}
+		.top_ul li{
+					list-style:none;
+					float:right;
+					margin:10px 5px;
+					}
+		.top_ul li a{
+							text-decoration:none;
+							font-size:20px;
+							color:#eee;
+							}
+	.top_ul li:hover a{color:#f5426c;	}
+	.top_ul .top_tex{display:none;}
+
+
+
+
+input[type="checkbox"]#menu_icon{display:none;}
+input[type="checkbox"]:checked ~ div.main_nav{position:fixed;
+																						height:300px; 
+																						width:150px;
+																						transition:all 0.5s ease-in-out;
+																						-webkit-transition:all 0.5s ease-in-out;
+																						-moz-transition:all 0.5s ease-in-out;
+																						-o-transition:all 0.5s ease-in-out;
+																						}
+input[type="checkbox"]:checked ~ div.main_nav label[for="menu_icon"] i:before{position:fixed;
+																																				 content:"\f063";
+																																				 color:#f5426c;	
+																																				 }
+label[for="menu_icon"] i:before{	padding:5px;
+																content:"\f0c9";
+																color:#fff;
+																font-size:20px;
+																cursor:pointer;
+																position:fixed;
+																top:15px;
+															}
+ input[type="checkbox"]:checked ~ div.main_nav ul{
+																				   height:290px;
+																					}
+
+
+div.main_nav{
+							position:absolute;
+							left:10px;
+							top:20px;
+							z-index:1000;
+							width:150px;
+							height:0px;
+							transition:all 0.7s ease-in-out;
+							-webkit-transition:all 0.7s ease-in-out;
+							-moz-transition:all 0.7s ease-in-out;
+							-o-transition:all 0.7s ease-in-out;
+							}
+div.main_nav ul{background:rgba(0,0,0,0.8);
+								height:0px;
+								width:130px;
+								overflow:hidden; 
+								transition:all 0.7s ease;
+								-webkit-transition:all 0.7s ease;
+								-moz-transition:all 0.7s ease;
+								-o-transition:all 0.7s ease;
+								}
+
+		.main_ul li{
+						list-style:none;
+						height:30px;
+						padding-top:9px;
+						padding-left:5px;
+						font-size:13px;
+						}
+		.main_nav .main_ul li:hover > a{color:#f5426c;	}
+		label[for="menu_icon"]:hover i:before{color:#f5426c;	}
+
+		.main_ul li a{text-decoration:none; color:rgba(255,255,255,1);}
+		.ul1,.ul2, .ul3, .ul4, .ul5{display:none;}
+
+		/*-----------------------------------------제품---------------------------------------------------------------*/
+	/*	#shadow_bg{
+							background:url(../mac/images/shadow_bg.png) no-repeat;
+							width:100%;
+							height:1800px;
+							position:absolute;
+							top:80px;
+							}*/
+
+		.top_list{display:none;}
+
+		.top_banner{
+								width:100%;
+								height:150px;
+								background:url(../mac/images/shadow_banner.png) no-repeat;
+								background-size:100%;
+								position:absolute;
+								top:110px;
+								transition:all 0.7s ease;
+								-webkit-transition:all 0.7s ease;
+								-moz-transition:all 0.7s ease;
+								-o-transition:all 0.7s ease;
+								overflow:hidden;
+								cursor:pointer;
+								}
+		.top_banner .banner .text_box{display:none;}
+		.top_banner:hover{background:url(../mac/images/shadow_banner3.png) no-repeat;background-size:100%;}
+		.shadow_logo{
+									background:url(../mac/images/shadow.gif) no-repeat;
+									background-size:100%;
+									width:200px;
+									height:50px;
+									position:absolute;
+									top:270px;
+									left:50%;
+									transform:translate(-50%,0);
+									border-top:solid 2px rgba(255,255,255,0.7);
+									}
+
+			#product{
+								width:400px; 
+								height:1200px; 
+								position:absolute; 
+								left:50%;
+								transform:translate(-50%,0);
+								top:330px;
+								}
+			#product div[class *="box"]{float:left; 
+																width:160px; 
+																height:160px; 
+																transition:all 0.5s ease;
+																-webkit-transition:all 0.5s ease;
+																-moz-transition:all 0.5s ease;
+																-o-transition:all 0.5s ease;
+																margin:10px;
+																padding:10px;
+																}
+			#product .box1{background:url(../mac/images/shadow1.png) no-repeat; background-size:100%;}
+			#product .box2{ background:url(../mac/images/shadow2.png) no-repeat;  background-size:100%;}
+			#product .box3{background:url(../mac/images/shadow3.png) no-repeat;  background-size:100%;}
+			#product .box4{ background:url(../mac/images/shadow4.png) no-repeat;  background-size:100%;}
+
+			#product .box5{background:url(../mac/images/shadow5.png) no-repeat; background-size:100%; }
+			#product .box6{background:url(../mac/images/shadow6.png) no-repeat; background-size:100%; }
+			#product .box7{background:url(../mac/images/shadow7.png) no-repeat;  background-size:100%;}
+			#product .box8{background:url(../mac/images/shadow8.png) no-repeat;  background-size:100%;}
+
+			#product .box9{background:url(../mac/images/shadow9.png) no-repeat;  background-size:100%;}
+			#product .box10{background:url(../mac/images/shadow10.png) no-repeat;  background-size:100%;}
+			#product .box11{background:url(../mac/images/shadow11.png) no-repeat;  background-size:100%;}
+			#product .box12{background:url(../mac/images/shadow12.png) no-repeat;  background-size:100%;}
+
+			
+				#product .box1:hover{background:url(../mac/images/shadow1-2.png) no-repeat; background-size:100%;}
+				#product .box2:hover{background:url(../mac/images/shadow2-2.png) no-repeat; background-size:100%;}
+				#product .box3:hover{background:url(../mac/images/shadow3-2.png) no-repeat; background-size:100%;}
+				#product .box4:hover{background:url(../mac/images/shadow4-2.png) no-repeat; background-size:100%;}
+				#product .box5:hover{background:url(../mac/images/shadow5-2.png) no-repeat; background-size:100%;}
+				#product .box6:hover{background:url(../mac/images/shadow6-2.png) no-repeat; background-size:100%;}
+				#product .box7:hover{background:url(../mac/images/shadow7-2.png) no-repeat; background-size:100%;}
+				#product .box8:hover{background:url(../mac/images/shadow8-2.png) no-repeat; background-size:100%;}
+				#product .box9:hover{background:url(../mac/images/shadow9-2.png) no-repeat; background-size:100%;}
+				#product .box10:hover{background:url(../mac/images/shadow10-2.png) no-repeat; background-size:100%;}
+				#product .box11:hover{background:url(../mac/images/shadow11-2.png) no-repeat; background-size:100%;}
+				#product .box12:hover{background:url(../mac/images/shadow12-2.png) no-repeat; background-size:100%;}
+				
+				
+				#product div[class *="box"] .title {font-size:14px; background:rgba(0,0,0,.7); padding:10px; opacity:0;}
+				#product div[class *="box"]:hover .title {opacity:1;}
+				#product div[class *="box"] a{color:rgba(255,255,255,1); text-decoration:none;}
+				#product div[class *="box"] .title h3{font-size:16px;}
+
+				#product div[class *="box"] .price{position:relative;font-size:15px; background:rgba(0,0,0,.7); padding:10px; color:rgba(255,255,255,1); opacity:0;}
+				#product div[class *="box"]:hover .price{opacity:1;}
+
+				#product div[class *="box"] .icon i{display:none;}
+				
+	/*--------------------footer----------------------------*/
+	.hidden_box{display:none;}
+
+ .footer_bottom{
+							width:100%; 
+							height:50px; 
+							background:#711c45;
+							padding-top:5px;
+							padding-left:10px;
+							position:relative;
+							top:1530px;
+							z-index:3;	
+							text-align:justify;
+							}
+.footer_bottom ul{
+									list-style:none; 
+									width:100%; 
+									height:30px; 
+									margin:0 auto;
+									font-size:12px;
+									}
+.footer_bottom ul li{
+									float:left; 
+									color:#f5426c; 
+									margin:0 10px;
+									font-weight:bold;
+									}
+.footer_bottom ul li a{
+									font-size:12px; 
+									color:#f5426c; 
+									text-decoration:none; 
+									font-weight:bold;
+									}										
+									}
+  </style>
+ </head>
+ <body>
+ 	<header>
+	<div class="logo"><a href="#"></a></div>
+	
+	<nav>		
+		<ul class="top_ul">
+			<li><a href="#"><i class="fa fa-search"></i> <span class="top_tex">Search</span></a></li>
+			<li><a href="#" class="top_tex">Sign In</a></li>
+			<li><a href="#"><i class="fa fa-shopping-cart"></i> <span class="top_tex">My Bag (0)</span></a></li>
+		</ul>
+	</header>
+		
+		<input type="checkbox" id="menu_icon">
+		<div class="main_nav">
+		<label for="menu_icon"><i class="fa"></i></label>
+		<ul class="main_ul">
+			<li class="li1"><a href="#">HOLIDAY<div class="bar1"><span></span></div></a>
+						<ul class="ul1">
+							<li><a href="#">HOLIDAY GIFT GUIDE</a></li>
+							<li><a href="#">BRUSH KITS</a></li>
+							<li><a href="#">LIP KITS & BAGS</a></li>
+							<li><a href="#">EYE KITS & BAGS</a></li>
+							<li><a href="#">FACE KITS</a></li>
+							<li><a href="#">HOLIDAY GIFT CARD</a></li>
+						</ul>
+			</li>
+			<li class="li2"><a href="#">WHAT'S NEW<div class="bar2"><span></span></div></a>
+						<ul class="ul2">
+							<li><a href="#">SHADESCENTS</a></li>
+							<li><a href="#">CANDY COATED GIFT GUIDE</a></li>
+							<li><a href="#">INTHE SPOTLIGHT</a></li>
+							<li><a href="#">M.A.C HELMUT NEWTON</a></li>
+							<li><a href="#">M.A.C STUDIO QUIKTRIK STICK</a></li>
+							<li><a href="#">HOLIDAY GIFT CARD</a></li>
+						</ul>
+			</li>
+			<li class="li3"><a href="#">PRODUCTS<div class="bar3"><span></span></div></a>
+						<ul class="ul3">
+							<li><a href="#">TRENDING NOW</a></li>
+							<li><a href="#">MAKEUP</a></li>
+							<li><a href="#">PRIMER+SKINCARE</a></li>
+							<li><a href="#">BRUSHES+TOOLS</a></li>
+							<li><a href="#">FRAGRANCE</a></li>
+							<li><a href="#">GIFTING</a></li>
+						</ul>
+			</li>
+			<li class="li4"><a href="#">BESTSELLERS<div class="bar4"><span></span></div></a>
+						<ul class="ul4">
+							<li><a href="#">HOLIDAY BESTSELLERS</a></li>
+							<li><a href="#">MOST DESIRED</a></li>
+							<li><a href="#">ONLINE EXCLUSIVES</a></li>
+							<li><a href="#">TOP RATED</a></li>
+							<li><a href="#">JUST IN</a></li>
+							<li><a href="#">TRAVEL SIZE</a></li>
+						</ul>
+			</li>
+			<li class="li5"><a href="#">ARTISTRY<div class="bar5"><span></span></div></a>
+						<ul class="ul5">
+							<li><a href="#">FASHION WEEK</a></li>
+							<li><a href="#">THE ARTISTS</a></li>
+							<li><a href="#">VIDEOS</a></li>
+						</ul>
+			</li>
+			<li class="li6"><a href="#">CULTURE<div class="bar6"><span></span></div></a></li>
+			<li class="li7"><a href="#">MAKEUP SERVICES<div class="bar7"><span></span></div></a></li>
+		</ul>
+		</div>
+	</nav>
+
+
+<!----------------------------------------콘텐츠--------------------------------------------------->
+	<div id="shadow_bg">
+				<div class="top_list">
+					<ul>
+						<li><a href="#">HOME </a></li>
+						<li><a href="#">PRODUCTS</a></li>
+						<li><a href="#">MAKEUP</a></li>
+						<li><a href="#">EYES </a></li>
+						<li><a href="#">SHADOW</a></li>
+					</ul>
+				</div>
+
+				<div class="top_banner">
+					<div class="banner">
+							<div class="text_box">									
+									<span class="text"><br><h3>SPELLBINDER</h3><br><br><span class="spell_p">Black, ionized pigments are magnetically charged, fusing the loose powder together so it magically maintains its form and dimension. Hexing hues cast their spell in blackened emerald, cobalt and teal with a metallic finish.</span></span>
+							<div class="button" id="button">
+									<a href="button"><span>SHOP NOW</span></a>
+							</div></div>
+							
+					</div>
+				</div>
+
+				<div class="shadow_logo"><div class="img"></div></div>
+
+				<section id="product">
+					<div class="box1">
+						<div class="top">
+										<div class="title"><a href="#"><h3>EYE SHADOW</h3><br>RICH COLOUR, PROFESSIONAL, 40% OFF SELECT SHADES</div></a>
+									<div class="price">$16.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box2">
+						<div class="top">
+										<div class="title"><a href="#"><h3>DAZZLESHADOW</h3><br>COLOUR-TRUE, HIGH INTENSITY, 3D GLITTER EFFECT</div></a>
+									<div class="price">$18.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box3">
+						<div class="top">
+										<div class="title"><a href="#"><h3>EXTRA DIMENSION EYE SHADOW</h3><br>HYBRID FORMULA, HIGH SHINE, 6-HOUR WEAR</div></a>
+									<div class="price">$20.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box4">
+						<div class="top">
+										<div class="title"><a href="#"><h3>EYE SHADOW / GOOD LUCK TROLLS</h3><br><span style="color:#f5426c">New Price: $6.80</span><br>Original Price: $17</div></a>
+									<div class="price">$6.80</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box5">
+						<div class="top">
+										<div class="title"><a href="#"><h3>MAGIC DUST EYE SHADOW / NUTCRACKER SWEET</h3><br><span style="font-size:14px">LONG-WEARING, PEARLESCENT FINISH, SPECIAL PACKAGING</span></div></a>
+									<div class="price">$19.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box6">
+						<div class="top">
+										<div class="title"><a href="#"><h3>MINERALIZE EYE SHADOW</h3><br>NOURISHING, BUILDABLE, LIGHTWEIGHT</div></a>
+									<div class="price">$22.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box7">
+						<div class="top">
+										<div class="title"><a href="#"><h3>SOFT SERVE EYE SHADOW</h3><br>CREAM FORMULA, BOUNCY TEXTURE, BUILDABLE</div></a>
+									<div class="price">$22.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box8">
+						<div class="top">
+										<div class="title"><a href="#"><h3>SPELLBINDER SHADOW</h3><br>COLOUR-TRUE, VELVETY TEXTURE, METALLIC FINISH</div></a>
+									<div class="price">$22.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box9">
+						<div class="top">
+										<div class="title"><a href="#"><h3>VELUXE PEARLFUSION SHADOW TRIO</h3><br>HIGH SHINE, POWDER HYBRID, THREE SHADES</div></a>
+									<div class="price">$25.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box10">
+						<div class="top">
+										<div class="title"><a href="#"><h3>FOILED SHADOW</h3><br>WET/DRY FORMULA, METALLIC FINISH, LIGHTWEIGHT</div></a>
+									<div class="price">$20.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box11">
+						<div class="top">
+										<div class="title"><a href="#"><h3>INTO THE WELL EYE SHADOW</h3><br>COLOUR-TRUE, EYE SHADOW/ EYE LINER, WET/DRY FORMULA</div></a>
+									<div class="price">$20.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					<div class="box12">
+						<div class="top">
+										<div class="title"><a href="#"><h3>PRO LONGWEAR PAINT POT</h3><br>LONG-WEARING, BLENDABLE, CREAMY</div></a>
+									<div class="price">$22.00</div>
+									<div class="icon"><a href="#"><i class="fa fa-heart-o"></i></a>  <a href="#"><i class="fa fa-search"></i></a> <a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+						</div>
+					</div>
+					
+				</section>
+									
+	</div>
+
+	<!-----------------------------footer------------------------------------------>
+<footer>
+		<div class="hidden_box">
+		<div class="bottom_pt"></div>
+		<div class="foot_box">
+		<div class="f1">
+		<h4>YOUR M·A·C STORE</h4>
+		<ul>
+			<li><a href="#">FIND A STORE / EVENT</a></li>
+			<li><a href="#">MAKEUP SERVICES</a></li>
+		</ul>
+		</div>
+		
+		<div class="f2">
+		<h4>CUSTOMER SERVICE</h4>
+		<ul>
+			<li><a href="#">CONTACT US</a></li>
+			<li><a href="#">FAQS</a></li>
+			<li><a href="#">SHIPPING INFO</a></li>
+			<li><a href="#">RETURN POLICY</a></li>
+			<li><a href="#">OFFER DETAILS</a></li>
+			<li><a href="#">SITE FEEDBACK</a></li>
+		</ul>
+		</div>
+
+		<div class="f3">
+		<h4>ABOUT US</h4>
+		<ul>
+			<li><a href="#">OUR STORY</a></li>
+			<li><a href="#">M·A·C AIDS FUND</a></li>
+			<li><a href="#">M·A·C PRO MEMBERSHIP</a></li>
+			<li><a href="#">M·A·C SELECT PROGRAM</a></li>
+			<li><a href="#">BACK TO M·A·C</a></li>
+			<li><a href="#">CAREERS</a></li>
+			<li><a href="#">ANIMAL TESTING</a></li>
+		</ul>
+		</div>
+
+		<div class="f4">
+		<h4>YOUR ACCOUNT</h4>
+		<ul>
+			<li><a href="#">MY M·A·C</a></li>
+			<li><a href="#">ORDER STATUS</a></li>
+			<li><a href="#">MY FAVOURITES</a></li>
+		</ul>
+		</div>
+	
+		<div class="f5">
+		<h4>GIFT CARDS</h4>
+		<ul>
+			<li><a href="#">GIFT CARDS</a></li>
+			<li><a href="#">EGIFT CARDS</a></li>
+			<li><a href="#">CHECK BALANCE</a></li>
+			<li><a href="#">ABOUT GIFT CARDS</a></li>
+		</ul>
+		</div>
+
+		<div class="f6">
+		<h4>CONNECT</h4>
+		<ul>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+
+		<div class="f7">
+		<h4>INTERNATIONAL SITES</h4>
+		<ul>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+		
+		</div>		
+		</div>
+		
+	</footer>
+	<div class="footer_bottom">
+		<ul>
+			<li><a href="#">PRIVACY POLICY</a></li>
+			<li><a href="#">INTEREST-BASED ADS</a></li>
+			<li><a href="#">TERMS & CONDITIONS</a></li>
+			<li><a href="#">SUPPLIER RELATIONS</a></li>
+			<li><a href="#">COUNTERFEIT EDUCATION</a></li>
+			<li>© MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.</li>
+		</ul>
+		</div>
+	<div class="brick"></div>
+ </body>
+</html>
