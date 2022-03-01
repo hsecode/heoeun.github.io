@@ -155,7 +155,7 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
 
 /* about */
 .aboutWrap{position:relative;padding:8% 30px;box-sizing:border-box;width:100%;background:#ffda6a;}
-.aboutArea{margin:0 auto;padding:30px;box-sizing:border-box;max-width:880px;background:#fff;border-radius:10px;}
+.aboutArea{margin:0 auto;padding:30px;box-sizing:border-box;max-width:1000px;background:#fff;border-radius:10px;}
 .infoArea .infoArea__top{margin-bottom:20px;text-align:center;}
 .aboutArea .profileImage{position:relative;margin:0 auto 20px;width:230px;height:260px;border:5px solid #ffbd00;background:url(../images/mypic.jpg) center bottom / cover no-repeat;border-radius:8px;}
 .aboutArea .profileImage:before{content:'';position:absolute;top:-40px;right:-45px;width:100px;height:100px;background:#aef554;border-radius:50%;}
@@ -172,12 +172,17 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
 .aboutArea .section__title:before{content:"About";position:absolute;top:-0.35rem;left:-0.35rem;color:transparent;-webkit-text-stroke:0.1rem #ff7412;}
 @media all and (min-width:768px) {
     .aboutArea{padding:80px 50px;}
-    .aboutArea h3.section__title {max-width: 660px; margin: 0 auto 30px; text-align: left;}
+    .aboutArea h3.section__title {margin: 0 auto 30px; text-align: left;}
     .aboutArea .window_box{max-width:900px;}
     .aboutArea .profileImage{margin:0 0 20px;}
-    .infoArea{flex-direction:row;align-items:center;margin:60px auto 0;max-width:720px;}
+    .infoArea{flex-direction:row;align-items:center;margin:60px auto 0;}
     .infoArea .infoArea__top{padding-right:20px;text-align:left;}
     .infoArea .infoArea__bottom{flex:1;padding: 20px 0 20px 40px;border-top:none;border-left:3px dashed #ffb100;}
+}
+@media all and (min-width:1024px) {
+    .aboutArea{padding:100px 90px 80px;}
+    .infoArea .infoArea__top{padding-right:70px;}
+    .infoArea .infoArea__bottom{padding-left:50px;}
 }
 /* //about */
 
@@ -200,7 +205,8 @@ h3.section__title{margin-bottom:30px;text-align:center;font-family:'Baloo Bhai',
 .careerBox{margin: 0 auto;padding:50px 30px;max-width:700px;background:#fff;}
 .careerBox__item{display:none;margin-top:15px;padding:0 10px;}
 .careerBox__item.active{display:block;}
-.careerDetail__notice{margin-bottom:10px;font-size:12px;color:#999;}
+.careerDetail__notice{font-size:12px;color:#999;}
+.careerDetail__notice + .careerDetail__notice{margin-bottom:10px;}
 .careerDetail__notice em{letter-spacing:.7px;color:#d05aec;}
 .projectList + .projectList{margin-top:20px;}
 .projectList__item + .projectList__item{margin-top:20px;}
