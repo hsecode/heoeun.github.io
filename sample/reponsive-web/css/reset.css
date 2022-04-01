@@ -1,0 +1,26 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td,button,textarea,select{margin:0;padding:0;}
+[class] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; /* ol, ul */
+    border: 0; /* button, fieldset, iframe, input, select, table, textarea */
+    background-color: transparent; /* button, dialog, mark, meter, progress */
+    border-collapse: collapse; /* table */
+    border-spacing: 0; /* table */
+}
+[class]::before,
+[class]::after { box-sizing: border-box; }
+/*//reset*/
